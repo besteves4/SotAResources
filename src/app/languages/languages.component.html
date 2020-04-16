@@ -1,32 +1,55 @@
-
+<h2 class="languages-title mt-3 mb-4">
+        {{languages.title}}
+</h2>
 
 <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
+    <thead>
+        <tr>
+            <th scope="col" *ngFor="let colname of languages.columns">
+                {{colname}}
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let ppl of languages.privacyPolicy">
+            <th scope="row">
+                {{ppl.id}}
+            </th>
+            <td>
+                {{ppl.name}}
+            </td>
+            <td>
+                {{ppl.description}}
+            </td>
+            <td>
+                {{ppl.creation}}
+            </td>
+            <td>
+                {{ppl.lastUpdate}}
+            </td>
+            <td>
+                {{ppl.idiom}}
+            </td>
+            <td>
+                <p *ngFor="let rdf of ppl?.rdf">
+                    {{rdf.type}}
+                </p>
+            </td>
+            <td>
+                <p *ngFor="let doc of ppl?.documentation">
+                    {{doc.type}}
+                </p>
+            </td>
+            <td>
+                <p *ngFor="let ex of ppl?.examples">
+                    {{ex.type}}
+                </p>
+            </td>
+            <td>
+                <p *ngFor="let diag of ppl?.diagrams">
+                    {{diag.type}}
+                </p>
+            </td>
+        </tr>
+    </tbody>
 </table>
