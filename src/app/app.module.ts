@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 
 import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+
 import { HomeComponent } from './home/home.component';
 import { LanguagesComponent } from './languages/languages.component';
 import { LanguagesDescriptionModalComponent } from './languages-description-modal/languages-description-modal.component';
@@ -23,6 +25,7 @@ import { OrderByPositionPipe } from './pipes/order-by-position.pipe';
         AppComponent,
         HomeComponent,
         NavbarComponent,
+        FooterComponent,
         LanguagesComponent,
         LanguagesDescriptionModalComponent,
         OntologiesComponent,
