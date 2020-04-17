@@ -13,8 +13,6 @@ export class LanguagesComponent implements OnInit {
             'Language',
             'Name',
             'Description',
-            'Creation',
-            'Last Update',
             'Idiom',
             'RDF',
             'Documentation',
@@ -28,7 +26,10 @@ export class LanguagesComponent implements OnInit {
                 description: '...',
                 creation: '...',
                 lastUpdate: '...',
-                idiom: '...',
+                idiom: {
+                    imageSrc: '../../assets/uk_flag.png',
+                    lang: 'en'
+                },
                 rdf: [
                     {
                         type: '...',

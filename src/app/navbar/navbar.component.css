@@ -3,5 +3,12 @@
 }
 
 .bg-light {
-    background-color: #dbfaf4 !important;
+    background-color: #1abc9c !important;
+}
+
+.navbar {
+  min-height: 80px;
+}
+.nav-link {
+    text-transform: uppercase;
 }

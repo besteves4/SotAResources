@@ -2,7 +2,7 @@
         {{languages.title}}
 </h2>
 
-<table class="table">
+<table class="table table-sm table-hover">
     <thead>
         <tr>
             <th scope="col" *ngFor="let colname of languages.columns">
@@ -22,13 +22,9 @@
                 {{ppl.description}}
             </td>
             <td>
-                {{ppl.creation}}
-            </td>
-            <td>
-                {{ppl.lastUpdate}}
-            </td>
-            <td>
-                {{ppl.idiom}}
+                <div class="idiom">
+                    <img src={{ppl.idiom.imageSrc}} height="12" mr-1> {{ppl.idiom.lang}}
+                </div>
             </td>
             <td>
                 <p *ngFor="let rdf of ppl?.rdf">
