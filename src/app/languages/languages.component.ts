@@ -32,41 +32,41 @@ export class LanguagesComponent implements OnInit {
                 },
                 rdf: [
                     {
-                        type: '...',
+                        type: 'xml',
                         link: ''
                     },
                     {
-                        type: '...',
+                        type: 'rdf',
                         link: ''
                     }
                 ],
                 documentation: [
                     {
-                        type: '...',
-                        link: ''
+                        type: 'html',
+                        link: '#'
                     },
                     {
-                        type: '...',
-                        link: ''
+                        type: 'doc',
+                        link: '#'
                     }
                 ],
                 examples: [
                     {
-                        type: '...',
+                        type: 'sample',
                         link: ''
                     },
                     {
-                        type: '...',
+                        type: 'use-case',
                         link: ''
                     }
                 ],
                 diagrams: [
                     {
-                        type: '...',
+                        type: 'legal-basis',
                         link: ''
                     },
                     {
-                        type: '...',
+                        type: 'purposes',
                         link: ''
                     }
                 ]

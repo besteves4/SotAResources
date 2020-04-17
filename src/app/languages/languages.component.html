@@ -27,24 +27,32 @@
                 </div>
             </td>
             <td>
-                <p *ngFor="let rdf of ppl?.rdf">
-                    {{rdf.type}}
-                </p>
+                <div class="button-wrapper mr-1" *ngFor="let rdf of ppl?.rdf" [ngSwitch]="rdf.type">
+                    <a *ngSwitchCase="'xml'" class="btn btn-outline-warning btn-sm" href={{rdf.link}} role="button">{{rdf.type}}</a>
+                    <a *ngSwitchCase="'rdf'" class="btn btn-outline-success btn-sm" href={{rdf.link}} role="button">{{rdf.type}}</a>
+                    <a *ngSwitchDefault class="btn btn-dark btn-sm" href={{rdf.link}} role="button">{{rdf.type}}</a>
+                </div>
             </td>
             <td>
-                <p *ngFor="let doc of ppl?.documentation">
-                    {{doc.type}}
-                </p>
+                <div class="button-wrapper mr-1" *ngFor="let doc of ppl?.documentation" [ngSwitch]="doc.type">
+                    <a *ngSwitchCase="'html'" class="btn btn-outline-warning btn-sm" href={{doc.link}} role="button">{{doc.type}}</a>
+                    <a *ngSwitchCase="'doc'" class="btn btn-outline-success btn-sm" href={{doc.link}} role="button">{{doc.type}}</a>
+                    <a *ngSwitchDefault class="btn btn-dark btn-sm" href={{doc.link}} role="button">{{doc.type}}</a>
+                </div>
             </td>
             <td>
-                <p *ngFor="let ex of ppl?.examples">
-                    {{ex.type}}
-                </p>
+                <div class="button-wrapper mr-1" *ngFor="let ex of ppl?.examples" [ngSwitch]="ex.type">
+                    <a *ngSwitchCase="'sample'" class="btn btn-outline-warning btn-sm" href={{ex.link}} role="button">{{ex.type}}</a>
+                    <a *ngSwitchCase="'use-case'" class="btn btn-outline-success btn-sm" href={{ex.link}} role="button">{{ex.type}}</a>
+                    <a *ngSwitchDefault class="btn btn-dark btn-sm" href={{ex.link}} role="button">{{ex.type}}</a>
+                </div>
             </td>
             <td>
-                <p *ngFor="let diag of ppl?.diagrams">
-                    {{diag.type}}
-                </p>
+                <div class="button-wrapper mr-1" *ngFor="let diag of ppl?.diagrams" [ngSwitch]="diag.type">
+                    <a *ngSwitchCase="'legal-basis'" class="btn btn-outline-warning btn-sm" href={{diag.link}} role="button">{{diag.type}}</a>
+                    <a *ngSwitchCase="'purposes'" class="btn btn-outline-success btn-sm" href={{diag.link}} role="button">{{diag.type}}</a>
+                    <a *ngSwitchDefault class="btn btn-dark btn-sm" href={{diag.link}} role="button">{{diag.type}}</a>
+                </div>
             </td>
         </tr>
     </tbody>

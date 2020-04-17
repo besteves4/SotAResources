@@ -1,3 +1,7 @@
 .idiom {
     text-transform: uppercase;
 }
+
+.button-wrapper {
+    display: inline;
+}
