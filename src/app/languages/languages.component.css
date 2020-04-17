@@ -1,7 +1,61 @@
 .idiom {
     text-transform: uppercase;
+    text-align: center;
+    min-width: 60px;
 }
 
 .button-wrapper {
     display: inline;
+}
+
+.plus-square {
+    cursor: pointer;
+}
+
+.vertical-middle {
+    vertical-align:middle;
+}
+
+.description {
+    vertical-align:middle;
+    text-align: justify;
+    min-width: 250px;
+}
+
+.colnames {
+    text-align: center;
+}
+
+.colnames {
+    text-align: center;
+}
+
+.name {
+    vertical-align:middle;
+    min-width: 120px;
+    vertical-align:middle;
+}
+
+.rdf {
+    text-align: center;
+    min-width: 100px;
+    vertical-align:middle;
+}
+
+.documentation {
+    text-align: center;
+    min-width: 100px;
+    vertical-align:middle;
+}
+
+.example {
+    text-align: center;
+    min-width: 100px;
+    vertical-align:middle;
+}
+
+.diagram {
+    text-align: center;
+    min-width: 100px;
+    vertical-align:middle;
 }

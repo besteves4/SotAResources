@@ -1,0 +1,18 @@
+<div class="modal fade" bsModal #languagesDescriptionModal="bs-modal" tabindex="-1" role="dialog" aria-labelledby="dialog-nested-name1">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close pull-right" aria-label="Close" (click)="languagesDescriptionModal.hide()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                
+                <div class="col-12">
+                    <h3 class="language-title mb-2">
+                        {{ppl?.id}}
+                    </h3>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

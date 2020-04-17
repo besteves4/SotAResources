@@ -5,55 +5,60 @@
 <table class="table table-sm table-hover">
     <thead>
         <tr>
-            <th scope="col" *ngFor="let colname of languages.columns">
+            <th scope="col" class="colnames" *ngFor="let colname of languages.columns">
                 {{colname}}
             </th>
         </tr>
     </thead>
     <tbody>
         <tr *ngFor="let ppl of languages.privacyPolicy">
-            <th scope="row">
+            <th scope="row" class="vertical-middle">
                 {{ppl.id}}
             </th>
-            <td>
+            <td class="name">
                 {{ppl.name}}
             </td>
-            <td>
-                {{ppl.description}}
+            <td class="description">
+                <div>
+                    {{ppl.description}}
+                    <fa-icon class="plus-square clickable mr-3" (click)="handleClick(ppl)" [icon]="faPlusSquare"></fa-icon>
+                </div>
             </td>
-            <td>
+            <td class="vertical-middle">
                 <div class="idiom">
                     <img src={{ppl.idiom.imageSrc}} height="12" mr-1> {{ppl.idiom.lang}}
                 </div>
             </td>
-            <td>
+            <td class="rdf">
                 <div class="button-wrapper mr-1" *ngFor="let rdf of ppl?.rdf" [ngSwitch]="rdf.type">
-                    <a *ngSwitchCase="'xml'" class="btn btn-outline-warning btn-sm" href={{rdf.link}} role="button">{{rdf.type}}</a>
-                    <a *ngSwitchCase="'rdf'" class="btn btn-outline-success btn-sm" href={{rdf.link}} role="button">{{rdf.type}}</a>
-                    <a *ngSwitchDefault class="btn btn-dark btn-sm" href={{rdf.link}} role="button">{{rdf.type}}</a>
+                    <a *ngSwitchCase="'xml'" class="btn btn-outline-warning btn-sm mb-1" href={{rdf.link}} role="button">{{rdf.type}}</a>
+                    <a *ngSwitchCase="'rdf'" class="btn btn-outline-success btn-sm mb-1" href={{rdf.link}} role="button">{{rdf.type}}</a>
+                    <a *ngSwitchDefault class="btn btn-dark btn-sm mb-1" href={{rdf.link}} role="button">{{rdf.type}}</a>
                 </div>
             </td>
-            <td>
+            <td class="documentation">
                 <div class="button-wrapper mr-1" *ngFor="let doc of ppl?.documentation" [ngSwitch]="doc.type">
-                    <a *ngSwitchCase="'html'" class="btn btn-outline-warning btn-sm" href={{doc.link}} role="button">{{doc.type}}</a>
-                    <a *ngSwitchCase="'doc'" class="btn btn-outline-success btn-sm" href={{doc.link}} role="button">{{doc.type}}</a>
-                    <a *ngSwitchDefault class="btn btn-dark btn-sm" href={{doc.link}} role="button">{{doc.type}}</a>
+                    <a *ngSwitchCase="'html'" class="btn btn-outline-warning btn-sm mb-1" href={{doc.link}} role="button">{{doc.type}}</a>
+                    <a *ngSwitchCase="'doc'" class="btn btn-outline-success btn-sm mb-1" href={{doc.link}} role="button">{{doc.type}}</a>
+                    <a *ngSwitchDefault class="btn btn-dark btn-sm mb-1" href={{doc.link}} role="button">{{doc.type}}</a>
                 </div>
             </td>
-            <td>
+            <td class="example">
                 <div class="button-wrapper mr-1" *ngFor="let ex of ppl?.examples" [ngSwitch]="ex.type">
-                    <a *ngSwitchCase="'sample'" class="btn btn-outline-warning btn-sm" href={{ex.link}} role="button">{{ex.type}}</a>
-                    <a *ngSwitchCase="'use-case'" class="btn btn-outline-success btn-sm" href={{ex.link}} role="button">{{ex.type}}</a>
-                    <a *ngSwitchDefault class="btn btn-dark btn-sm" href={{ex.link}} role="button">{{ex.type}}</a>
+                    <a *ngSwitchCase="'sample'" class="btn btn-outline-warning btn-sm mb-1" href={{ex.link}} role="button">{{ex.type}}</a>
+                    <a *ngSwitchCase="'use-case'" class="btn btn-outline-success btn-sm mb-1" href={{ex.link}} role="button">{{ex.type}}</a>
+                    <a *ngSwitchDefault class="btn btn-dark btn-sm mb-1" href={{ex.link}} role="button">{{ex.type}}</a>
                 </div>
             </td>
-            <td>
+            <td class="diagram">
                 <div class="button-wrapper mr-1" *ngFor="let diag of ppl?.diagrams" [ngSwitch]="diag.type">
-                    <a *ngSwitchCase="'legal-basis'" class="btn btn-outline-warning btn-sm" href={{diag.link}} role="button">{{diag.type}}</a>
-                    <a *ngSwitchCase="'purposes'" class="btn btn-outline-success btn-sm" href={{diag.link}} role="button">{{diag.type}}</a>
-                    <a *ngSwitchDefault class="btn btn-dark btn-sm" href={{diag.link}} role="button">{{diag.type}}</a>
+                    <a *ngSwitchCase="'legal-basis'" class="btn btn-outline-warning btn-sm mb-1" href={{diag.link}} role="button">{{diag.type}}</a>
+                    <a *ngSwitchCase="'purposes'" class="btn btn-outline-success btn-sm mb-1" href={{diag.link}} role="button">{{diag.type}}</a>
+                    <a *ngSwitchDefault class="btn btn-dark btn-sm mb-1" href={{diag.link}} role="button">{{diag.type}}</a>
                 </div>
             </td>
         </tr>
     </tbody>
 </table>
+
+<app-languages-description-modal #languagesDescriptionModal [ppl]="activeJob"></app-languages-description-modal>

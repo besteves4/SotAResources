@@ -1,4 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { faPlusSquare } from '@fortawesome/free-solid-svg-icons';
+
+import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
+import { LanguagesDescriptionModalComponent } from '../languages-description-modal/languages-description-modal.component';
+import { element } from 'protractor';
 
 @Component({
     selector: 'app-languages',
@@ -7,6 +12,21 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class LanguagesComponent implements OnInit {
+
+    activeJob: any;
+    @ViewChild('languagesDescriptionModal', {static: false}) languagesDescriptionModal;
+
+    constructor() { }
+
+    ngOnInit() { }
+    
+    handleClick(ppl) {
+        this.activeJob = ppl;
+        this.languagesDescriptionModal.show()
+    }
+
+    faPlusSquare = faPlusSquare;
+
     languages = {
         title: 'Relevant privacy-related policy languages',
         columns: [
@@ -22,10 +42,10 @@ export class LanguagesComponent implements OnInit {
         privacyPolicy: [
             {
                 id: 'P3P',
-                name: '...',
-                description: '...',
-                creation: '...',
-                lastUpdate: '...',
+                name: 'Platform for Privacy Preferences',
+                description: 'Lorem ipsum dolor sit amet, consectetur ut incididunt ut labore et dolore magna aliqua. ',
+                created: '',
+                lastUpdated: '',
                 idiom: {
                     imageSrc: '../../assets/uk_flag.png',
                     lang: 'en'
@@ -329,10 +349,4 @@ export class LanguagesComponent implements OnInit {
             }
         ]
     }
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
 }

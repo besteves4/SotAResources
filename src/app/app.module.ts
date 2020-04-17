@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { LanguagesComponent } from './languages/languages.component';
+import { LanguagesDescriptionModalComponent } from './languages-description-modal/languages-description-modal.component';
 import { OntologiesComponent } from './ontologies/ontologies.component';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -23,6 +24,7 @@ import { OrderByPositionPipe } from './pipes/order-by-position.pipe';
         HomeComponent,
         NavbarComponent,
         LanguagesComponent,
+        LanguagesDescriptionModalComponent,
         OntologiesComponent,
         DividerPipe,
         OrderByPositionPipe
@@ -35,6 +37,9 @@ import { OrderByPositionPipe } from './pipes/order-by-position.pipe';
         FontAwesomeModule,
         BrowserAnimationsModule,
         ModalModule.forRoot()
+    ],
+    entryComponents: [
+        LanguagesDescriptionModalComponent
     ],
     providers: [],
     bootstrap: [
