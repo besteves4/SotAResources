@@ -33,8 +33,7 @@ export class LanguagesComponent implements OnInit {
             'Language',
             'Name',
             'Description',
-            'Idiom',
-            'RDF',
+            'Resources',
             'Documentation',
             'Examples',
             'Diagrams'
@@ -43,31 +42,81 @@ export class LanguagesComponent implements OnInit {
             {
                 id: 'P3P',
                 name: 'Platform for Privacy Preferences',
-                description: 'Lorem ipsum dolor sit amet, consectetur ut incididunt ut labore et dolore magna aliqua. ',
-                created: '',
-                lastUpdated: '',
+                description: 'Specification for websites to disclose privacy protocols that can be automatically read and interpreted by user agents',
+                w3cStatus: 'W3C Obsolete Recommendation',
+                authors: {
+                    name: 'W3C P3P Specification Working Group',
+                    link: 'https://www.w3.org/P3P/'
+                },
+                summary: [],
+                elements: [
+                    {
+                        name: 'Policy',
+                        link: 'https://www.w3.org/TR/P3P/#POLICY'
+                    },
+                    {
+                        name: 'Entity',
+                        link: 'https://www.w3.org/TR/P3P/#ENTITY'
+                    },
+                    {
+                        name: 'Access',
+                        link: 'https://www.w3.org/TR/P3P/#ACCESS'
+                    },
+                    {
+                        name: 'Disputes',
+                        link: 'https://www.w3.org/TR/P3P/#DISPUTES'
+                    },
+                    {
+                        name: 'Remedies',
+                        link: 'https://www.w3.org/TR/P3P/#REMEDIES'
+                    },
+                    {
+                        name: 'Purpose',
+                        link: 'https://www.w3.org/TR/P3P/#PURPOSE'
+                    },
+                    {
+                        name: 'Recipient',
+                        link: 'https://www.w3.org/TR/P3P/#RECPNT'
+                    },
+                    {
+                        name: 'Retention',
+                        link: 'https://www.w3.org/TR/P3P/#RETENTION'
+                    },
+                    {
+                        name: 'Data',
+                        link: 'https://www.w3.org/TR/P3P/#DATA'
+                    },
+                    {
+                        name: 'Categories',
+                        link: 'https://www.w3.org/TR/P3P/#Categories'
+                    }
+                ],
                 idiom: {
                     imageSrc: '../../assets/uk_flag.png',
                     lang: 'en'
                 },
                 rdf: [
                     {
-                        type: 'xml',
-                        link: ''
+                        type: 'RDF',
+                        link: 'https://www.w3.org/TR/p3p-rdfschema/p3p-rdf-schema.xml'
                     },
                     {
-                        type: 'rdf',
-                        link: ''
+                        type: 'DTD',
+                        link: 'https://www.w3.org/2002/01/P3Pv1.dtd'
+                    },
+                    {
+                        type: ' XML',
+                        link: 'https://www.w3.org/2002/01/P3Pv1'
+                    },
+                    {
+                        type: 'DATA-STRUCT XML',
+                        link: 'https://www.w3.org/TR/P3P/base'
                     }
                 ],
                 documentation: [
                     {
-                        type: 'html',
-                        link: '#'
-                    },
-                    {
-                        type: 'doc',
-                        link: '#'
+                        type: 'HTML',
+                        link: 'https://www.w3.org/TR/P3P/'
                     }
                 ],
                 examples: [
@@ -100,25 +149,41 @@ export class LanguagesComponent implements OnInit {
                 idiom: '',
                 rdf: [
                     {
-                        type: '',
-                        link: ''
+                        type: ' P3P v1 XML',
+                        link: 'https://www.w3.org/2002/01/P3Pv1'
+                    },
+                    {
+                        type: 'DATA-STRUCT XML',
+                        link: 'https://www.w3.org/TR/P3P/base'
                     }
                 ],
                 documentation: [
                     {
-                        type: '',
-                        link: ''
+                        type: 'html',
+                        link: 'https://www.w3.org/TR/P3P/'
+                    },
+                    {
+                        type: 'doc',
+                        link: '#'
                     }
                 ],
                 examples: [
                     {
-                        type: '',
+                        type: 'sample',
+                        link: ''
+                    },
+                    {
+                        type: 'use-case',
                         link: ''
                     }
                 ],
                 diagrams: [
                     {
-                        type: '',
+                        type: 'legal-basis',
+                        link: ''
+                    },
+                    {
+                        type: 'purposes',
                         link: ''
                     }
                 ]

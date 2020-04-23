@@ -1,7 +1,10 @@
-.idiom {
-    text-transform: uppercase;
+.table {
+    font-size: 13px;
     text-align: center;
-    min-width: 60px;
+}
+
+.btn {
+    font-size: 12px;
 }
 
 .button-wrapper {
@@ -22,14 +25,6 @@
     min-width: 250px;
 }
 
-.colnames {
-    text-align: center;
-}
-
-.colnames {
-    text-align: center;
-}
-
 .name {
     vertical-align:middle;
     min-width: 120px;
@@ -37,25 +32,21 @@
 }
 
 .rdf {
-    text-align: center;
     min-width: 100px;
     vertical-align:middle;
 }
 
 .documentation {
-    text-align: center;
     min-width: 100px;
     vertical-align:middle;
 }
 
 .example {
-    text-align: center;
     min-width: 100px;
     vertical-align:middle;
 }
 
 .diagram {
-    text-align: center;
     min-width: 100px;
     vertical-align:middle;
 }

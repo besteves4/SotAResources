@@ -1,0 +1,11 @@
+.description {
+    height: 100px;
+}
+
+.button-wrapper {
+    display: inline;
+}
+
+.idiom {
+    text-transform: uppercase;
+}

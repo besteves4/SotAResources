@@ -17,7 +17,7 @@ export class FooterComponent implements OnInit {
             name: 'Beatriz Esteves',
             linkPersonalWebpage: 'https://besteves4.github.io',
         },
-        lastUpdate : '17/April/2020'
+        lastUpdate : '--/--/----'
     }
     
     constructor() { }

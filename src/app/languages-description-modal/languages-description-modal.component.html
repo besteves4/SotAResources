@@ -6,10 +6,46 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
                 
-                <div class="col-12">
-                    <h3 class="language-title mb-2">
-                        {{ppl?.id}}
-                    </h3>
+                <div class="row mb-2">
+                    <div class="col-9">
+                        <h3 class="language-title mb-2">
+                            {{ppl?.id}} - {{ppl?.name}}
+                        </h3>
+                    </div>
+                    <div class="col-3" [ngSwitch]="ppl?.w3cStatus">
+                        <a *ngSwitchCase="'W3C Obsolete Recommendation'" class="btn btn-dark btn-sm float-right" href="https://www.w3.org/2018/Process-20180201/#rec-rescind" target="_blank" role="button">{{ppl?.w3cStatus}}</a>
+                        <a *ngSwitchDefault class="btn btn-warning btn-sm mb-1" href="#" target="_blank" role="button">{{ppl?.w3cStatus}}</a>
+                    </div>
+                </div>
+
+                <div class="row mb-1">
+                    <div class="col-12">
+                        Responsible: <a class="authors-link" href={{ppl?.authors.link}} target="_blank">{{ppl?.authors.name}}</a>
+                    </div>
+                </div>
+
+                <div class="row mb-1">
+                    <div class="col-12">
+                        Language: 
+                        <span class="idiom">
+                            <img src={{ppl.idiom.imageSrc}} height="12" mr-1> {{ppl?.idiom.lang}}
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row description">
+                    <div class="col-12">
+                        Description & main goals
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        Main elements <br>
+                        <div class="button-wrapper" *ngFor="let element of ppl?.elements">
+                            <a class="btn btn-outline-success btn-sm mr-1" href={{element.link}} target="_blank" role="button">{{element.name}}</a>
+                        </div>
+                    </div>
                 </div>
                 
             </div>
