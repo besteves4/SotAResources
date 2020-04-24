@@ -149,21 +149,21 @@ export class LanguagesComponent implements OnInit {
                 idiom: '',
                 rdf: [
                     {
-                        type: ' P3P v1 XML',
-                        link: 'https://www.w3.org/2002/01/P3Pv1'
+                        type: 'XML',
+                        link: ''
                     },
                     {
                         type: 'DATA-STRUCT XML',
-                        link: 'https://www.w3.org/TR/P3P/base'
+                        link: ''
                     }
                 ],
                 documentation: [
                     {
-                        type: 'html',
-                        link: 'https://www.w3.org/TR/P3P/'
+                        type: 'HTML',
+                        link: ''
                     },
                     {
-                        type: 'doc',
+                        type: 'DOC',
                         link: '#'
                     }
                 ],

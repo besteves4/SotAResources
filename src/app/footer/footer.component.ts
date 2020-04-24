@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-footer',
@@ -8,11 +9,17 @@ import { Component, OnInit } from '@angular/core';
 
 export class FooterComponent implements OnInit {
 
+    faTwitterSquare = faTwitterSquare;
+
     footer = {
-        acknowledgements: 'Acknowledgements',
-        protectCordis: '',
-        protectLinkedin: '',
-        protectTwitter: '',
+        imageSrc: '../../assets/eu_flag.jpg',
+        protect: {
+            icon: '../../assets/protect.png',
+            webpage: 'https://protect-network.eu/',
+            cordis: 'https://cordis.europa.eu/project/id/813497',  
+            linkedin: '',
+            twitter: 'https://twitter.com/ItnProtect'
+        },
         author: {
             name: 'Beatriz Esteves',
             linkPersonalWebpage: 'https://besteves4.github.io',
