@@ -1,17 +1,17 @@
 <h3 class="languages-title mt-3 mb-4">
-        {{languages.title}}
+        {{table.caption}}
 </h3>
 
 <table class="table table-sm table-hover table-bordered">
     <thead>
         <tr>
-            <th scope="col" class="colnames" *ngFor="let colname of languages.columns">
+            <th scope="col" class="colnames" *ngFor="let colname of table.columns">
                 {{colname}}
             </th>
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let ppl of languages.privacyPolicy">
+        <tr *ngFor="let ppl of privacyPolicyLanguages">
             <th scope="row" class="vertical-middle">
                 {{ppl.id}}
             </th>
@@ -37,13 +37,6 @@
                     <a *ngSwitchCase="'HTML'" class="btn btn-outline-warning btn-sm mb-1" href={{doc.link}} target="_blank" role="button">{{doc.type}}</a>
                     <a *ngSwitchCase="'DOC'" class="btn btn-outline-success btn-sm mb-1" href={{doc.link}} target="_blank" role="button">{{doc.type}}</a>
                     <a *ngSwitchDefault class="btn btn-dark btn-sm mb-1" href={{doc.link}} target="_blank" role="button">{{doc.type}}</a>
-                </div>
-            </td>
-            <td class="example">
-                <div class="button-wrapper mr-1" *ngFor="let ex of ppl?.examples" [ngSwitch]="ex.type">
-                    <a *ngSwitchCase="'sample'" class="btn btn-outline-warning btn-sm mb-1" href={{ex.link}} role="button">{{ex.type}}</a>
-                    <a *ngSwitchCase="'use-case'" class="btn btn-outline-success btn-sm mb-1" href={{ex.link}} role="button">{{ex.type}}</a>
-                    <a *ngSwitchDefault class="btn btn-dark btn-sm mb-1" href={{ex.link}} role="button">{{ex.type}}</a>
                 </div>
             </td>
             <td class="diagram">

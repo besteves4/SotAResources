@@ -1,0 +1,20 @@
+<accordion [isAnimated]="true">
+    <div *ngFor="let ex of ppl?.examples">
+		<accordion-group heading="{{ex.title}}">
+			<div class="mb-2">
+				{{ex.description}}
+			</div>
+
+			<div class='example-buttons' *ngFor='let solution of ex.solutions'>
+				<button type='button' class="btn btn-secondary btn-sm mb-2" (click)='handleClick(solution.link)'>
+					{{solution.language}}
+				</button>
+			</div>
+
+			<div class='example-text col-12'>
+				{{activeLink}}
+			</div>
+		
+		</accordion-group>
+    </div>
+</accordion>

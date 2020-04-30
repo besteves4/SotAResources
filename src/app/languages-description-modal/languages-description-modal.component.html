@@ -6,8 +6,8 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
                 
-                <div class="row mb-2">
-                    <div class="col-9">
+                <div class="row mt-2 mb-2">
+                    <div class="col-8 offset-1">
                         <h3 class="language-title mb-2">
                             {{ppl?.id}} - {{ppl?.name}}
                         </h3>
@@ -19,28 +19,28 @@
                 </div>
 
                 <div class="row mb-1">
-                    <div class="col-12">
+                    <div class="col-11 offset-1">
                         Responsible: <a class="authors-link" href={{ppl?.authors.link}} target="_blank">{{ppl?.authors.name}}</a>
                     </div>
                 </div>
 
                 <div class="row mb-1">
-                    <div class="col-12">
+                    <div class="col-11 offset-1">
                         Language: 
                         <span class="idiom">
-                            <img src={{ppl.idiom.imageSrc}} height="12" mr-1> {{ppl?.idiom.lang}}
+                            <img src={{ppl?.idiom.imageSrc}} height="12" mr-1> {{ppl?.idiom.lang}}
                         </span>
                     </div>
                 </div>
 
                 <div class="row description">
-                    <div class="col-12">
+                    <div class="col-11 offset-1">
                         Description & main goals
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-12">
+                <div class="row mb-3">
+                    <div class="col-11 offset-1">
                         Main elements <br>
                         <div class="button-wrapper" *ngFor="let element of ppl?.elements">
                             <a class="btn btn-outline-success btn-sm mr-1" href={{element.link}} target="_blank" role="button">{{element.name}}</a>
@@ -48,6 +48,11 @@
                     </div>
                 </div>
                 
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <app-examples-accordion [ppl]="ppl"></app-examples-accordion>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

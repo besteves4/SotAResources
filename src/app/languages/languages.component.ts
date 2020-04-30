@@ -27,391 +27,142 @@ export class LanguagesComponent implements OnInit {
 
     faPlusSquare = faPlusSquare;
 
-    languages = {
-        title: 'Relevant privacy-related policy languages',
+    table = {
+        caption: 'Relevant privacy-related policy languages',
         columns: [
             'Language',
             'Name',
             'Description',
             'Resources',
             'Documentation',
-            'Examples',
             'Diagrams'
-        ],
-        privacyPolicy: [
-            {
-                id: 'P3P',
-                name: 'Platform for Privacy Preferences',
-                description: 'Specification for websites to disclose privacy protocols that can be automatically read and interpreted by user agents',
-                w3cStatus: 'W3C Obsolete Recommendation',
-                authors: {
-                    name: 'W3C P3P Specification Working Group',
-                    link: 'https://www.w3.org/P3P/'
-                },
-                summary: [],
-                elements: [
-                    {
-                        name: 'Policy',
-                        link: 'https://www.w3.org/TR/P3P/#POLICY'
-                    },
-                    {
-                        name: 'Entity',
-                        link: 'https://www.w3.org/TR/P3P/#ENTITY'
-                    },
-                    {
-                        name: 'Access',
-                        link: 'https://www.w3.org/TR/P3P/#ACCESS'
-                    },
-                    {
-                        name: 'Disputes',
-                        link: 'https://www.w3.org/TR/P3P/#DISPUTES'
-                    },
-                    {
-                        name: 'Remedies',
-                        link: 'https://www.w3.org/TR/P3P/#REMEDIES'
-                    },
-                    {
-                        name: 'Purpose',
-                        link: 'https://www.w3.org/TR/P3P/#PURPOSE'
-                    },
-                    {
-                        name: 'Recipient',
-                        link: 'https://www.w3.org/TR/P3P/#RECPNT'
-                    },
-                    {
-                        name: 'Retention',
-                        link: 'https://www.w3.org/TR/P3P/#RETENTION'
-                    },
-                    {
-                        name: 'Data',
-                        link: 'https://www.w3.org/TR/P3P/#DATA'
-                    },
-                    {
-                        name: 'Categories',
-                        link: 'https://www.w3.org/TR/P3P/#Categories'
-                    }
-                ],
-                idiom: {
-                    imageSrc: '../../assets/uk_flag.png',
-                    lang: 'en'
-                },
-                rdf: [
-                    {
-                        type: 'RDF',
-                        link: 'https://www.w3.org/TR/p3p-rdfschema/p3p-rdf-schema.xml'
-                    },
-                    {
-                        type: 'DTD',
-                        link: 'https://www.w3.org/2002/01/P3Pv1.dtd'
-                    },
-                    {
-                        type: ' XML',
-                        link: 'https://www.w3.org/2002/01/P3Pv1'
-                    },
-                    {
-                        type: 'DATA-STRUCT XML',
-                        link: 'https://www.w3.org/TR/P3P/base'
-                    }
-                ],
-                documentation: [
-                    {
-                        type: 'HTML',
-                        link: 'https://www.w3.org/TR/P3P/'
-                    }
-                ],
-                examples: [
-                    {
-                        type: 'sample',
-                        link: ''
-                    },
-                    {
-                        type: 'use-case',
-                        link: ''
-                    }
-                ],
-                diagrams: [
-                    {
-                        type: 'legal-basis',
-                        link: ''
-                    },
-                    {
-                        type: 'purposes',
-                        link: ''
-                    }
-                ]
-            },
-            {
-                id: 'ODRL',
-                name: '',
-                description: '',
-                creation: '',
-                lastUpdate: '',
-                idiom: '',
-                rdf: [
-                    {
-                        type: 'XML',
-                        link: ''
-                    },
-                    {
-                        type: 'DATA-STRUCT XML',
-                        link: ''
-                    }
-                ],
-                documentation: [
-                    {
-                        type: 'HTML',
-                        link: ''
-                    },
-                    {
-                        type: 'DOC',
-                        link: '#'
-                    }
-                ],
-                examples: [
-                    {
-                        type: 'sample',
-                        link: ''
-                    },
-                    {
-                        type: 'use-case',
-                        link: ''
-                    }
-                ],
-                diagrams: [
-                    {
-                        type: 'legal-basis',
-                        link: ''
-                    },
-                    {
-                        type: 'purposes',
-                        link: ''
-                    }
-                ]
-            },
-            {
-                id: 'XPref',
-                name: '',
-                description: '',
-                creation: '',
-                lastUpdate: '',
-                idiom: '',
-                rdf: [
-                    {
-                        type: '',
-                        link: ''
-                    }
-                ],
-                documentation: [
-                    {
-                        type: '',
-                        link: ''
-                    }
-                ],
-                examples: [
-                    {
-                        type: '',
-                        link: ''
-                    }
-                ],
-                diagrams: [
-                    {
-                        type: '',
-                        link: ''
-                    }
-                ]
-            },
-            {
-                id: 'SecPAL4P',
-                name: '',
-                description: '',
-                creation: '',
-                lastUpdate: '',
-                idiom: '',
-                rdf: [
-                    {
-                        type: '',
-                        link: ''
-                    }
-                ],
-                documentation: [
-                    {
-                        type: '',
-                        link: ''
-                    }
-                ],
-                examples: [
-                    {
-                        type: '',
-                        link: ''
-                    }
-                ],
-                diagrams: [
-                    {
-                        type: '',
-                        link: ''
-                    }
-                ]
-            },
-            {
-                id: 'AIR',
-                name: '',
-                description: '',
-                creation: '',
-                lastUpdate: '',
-                idiom: '',
-                rdf: [
-                    {
-                        type: '',
-                        link: ''
-                    }
-                ],
-                documentation: [
-                    {
-                        type: '',
-                        link: ''
-                    }
-                ],
-                examples: [
-                    {
-                        type: '',
-                        link: ''
-                    }
-                ],
-                diagrams: [
-                    {
-                        type: '',
-                        link: ''
-                    }
-                ]
-            },
-            {
-                id: 'POL',
-                name: '',
-                description: '',
-                creation: '',
-                lastUpdate: '',
-                idiom: '',
-                rdf: [
-                    {
-                        type: '',
-                        link: ''
-                    }
-                ],
-                documentation: [
-                    {
-                        type: '',
-                        link: ''
-                    }
-                ],
-                examples: [
-                    {
-                        type: '',
-                        link: ''
-                    }
-                ],
-                diagrams: [
-                    {
-                        type: '',
-                        link: ''
-                    }
-                ]
-            },
-            {
-                id: 'P2U',
-                name: '',
-                description: '',
-                creation: '',
-                lastUpdate: '',
-                idiom: '',
-                rdf: [
-                    {
-                        type: '',
-                        link: ''
-                    }
-                ],
-                documentation: [
-                    {
-                        type: '',
-                        link: ''
-                    }
-                ],
-                examples: [
-                    {
-                        type: '',
-                        link: ''
-                    }
-                ],
-                diagrams: [
-                    {
-                        type: '',
-                        link: ''
-                    }
-                ]
-            },
-            {
-                id: 'A-PPL',
-                name: '',
-                description: '',
-                creation: '',
-                lastUpdate: '',
-                idiom: '',
-                rdf: [
-                    {
-                        type: '',
-                        link: ''
-                    }
-                ],
-                documentation: [
-                    {
-                        type: '',
-                        link: ''
-                    }
-                ],
-                examples: [
-                    {
-                        type: '',
-                        link: ''
-                    }
-                ],
-                diagrams: [
-                    {
-                        type: '',
-                        link: ''
-                    }
-                ]
-            },
-            {
-                id: 'DPF',
-                name: '',
-                description: '',
-                creation: '',
-                lastUpdate: '',
-                idiom: '',
-                rdf: [
-                    {
-                        type: '',
-                        link: ''
-                    }
-                ],
-                documentation: [
-                    {
-                        type: '',
-                        link: ''
-                    }
-                ],
-                examples: [
-                    {
-                        type: '',
-                        link: ''
-                    }
-                ],
-                diagrams: [
-                    {
-                        type: '',
-                        link: ''
-                    }
-                ]
-            }
         ]
     }
+
+    privacyPolicyLanguages = [
+        {
+            id: 'P3P',
+            name: 'Platform for Privacy Preferences',
+            description: 'Specification for websites to disclose privacy protocols that can be automatically read and interpreted by user agents',
+            w3cStatus: 'W3C Obsolete Recommendation',
+            authors: {
+                name: 'W3C P3P Specification Working Group',
+                link: 'https://www.w3.org/P3P/'
+            },
+            summary: [],
+            elements: [
+                {
+                    name: 'Policy',
+                    link: 'https://www.w3.org/TR/P3P/#POLICY'
+                },
+                {
+                    name: 'Entity',
+                    link: 'https://www.w3.org/TR/P3P/#ENTITY'
+                },
+                {
+                    name: 'Access',
+                    link: 'https://www.w3.org/TR/P3P/#ACCESS'
+                },
+                {
+                    name: 'Disputes',
+                    link: 'https://www.w3.org/TR/P3P/#DISPUTES'
+                },
+                {
+                    name: 'Remedies',
+                    link: 'https://www.w3.org/TR/P3P/#REMEDIES'
+                },
+                {
+                    name: 'Purpose',
+                    link: 'https://www.w3.org/TR/P3P/#PURPOSE'
+                },
+                {
+                    name: 'Recipient',
+                    link: 'https://www.w3.org/TR/P3P/#RECPNT'
+                },
+                {
+                    name: 'Retention',
+                    link: 'https://www.w3.org/TR/P3P/#RETENTION'
+                },
+                {
+                    name: 'Data',
+                    link: 'https://www.w3.org/TR/P3P/#DATA'
+                },
+                {
+                    name: 'Categories',
+                    link: 'https://www.w3.org/TR/P3P/#Categories'
+                }
+            ],
+            idiom: {
+                imageSrc: '../../assets/uk_flag.png',
+                lang: 'en'
+            },
+            rdf: [
+                {
+                    type: 'RDF',
+                    link: 'https://www.w3.org/TR/p3p-rdfschema/p3p-rdf-schema.xml'
+                },
+                {
+                    type: 'DTD',
+                    link: 'https://www.w3.org/2002/01/P3Pv1.dtd'
+                },
+                {
+                    type: ' XML',
+                    link: 'https://www.w3.org/2002/01/P3Pv1'
+                },
+                {
+                    type: 'DATA-STRUCT XML',
+                    link: 'https://www.w3.org/TR/P3P/base'
+                }
+            ],
+            documentation: [
+                {
+                    type: 'HTML',
+                    link: 'https://www.w3.org/TR/P3P/'
+                }
+            ],
+            examples: [
+                {
+                    type: 'sample',
+                    title: 'Example 2.2 from the P3P specification',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                    solutions: [
+                        {
+                            language: 'XML',
+                            link: 'path_to_the_xml_example'
+                        },
+                        {
+                            language: 'RDF',
+                            link: 'path_to_the_rdf_example'
+                        }
+                    ]
+                },
+                {
+                    type: 'use-case',
+                    title: '',
+                    description: '',
+                    solutions: [
+                        {
+                            language: 'RDF',
+                            link: ''
+                        },
+                        {
+                            language: 'XML',
+                            link: ''
+                        }
+                    ]
+                }
+            ],
+            diagrams: [
+                {
+                    type: 'legal-basis',
+                    link: ''
+                },
+                {
+                    type: 'purposes',
+                    link: ''
+                }
+            ]
+        },
+        {}
+    ]
 }
