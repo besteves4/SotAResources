@@ -127,10 +127,12 @@ export class LanguagesComponent implements OnInit {
                     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
                     solutions: [
                         {
+                            id: 1,
                             language: 'XML',
                             link: 'path_to_the_xml_example'
                         },
                         {
+                            id: 2,
                             language: 'RDF',
                             link: 'path_to_the_rdf_example'
                         }
@@ -142,12 +144,14 @@ export class LanguagesComponent implements OnInit {
                     description: '',
                     solutions: [
                         {
+                            id: 3,
                             language: 'RDF',
-                            link: ''
+                            link: 'rdf bla bla bla'
                         },
                         {
+                            id: 4,
                             language: 'XML',
-                            link: ''
+                            link: 'xml bla bla bla'
                         }
                     ]
                 }

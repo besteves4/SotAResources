@@ -6,13 +6,15 @@
 			</div>
 
 			<div class='example-buttons' *ngFor='let solution of ex.solutions'>
-				<button type='button' class="btn btn-secondary btn-sm mb-2" (click)='handleClick(solution.link)'>
+				<button type='button' class="btn btn-secondary btn-sm mb-2" (click)='handleClick(solution.id)'>
 					{{solution.language}}
 				</button>
 			</div>
 
-			<div class='example-text col-12'>
-				{{activeLink}}
+			<div class='example-text col-12' *ngFor='let solution of ex.solutions'>
+				<div *ngIf='activeId==solution.id'>
+					{{solution.link}}
+				</div>
 			</div>
 		
 		</accordion-group>

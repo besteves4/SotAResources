@@ -17,10 +17,10 @@ export class ExamplesAccordionComponent implements OnInit {
 
   @Input() ppl;
 
-  activeLink = '';
+  activeId = '';
 
-  handleClick(link) {
-    this.activeLink = link;
+  handleClick(id) {
+    this.activeId = id;
   }
   constructor() {}
    
