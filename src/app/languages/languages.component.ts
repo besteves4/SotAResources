@@ -159,11 +159,11 @@ export class LanguagesComponent implements OnInit {
             diagrams: [
                 {
                     type: 'legal-basis',
-                    link: ''
+                    imageSrc: '../../assets/uk_flag.png'
                 },
                 {
                     type: 'purposes',
-                    link: ''
+                    imageSrc: '../../assets/uk_flag.png'
                 }
             ]
         },

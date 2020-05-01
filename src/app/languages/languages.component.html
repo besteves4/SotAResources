@@ -41,9 +41,25 @@
             </td>
             <td class="diagram">
                 <div class="button-wrapper mr-1" *ngFor="let diag of ppl?.diagrams" [ngSwitch]="diag.type">
-                    <a *ngSwitchCase="'legal-basis'" class="btn btn-outline-warning btn-sm mb-1" href={{diag.link}} role="button">{{diag.type}}</a>
-                    <a *ngSwitchCase="'purposes'" class="btn btn-outline-success btn-sm mb-1" href={{diag.link}} role="button">{{diag.type}}</a>
-                    <a *ngSwitchDefault class="btn btn-dark btn-sm mb-1" href={{diag.link}} role="button">{{diag.type}}</a>
+                    <a *ngSwitchCase="'legal-basis'" class="btn btn-outline-warning btn-sm mb-1" href={{diag.link}} role="button" data-toggle="modal" data-target=".bd-example-modal-lg">{{diag.type}}</a>
+                    <a *ngSwitchCase="'purposes'" class="btn btn-outline-success btn-sm mb-1" href={{diag.link}} role="button" data-toggle="modal" data-target=".bd-example-modal-lg">{{diag.type}}</a>
+                    <a *ngSwitchDefault class="btn btn-dark btn-sm mb-1" href={{diag.link}} role="button" data-toggle="modal" data-target=".bd-example-modal-lg">{{diag.type}}</a>
+                    
+                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+
+                                    <div>
+                                        <img src={{diag.imageSrc}} alt="" height="50">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </td>
         </tr>
