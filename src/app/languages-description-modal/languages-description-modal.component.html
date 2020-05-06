@@ -20,22 +20,43 @@
 
                 <div class="row mb-1">
                     <div class="col-11 offset-1">
-                        Responsible: <a class="authors-link" href={{ppl?.authors.link}} target="_blank">{{ppl?.authors.name}}</a>
+                        Responsible: <a class="authors-link" href={{ppl?.responsible.link}} target="_blank">{{ppl?.responsible.name}}</a>
+                    </div>
+                </div>
+                
+                <div class="row mb-1">
+                    <div class="col-11 offset-1">
+                        Created:
+                        {{ppl?.dates.created}}
                     </div>
                 </div>
 
                 <div class="row mb-1">
                     <div class="col-11 offset-1">
-                        Language: 
-                        <span class="idiom">
-                            <img src={{ppl?.idiom.imageSrc}} height="12" mr-1> {{ppl?.idiom.lang}}
-                        </span>
+                        Last Updated:
+                        {{ppl?.dates.lastUpdated}}
                     </div>
                 </div>
 
-                <div class="row description">
+                <div class="row mb-1">
                     <div class="col-11 offset-1">
-                        Description & main goals
+                        Languages <br>
+                        <div class="button-wrapper" *ngFor="let idiom of ppl?.idiom">
+                            <a class="btn btn-outline-info btn-sm mr-1" href={{idiom.link}} target="_blank" role="button">
+                                <span class="idiom">
+                                    <img src={{idiom.imageSrc}} height="12" mr-1> {{idiom.lang}}
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-1">
+                    <div class="col-11 offset-1">
+                        Authors <br>
+                        <div class="button-wrapper" *ngFor="let author of ppl?.authors">
+                            <a class="btn btn-outline-info btn-sm mr-1" href={{author.link}} target="_blank" role="button">{{author.name}}</a>
+                        </div>
                     </div>
                 </div>
 

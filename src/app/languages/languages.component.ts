@@ -52,11 +52,53 @@ export class LanguagesComponent implements OnInit {
                 }
             ],
             w3cStatus: 'W3C Obsolete Recommendation',
-            authors: {
+            dates: {
+                created: '16 April 2002',
+                lastUpdated: '30 August 2018'
+            },
+            idiom: [
+                {
+                    imageSrc: '../../assets/uk_flag.png',
+                    lang: 'en',
+                    link:'https://www.w3.org/TR/P3P/'
+                },
+                {
+                    imageSrc: '../../assets/Flag_of_France.svg',
+                    lang: 'fr',
+                    link: 'http://www.yoyodesign.org/doc/w3c/p3p1/index.html'
+                },
+                {
+                    imageSrc: '../../assets/Flag_of_Japan.svg.png',
+                    lang: 'jp',
+                    link: 'http://www.iajapan.org/trans2japanese/w3c/rec-p3p-20020416j.html'
+                }
+            ],
+            responsible: {
                 name: 'W3C P3P Specification Working Group',
                 link: 'https://www.w3.org/P3P/'
             },
-            summary: [],
+            authors: [
+                {
+                    name: 'Lorrie Cranor',
+                    link: 'https://lorrie.cranor.org/'
+                },
+                {
+                    name: 'Marc Langheinrich',
+                    link: 'https://uc.inf.usi.ch/team/langheinrich/'
+                },
+                {
+                    name: 'Massimo Marchiori',
+                    link: 'https://www.w3.org/People/Massimo/'
+                },
+                {
+                    name: 'Martin Presler-Marshall',
+                    link: 'mailto:mpresler@us.ibm.com'
+                },
+                {
+                    name: 'Joseph Reagle',
+                    link: 'http://reagle.org/joseph/'
+                }
+            ],
             elements: [
                 {
                     name: 'Policy',
@@ -99,10 +141,6 @@ export class LanguagesComponent implements OnInit {
                     link: 'https://www.w3.org/TR/P3P/#Categories'
                 }
             ],
-            idiom: {
-                imageSrc: '../../assets/uk_flag.png',
-                lang: 'en'
-            },
             rdf: [
                 {
                     type: 'RDF',
