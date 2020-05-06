@@ -33,6 +33,7 @@ export class LanguagesComponent implements OnInit {
             'Language',
             'Name',
             'Description',
+            'Domain',
             'Resources',
             'Documentation',
             'Diagrams'
@@ -44,6 +45,12 @@ export class LanguagesComponent implements OnInit {
             id: 'P3P',
             name: 'Platform for Privacy Preferences',
             description: 'Specification for websites to disclose privacy protocols that can be automatically read and interpreted by user agents',
+            domain: [
+                {
+                    name: 'privacy',
+                    dbPedia: 'http://dbpedia.org/page/Category:Privacy'
+                }
+            ],
             w3cStatus: 'W3C Obsolete Recommendation',
             authors: {
                 name: 'W3C P3P Specification Working Group',
