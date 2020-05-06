@@ -30,7 +30,6 @@ export class ExamplesAccordionComponent implements OnInit {
 
   public rdfItems = [];
   loadRDF(rdf) {
-    console.log(rdf)
     this._http.get(rdf,  
       {  
         headers: new HttpHeaders()  
@@ -47,7 +46,6 @@ export class ExamplesAccordionComponent implements OnInit {
 
   public xmlItems = [];
   loadXML(xml) {
-    console.log(xml)
     this._http.get(xml,  
       {  
         headers: new HttpHeaders()  

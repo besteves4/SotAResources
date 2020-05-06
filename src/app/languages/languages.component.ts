@@ -53,8 +53,8 @@ export class LanguagesComponent implements OnInit {
             ],
             w3cStatus: 'W3C Obsolete Recommendation',
             dates: {
-                created: '16 April 2002',
-                lastUpdated: '30 August 2018'
+                created: '1998',
+                lastUpdated: '2010'
             },
             idiom: [
                 {
@@ -169,7 +169,13 @@ export class LanguagesComponent implements OnInit {
                 {
                     type: 'sample',
                     title: 'Example 2.2 from the P3P specification',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                    description: [
+                        'P3P policy /P3P/Policies.xml#first applies to the entire site, except resources whose paths begin with /catalog, /cgi-bin, or /servlet.',
+                        'P3P policy /P3P/Policies.xml#second applies to all resources whose paths begin with /catalog.',
+                        'P3P policy /P3P/Policies.xml#third applies to all resources whose paths begin with /cgi-bin or /servlet, except for /servlet/unknown.',
+                        'No statement is made about what P3P policy applies to /servlet/unknown.',
+                        'These statements are valid for 2 days.'
+                    ],
                     solutions: [
                         {
                             id: 1,
