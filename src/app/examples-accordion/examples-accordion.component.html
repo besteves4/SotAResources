@@ -5,15 +5,35 @@
 				{{ex.description}}
 			</div>
 
-			<div class='example-buttons' *ngFor='let solution of ex.solutions'>
-				<button type='button' class="btn btn-secondary btn-sm mb-2" (click)='handleClick(solution.id)'>
+			<div class='example-buttons' *ngFor='let solution of ex.solutions' [ngSwitch]="solution.language">
+				<button *ngSwitchCase="'RDF'" type='button' class="btn btn-secondary btn-sm mb-2" (click)='handleRDF(solution.id, solution.link)'>
 					{{solution.language}}
 				</button>
+				<button *ngSwitchCase="'XML'" type='button' class="btn btn-secondary btn-sm mb-2" (click)='handleXML(solution.id, solution.link)'>
+					{{solution.language}}
+				</button>
+				<button *ngSwitchDefault type='button' class="btn btn-secondary btn-sm mb-2">
+					{{solution.language}}
+				</button>
+				
 			</div>
 
-			<div class='example-text col-12' *ngFor='let solution of ex.solutions'>
+			<div class='example-text col-12' *ngFor='let solution of ex.solutions' [ngSwitch]="solution.language">
 				<div *ngIf='activeId==solution.id'>
-					{{solution.link}}
+					<div *ngSwitchCase="'RDF'">
+						&lt;rdf:RDF
+						<div *ngFor="let rdf of rdfItems">
+							{{rdf}}
+						</div>
+						&lt;/rdf:RDF&gt;
+					</div>
+					<div *ngSwitchCase="'XML'">
+						<div *ngFor="let xml of xmlItems">
+							{{xml}}
+						</div>
+					</div>
+					<div *ngSwitchDefault>
+					</div>
 				</div>
 			</div>
 		

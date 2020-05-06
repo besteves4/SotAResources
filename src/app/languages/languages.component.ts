@@ -129,12 +129,12 @@ export class LanguagesComponent implements OnInit {
                         {
                             id: 1,
                             language: 'XML',
-                            link: 'path_to_the_xml_example'
+                            link: '../assets/examples/p3p/RDF_ex-2-2.xml'
                         },
                         {
                             id: 2,
                             language: 'RDF',
-                            link: 'path_to_the_rdf_example'
+                            link: '../assets/examples/p3p/RDF_ex-2-2.xml'
                         }
                     ]
                 },
@@ -146,12 +146,12 @@ export class LanguagesComponent implements OnInit {
                         {
                             id: 3,
                             language: 'RDF',
-                            link: 'rdf bla bla bla'
+                            link: '../assets/examples/p3p/RDF_ex-2-2.xml'
                         },
                         {
                             id: 4,
                             language: 'XML',
-                            link: 'xml bla bla bla'
+                            link: '../assets/examples/p3p/RDF_ex-2-2.xml'
                         }
                     ]
                 }

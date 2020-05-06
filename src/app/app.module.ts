@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http'; 
 
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
@@ -21,6 +22,7 @@ import { ModalModule } from 'ngx-bootstrap';
 import { AccordionModule } from 'ngx-bootstrap/accordion';
 import { DividerPipe } from './pipes/divider.pipe';
 import { OrderByPositionPipe } from './pipes/order-by-position.pipe';
+import { StartsWithPipe } from './pipes/starts-with.pipe';
 
 @NgModule({
     declarations: [
@@ -33,13 +35,15 @@ import { OrderByPositionPipe } from './pipes/order-by-position.pipe';
         ExamplesAccordionComponent,
         OntologiesComponent,
         DividerPipe,
-        OrderByPositionPipe
+        OrderByPositionPipe,
+        StartsWithPipe
     ],
     imports: [
         CommonModule,
         BrowserModule,
         AppRoutingModule,
         RouterModule,
+        HttpClientModule,
         FontAwesomeModule,
         BrowserAnimationsModule,
         ModalModule.forRoot(),
