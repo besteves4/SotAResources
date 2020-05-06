@@ -11,7 +11,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let ppl of privacyPolicyLanguages">
+        <tr *ngFor="let ppl of privacyPolicyLanguages" class="overlay clickable" (click)="handleClick(ppl)">
             <th scope="row" class="vertical-middle">
                 {{ppl.id}}
             </th>
@@ -21,7 +21,6 @@
             <td class="description">
                 <div>
                     {{ppl.description}}
-                    <fa-icon class="plus-square clickable mr-3" (click)="handleClick(ppl)" [icon]="faPlusSquare"></fa-icon>
                 </div>
             </td>
             <td class="domain">
