@@ -174,7 +174,7 @@ export class LanguagesComponent implements OnInit {
                         {
                             id: 1,
                             language: 'XML',
-                            link: '../assets/examples/p3p/RDF_ex-2-2.xml'
+                            link: '../assets/examples/p3p/XML_ex-2-2.xml'
                         },
                         {
                             id: 2,
@@ -196,7 +196,7 @@ export class LanguagesComponent implements OnInit {
                         {
                             id: 4,
                             language: 'XML',
-                            link: '../assets/examples/p3p/RDF_ex-2-2.xml'
+                            link: '../assets/examples/p3p/XML_ex-2-2.xml'
                         }
                     ]
                 }

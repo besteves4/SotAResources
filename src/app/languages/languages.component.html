@@ -11,14 +11,14 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let ppl of privacyPolicyLanguages" class="overlay clickable" (click)="handleClick(ppl)">
-            <th scope="row" class="vertical-middle">
+        <tr *ngFor="let ppl of privacyPolicyLanguages">
+            <th scope="row" class="vertical-middle clickable" (click)="handleClick(ppl)">
                 {{ppl.id}}
             </th>
-            <td class="name">
+            <td class="name clickable" (click)="handleClick(ppl)">
                 {{ppl.name}}
             </td>
-            <td class="description">
+            <td class="description clickable" (click)="handleClick(ppl)">
                 <div>
                     {{ppl.description}}
                 </div>
