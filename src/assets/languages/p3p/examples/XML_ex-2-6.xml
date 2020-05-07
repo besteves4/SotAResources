@@ -1,0 +1,14 @@
+<META xmlns="http://www.w3.org/2002/01/P3Pv1">
+ <POLICY-REFERENCES>
+    <POLICY-REF about="/P3P/Policies.xml#first">
+      <INCLUDE>/docs/*</INCLUDE>
+      <METHOD>GET</METHOD>
+      <METHOD>HEAD</METHOD>
+    </POLICY-REF>
+    <POLICY-REF about="/P3P/Policies.xml#second">
+      <INCLUDE>/docs/*</INCLUDE>
+      <METHOD>PUT</METHOD>
+      <METHOD>DELETE</METHOD>
+    </POLICY-REF>
+ </POLICY-REFERENCES>
+</META>

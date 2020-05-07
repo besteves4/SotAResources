@@ -1,0 +1,11 @@
+<META xmlns="http://www.w3.org/2002/01/P3Pv1">
+ <POLICY-REFERENCES>
+    <POLICY-REF about="/P3P/Policies.xml#first">
+       <COOKIE-INCLUDE name="*" value="*" domain="*" path="*"/>
+       <COOKIE-EXCLUDE name="obnoxious-cookie" value="*" domain=".example.com" path="/"/>
+    </POLICY-REF>
+    <POLICY-REF about="/P3P/Policies.xml#second">
+       <COOKIE-INCLUDE name="obnoxious-cookie" value="*" domain=".example.com" path="/"/>
+    </POLICY-REF>
+ </POLICY-REFERENCES>
+</META>
