@@ -45,7 +45,7 @@
             </td>
             <td class="diagram">
                 <div class="button-wrapper mr-1" *ngFor="let diag of ppl?.diagrams" [ngSwitch]="diag.type">
-                    <a *ngSwitchCase="'legal-basis'" class="btn btn-outline-warning btn-sm mb-1" href={{diag.link}} role="button" data-toggle="modal" data-target=".bd-example-modal-lg">{{diag.type}}</a>
+                    <a *ngSwitchCase="'P3P v1'" class="btn btn-outline-warning btn-sm mb-1" href={{diag.link}} role="button" data-toggle="modal" data-target=".bd-example-modal-lg">{{diag.type}}</a>
                     <a *ngSwitchCase="'purposes'" class="btn btn-outline-success btn-sm mb-1" href={{diag.link}} role="button" data-toggle="modal" data-target=".bd-example-modal-lg">{{diag.type}}</a>
                     <a *ngSwitchDefault class="btn btn-dark btn-sm mb-1" href={{diag.link}} role="button" data-toggle="modal" data-target=".bd-example-modal-lg">{{diag.type}}</a>
                     
@@ -58,7 +58,7 @@
                                     </button>
 
                                     <div>
-                                        <img src={{diag.imageSrc}} alt="" height="50">
+                                        <img src={{diag.imageSrc}} alt="">
                                     </div>
                                 </div>
                             </div>

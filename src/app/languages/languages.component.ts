@@ -58,17 +58,17 @@ export class LanguagesComponent implements OnInit {
             },
             idiom: [
                 {
-                    imageSrc: '../../assets/uk_flag.png',
+                    imageSrc: '../../assets/flags/uk_flag.png',
                     lang: 'en',
                     link:'https://www.w3.org/TR/P3P/'
                 },
                 {
-                    imageSrc: '../../assets/Flag_of_France.svg',
+                    imageSrc: '../../assets/flags/Flag_of_France.svg',
                     lang: 'fr',
                     link: 'http://www.yoyodesign.org/doc/w3c/p3p1/index.html'
                 },
                 {
-                    imageSrc: '../../assets/Flag_of_Japan.svg.png',
+                    imageSrc: '../../assets/flags/Flag_of_Japan.svg.png',
                     lang: 'jp',
                     link: 'http://www.iajapan.org/trans2japanese/w3c/rec-p3p-20020416j.html'
                 }
@@ -180,12 +180,12 @@ export class LanguagesComponent implements OnInit {
                         {
                             id: 1,
                             language: 'XML',
-                            link: '../assets/examples/p3p/XML_ex-2-2.xml'
+                            link: '../assets/languages/p3p/examples/XML_ex-2-2.xml'
                         },
                         {
                             id: 2,
                             language: 'RDF',
-                            link: '../assets/examples/p3p/RDF_ex-2-2.xml'
+                            link: '../assets/languages/p3p/examples/RDF_ex-2-2.xml'
                         }
                     ]
                 },
@@ -197,24 +197,20 @@ export class LanguagesComponent implements OnInit {
                         {
                             id: 3,
                             language: 'RDF',
-                            link: '../assets/examples/p3p/RDF_ex-2-2.xml'
+                            link: '../assets/languages/p3p/examples/RDF_ex-2-2.xml'
                         },
                         {
                             id: 4,
                             language: 'XML',
-                            link: '../assets/examples/p3p/XML_ex-2-2.xml'
+                            link: '../assets/languages/p3p/examples/XML_ex-2-2.xml'
                         }
                     ]
                 }
             ],
             diagrams: [
                 {
-                    type: 'legal-basis',
-                    imageSrc: '../../assets/uk_flag.png'
-                },
-                {
-                    type: 'purposes',
-                    imageSrc: '../../assets/uk_flag.png'
+                    type: 'P3P v1',
+                    imageSrc: '../../assets/languages/p3p/diagrams/P3Pv1.svg'
                 }
             ]
         },

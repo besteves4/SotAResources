@@ -12,7 +12,7 @@ export class FooterComponent implements OnInit {
     faTwitterSquare = faTwitterSquare;
 
     footer = {
-        imageSrc: '../../assets/eu_flag.jpg',
+        imageSrc: '../../assets/flags/eu_flag.jpg',
         protect: {
             icon: '../../assets/protect.png',
             webpage: 'https://protect-network.eu/',
