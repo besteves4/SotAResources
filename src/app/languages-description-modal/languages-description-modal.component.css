@@ -9,3 +9,12 @@
 .idiom {
     text-transform: uppercase;
 }
+
+.w3c-working-draft {
+    background-color: #005a9c;
+    color: white;
+}
+
+.w3c-working-draft:hover {
+    background-color: #004f88;
+}

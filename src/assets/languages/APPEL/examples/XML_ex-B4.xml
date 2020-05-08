@@ -1,0 +1,60 @@
+<appel:RULESET xmlns:appel="http://www.w3.org/2002/04/APPELv1" 
+               xmlns:p3p="http://www.w3.org/2000/12/P3Pv1" 
+               crtdby="W3C" crtdon="2001-02-19T16:04:02+01:00">
+  <appel:RULE behavior="request" prompt="yes" 
+              description="Service collects data for marketing, tailoring, or
+                           'other' purposes.">
+              promptmsg="FYI: This service collects data for marketing, 
+                         tailoring, or 'other' purposes. Continue?">
+    <p3p:POLICY>
+      <p3p:STATEMENT>
+        <p3p:PURPOSE appel:connective="or">
+          <p3p:contact/>
+          <p3p:telemarketing/>
+          <p3p:pseudo-analysis/>
+          <p3p:pseudo-decision/>
+          <p3p:individual-analysis/>
+          <p3p:individual-decision/>
+          <p3p:other-purpose/>
+        </p3p:PURPOSE>
+      </p3p:STATEMENT>
+    </p3p:POLICY>
+  </appel:RULE>
+  <appel:RULE behavior="request" prompt="yes" 
+              description="Service shares information with legal entities
+                           following different practices, public fora, or
+                           unrelated third parties.">
+              promptmsg="FYI: This service shares information with legal entities
+                         following different practices, public fora, or
+                         unrelated third parties. Continue anyway?">
+    <p3p:POLICY>
+      <p3p:STATEMENT>
+        <p3p:RECIPIENT appel:connective="or">
+          <p3p:other-recipient/>
+          <p3p:public/>
+          <p3p:unrelated/>
+        </p3p:RECIPIENT>
+      </p3p:STATEMENT>
+    </p3p:POLICY>
+  </appel:RULE>
+  <appel:RULE behavior="request" prompt="yes" 
+              description="Site collects healthcare information.">
+              promptmsg="FYI: Site collects healthcare information. Continue?">
+    <p3p:POLICY>
+      <p3p:STATEMENT>
+        <p3p:DATA-GROUP>
+          <p3p:DATA>
+            <p3p:CATEGORIES>
+              <p3p:health/>
+            </p3p:CATEGORIES>
+          </p3p:DATA>
+        </p3p:DATA-GROUP>
+      </p3p:STATEMENT>
+    </p3p:POLICY>
+  </appel:RULE>
+  <appel:RULE behavior="request" 
+              description="Privacy policy matches Information Only
+                           preferences"> 
+    <appel:OTHERWISE/>
+  </appel:RULE>
+</appel:RULESET>

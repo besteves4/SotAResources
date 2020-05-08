@@ -1,8 +1,8 @@
 <accordion [isAnimated]="true">
     <div *ngFor="let ex of ppl?.examples">
 		<accordion-group heading="{{ex.title}}">
-			<div class="description mb-2" *ngFor='let desc of ex.description; let i=index'>
-				{{i+1}}. {{desc}}
+			<div class="description mb-2" *ngFor='let desc of ex.description'>
+				- {{desc}}
 			</div>
 
 			<div class='example-buttons' *ngFor='let solution of ex.solutions' [ngSwitch]="solution.language">

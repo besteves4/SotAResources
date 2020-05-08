@@ -1,0 +1,71 @@
+<appel:RULESET xmlns:appel="http://www.w3.org/2002/04/APPELv1"
+         xmlns:p3p="http://www.w3.org/2000/12/P3Pv1"
+         crtdby="W3C" crtdon="2000-03-15T10:55:32+01:00">
+  <appel:RULE behavior="limited" prompt="yes" 
+              description="Service collects some kind of identifiable 
+                           information"
+              promptmsg="Warning! Service collects some kind of identifiable 
+                         information. Do you want to continue (using limited access)?">
+    <p3p:POLICY>
+      <p3p:ACCESS appel:connective="non-and">
+        <p3p:nonident/>
+      </p3p:ACCESS>
+    </p3p:POLICY>
+  </appel:RULE>
+  <appel:RULE behavior="limited" prompt="yes" 
+              description="Service collects physical and/or online 
+                           contact information and/or financial account 
+                           identifiers and/or other data that may be 
+                           personally-identifiable"
+              promptmsg="Warning! Service collects physical and/or online 
+                         contact information and/or financial account 
+                         identifiers and/or other data that may be 
+                         personally-identifiable. Do you want to 
+                         continue (using limited access)?">
+    <p3p:POLICY>
+      <p3p:STATEMENT>
+        <p3p:DATA-GROUP>
+          <p3p:DATA>
+            <p3p:CATEGORIES appel:connective="or">
+              <p3p:physical/>
+              <p3p:online/>
+              <p3p:uniqueid/>
+              <p3p:financial/>
+              <p3p:other-category/>
+            </p3p:CATEGORIES>
+          </p3p:DATA>
+        </p3p:DATA-GROUP>
+      </p3p:STATEMENT>
+    </p3p:POLICY>
+  </appel:RULE>
+  <appel:RULE behavior="request" 
+              description="Service does not collect identifiable data or share
+                           data with other parties">
+    <p3p:POLICY>
+      <p3p:STATEMENT>
+        <p3p:RECIPIENT appel:connective="and-exact">
+          <p3p:ours/>
+        </p3p:RECIPIENT>
+        <p3p:PURPOSE appel:connective="non-and">
+          <p3p:contact/>
+          <p3p:telemarketing/>
+          <p3p:individual-analysis/>
+          <p3p:individual-decision/>
+          <p3p:other-purpose/>
+        </p3p:PURPOSE>
+        <p3p:DATA-GROUP appel:connective="or-exact">
+          <p3p:DATA ref="#user.*"/>
+          <p3p:DATA ref="#dynamic.*">
+       <p3p:CATEGORIES><state></p3p:CATEGORIES>
+          </p3p:DATA>
+        </p3p:DATA-GROUP>
+      </p3p:STATEMENT>
+    </p3p:POLICY>
+  </appel:RULE>
+  <appel:RULE behavior="limited" 
+              description="Warning! Service requests data from your data 
+                           repository or has a practice that doesn't match
+                           your preferences">
+    <appel:OTHERWISE/>
+  </appel:RULE>
+</appel:RULESET>
