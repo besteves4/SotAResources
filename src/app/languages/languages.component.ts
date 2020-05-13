@@ -151,7 +151,7 @@ export class LanguagesComponent implements OnInit {
                     link: 'https://www.w3.org/2002/01/P3Pv1.dtd'
                 },
                 {
-                    type: ' XML',
+                    type: 'XML',
                     link: 'https://www.w3.org/2002/01/P3Pv1'
                 },
                 {
@@ -353,7 +353,7 @@ export class LanguagesComponent implements OnInit {
                     link: 'https://www.w3.org/TR/P3P-preferences/APPELv1-20020415.dtd'
                 },
                 {
-                    type: ' XML',
+                    type: 'XML',
                     link: 'https://www.w3.org/TR/P3P-preferences/APPELv1-20020415.xsd'
                 }
             ],
@@ -432,6 +432,143 @@ export class LanguagesComponent implements OnInit {
                         }
                     ]
                 }
+            ],
+            diagrams: [
+/*                 {
+                    type: 'APPEL v1',
+                    imageSrc: '../../assets/languages/APPEL/diagrams/APPELv1.svg'
+                } */
+            ]
+        },
+        {
+            id: 'ODRL',
+            name: 'Open Digital Rights Language',
+            description: '',
+            domain: [],
+            w3cStatus: '',
+            dates: {
+                created: '',
+                lastUpdated: ''
+            },
+            idiom: [
+                {
+                    imageSrc: '../../assets/flags/uk_flag.png',
+                    lang: 'en',
+                    link:'https://www.w3.org/TR/odrl-vocab/'
+                },
+                {
+                    imageSrc: '../../assets/flags/Flag_of_Japan.svg.png',
+                    lang: 'jp',
+                    link: 'http://www.asahi-net.or.jp/~ax2s-kmtn/internet/rights/REC-odrl-vocab-20180215.html'
+                }
+            ],
+            responsible: {
+                name: '',
+                link: ''
+            },
+            authors: [],
+            elements: [
+                {
+                    name: 'Policy',
+                    link: 'https://www.w3.org/TR/odrl-vocab/#policyConcepts'
+                },
+                {
+                    name: 'Rule',
+                    link: 'https://www.w3.org/TR/odrl-vocab/#ruleConcepts'
+                },
+                {
+                    name: 'Asset',
+                    link: 'https://www.w3.org/TR/odrl-vocab/#assetConcepts'
+                },
+                {
+                    name: 'Party',
+                    link: 'https://www.w3.org/TR/odrl-vocab/#partyConcepts'
+                },
+                {
+                    name: 'Permission',
+                    link: 'https://www.w3.org/TR/odrl-vocab/#permissions'
+                },
+                {
+                    name: 'Prohibition',
+                    link: 'https://www.w3.org/TR/odrl-vocab/#prohibitions'
+                },
+                {
+                    name: 'Action',
+                    link: 'https://www.w3.org/TR/odrl-vocab/#actionConcepts'
+                },
+                {
+                    name: 'Duty',
+                    link: 'https://www.w3.org/TR/odrl-vocab/#duties'
+                },
+                {
+                    name: 'Constraint',
+                    link: 'https://www.w3.org/TR/odrl-vocab/#constraints'
+                },
+                {
+                    name: 'Conflict terms',
+                    link: 'https://www.w3.org/TR/odrl-vocab/#conflictConcepts'
+                }
+            ],
+            rdf: [
+                {
+                    type: 'Turtle',
+                    link: 'https://www.w3.org/ns/odrl/2/ODRL22.ttl'
+                },
+                {
+                    type: 'RDF',
+                    link: 'https://www.w3.org/ns/odrl/2/ODRL22.rdf'
+                },
+                {
+                    type: 'N-Triples',
+                    link: 'https://www.w3.org/ns/odrl/2/ODRL22.nt'
+                },
+                {
+                    type: 'JSON-LD',
+                    link: 'https://www.w3.org/ns/odrl/2/ODRL22.json'
+                },
+                {
+                    type: 'JSON-LD Context',
+                    link: 'https://www.w3.org/ns/odrl.jsonld'
+                },
+                {
+                    type: 'XML',
+                    link: 'https://www.w3.org/ns/odrl/2/ODRL22.xsd'
+                }
+            ],
+            documentation: [
+                {
+                    type: 'ODRL VOCAB',
+                    link: 'https://www.w3.org/TR/odrl-vocab/'
+                },
+                {
+                    type: 'GitHub',
+                    link: 'https://github.com/w3c/poe'
+                },
+                {
+                    type: 'ODRL MODEL',
+                    link: 'https://www.w3.org/TR/odrl-model/'
+                }
+            ],
+            examples: [
+/*                 {
+                    type: 'sample',
+                    title: '"Almost Anonymous" Ruleset (APPEL specification)',
+                    description: [
+                        'This ruleset provides a nearly anonymous browsing experience.',
+                        'It prompts the user for a decision about Web sites that make an access disclosure other than "identifiable data is not used."',
+                        'It also prompts for Web sites that collect physical contact information, online contact information, financial account identifiers, and data described as "other" data.',
+                        'All prompts imply that all but the absolutely necessary request headers should be suppressed if the user decides to access the resource.',
+                        'It allows for the collection of other kinds of data and the use of state management mechanisms as long as this data will not be shared, will not be used for contacting visitors for marking, will not be used for individual tailoring, and will not be used for purposes described as "other" uses.',
+                        'Users wishing to engage in electronic commerce activities that require the exchange of personal information such as payment and billing information will have to override these settings on a site by site basis.'
+                    ],
+                    solutions: [
+                        {
+                            id: 11,
+                            language: 'XML',
+                            link: '../assets/languages/APPEL/examples/XML_ex-B1.xml'
+                        }
+                    ]
+                } */
             ],
             diagrams: [
 /*                 {
