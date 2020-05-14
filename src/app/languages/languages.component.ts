@@ -553,6 +553,10 @@ export class LanguagesComponent implements OnInit {
                     link: 'https://www.w3.org/ns/odrl/2/ODRL22.rdf'
                 },
                 {
+                    type: 'XML',
+                    link: 'https://www.w3.org/ns/odrl/2/ODRL22.xsd'
+                },
+                {
                     type: 'N-Triples',
                     link: 'https://www.w3.org/ns/odrl/2/ODRL22.nt'
                 },
@@ -563,10 +567,6 @@ export class LanguagesComponent implements OnInit {
                 {
                     type: 'JSON-LD Context',
                     link: 'https://www.w3.org/ns/odrl.jsonld'
-                },
-                {
-                    type: 'XML',
-                    link: 'https://www.w3.org/ns/odrl/2/ODRL22.xsd'
                 }
             ],
             documentation: [
@@ -584,25 +584,57 @@ export class LanguagesComponent implements OnInit {
                 }
             ],
             examples: [
-/*                 {
+                {
                     type: 'sample',
-                    title: '"Almost Anonymous" Ruleset (APPEL specification)',
+                    title: 'Example 1 (ODRL specification)',
                     description: [
-                        'This ruleset provides a nearly anonymous browsing experience.',
-                        'It prompts the user for a decision about Web sites that make an access disclosure other than "identifiable data is not used."',
-                        'It also prompts for Web sites that collect physical contact information, online contact information, financial account identifiers, and data described as "other" data.',
-                        'All prompts imply that all but the absolutely necessary request headers should be suppressed if the user decides to access the resource.',
-                        'It allows for the collection of other kinds of data and the use of state management mechanisms as long as this data will not be shared, will not be used for contacting visitors for marking, will not be used for individual tailoring, and will not be used for purposes described as "other" uses.',
-                        'Users wishing to engage in electronic commerce activities that require the exchange of personal information such as payment and billing information will have to override these settings on a site by site basis.'
+                        'The target asset and assigner and assignee parties are defined at the policy-level, and hence, are applied to both permission rules.',
+                        'The first permission allows the assignee to play the target asset as long as they accept they will be tracked.',
+                        'The second permission allows the assignee to distribute the target asset to the identified country (Italy) for a compensation payment of EUR5,000.'
                     ],
                     solutions: [
                         {
-                            id: 11,
+                            id: 15,
                             language: 'XML',
-                            link: '../assets/languages/APPEL/examples/XML_ex-B1.xml'
+                            link: '../assets/languages/ODRL/examples/XML_ex-1.xml'
                         }
                     ]
-                } */
+                },
+                {
+                    type: 'sample',
+                    title: 'XML Linking - Example 2 (ODRL specification)',
+                    description: [
+                        'To support repeating the same element content across permissions and prohibitions, the asset, party, constraint, action, and duty elements support the xml id and idref attributes.',
+                        'Any of these elements that has been identified using the id attribute can then be referred to by an element with the same name using the idref attribute.',
+                        'In this case, the referring element must have no other content.',
+                        'As shown in the below example, the prohibition refers to elements defined in the permission, except for the constraint element.',
+                        'In this case, the assignee can play the music asset in Italy but not in France.'
+                    ],
+                    solutions: [
+                        {
+                            id: 16,
+                            language: 'XML',
+                            link: '../assets/languages/ODRL/examples/XML_ex-2.xml'
+                        }
+                    ]
+                },
+                {
+                    type: 'sample',
+                    title: 'Logical Constraints - Example 3 (ODRL specification)',
+                    description: [
+                        'To support logical constraints, constraint objects can be expressed at the policy level and locally identified with the id attribute.',
+                        'The logical constraint (in the rule) can then refer to these constraints using its #id in the leftOperand, and the logical relationship in the name attribute.',                       
+                        'The below example shows two constraints defined with ids C1 and C2.',
+                        'The logical constraint in the permission refers to these using the #C1 and #C2 values in the rightOperand, and the logical relationship (xone) in the name attribute.'
+                    ],
+                    solutions: [
+                        {
+                            id: 17,
+                            language: 'XML',
+                            link: '../assets/languages/ODRL/examples/XML_ex-3.xml'
+                        }
+                    ]
+                }
             ],
             diagrams: [
 /*                 {
