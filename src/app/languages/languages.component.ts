@@ -151,7 +151,7 @@ export class LanguagesComponent implements OnInit {
                     link: 'https://www.w3.org/2002/01/P3Pv1.dtd'
                 },
                 {
-                    type: ' XML',
+                    type: 'XML',
                     link: 'https://www.w3.org/2002/01/P3Pv1'
                 },
                 {
@@ -353,7 +353,7 @@ export class LanguagesComponent implements OnInit {
                     link: 'https://www.w3.org/TR/P3P-preferences/APPELv1-20020415.dtd'
                 },
                 {
-                    type: ' XML',
+                    type: 'XML',
                     link: 'https://www.w3.org/TR/P3P-preferences/APPELv1-20020415.xsd'
                 }
             ],
@@ -471,7 +471,12 @@ export class LanguagesComponent implements OnInit {
                 {
                     imageSrc: '../../assets/flags/uk_flag.png',
                     lang: 'en',
-                    link: 'https://www.w3.org/TR/odrl-vocab/'
+                    link:'https://www.w3.org/TR/odrl-vocab/'
+                },
+                {
+                    imageSrc: '../../assets/flags/Flag_of_Japan.svg.png',
+                    lang: 'jp',
+                    link: 'http://www.asahi-net.or.jp/~ax2s-kmtn/internet/rights/REC-odrl-vocab-20180215.html'
                 }
             ],
             responsible: {
@@ -498,40 +503,88 @@ export class LanguagesComponent implements OnInit {
             ],
             elements: [
                 {
-                    name: 'Ruleset',
-                    link: 'https://www.w3.org/TR/P3P-preferences/#RULESET'
+                    name: 'Policy',
+                    link: 'https://www.w3.org/TR/odrl-vocab/#policyConcepts'
                 },
                 {
                     name: 'Rule',
-                    link: 'https://www.w3.org/TR/P3P-preferences/#RULE'
+                    link: 'https://www.w3.org/TR/odrl-vocab/#ruleConcepts'
                 },
                 {
-                    name: 'Otherwise',
-                    link: 'https://www.w3.org/TR/P3P-preferences/#OTHERWISE'
+                    name: 'Asset',
+                    link: 'https://www.w3.org/TR/odrl-vocab/#assetConcepts'
                 },
                 {
-                    name: 'Request',
-                    link: 'https://www.w3.org/TR/P3P-preferences/#REQUEST'
+                    name: 'Party',
+                    link: 'https://www.w3.org/TR/odrl-vocab/#partyConcepts'
+                },
+                {
+                    name: 'Permission',
+                    link: 'https://www.w3.org/TR/odrl-vocab/#permissions'
+                },
+                {
+                    name: 'Prohibition',
+                    link: 'https://www.w3.org/TR/odrl-vocab/#prohibitions'
+                },
+                {
+                    name: 'Action',
+                    link: 'https://www.w3.org/TR/odrl-vocab/#actionConcepts'
+                },
+                {
+                    name: 'Duty',
+                    link: 'https://www.w3.org/TR/odrl-vocab/#duties'
+                },
+                {
+                    name: 'Constraint',
+                    link: 'https://www.w3.org/TR/odrl-vocab/#constraints'
+                },
+                {
+                    name: 'Conflict terms',
+                    link: 'https://www.w3.org/TR/odrl-vocab/#conflictConcepts'
                 }
             ],
             rdf: [
                 {
-                    type: 'DTD',
-                    link: 'https://www.w3.org/TR/P3P-preferences/APPELv1-20020415.dtd'
+                    type: 'Turtle',
+                    link: 'https://www.w3.org/ns/odrl/2/ODRL22.ttl'
                 },
                 {
-                    type: ' XML',
-                    link: 'https://www.w3.org/TR/P3P-preferences/APPELv1-20020415.xsd'
+                    type: 'RDF',
+                    link: 'https://www.w3.org/ns/odrl/2/ODRL22.rdf'
+                },
+                {
+                    type: 'N-Triples',
+                    link: 'https://www.w3.org/ns/odrl/2/ODRL22.nt'
+                },
+                {
+                    type: 'JSON-LD',
+                    link: 'https://www.w3.org/ns/odrl/2/ODRL22.json'
+                },
+                {
+                    type: 'JSON-LD Context',
+                    link: 'https://www.w3.org/ns/odrl.jsonld'
+                },
+                {
+                    type: 'XML',
+                    link: 'https://www.w3.org/ns/odrl/2/ODRL22.xsd'
                 }
             ],
             documentation: [
                 {
-                    type: 'HTML',
-                    link: 'https://www.w3.org/TR/P3P-preferences/'
+                    type: 'ODRL VOCAB',
+                    link: 'https://www.w3.org/TR/odrl-vocab/'
+                },
+                {
+                    type: 'GitHub',
+                    link: 'https://github.com/w3c/poe'
+                },
+                {
+                    type: 'ODRL MODEL',
+                    link: 'https://www.w3.org/TR/odrl-model/'
                 }
             ],
             examples: [
-                {
+/*                 {
                     type: 'sample',
                     title: '"Almost Anonymous" Ruleset (APPEL specification)',
                     description: [
@@ -549,56 +602,7 @@ export class LanguagesComponent implements OnInit {
                             link: '../assets/languages/APPEL/examples/XML_ex-B1.xml'
                         }
                     ]
-                },
-                {
-                    type: 'sample',
-                    title: '"Privacy And Commerce" Ruleset (APPEL specification)',
-                    description: [
-                        'This ruleset allows users to exchange personal information needed for electronic commerce activities while providing warning prompts when that information may be shared with legal entities following different practices, public fora, or unrelated third parties; or used for marketing, tailoring, or "other" purposes.',
-                        'A warning prompt will also be provided if the site collects healthcare information.',
-                        'All warnings imply that all but the absolutely necessary request headers should be suppressed if the user decides to access the resource.',
-                        'An informational prompt will be provided at sites that provide no access to identifiable information.',
-                    ],
-                    solutions: [
-                        {
-                            id: 12,
-                            language: 'XML',
-                            link: '../assets/languages/APPEL/examples/XML_ex-B2.xml'
-                        }
-                    ]
-                },
-                {
-                    type: 'sample',
-                    title: '"Look For The Seal" Ruleset (APPEL specification)',
-                    description: [
-                        'This ruleset allows users to exchange any type of personal information for any purpose with Web sites that have either a "PrivacyProtect" or "TrustUs" seal as long as those sites do not share the information with unrelated third parties.',
-                        'It also allows users to exchange personal information needed for electronic commerce activities with any site, while providing warning prompts (and suppressing unnecessary request headers) when that information may be shared with legal entities following different practices, public fora, or unrelated third parties; or used for marketing, tailoring, or "other" purposes by sites that do not have a seal.',
-                        'An informational prompt will be provided at sites that have seals and collect healthcare information; a warning prompt (again, suppressing all unnecessary headers) will be provided at sites that do not have seals and collect healthcare information.',
-                        'An informational prompt will be provided at sites that provide no access.'
-                    ],
-                    solutions: [
-                        {
-                            id: 13,
-                            language: 'XML',
-                            link: '../assets/languages/APPEL/examples/XML_ex-B3.xml'
-                        }
-                    ]
-                },
-                {
-                    type: 'sample',
-                    title: 'Information Only" Ruleset (APPEL specification)',
-                    description: [
-                        'This ruleset allows users to exchange any type of personal information for any purpose.',
-                        'However, it provides informational prompts when sites collect data for marketing, pseudonymous or individual tailoring, or "other" purposes; share data with legal entities following different practices, public fora, or unrelated third parties; or collect healthcare information.'
-                    ],
-                    solutions: [
-                        {
-                            id: 14,
-                            language: 'XML',
-                            link: '../assets/languages/APPEL/examples/XML_ex-B4.xml'
-                        }
-                    ]
-                }
+                } */
             ],
             diagrams: [
 /*                 {

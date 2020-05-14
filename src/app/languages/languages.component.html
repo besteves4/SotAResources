@@ -33,13 +33,16 @@
                     <a *ngSwitchCase="rdf.type.includes('XML')" class="btn btn-outline-warning btn-sm mb-1" href={{rdf.link}} target="_blank" role="button">{{rdf.type}}</a>
                     <a *ngSwitchCase="rdf.type.includes('RDF')" class="btn btn-outline-success btn-sm mb-1" href={{rdf.link}} target="_blank" role="button">{{rdf.type}}</a>
                     <a *ngSwitchCase="rdf.type.includes('DTD')" class="btn btn-outline-info btn-sm mb-1" href={{rdf.link}} target="_blank" role="button">{{rdf.type}}</a>
+                    <a *ngSwitchCase="rdf.type.includes('JSON-LD')" class="btn btn-outline-primary btn-sm mb-1" href={{rdf.link}} target="_blank" role="button">{{rdf.type}}</a>
+                    <a *ngSwitchCase="rdf.type.includes('Turtle')" class="btn btn-outline-danger btn-sm mb-1" href={{rdf.link}} target="_blank" role="button">{{rdf.type}}</a>
+                    <a *ngSwitchCase="rdf.type.includes('N-Triples')" class="btn btn-outline-secondary btn-sm mb-1" href={{rdf.link}} target="_blank" role="button">{{rdf.type}}</a>
                     <a *ngSwitchDefault class="btn btn-dark btn-sm mb-1" href={{rdf.link}} target="_blank" role="button">{{rdf.type}}</a>
                 </div>
             </td>
             <td class="documentation">
-                <div class="button-wrapper mr-1" *ngFor="let doc of ppl?.documentation" [ngSwitch]="doc.type">
-                    <a *ngSwitchCase="'HTML'" class="btn btn-outline-warning btn-sm mb-1" href={{doc.link}} target="_blank" role="button">{{doc.type}}</a>
-                    <a *ngSwitchCase="'DOC'" class="btn btn-outline-success btn-sm mb-1" href={{doc.link}} target="_blank" role="button">{{doc.type}}</a>
+                <div class="button-wrapper mr-1" *ngFor="let doc of ppl?.documentation" [ngSwitch]="true">
+                    <a *ngSwitchCase="doc.type.includes('HTML') || doc.type.includes('VOCAB') || doc.type.includes('MODEL')" class="btn btn-outline-warning btn-sm mb-1" href={{doc.link}} target="_blank" role="button">{{doc.type}}</a>
+                    <a *ngSwitchCase="doc.type.includes('GitHub')" class="btn btn-outline-success btn-sm mb-1" href={{doc.link}} target="_blank" role="button">{{doc.type}}</a>
                     <a *ngSwitchDefault class="btn btn-dark btn-sm mb-1" href={{doc.link}} target="_blank" role="button">{{doc.type}}</a>
                 </div>
             </td>
