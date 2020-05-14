@@ -292,7 +292,7 @@ export class LanguagesComponent implements OnInit {
         {
             id: 'APPEL',
             name: 'A P3P Preference Exchange Language',
-            description: 'P3P extension for users to express their preferences through a set of preference-rules. P3P enabled Web sites can use these preferences for automated or semi-automated  decision-make ',
+            description: 'P3P extension for users to express their preferences through a set of preference-rules. P3P enabled Web sites can use these preferences for automated or semi-automated decision-making',
             domain: [
                 {
                     name: 'privacy',
@@ -327,6 +327,173 @@ export class LanguagesComponent implements OnInit {
                 {
                     name: 'Massimo Marchiori',
                     link: 'https://www.w3.org/People/Massimo/'
+                }
+            ],
+            elements: [
+                {
+                    name: 'Ruleset',
+                    link: 'https://www.w3.org/TR/P3P-preferences/#RULESET'
+                },
+                {
+                    name: 'Rule',
+                    link: 'https://www.w3.org/TR/P3P-preferences/#RULE'
+                },
+                {
+                    name: 'Otherwise',
+                    link: 'https://www.w3.org/TR/P3P-preferences/#OTHERWISE'
+                },
+                {
+                    name: 'Request',
+                    link: 'https://www.w3.org/TR/P3P-preferences/#REQUEST'
+                }
+            ],
+            rdf: [
+                {
+                    type: 'DTD',
+                    link: 'https://www.w3.org/TR/P3P-preferences/APPELv1-20020415.dtd'
+                },
+                {
+                    type: ' XML',
+                    link: 'https://www.w3.org/TR/P3P-preferences/APPELv1-20020415.xsd'
+                }
+            ],
+            documentation: [
+                {
+                    type: 'HTML',
+                    link: 'https://www.w3.org/TR/P3P-preferences/'
+                }
+            ],
+            examples: [
+                {
+                    type: 'sample',
+                    title: '"Almost Anonymous" Ruleset (APPEL specification)',
+                    description: [
+                        'This ruleset provides a nearly anonymous browsing experience.',
+                        'It prompts the user for a decision about Web sites that make an access disclosure other than "identifiable data is not used."',
+                        'It also prompts for Web sites that collect physical contact information, online contact information, financial account identifiers, and data described as "other" data.',
+                        'All prompts imply that all but the absolutely necessary request headers should be suppressed if the user decides to access the resource.',
+                        'It allows for the collection of other kinds of data and the use of state management mechanisms as long as this data will not be shared, will not be used for contacting visitors for marking, will not be used for individual tailoring, and will not be used for purposes described as "other" uses.',
+                        'Users wishing to engage in electronic commerce activities that require the exchange of personal information such as payment and billing information will have to override these settings on a site by site basis.'
+                    ],
+                    solutions: [
+                        {
+                            id: 11,
+                            language: 'XML',
+                            link: '../assets/languages/APPEL/examples/XML_ex-B1.xml'
+                        }
+                    ]
+                },
+                {
+                    type: 'sample',
+                    title: '"Privacy And Commerce" Ruleset (APPEL specification)',
+                    description: [
+                        'This ruleset allows users to exchange personal information needed for electronic commerce activities while providing warning prompts when that information may be shared with legal entities following different practices, public fora, or unrelated third parties; or used for marketing, tailoring, or "other" purposes.',
+                        'A warning prompt will also be provided if the site collects healthcare information.',
+                        'All warnings imply that all but the absolutely necessary request headers should be suppressed if the user decides to access the resource.',
+                        'An informational prompt will be provided at sites that provide no access to identifiable information.',
+                    ],
+                    solutions: [
+                        {
+                            id: 12,
+                            language: 'XML',
+                            link: '../assets/languages/APPEL/examples/XML_ex-B2.xml'
+                        }
+                    ]
+                },
+                {
+                    type: 'sample',
+                    title: '"Look For The Seal" Ruleset (APPEL specification)',
+                    description: [
+                        'This ruleset allows users to exchange any type of personal information for any purpose with Web sites that have either a "PrivacyProtect" or "TrustUs" seal as long as those sites do not share the information with unrelated third parties.',
+                        'It also allows users to exchange personal information needed for electronic commerce activities with any site, while providing warning prompts (and suppressing unnecessary request headers) when that information may be shared with legal entities following different practices, public fora, or unrelated third parties; or used for marketing, tailoring, or "other" purposes by sites that do not have a seal.',
+                        'An informational prompt will be provided at sites that have seals and collect healthcare information; a warning prompt (again, suppressing all unnecessary headers) will be provided at sites that do not have seals and collect healthcare information.',
+                        'An informational prompt will be provided at sites that provide no access.'
+                    ],
+                    solutions: [
+                        {
+                            id: 13,
+                            language: 'XML',
+                            link: '../assets/languages/APPEL/examples/XML_ex-B3.xml'
+                        }
+                    ]
+                },
+                {
+                    type: 'sample',
+                    title: 'Information Only" Ruleset (APPEL specification)',
+                    description: [
+                        'This ruleset allows users to exchange any type of personal information for any purpose.',
+                        'However, it provides informational prompts when sites collect data for marketing, pseudonymous or individual tailoring, or "other" purposes; share data with legal entities following different practices, public fora, or unrelated third parties; or collect healthcare information.'
+                    ],
+                    solutions: [
+                        {
+                            id: 14,
+                            language: 'XML',
+                            link: '../assets/languages/APPEL/examples/XML_ex-B4.xml'
+                        }
+                    ]
+                }
+            ],
+            diagrams: [
+/*                 {
+                    type: 'APPEL v1',
+                    imageSrc: '../../assets/languages/APPEL/diagrams/APPELv1.svg'
+                } */
+            ]
+        },
+        {
+            id: 'ODRL',
+            name: 'Open Digital Rights Language',
+            description: 'Policy expression language that provides a model, vocabulary and encoding mechanisms to express information about permissions, prohibitions and duties related to an asset.',
+            domain: [
+                {
+                    name: 'digital rights',
+                    dbPedia: 'http://dbpedia.org/page/Digital_rights'
+                },
+/*                 {
+                    name: 'duty',
+                    dbPedia: 'http://dbpedia.org/page/Duty'
+                },
+                {
+                    name: 'permission',
+                    dbPedia: 'http://dbpedia.org/page/Permission_(philosophy)'
+                },
+                {
+                    name: 'obligation',
+                    dbPedia: 'http://dbpedia.org/page/Obligation'
+                } */
+            ],
+            w3cStatus: 'W3C Recommendation',
+            dates: {
+                created: '2001',
+                lastUpdated: '2019'
+            },
+            idiom: [
+                {
+                    imageSrc: '../../assets/flags/uk_flag.png',
+                    lang: 'en',
+                    link: 'https://www.w3.org/TR/odrl-vocab/'
+                }
+            ],
+            responsible: {
+                name: 'W3C ODRL Community Group',
+                link: 'https://www.w3.org/community/odrl/'
+            },
+            authors: [
+                {
+                    name: 'Renato Iannella',
+                    link: 'https://www.linkedin.com/in/riannella/'
+                },
+                {
+                    name: 'Michael Steidl',
+                    link: 'https://www.linkedin.com/in/michaelwsteidl/'
+                },
+                {
+                    name: 'Stuart Myles',
+                    link: 'https://www.linkedin.com/in/stuart-myles-60a985/'
+                },
+                {
+                    name: 'Víctor Rodríguez-Doncel',
+                    link: 'http://cosasbuenas.es'
                 }
             ],
             elements: [

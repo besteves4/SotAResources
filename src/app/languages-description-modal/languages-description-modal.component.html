@@ -15,6 +15,7 @@
                     <div class="col-3" [ngSwitch]="ppl?.w3cStatus">
                         <a *ngSwitchCase="'W3C Obsolete Recommendation'" class="btn btn-dark btn-sm float-right" href="https://www.w3.org/2018/Process-20180201/#rec-rescind" target="_blank" role="button">{{ppl?.w3cStatus}}</a>
                         <a *ngSwitchCase="'W3C Working Draft'" class="btn w3c-working-draft btn-sm float-right" href="https://www.w3.org/2018/Process-20180201/#working-draft" target="_blank" role="button">{{ppl?.w3cStatus}}</a>
+                        <a *ngSwitchCase="'W3C Recommendation'" class="btn w3c-working-draft btn-sm float-right" href="https://www.w3.org/2018/Process-20180201/#rec-publication" target="_blank" role="button">{{ppl?.w3cStatus}}</a>
                         <a *ngSwitchDefault class="btn btn-warning btn-sm mb-1" href="#" target="_blank" role="button">{{ppl?.w3cStatus}}</a>
                     </div>
                 </div>

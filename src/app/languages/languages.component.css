@@ -33,10 +33,11 @@
 
 .domain {
     vertical-align:middle;
+    min-width: 150px;
 }
 
 .rdf {
-    min-width: 100px;
+    min-width: 110px;
     vertical-align:middle;
 }
 
@@ -45,12 +46,7 @@
     vertical-align:middle;
 }
 
-.example {
-    min-width: 100px;
-    vertical-align:middle;
-}
-
 .diagram {
-    min-width: 100px;
+    min-width: 50px;
     vertical-align:middle;
 }
