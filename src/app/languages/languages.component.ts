@@ -634,6 +634,30 @@ export class LanguagesComponent implements OnInit {
                             link: '../assets/languages/ODRL/examples/XML_ex-3.xml'
                         }
                     ]
+                },
+                {
+                    type: 'use-case',
+                    heading: {
+                        title: 'OMA SpecWorks',
+                        imageSrc: '../../assets/flags/Flag_of_Japan.svg.png'
+                    },
+                    institution: {
+                        name: '',
+                        link: 'https://omaspecworks.org/'
+                    },
+                    description: [
+                        'To support logical constraints, constraint objects can be expressed at the policy level and locally identified with the id attribute.',
+                        'The logical constraint (in the rule) can then refer to these constraints using its #id in the leftOperand, and the logical relationship in the name attribute.',                       
+                        'The below example shows two constraints defined with ids C1 and C2.',
+                        'The logical constraint in the permission refers to these using the #C1 and #C2 values in the rightOperand, and the logical relationship (xone) in the name attribute.'
+                    ],
+                    solutions: [
+                        {
+                            id: 17,
+                            language: 'XML',
+                            link: '../assets/languages/ODRL/examples/XML_ex-3.xml'
+                        }
+                    ]
                 }
             ],
             diagrams: [
