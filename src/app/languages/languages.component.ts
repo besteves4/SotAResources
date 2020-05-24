@@ -169,21 +169,16 @@ export class LanguagesComponent implements OnInit {
                 {
                     type: 'sample',
                     title: 'Example 2.2 from the P3P specification',
-                    description: [
-                        'P3P policy /P3P/Policies.xml#first applies to the entire site, except resources whose paths begin with /catalog, /cgi-bin, or /servlet.',
-                        'P3P policy /P3P/Policies.xml#second applies to all resources whose paths begin with /catalog.',
-                        'P3P policy /P3P/Policies.xml#third applies to all resources whose paths begin with /cgi-bin or /servlet, except for /servlet/unknown.',
-                        'No statement is made about what P3P policy applies to /servlet/unknown.',
-                        'These statements are valid for 2 days.'
-                    ],
+                    description: {
+                        name: 'P3P specification',
+                        link: 'https://www.w3.org/TR/P3P/#ref_file_example'
+                    },
                     solutions: [
                         {
-                            id: 1,
                             language: 'XML',
                             link: '../assets/languages/p3p/examples/XML_ex-2-2.xml'
                         },
                         {
-                            id: 2,
                             language: 'RDF',
                             link: '../assets/languages/p3p/examples/RDF_ex-2-2.xml'
                         }
@@ -192,18 +187,16 @@ export class LanguagesComponent implements OnInit {
                 {
                     type: 'sample',
                     title: 'Example 2.5 from the P3P specification',
-                    description: [
-                        '/P3P/Policies.xml#first applies to all cookies, except cookies with the cookie name value of "obnoxious-cookie", a domain value of ".example.com", and a path value of "/"',
-                        '/P3P/Policies.xml#second applies to all cookies with the cookie name of "obnoxious-cookie", a domain value of ".example.com", and a path value of "/".',
-                    ],
+                    description: {
+                        name: 'P3P specification',
+                        link: 'https://www.w3.org/TR/P3P/#cookies'
+                    },
                     solutions: [
                         {
-                            id: 3,
                             language: 'XML',
                             link: '../assets/languages/p3p/examples/XML_ex-2-5.xml'
                         },
                         {
-                            id: 4,
                             language: 'RDF',
                             link: '../assets/languages/p3p/examples/RDF_ex-2-5.xml'
                         }
@@ -212,18 +205,16 @@ export class LanguagesComponent implements OnInit {
                 {
                     type: 'sample',
                     title: 'Example 2.6 from the P3P specification',
-                    description: [
-                        '/P3P/Policies.xml#first applies to all resources whose paths begin with /docs/ for GET and HEAD methods',
-                        '/P3P/Policies.xml#second applies for PUT and DELETE methods, the following policy reference would be written'
-                    ],
+                    description: {
+                        name: 'P3P specification',
+                        link: 'https://www.w3.org/TR/P3P/#ref_file_method'
+                    },
                     solutions: [
                         {
-                            id: 5,
                             language: 'XML',
                             link: '../assets/languages/p3p/examples/XML_ex-2-6.xml'
                         },
                         {
-                            id: 6,
                             language: 'RDF',
                             link: '../assets/languages/p3p/examples/RDF_ex-2-6.xml'
                         }
@@ -232,22 +223,16 @@ export class LanguagesComponent implements OnInit {
                 {
                     type: 'sample',
                     title: "Example 3.1: CatalogExample's Privacy Policy for Browsers",
-                    description: [
-                        'At CatalogExample, we care about your privacy. When you come to our site to look for an item, we will only use this information to improve our site and will not store it with information we could use to identify you.',
-                        'CatalogExample, Inc. is a licensee of the PrivacySealExample Program. The PrivacySealExample Program ensures your privacy by holding Web site licensees to high privacy standards and confirming with independent auditors that these information practices are being followed.',                        
-                        'Questions regarding this statement should be directed to: CatalogExample, 4000 Lincoln Ave., Birmingham, MI 48009 USA, email: catalog@example.com, Telephone 248-EXAMPLE (248-392-6753).',
-                        'If we have not responded to your inquiry or your inquiry has not been satisfactorily addressed, you can contact PrivacySealExample at http://www.privacyseal.example.org. CatalogExample will correct all errors or wrongful actions arising in connection with the privacy policy.',
-                        'When you browse through our site we collect: the basic information about your computer and connection to make sure that we can get you the proper information and for security purposes; aggregate information on what pages consumers access or visit to improve our site.',
-                        'Data retention: We purge every two weeks the browsing information that we collect.'
-                    ],
+                    description: {
+                        name: 'P3P specification',
+                        link: 'https://www.w3.org/TR/P3P/#Example_policy'
+                    },
                     solutions: [
                         {
-                            id: 7,
                             language: 'XML',
                             link: '../assets/languages/p3p/examples/XML_ex-3-1.xml'
                         },
                         {
-                            id: 8,
                             language: 'RDF',
                             link: '../assets/languages/p3p/examples/RDF_ex-3-1.xml'
                         }
@@ -256,26 +241,16 @@ export class LanguagesComponent implements OnInit {
                 {
                     type: 'sample',
                     title: "Example 3.2: CatalogExample's Privacy Policy for Shoppers",
-                    description: [
-                        "At CatalogExample, we care about your privacy. We will never share your credit card number or any other financial information with any third party. With your permission only, we will share information with carefully selected marketing partners that meet either the preferences that you've specifically provided or your past purchasing habits. The more we and know about your likes and dislikes, the better we can tailor offerings to your needs.",
-                        "CatalogExample is a licensee of the PrivacySealExample Program. The PrivacySealExample Program ensures your privacy by holding Web site licensees to high privacy standards and confirming with independent auditors that these information practices are being followed.",
-                        "Questions regarding this statement should be directed to: CatalogExample, 4000 Lincoln Ave., Birmingham, MI 48009 USA, email: catalog@example.com, Telephone +1 248-EXAMPLE (+1 248-392-6753)",
-                        "If we have not responded to your inquiry or your inquiry has not been satisfactorily addressed, you can contact PrivacySealExample - http://privacyseal.example.org/privacyseal. CatalogExample will correct all errors or wrongful actions arising in connection with the privacy policy.",
-                        "When you browse through our site we collect: the basic information about your computer and connection to make sure that we can get you the proper information and for security purposes; and aggregate information on what pages consumers access or visit to improve our site",
-                        "If you choose to purchase an item we will ask you for more information including:  your name and address so that we can have your purchase delivered to you and so we can contact you in the future; your email address and telephone number so we can contact you; a login and password to use to update your information at any time in the future; and financial information to complete your purchase (you may choose to store this for future use); optionally, you can enter other demographic information so that we can tailor services to you in the future.",
-                        "Also on this page we will give you the option to choose if you would like to receive email, telephone calls or written service from CatalogExample or from our carefully selected marketing partners who maintain similar privacy practices. If you would like to receive these solicitations simply check the appropriate boxes. You can choose to stop participating at any time simply by changing your preferences.",
-                        "Changing and Updating personal information: Consumers can change all of their personal account information by going to the preferences section of CatalogExample at http://catalog.example.com/preferences.html. You can change your address, telephone number, email address, password as well as your privacy settings.",
-                        "Cookies: CatalogExample uses cookies only to see if you have been an CatalogExample customer in the past and, if so, customize services based on your past browsing habits and purchases. We do not store any personal data in the cookie nor do we share or sell the any of the information with other parties or affiliates.",
-                        "Data retention: We will keep the information about you and your purchases for as long as you remain our customer. If you do not place an order from us for one year we will remove your information from our databases."
-                    ],
+                    description: {
+                        name: 'P3P specification',
+                        link: 'https://www.w3.org/TR/P3P/#Example_policy'
+                    },
                     solutions: [
                         {
-                            id: 9,
                             language: 'XML',
                             link: '../assets/languages/p3p/examples/XML_ex-3-2.xml'
                         },
                         {
-                            id: 10,
                             language: 'RDF',
                             link: '../assets/languages/p3p/examples/RDF_ex-3-2.xml'
                         }
@@ -367,17 +342,12 @@ export class LanguagesComponent implements OnInit {
                 {
                     type: 'sample',
                     title: '"Almost Anonymous" Ruleset (APPEL specification)',
-                    description: [
-                        'This ruleset provides a nearly anonymous browsing experience.',
-                        'It prompts the user for a decision about Web sites that make an access disclosure other than "identifiable data is not used."',
-                        'It also prompts for Web sites that collect physical contact information, online contact information, financial account identifiers, and data described as "other" data.',
-                        'All prompts imply that all but the absolutely necessary request headers should be suppressed if the user decides to access the resource.',
-                        'It allows for the collection of other kinds of data and the use of state management mechanisms as long as this data will not be shared, will not be used for contacting visitors for marking, will not be used for individual tailoring, and will not be used for purposes described as "other" uses.',
-                        'Users wishing to engage in electronic commerce activities that require the exchange of personal information such as payment and billing information will have to override these settings on a site by site basis.'
-                    ],
+                    description: {
+                        name: 'APPEL specification',
+                        link: 'https://www.w3.org/TR/P3P-preferences/#examples'
+                    },
                     solutions: [
                         {
-                            id: 11,
                             language: 'XML',
                             link: '../assets/languages/APPEL/examples/XML_ex-B1.xml'
                         }
@@ -386,15 +356,12 @@ export class LanguagesComponent implements OnInit {
                 {
                     type: 'sample',
                     title: '"Privacy And Commerce" Ruleset (APPEL specification)',
-                    description: [
-                        'This ruleset allows users to exchange personal information needed for electronic commerce activities while providing warning prompts when that information may be shared with legal entities following different practices, public fora, or unrelated third parties; or used for marketing, tailoring, or "other" purposes.',
-                        'A warning prompt will also be provided if the site collects healthcare information.',
-                        'All warnings imply that all but the absolutely necessary request headers should be suppressed if the user decides to access the resource.',
-                        'An informational prompt will be provided at sites that provide no access to identifiable information.',
-                    ],
+                    description: {
+                        name: 'APPEL specification',
+                        link: 'https://www.w3.org/TR/P3P-preferences/#examples'
+                    },
                     solutions: [
                         {
-                            id: 12,
                             language: 'XML',
                             link: '../assets/languages/APPEL/examples/XML_ex-B2.xml'
                         }
@@ -403,15 +370,12 @@ export class LanguagesComponent implements OnInit {
                 {
                     type: 'sample',
                     title: '"Look For The Seal" Ruleset (APPEL specification)',
-                    description: [
-                        'This ruleset allows users to exchange any type of personal information for any purpose with Web sites that have either a "PrivacyProtect" or "TrustUs" seal as long as those sites do not share the information with unrelated third parties.',
-                        'It also allows users to exchange personal information needed for electronic commerce activities with any site, while providing warning prompts (and suppressing unnecessary request headers) when that information may be shared with legal entities following different practices, public fora, or unrelated third parties; or used for marketing, tailoring, or "other" purposes by sites that do not have a seal.',
-                        'An informational prompt will be provided at sites that have seals and collect healthcare information; a warning prompt (again, suppressing all unnecessary headers) will be provided at sites that do not have seals and collect healthcare information.',
-                        'An informational prompt will be provided at sites that provide no access.'
-                    ],
+                    description: {
+                        name: 'APPEL specification',
+                        link: 'https://www.w3.org/TR/P3P-preferences/#examples'
+                    },
                     solutions: [
                         {
-                            id: 13,
                             language: 'XML',
                             link: '../assets/languages/APPEL/examples/XML_ex-B3.xml'
                         }
@@ -420,13 +384,12 @@ export class LanguagesComponent implements OnInit {
                 {
                     type: 'sample',
                     title: 'Information Only" Ruleset (APPEL specification)',
-                    description: [
-                        'This ruleset allows users to exchange any type of personal information for any purpose.',
-                        'However, it provides informational prompts when sites collect data for marketing, pseudonymous or individual tailoring, or "other" purposes; share data with legal entities following different practices, public fora, or unrelated third parties; or collect healthcare information.'
-                    ],
+                    description: {
+                        name: 'APPEL specification',
+                        link: 'https://www.w3.org/TR/P3P-preferences/#examples'
+                    },
                     solutions: [
                         {
-                            id: 14,
                             language: 'XML',
                             link: '../assets/languages/APPEL/examples/XML_ex-B4.xml'
                         }
@@ -586,15 +549,13 @@ export class LanguagesComponent implements OnInit {
             examples: [
                 {
                     type: 'sample',
-                    title: 'Example 1 (ODRL specification)',
-                    description: [
-                        'The target asset and assigner and assignee parties are defined at the policy-level, and hence, are applied to both permission rules.',
-                        'The first permission allows the assignee to play the target asset as long as they accept they will be tracked.',
-                        'The second permission allows the assignee to distribute the target asset to the identified country (Italy) for a compensation payment of EUR5,000.'
-                    ],
+                    title: 'XML Example - Example 1 (ODRL specification)',
+                    description: {
+                        name: 'ODRL specification',
+                        link: 'https://www.w3.org/TR/odrl-vocab/#xml'
+                    },
                     solutions: [
                         {
-                            id: 15,
                             language: 'XML',
                             link: '../assets/languages/ODRL/examples/XML_ex-1.xml'
                         }
@@ -603,16 +564,12 @@ export class LanguagesComponent implements OnInit {
                 {
                     type: 'sample',
                     title: 'XML Linking - Example 2 (ODRL specification)',
-                    description: [
-                        'To support repeating the same element content across permissions and prohibitions, the asset, party, constraint, action, and duty elements support the xml id and idref attributes.',
-                        'Any of these elements that has been identified using the id attribute can then be referred to by an element with the same name using the idref attribute.',
-                        'In this case, the referring element must have no other content.',
-                        'As shown in the below example, the prohibition refers to elements defined in the permission, except for the constraint element.',
-                        'In this case, the assignee can play the music asset in Italy but not in France.'
-                    ],
+                    description: {
+                        name: 'ODRL specification',
+                        link: 'https://www.w3.org/TR/odrl-vocab/#xml'
+                    },
                     solutions: [
                         {
-                            id: 16,
                             language: 'XML',
                             link: '../assets/languages/ODRL/examples/XML_ex-2.xml'
                         }
@@ -621,15 +578,12 @@ export class LanguagesComponent implements OnInit {
                 {
                     type: 'sample',
                     title: 'Logical Constraints - Example 3 (ODRL specification)',
-                    description: [
-                        'To support logical constraints, constraint objects can be expressed at the policy level and locally identified with the id attribute.',
-                        'The logical constraint (in the rule) can then refer to these constraints using its #id in the leftOperand, and the logical relationship in the name attribute.',                       
-                        'The below example shows two constraints defined with ids C1 and C2.',
-                        'The logical constraint in the permission refers to these using the #C1 and #C2 values in the rightOperand, and the logical relationship (xone) in the name attribute.'
-                    ],
+                    description: {
+                        name: 'ODRL specification',
+                        link: 'https://www.w3.org/TR/odrl-vocab/#xml'
+                    },
                     solutions: [
                         {
-                            id: 17,
                             language: 'XML',
                             link: '../assets/languages/ODRL/examples/XML_ex-3.xml'
                         }

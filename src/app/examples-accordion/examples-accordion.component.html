@@ -2,40 +2,19 @@
     <div *ngFor="let ex of ppl?.examples" [ngSwitch]="true">
 		<div *ngSwitchCase="ex.type.includes('sample')">
 			<accordion-group heading='{{ex.title}}'>
-				<div class="description mb-2" *ngFor='let desc of ex.description'>
-					- {{desc}}
+				<div>
+					Example description present on the
+					<a href="{{ex.description.link}}" target="_blank">{{ex.description.name}}</a>
 				</div>
-	
-				<div class='example-buttons' *ngFor='let solution of ex.solutions' [ngSwitch]="solution.language">
-					<button *ngSwitchCase="'RDF'" type='button' class="btn btn-secondary btn-sm mb-2" (click)='handleRDF(solution.id, solution.link)'>
-						{{solution.language}}
-					</button>
-					<button *ngSwitchCase="'XML'" type='button' class="btn btn-secondary btn-sm mb-2" (click)='handleXML(solution.id, solution.link)'>
-						{{solution.language}}
-					</button>
-					<button *ngSwitchDefault type='button' class="btn btn-secondary btn-sm mb-2">
-						{{solution.language}}
-					</button>
-					
+				
+				<div class="bold">
+					Resources:
 				</div>
-	
-				<div class='example-text col-12' *ngFor='let solution of ex.solutions' [ngSwitch]="solution.language">
-					<div *ngIf='activeId==solution.id'>
-						<div *ngSwitchCase="'RDF'">
-							&lt;rdf:RDF
-							<div *ngFor="let rdf of rdfItems">
-								{{rdf}}
-							</div>
-							&lt;/rdf:RDF&gt;
-						</div>
-						<div *ngSwitchCase="'XML'">
-							<div *ngFor="let xml of xmlItems">
-								{{xml}}
-							</div>
-						</div>
-						<div *ngSwitchDefault>
-						</div>
-					</div>
+				
+				<div class='button-wrapper' *ngFor='let solution of ex.solutions'>
+					<a role='button' class="btn btn-outline-secondary btn-sm mb-2 mr-1" href="{{solution.link}}" target="_blank">
+						{{solution.language}}
+					</a>					
 				</div>
 			</accordion-group>
 		</div>
@@ -66,7 +45,6 @@
 						</div>
 					</div>
 				</div>
-
 			</accordion-group>
 		</div>
 	</div>

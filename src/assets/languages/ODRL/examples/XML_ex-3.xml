@@ -10,13 +10,12 @@
         <o:action name="http://www.w3.org/ns/odrl/2/distribute"/>
         <o:constraint name="http://www.w3.org/ns/odrl/2/xone"
                       rightOperand="#C1 #C2"/>
-    </o:permission> 
-</o:Policy>
-...
-<o:constraint id="C1" name="http://www.w3.org/ns/odrl/2/spatial" 
+    </o:permission>
+	<o:constraint id="C1" name="http://www.w3.org/ns/odrl/2/spatial" 
                   operator="http://www.w3.org/ns/odrl/2/eq" 
                   rightOperand="http://vocab.getty.edu/tgn/1000080"/>
 				  
-<o:constraint id="C2" name="http://www.w3.org/ns/odrl/2/spatial" 
-                  operator="http://www.w3.org/ns/odrl/2/eq" 
-                 rightOperand="http://vocab.getty.edu/tgn/1000090"/>
+	<o:constraint id="C2" name="http://www.w3.org/ns/odrl/2/spatial" 
+					  operator="http://www.w3.org/ns/odrl/2/eq" 
+					 rightOperand="http://vocab.getty.edu/tgn/1000090"/>
+</o:Policy>
