@@ -639,23 +639,29 @@ export class LanguagesComponent implements OnInit {
                     type: 'use-case',
                     heading: {
                         title: 'OMA SpecWorks',
-                        imageSrc: '../../assets/flags/Flag_of_Japan.svg.png'
+                        imageSrc: 'https://pbs.twimg.com/profile_images/978341705949868034/pGc4LOw9_400x400.jpg'
                     },
                     institution: {
-                        name: '',
+                        name: 'Open Mobile Alliance SpecWorks',
                         link: 'https://omaspecworks.org/'
                     },
-                    description: [
-                        'To support logical constraints, constraint objects can be expressed at the policy level and locally identified with the id attribute.',
-                        'The logical constraint (in the rule) can then refer to these constraints using its #id in the leftOperand, and the logical relationship in the name attribute.',                       
-                        'The below example shows two constraints defined with ids C1 and C2.',
-                        'The logical constraint in the permission refers to these using the #C1 and #C2 values in the rightOperand, and the logical relationship (xone) in the name attribute.'
-                    ],
-                    solutions: [
+                    specifications: [
                         {
-                            id: 17,
-                            language: 'XML',
-                            link: '../assets/languages/ODRL/examples/XML_ex-3.xml'
+                            name: 'OMA Digital Rights Management (DRM)',
+                            resources: [
+                                {
+                                    type: 'DOC',
+                                    link: 'http://www.openmobilealliance.org/release/DRM/V2_2-20110419-C/OMA-TS-DRM_REL-V2_2-20110419-C.pdf'
+                                },
+                                {
+                                    type: 'XML',
+                                    link: 'http://www.openmobilealliance.org/release/DRM/V2_2-20110419-C/OMA-SUP-XSD_DRM_REL-V2_2-20110419-C.xsd'
+                                },
+                                {
+                                    type: 'DTD',
+                                    link: 'http://www.openmobilealliance.org/release/DRM/V2_2-20110419-C/OMA-SUP-DTD_DRM_REL-V2_2-20110419-C.dtd'
+                                }
+                            ]
                         }
                     ]
                 }

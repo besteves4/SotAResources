@@ -10,3 +10,30 @@
     background-color: lightgray;
     font-size: 12px;
 }
+
+.heading {
+    font-weight: 400;
+    color: #007bff;
+    text-decoration: none;
+    padding-left: 13px;
+}
+
+.heading:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.button-wrapper {
+    display: inline;
+}
+
+.bold {
+    font-weight: bold;
+}
+.specifications {
+    padding-left: 20px;
+}
+
+.buttons {
+    padding-left: 10px;
+}

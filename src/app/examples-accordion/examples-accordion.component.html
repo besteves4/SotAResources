@@ -41,12 +41,33 @@
 		</div>
 		<div *ngSwitchCase="ex.type.includes('use-case')">
 			<accordion-group #group>
-				<span accordion-heading>
+				<span accordion-heading class="heading">
 					<img src={{ex.heading.imageSrc}} height="30" class="float-right">
-					                  {{ex.heading.title}}
+					{{ex.heading.title}}
 				</span>
-				This content is straight in the template. 
+
+				<div class="bold">
+					Company / Institution:
+					<a href="{{ex.institution.link}}" target="_blank">{{ex.institution.name}}</a>
+				</div>
+
+				<div>
+					<div class="bold">
+						Specifications:
+					</div>
+					<div *ngFor="let spec of ex.specifications" class="col-12 specifications">
+						- {{spec.name}}
+						<div class="buttons mt-1">
+							<div class="button-wrapper" *ngFor="let res of spec.resources">
+								<a class="btn btn-outline-warning btn-sm mr-1" href={{res.link}} target="_blank" role="button">
+									{{res.type}}
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</accordion-group>
 		</div>
-    </div>
+	</div>
 </accordion>
