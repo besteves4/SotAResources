@@ -618,6 +618,40 @@ export class LanguagesComponent implements OnInit {
                             ]
                         }
                     ]
+                },
+                {
+                    type: 'use-case',
+                    heading: {
+                        title: 'IPTC Standards',
+                        imageSrc: 'https://iptc.org/std/RightsML/2.0/images/iptc_sv_gradient_150x150.jpg'
+                    },
+                    institution: {
+                        name: 'International Press Telecommunications Council (IPTC)',
+                        link: 'https://iptc.org/'
+                    },
+                    specifications: [
+                        {
+                            name: 'IPTC RightsML',
+                            resources: [
+                                {
+                                    type: 'DOC',
+                                    link: 'https://www.iptc.org/std/RightsML/1.1/RightsML_1.1EP2-spec_1.pdf'
+                                },
+                                {
+                                    type: 'HTML',
+                                    link: 'https://iptc.org/std/RightsML/2.0/RightsML_2.0-specification.html'
+                                },
+                                {
+                                    type: 'Turtle',
+                                    link: 'http://www.iptc.org/std/RightsML/2.0/RightsML_2.0-ontology.ttl'
+                                },
+                                {
+                                    type: 'GitHub',
+                                    link: 'https://github.com/iptc/rightsml-dev'
+                                }
+                            ]
+                        }
+                    ]
                 }
             ],
             diagrams: [
