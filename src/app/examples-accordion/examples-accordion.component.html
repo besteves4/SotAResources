@@ -47,5 +47,18 @@
 				</div>
 			</accordion-group>
 		</div>
+		<div *ngSwitchCase="ex.type.includes('editors')">
+			<accordion-group heading='Online Editors'>
+				<div>
+					{{ppl?.id}} editors to create licences:
+				</div>
+				
+				<div class='editors' *ngFor='let editor of ex.editors'>
+					<a href="{{editor}}" target="_blank">
+						{{editor}}
+					</a>					
+				</div>
+			</accordion-group>
+		</div>
 	</div>
 </accordion>

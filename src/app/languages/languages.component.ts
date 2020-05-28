@@ -652,6 +652,15 @@ export class LanguagesComponent implements OnInit {
                             ]
                         }
                     ]
+                },
+                {
+                    type: 'editors',
+                    editors: [
+                        'http://odrleditor.appspot.com/',
+                        'https://www.dalicc.net/',
+                        'http://licentia.inria.fr/',
+                        'https://licences.csiro.au/'
+                    ]
                 }
             ],
             diagrams: [

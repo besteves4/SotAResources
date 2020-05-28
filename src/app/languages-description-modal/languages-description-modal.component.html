@@ -8,7 +8,7 @@
                 
                 <div class="row mt-2 mb-2">
                     <div class="col-8 offset-1">
-                        <h3 class="language-title mb-2">
+                        <h3 class="language-title">
                             {{ppl?.id}} - {{ppl?.name}}
                         </h3>
                     </div>
@@ -20,27 +20,27 @@
                     </div>
                 </div>
 
-                <div class="row mb-1">
+                <div class="row mb-3">
                     <div class="col-11 offset-1">
                         Responsible: <a class="authors-link" href={{ppl?.responsible.link}} target="_blank">{{ppl?.responsible.name}}</a>
                     </div>
                 </div>
                 
-                <div class="row mb-1">
+                <div class="row mb-3">
                     <div class="col-11 offset-1">
                         Created:
                         {{ppl?.dates.created}}
                     </div>
                 </div>
 
-                <div class="row mb-1">
+                <div class="row mb-3">
                     <div class="col-11 offset-1">
                         Last Updated:
                         {{ppl?.dates.lastUpdated}}
                     </div>
                 </div>
 
-                <div class="row mb-1">
+                <div class="row mb-3">
                     <div class="col-11 offset-1">
                         Languages <br>
                         <div class="button-wrapper" *ngFor="let idiom of ppl?.idiom">
@@ -53,7 +53,7 @@
                     </div>
                 </div>
 
-                <div class="row mb-1">
+                <div class="row mb-3">
                     <div class="col-11 offset-1">
                         Authors <br>
                         <div class="button-wrapper" *ngFor="let author of ppl?.authors">
@@ -73,6 +73,7 @@
                 
                 <div class="row">
                     <div class="col-10 offset-1">
+                        Application scenarios <br>
                         <app-examples-accordion [ppl]="ppl"></app-examples-accordion>
                     </div>
                 </div>
