@@ -3,6 +3,7 @@ import { faPlusSquare } from '@fortawesome/free-solid-svg-icons';
 
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { LanguagesDescriptionModalComponent } from '../languages-description-modal/languages-description-modal.component';
+import { DiagramModalComponent } from '../diagram-modal/diagram-modal.component';
 import { element } from 'protractor';
 
 @Component({
@@ -16,6 +17,9 @@ export class LanguagesComponent implements OnInit {
     activeJob: any;
     @ViewChild('languagesDescriptionModal', {static: false}) languagesDescriptionModal;
 
+    activeDiag: any;
+    @ViewChild('diagramModal', {static: false}) diagramModal;
+
     constructor() { }
 
     ngOnInit() { }
@@ -23,6 +27,11 @@ export class LanguagesComponent implements OnInit {
     handleClick(ppl) {
         this.activeJob = ppl;
         this.languagesDescriptionModal.show()
+    }
+
+    handleClickDiag(diag) {
+        this.activeDiag = diag;
+        this.diagramModal.show();
     }
 
     faPlusSquare = faPlusSquare;
@@ -530,14 +539,14 @@ export class LanguagesComponent implements OnInit {
                     type: 'JSON-LD',
                     link: 'https://www.w3.org/ns/odrl/2/ODRL22.json'
                 },
-                {
+/*                 {
                     type: 'JSON-LD Context',
                     link: 'https://www.w3.org/ns/odrl.jsonld'
-                }
+                } */
             ],
             documentation: [
                 {
-                    type: 'ODRL VOCAB',
+                    type: 'ODRL Vocab',
                     link: 'https://www.w3.org/TR/odrl-vocab/'
                 },
                 {
@@ -545,7 +554,7 @@ export class LanguagesComponent implements OnInit {
                     link: 'https://github.com/w3c/poe'
                 },
                 {
-                    type: 'ODRL MODEL',
+                    type: 'ODRL Model',
                     link: 'https://www.w3.org/TR/odrl-model/'
                 }
             ],

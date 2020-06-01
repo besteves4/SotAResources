@@ -41,65 +41,15 @@
             </td>
             <td class="documentation">
                 <div class="button-wrapper mr-1" *ngFor="let doc of ppl?.documentation" [ngSwitch]="true">
-                    <a *ngSwitchCase="doc.type.includes('HTML') || doc.type.includes('VOCAB') || doc.type.includes('MODEL')" class="btn btn-outline-warning btn-sm mb-1" href={{doc.link}} target="_blank" role="button">{{doc.type}}</a>
+                    <a *ngSwitchCase="doc.type.includes('HTML') || doc.type.includes('Vocab') || doc.type.includes('Model')" class="btn btn-outline-warning btn-sm mb-1" href={{doc.link}} target="_blank" role="button">{{doc.type}}</a>
                     <a *ngSwitchCase="doc.type.includes('GitHub')" class="btn btn-outline-success btn-sm mb-1" href={{doc.link}} target="_blank" role="button">{{doc.type}}</a>
                     <a *ngSwitchDefault class="btn btn-dark btn-sm mb-1" href={{doc.link}} target="_blank" role="button">{{doc.type}}</a>
                 </div>
             </td>
             <td class="diagram">
                 <div class="button-wrapper mr-1" *ngFor="let diag of ppl?.diagrams" [ngSwitch]="true">
-                    <div *ngSwitchCase="diag.type.includes('xsddiagram')">
-                        <a class="btn btn-outline-warning btn-sm" href={{diag.link}} role="button" data-toggle="modal" data-target=".modal-lg-xsddiagram">{{diag.name}}</a>
-                    
-                        <div class="modal fade modal-lg-xsddiagram" tabindex="-1" role="dialog" aria-hidden="true">
-                            <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-body">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-
-                                        <div>
-                                            <figure>
-                                                <img src= {{diag.imageSrc}} alt='missing' />
-                                                <figcaption>
-                                                    Figure generated using
-                                                    <a href={{diag.typeSrc}} target="_blank">{{diag.nameSrc}}</a>.
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div *ngSwitchCase="diag.type.includes('spec')">
-                        <a class="btn btn-outline-warning btn-sm" href={{diag.link}} role="button" data-toggle="modal" data-target=".modal-lg-spec">{{diag.name}}</a>
-                    
-                        <div class="modal fade modal-lg-spec" tabindex="-1" role="dialog" aria-hidden="true">
-                            <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-body">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-
-                                        <div>
-                                            <figure>
-                                                <img src= {{diag.imageSrc}} alt='missing' />
-                                                <figcaption>
-                                                    Figure extracted from the
-                                                    <a href={{diag.typeSrc}} target="_blank">{{diag.nameSrc}}</a> specification.
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                    <a *ngSwitchCase="diag.type.includes('xsddiagram')" class="btn btn-outline-warning btn-sm clickable" role="button" (click)="handleClickDiag(diag)">{{diag.name}}</a>
+                    <a *ngSwitchCase="diag.type.includes('spec')" class="btn btn-outline-warning btn-sm clickable" role="button" (click)="handleClickDiag(diag)">{{diag.name}}</a>
                 </div>
             </td>
         </tr>
@@ -107,3 +57,4 @@
 </table>
 
 <app-languages-description-modal #languagesDescriptionModal [ppl]="activeJob"></app-languages-description-modal>
+<app-diagram-modal #diagramModal [diag]="activeDiag"></app-diagram-modal>
