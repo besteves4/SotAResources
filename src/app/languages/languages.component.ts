@@ -259,8 +259,11 @@ export class LanguagesComponent implements OnInit {
             ],
             diagrams: [
                 {
-                    type: 'P3P v1',
-                    imageSrc: '../../assets/languages/p3p/diagrams/P3Pv1.svg'
+                    type: 'xsddiagram',
+                    name: 'P3P v1',
+                    imageSrc: '../../assets/languages/p3p/diagrams/P3Pv1.svg',
+                    typeSrc: 'http://regis.cosnier.free.fr/?page=XSDDiagram',
+                    nameSrc: 'XSD Diagram'
                 }
             ]
         },
@@ -664,10 +667,13 @@ export class LanguagesComponent implements OnInit {
                 }
             ],
             diagrams: [
-/*                 {
-                    type: 'APPEL v1',
-                    imageSrc: '../../assets/languages/APPEL/diagrams/APPELv1.svg'
-                } */
+                {
+                    type: 'spec',
+                    name: 'ODRL v2.2',
+                    imageSrc: 'https://www.w3.org/TR/odrl-model/00Model.svg',
+                    typeSrc: 'https://www.w3.org/TR/odrl-model/#infoModel',
+                    nameSrc: 'ODRL Information Model 2.2'
+                }
             ]
         },
         {}
