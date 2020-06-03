@@ -21,6 +21,11 @@
 .bold {
     font-weight: bold;
 }
+
+.solutions {
+    padding-left: 20px;
+}
+
 .specifications {
     padding-left: 20px;
 }

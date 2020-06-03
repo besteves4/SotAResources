@@ -177,91 +177,76 @@ export class LanguagesComponent implements OnInit {
             examples: [
                 {
                     type: 'sample',
-                    title: 'Example 2.2 from the P3P specification',
+                    title: 'Examples from the P3P specification',
                     description: {
                         name: 'P3P specification',
                         link: 'https://www.w3.org/TR/P3P/#ref_file_example'
                     },
                     solutions: [
                         {
-                            language: 'XML',
-                            link: '../assets/languages/p3p/examples/XML_ex-2-2.xml'
+                            exampleName: 'Example 2.2',
+                            resources: [
+                                {
+                                    language: 'XML',
+                                    link: '../assets/languages/p3p/examples/XML_ex-2-2.xml'
+                                },
+                                {
+                                    language: 'RDF',
+                                    link: '../assets/languages/p3p/examples/RDF_ex-2-2.xml'
+                                }
+                            ]
                         },
                         {
-                            language: 'RDF',
-                            link: '../assets/languages/p3p/examples/RDF_ex-2-2.xml'
-                        }
-                    ]
-                },
-                {
-                    type: 'sample',
-                    title: 'Example 2.5 from the P3P specification',
-                    description: {
-                        name: 'P3P specification',
-                        link: 'https://www.w3.org/TR/P3P/#cookies'
-                    },
-                    solutions: [
-                        {
-                            language: 'XML',
-                            link: '../assets/languages/p3p/examples/XML_ex-2-5.xml'
+                            exampleName: 'Example 2.5',
+                            resources: [
+                                {
+                                    language: 'XML',
+                                    link: '../assets/languages/p3p/examples/XML_ex-2-5.xml'
+                                },
+                                {
+                                    language: 'RDF',
+                                    link: '../assets/languages/p3p/examples/RDF_ex-2-5.xml'
+                                }
+                            ]
                         },
                         {
-                            language: 'RDF',
-                            link: '../assets/languages/p3p/examples/RDF_ex-2-5.xml'
-                        }
-                    ]
-                },
-                {
-                    type: 'sample',
-                    title: 'Example 2.6 from the P3P specification',
-                    description: {
-                        name: 'P3P specification',
-                        link: 'https://www.w3.org/TR/P3P/#ref_file_method'
-                    },
-                    solutions: [
-                        {
-                            language: 'XML',
-                            link: '../assets/languages/p3p/examples/XML_ex-2-6.xml'
+                            exampleName: 'Example 2.6',
+                            resources: [
+                                {
+                                    language: 'XML',
+                                    link: '../assets/languages/p3p/examples/XML_ex-2-6.xml'
+                                },
+                                {
+                                    language: 'RDF',
+                                    link: '../assets/languages/p3p/examples/RDF_ex-2-6.xml'
+                                }
+                            ]
                         },
                         {
-                            language: 'RDF',
-                            link: '../assets/languages/p3p/examples/RDF_ex-2-6.xml'
-                        }
-                    ]
-                },
-                {
-                    type: 'sample',
-                    title: "Example 3.1: CatalogExample's Privacy Policy for Browsers",
-                    description: {
-                        name: 'P3P specification',
-                        link: 'https://www.w3.org/TR/P3P/#Example_policy'
-                    },
-                    solutions: [
-                        {
-                            language: 'XML',
-                            link: '../assets/languages/p3p/examples/XML_ex-3-1.xml'
+                            exampleName: "CatalogExample's Privacy Policy for Browsers - Example 3.1",
+                            resources: [
+                                {
+                                    language: 'XML',
+                                    link: '../assets/languages/p3p/examples/XML_ex-3-1.xml'
+                                },
+                                {
+                                    language: 'RDF',
+                                    link: '../assets/languages/p3p/examples/RDF_ex-3-1.xml'
+                                }
+                            ]
                         },
                         {
-                            language: 'RDF',
-                            link: '../assets/languages/p3p/examples/RDF_ex-3-1.xml'
-                        }
-                    ]
-                },
-                {
-                    type: 'sample',
-                    title: "Example 3.2: CatalogExample's Privacy Policy for Shoppers",
-                    description: {
-                        name: 'P3P specification',
-                        link: 'https://www.w3.org/TR/P3P/#Example_policy'
-                    },
-                    solutions: [
-                        {
-                            language: 'XML',
-                            link: '../assets/languages/p3p/examples/XML_ex-3-2.xml'
-                        },
-                        {
-                            language: 'RDF',
-                            link: '../assets/languages/p3p/examples/RDF_ex-3-2.xml'
+                            exampleName: "CatalogExample's Privacy Policy for Shoppers - Example 3.2",
+                            resources: [
+                                {
+                                    language: 'XML',
+                                    link: '../assets/languages/p3p/examples/XML_ex-3-2.xml'
+                                },
+                                {
+                                    language: 'RDF',
+                                    link: '../assets/languages/p3p/examples/RDF_ex-3-2.xml'
+                                }
+                            ]
                         }
                     ]
                 }
@@ -353,57 +338,47 @@ export class LanguagesComponent implements OnInit {
             examples: [
                 {
                     type: 'sample',
-                    title: '"Almost Anonymous" Ruleset (APPEL specification)',
+                    title: 'Examples from the APPEL specification',
                     description: {
                         name: 'APPEL specification',
                         link: 'https://www.w3.org/TR/P3P-preferences/#examples'
                     },
                     solutions: [
                         {
-                            language: 'XML',
-                            link: '../assets/languages/APPEL/examples/XML_ex-B1.xml'
-                        }
-                    ]
-                },
-                {
-                    type: 'sample',
-                    title: '"Privacy And Commerce" Ruleset (APPEL specification)',
-                    description: {
-                        name: 'APPEL specification',
-                        link: 'https://www.w3.org/TR/P3P-preferences/#examples'
-                    },
-                    solutions: [
+                            exampleName: '"Almost Anonymous" Ruleset',
+                            resources: [
+                                {
+                                    language: 'XML',
+                                    link: '../assets/languages/APPEL/examples/XML_ex-B1.xml'
+                                }
+                            ]
+                        },
                         {
-                            language: 'XML',
-                            link: '../assets/languages/APPEL/examples/XML_ex-B2.xml'
-                        }
-                    ]
-                },
-                {
-                    type: 'sample',
-                    title: '"Look For The Seal" Ruleset (APPEL specification)',
-                    description: {
-                        name: 'APPEL specification',
-                        link: 'https://www.w3.org/TR/P3P-preferences/#examples'
-                    },
-                    solutions: [
+                            exampleName: '"Privacy And Commerce" Ruleset',
+                            resources: [
+                                {
+                                    language: 'XML',
+                                    link: '../assets/languages/APPEL/examples/XML_ex-B2.xml'
+                                }
+                            ]
+                        },
                         {
-                            language: 'XML',
-                            link: '../assets/languages/APPEL/examples/XML_ex-B3.xml'
-                        }
-                    ]
-                },
-                {
-                    type: 'sample',
-                    title: 'Information Only" Ruleset (APPEL specification)',
-                    description: {
-                        name: 'APPEL specification',
-                        link: 'https://www.w3.org/TR/P3P-preferences/#examples'
-                    },
-                    solutions: [
+                            exampleName: '"Look For The Seal" Ruleset',
+                            resources: [
+                                {
+                                    language: 'XML',
+                                    link: '../assets/languages/APPEL/examples/XML_ex-B3.xml'
+                                }
+                            ]
+                        },
                         {
-                            language: 'XML',
-                            link: '../assets/languages/APPEL/examples/XML_ex-B4.xml'
+                            exampleName: '"Information Only" Ruleset',
+                            resources: [
+                                {
+                                    language: 'XML',
+                                    link: '../assets/languages/APPEL/examples/XML_ex-B4.xml'
+                                }
+                            ]
                         }
                     ]
                 }
@@ -561,43 +536,38 @@ export class LanguagesComponent implements OnInit {
             examples: [
                 {
                     type: 'sample',
-                    title: 'XML Example - Example 1 (ODRL specification)',
+                    title: 'Examples from the ODRL specification',
                     description: {
                         name: 'ODRL specification',
                         link: 'https://www.w3.org/TR/odrl-vocab/#xml'
                     },
                     solutions: [
                         {
-                            language: 'XML',
-                            link: '../assets/languages/ODRL/examples/XML_ex-1.xml'
-                        }
-                    ]
-                },
-                {
-                    type: 'sample',
-                    title: 'XML Linking - Example 2 (ODRL specification)',
-                    description: {
-                        name: 'ODRL specification',
-                        link: 'https://www.w3.org/TR/odrl-vocab/#xml'
-                    },
-                    solutions: [
+                            exampleName: 'XML Example - Example 1',
+                            resources: [
+                                {
+                                    language: 'XML',
+                                    link: '../assets/languages/ODRL/examples/XML_ex-1.xml'
+                                }
+                            ]
+                        },
                         {
-                            language: 'XML',
-                            link: '../assets/languages/ODRL/examples/XML_ex-2.xml'
-                        }
-                    ]
-                },
-                {
-                    type: 'sample',
-                    title: 'Logical Constraints - Example 3 (ODRL specification)',
-                    description: {
-                        name: 'ODRL specification',
-                        link: 'https://www.w3.org/TR/odrl-vocab/#xml'
-                    },
-                    solutions: [
+                            exampleName: 'XML Linking - Example 2',
+                            resources: [
+                                {
+                                    language: 'XML',
+                                    link: '../assets/languages/ODRL/examples/XML_ex-2.xml'
+                                }
+                            ]
+                        },
                         {
-                            language: 'XML',
-                            link: '../assets/languages/ODRL/examples/XML_ex-3.xml'
+                            exampleName: 'Logical Constraints - Example 3',
+                            resources: [
+                                {
+                                    language: 'XML',
+                                    link: '../assets/languages/ODRL/examples/XML_ex-3.xml'
+                                }
+                            ]
                         }
                     ]
                 },
@@ -754,18 +724,35 @@ export class LanguagesComponent implements OnInit {
             examples: [
                 {
                     type: 'sample',
-                    title: 'Specifying what is unacceptable (XPref documentation)',
+                    title: 'Examples from the XPref documentation',
                     description: {
-                        name: 'XPref documentation - section 4.3.1',
-                        link: 'https://www.w3.org/TR/odrl-vocab/#xml'
+                        name: 'XPref documentation',
+                        link: 'http://www.rsrikant.com/papers/www03_xpref.pdf'
                     },
                     solutions: [
-/*                         {
-                            language: 'XML',
-                            link: '../assets/languages/ODRL/examples/XML_ex-1.xml'
-                        } */
+                        {
+                            exampleName: 'Specifying what is unacceptable -  section 4.3.1',
+                            resources: []
+                        },
+                        {
+                            exampleName: 'Specifying what is acceptable -  section 4.3.2',
+                            resources: []
+                        },
+                        {
+                            exampleName: 'Combinations -  section 4.3.3',
+                            resources: []
+                        }
                     ]
                 }
+            ],
+            diagrams: [
+                /* {
+                    type: 'spec',
+                    name: 'ODRL v2.2',
+                    imageSrc: 'https://www.w3.org/TR/odrl-model/00Model.svg',
+                    typeSrc: 'https://www.w3.org/TR/odrl-model/#infoModel',
+                    nameSrc: 'ODRL Information Model 2.2'
+                } */
             ]
         },
         {}

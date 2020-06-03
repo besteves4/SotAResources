@@ -2,17 +2,20 @@
     <div *ngFor="let ex of ppl?.examples" [ngSwitch]="true">
 		<div *ngSwitchCase="ex.type.includes('sample')">
 			<accordion-group heading='{{ex.title}}'>
-				<div>
-					Example description present on the
+				<div class='mb-1'>
+					Example(s) description present on the
 					<a href="{{ex.description.link}}" target="_blank">{{ex.description.name}}</a>
 				</div>
 				
 				<div *ngIf="ex.solutions.length != 0">
-					<strong>Resources: </strong> <br>
-					<div class='button-wrapper' *ngFor='let solution of ex.solutions'>
-						<a role='button' class="btn btn-outline-secondary btn-sm mb-2 mr-1" href="{{solution.link}}" target="_blank">
-							{{solution.language}}
-						</a>					
+					<div *ngFor="let solution of ex.solutions" class="col-12 solutions mb-1">
+						- {{solution.exampleName}}
+
+						<div class="button-wrapper" *ngFor="let res of solution.resources">
+							<a class="btn btn-outline-warning btn-sm mr-1" href={{res.link}} target="_blank" role="button">
+								{{res.language}}
+							</a>
+						</div>
 					</div>
 				</div>
 			</accordion-group>
