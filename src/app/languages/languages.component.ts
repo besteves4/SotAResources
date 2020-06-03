@@ -26,7 +26,7 @@ export class LanguagesComponent implements OnInit {
     
     handleClick(ppl) {
         this.activeJob = ppl;
-        this.languagesDescriptionModal.show()
+        this.languagesDescriptionModal.show();
     }
 
     handleClickDiag(diag) {
@@ -279,7 +279,7 @@ export class LanguagesComponent implements OnInit {
         {
             id: 'APPEL',
             name: 'A P3P Preference Exchange Language',
-            description: 'P3P extension for users to express their preferences through a set of preference-rules. P3P enabled Web sites can use these preferences for automated or semi-automated decision-making',
+            description: 'P3P extension for users to express their preferences through a set of preference-rules. P3P enabled websites can use these preferences for automated or semi-automated decision-making',
             domain: [
                 {
                     name: 'privacy',
@@ -616,7 +616,7 @@ export class LanguagesComponent implements OnInit {
                             name: 'OMA Digital Rights Management (DRM)',
                             resources: [
                                 {
-                                    type: 'DOC',
+                                    type: 'PDF',
                                     link: 'http://www.openmobilealliance.org/release/DRM/V2_2-20110419-C/OMA-TS-DRM_REL-V2_2-20110419-C.pdf'
                                 },
                                 {
@@ -646,7 +646,7 @@ export class LanguagesComponent implements OnInit {
                             name: 'IPTC RightsML',
                             resources: [
                                 {
-                                    type: 'DOC',
+                                    type: 'PDF',
                                     link: 'https://www.iptc.org/std/RightsML/1.1/RightsML_1.1EP2-spec_1.pdf'
                                 },
                                 {
@@ -682,6 +682,89 @@ export class LanguagesComponent implements OnInit {
                     imageSrc: 'https://www.w3.org/TR/odrl-model/00Model.svg',
                     typeSrc: 'https://www.w3.org/TR/odrl-model/#infoModel',
                     nameSrc: 'ODRL Information Model 2.2'
+                }
+            ]
+        },
+        {
+            id: 'XPref',
+            name: 'Xpath-based Preference Language',
+            description: 'Preference language that makes use of XPath to deal with the shortcomings of APPEL when it comes to establish privacy preferences to be used by P3P enabled websites',
+            domain: [
+                {
+                    name: 'privacy',
+                    dbPedia: 'http://dbpedia.org/page/Category:Privacy'
+                },
+                {
+                    name: 'preference',
+                    dbPedia: 'http://dbpedia.org/page/Preference'
+                }
+            ],
+            w3cStatus: '',
+            dates: {
+                created: '2003',
+                lastUpdated: ''
+            },
+            idiom: [
+                {
+                    imageSrc: '../../assets/flags/uk_flag.png',
+                    lang: 'en',
+                    link:'http://www.rsrikant.com/papers/www03_xpref.pdf'
+                }
+            ],
+            responsible: {
+                name: 'IBM Research - Almaden',
+                link: 'https://www.research.ibm.com/labs/almaden/'
+            },
+            authors: [
+                {
+                    name: 'Rakesh Agrawal',
+                    link: 'https://rakesh.agrawal-family.com/'
+                },
+                {
+                    name: 'Jerry Kiernan',
+                    link: 'https://dblp.org/pers/hd/k/Kiernan:Jerry'
+                },
+                {
+                    name: 'Ramakrishnan Srikant',
+                    link: 'http://www.rsrikant.com/'
+                },
+                {
+                    name: 'Yirong Xu',
+                    link: 'https://dblp.org/pers/x/Xu:Yirong.html'
+                }
+            ],
+            elements: [
+/*                 {
+                    name: 'Policy',
+                    link: 'https://www.w3.org/TR/odrl-vocab/#policyConcepts'
+                } */
+            ],
+            rdf: [
+/*                 {
+                    type: 'JSON-LD Context',
+                    link: 'https://www.w3.org/ns/odrl.jsonld'
+                } */
+            ],
+            documentation: [
+                {
+                    type: 'PDF',
+                    link: 'http://www.rsrikant.com/papers/www03_xpref.pdf'
+                }
+            ],
+            examples: [
+                {
+                    type: 'sample',
+                    title: 'Specifying what is unacceptable (XPref documentation)',
+                    description: {
+                        name: 'XPref documentation - section 4.3.1',
+                        link: 'https://www.w3.org/TR/odrl-vocab/#xml'
+                    },
+                    solutions: [
+/*                         {
+                            language: 'XML',
+                            link: '../assets/languages/ODRL/examples/XML_ex-1.xml'
+                        } */
+                    ]
                 }
             ]
         },

@@ -7,14 +7,13 @@
 					<a href="{{ex.description.link}}" target="_blank">{{ex.description.name}}</a>
 				</div>
 				
-				<div class="bold">
-					Resources:
-				</div>
-				
-				<div class='button-wrapper' *ngFor='let solution of ex.solutions'>
-					<a role='button' class="btn btn-outline-secondary btn-sm mb-2 mr-1" href="{{solution.link}}" target="_blank">
-						{{solution.language}}
-					</a>					
+				<div *ngIf="ex.solutions.length != 0">
+					<strong>Resources: </strong> <br>
+					<div class='button-wrapper' *ngFor='let solution of ex.solutions'>
+						<a role='button' class="btn btn-outline-secondary btn-sm mb-2 mr-1" href="{{solution.link}}" target="_blank">
+							{{solution.language}}
+						</a>					
+					</div>
 				</div>
 			</accordion-group>
 		</div>

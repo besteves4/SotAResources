@@ -16,33 +16,35 @@
                         <a *ngSwitchCase="'W3C Obsolete Recommendation'" class="btn btn-dark btn-sm float-right" href="https://www.w3.org/2018/Process-20180201/#rec-rescind" target="_blank" role="button">{{ppl?.w3cStatus}}</a>
                         <a *ngSwitchCase="'W3C Working Draft'" class="btn w3c-working-draft btn-sm float-right" href="https://www.w3.org/2018/Process-20180201/#working-draft" target="_blank" role="button">{{ppl?.w3cStatus}}</a>
                         <a *ngSwitchCase="'W3C Recommendation'" class="btn w3c-working-draft btn-sm float-right" href="https://www.w3.org/2018/Process-20180201/#rec-publication" target="_blank" role="button">{{ppl?.w3cStatus}}</a>
+                        <a *ngSwitchCase="''" href=""></a>
                         <a *ngSwitchDefault class="btn btn-warning btn-sm mb-1" href="#" target="_blank" role="button">{{ppl?.w3cStatus}}</a>
                     </div>
                 </div>
 
-                <div class="row mb-3">
+                <div class="row mb-2">
                     <div class="col-11 offset-1">
-                        Responsible: <a class="authors-link" href={{ppl?.responsible.link}} target="_blank">{{ppl?.responsible.name}}</a>
+                        <strong>Responsible: </strong>
+                        <a class="authors-link" href={{ppl?.responsible.link}} target="_blank">{{ppl?.responsible.name}}</a>
                     </div>
                 </div>
                 
-                <div class="row mb-3">
+                <div *ngIf="ppl?.dates.created.length != 0"class="row mb-2">
                     <div class="col-11 offset-1">
-                        Created:
+                        <strong>Created: </strong>
                         {{ppl?.dates.created}}
                     </div>
                 </div>
 
-                <div class="row mb-3">
+                <div *ngIf="ppl?.dates.lastUpdated.length != 0" class="row mb-2">
                     <div class="col-11 offset-1">
-                        Last Updated:
+                        <strong>Last updated: </strong>
                         {{ppl?.dates.lastUpdated}}
                     </div>
                 </div>
 
-                <div class="row mb-3">
+                <div class="row mb-2">
                     <div class="col-11 offset-1">
-                        Languages <br>
+                        <strong>Languages: </strong> <br>
                         <div class="button-wrapper" *ngFor="let idiom of ppl?.idiom">
                             <a class="btn btn-outline-info btn-sm mr-1" href={{idiom.link}} target="_blank" role="button">
                                 <span class="idiom">
@@ -53,18 +55,18 @@
                     </div>
                 </div>
 
-                <div class="row mb-3">
+                <div class="row mb-2">
                     <div class="col-11 offset-1">
-                        Authors <br>
+                        <strong>Authors: </strong> <br>
                         <div class="button-wrapper" *ngFor="let author of ppl?.authors">
                             <a class="btn btn-outline-info btn-sm mr-1" href={{author.link}} target="_blank" role="button">{{author.name}}</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="row mb-3">
+                <div *ngIf="ppl?.elements.length != 0" class="row mb-2">
                     <div class="col-11 offset-1">
-                        Main elements <br>
+                        <strong>Main elements: </strong> <br>
                         <div class="button-wrapper" *ngFor="let element of ppl?.elements">
                             <a class="btn btn-outline-success btn-sm mr-1" href={{element.link}} target="_blank" role="button">{{element.name}}</a>
                         </div>
@@ -73,7 +75,7 @@
                 
                 <div class="row">
                     <div class="col-10 offset-1">
-                        Application scenarios <br>
+                        <strong>Application scenarios: </strong> <br>
                         <app-examples-accordion [ppl]="ppl"></app-examples-accordion>
                     </div>
                 </div>
