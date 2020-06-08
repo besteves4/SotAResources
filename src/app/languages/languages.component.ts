@@ -755,6 +755,98 @@ export class LanguagesComponent implements OnInit {
                 } */
             ]
         },
+        {
+            id: 'S4P',
+            name: 'SecPAL for Privacy',
+            description: "Language framework that extends SecPAL to express user's preferences related to the handling of their Personally Identifiable Information (PII) and web services' data-handling policies on treating the collected PIIs.",
+            domain: [
+                {
+                    name: 'PII',
+                    dbPedia: 'http://dbpedia.org/page/Personally_identifiable_information'
+                },
+                {
+                    name: 'preference',
+                    dbPedia: 'http://dbpedia.org/page/Preference'
+                }
+            ],
+            w3cStatus: '',
+            dates: {
+                created: '2009',
+                lastUpdated: '2010'
+            },
+            idiom: [
+                {
+                    imageSrc: '../../assets/flags/uk_flag.png',
+                    lang: 'en',
+                    link:'https://www.microsoft.com/en-us/research/wp-content/uploads/2010/04/main-1.pdf'
+                }
+            ],
+            responsible: {
+                name: 'Microsoft Research',
+                link: 'https://www.microsoft.com/en-us/research/'
+            },
+            authors: [
+                {
+                    name: 'Moritz Y. Becker',
+                    link: 'https://dblp.org/pers/b/Becker:Moritz_Y=.html'
+                },
+                {
+                    name: 'Alexander Malkis',
+                    link: 'https://dblp.uni-trier.de/pers/m/Malkis:Alexander.html'
+                },
+                {
+                    name: 'Laurent Bussard',
+                    link: 'https://www.microsoft.com/en-us/research/people/lbussard/'
+                }
+            ],
+            elements: [
+/*                 {
+                    name: 'Policy',
+                    link: 'https://www.w3.org/TR/odrl-vocab/#policyConcepts'
+                } */
+            ],
+            rdf: [
+/*                 {
+                    type: 'JSON-LD Context',
+                    link: 'https://www.w3.org/ns/odrl.jsonld'
+                } */
+            ],
+            documentation: [
+                {
+                    type: 'S4P PDF',
+                    link: 'https://www.microsoft.com/en-us/research/wp-content/uploads/2010/04/main-1.pdf'
+                },
+                {
+                    type: 'SecPAL PDF',
+                    link: 'https://www.microsoft.com/en-us/research/wp-content/uploads/2006/09/BeckerFournetGordon_AuthorizationLanguage.pdf'
+                }
+            ],
+            examples: [
+                {
+                    type: 'sample',
+                    title: 'Examples from the S4P documentation',
+                    description: {
+                        name: 'S4P documentation',
+                        link: 'https://www.microsoft.com/en-us/research/wp-content/uploads/2010/04/main-1.pdf'
+                    },
+                    solutions: [
+                        {
+                            exampleName: 'Extended example on Annex A',
+                            resources: []
+                        }
+                    ]
+                }
+            ],
+            diagrams: [
+                /* {
+                    type: 'spec',
+                    name: 'ODRL v2.2',
+                    imageSrc: 'https://www.w3.org/TR/odrl-model/00Model.svg',
+                    typeSrc: 'https://www.w3.org/TR/odrl-model/#infoModel',
+                    nameSrc: 'ODRL Information Model 2.2'
+                } */
+            ]
+        },
         {}
     ]
 }
