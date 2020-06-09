@@ -1,0 +1,66 @@
+@prefix air: <http://dig.csail.mit.edu/TAMI/2007/amord/air#> .
+@prefix conf: <http://www.conf.org/ontology#> .
+@prefix pol: <http://www.conf.org/policies/publication#> .
+@prefix: <http://www.conf.org/policies/publication#> .
+
+
+pol:PubInProcPolicy a air:RuleSet ;
+
+    air:rule pol:CheckPubInProc .
+
+
+@forAll :PUBL .
+pol:CheckPubInProc a air:BeliefRule ;
+
+    air:if { @forSome :PROC .
+
+        <http://www.conf.org> conf:hasProceedings :PROC . 
+         :PROC conf:hasPaper :PUBL . } ; 
+
+    air:then [ air:description (:PUBL " published in this conference") ;
+
+        air:rule pol:CheckNonCompliance ], 
+        [ air:rule pol:CheckAtLeastOneAuthReg ], 
+        [ air:rule pol:CheckFirstAuthExempted ] . 
+
+
+    pol:CheckNonCompliance a air:BeliefRule ; 
+    air:if { :PUBL air:compliant-with pol:PubInProcPolicy . } ; 
+    air:else [ air:description ("the publication of " :PUBL " is questionable
+
+            as it did not meet any of the two criteria") ; 
+
+        air:assert { :PUBL air:non-compliant-with pol:PubInProcPolicy } ] . 
+
+@forAll :AUTH .
+pol:CheckAtLeastOneAuthReg a air:BeliefRule ;
+
+    air:if { :PUBL conf:hasAuthor :AUTH .
+
+        <http://www.conf.org> conf:registeredBy :AUTH . } ; 
+
+    air:then [ air:description ("One of the Authors" :AUTH "registered for
+
+            the conference") ; 
+
+        air:assert { :PUBL air:compliant-with pol:PubInProcPolicy } ] . 
+
+
+@forAll :REASON .
+pol:CheckFirstAuthExempted a air:BeliefRule ;
+
+    air:if { @forSome :COCHAIR, :EXEMPTION .
+
+         :COCHAIR a conf:Co-Chair . 
+         :EXEMPTION a conf:PublicationExemption . 
+         :EXEMPTION conf:exemptedBy :COCHAIR . 
+         :EXEMPTION conf:exemptee :AUTH . 
+         :EXEMPTION conf:reason :REASON . 
+         :PUBL conf:hasFirstAuthor :AUTH . } ; 
+
+    air:then [ air:description ("the first author " :AUTH " was exempted by one
+
+            of the cochairs, because " :REASON) ; 
+
+        air:assert { :PUBL air:compliant-with pol:PubInProcPolicy } ] . 
+

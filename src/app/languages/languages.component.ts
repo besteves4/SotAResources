@@ -514,10 +514,10 @@ export class LanguagesComponent implements OnInit {
                     type: 'JSON-LD',
                     link: 'https://www.w3.org/ns/odrl/2/ODRL22.json'
                 },
-/*                 {
+                {
                     type: 'JSON-LD Context',
                     link: 'https://www.w3.org/ns/odrl.jsonld'
-                } */
+                }
             ],
             documentation: [
                 {
@@ -758,7 +758,7 @@ export class LanguagesComponent implements OnInit {
         {
             id: 'S4P',
             name: 'SecPAL for Privacy',
-            description: "Language framework that extends SecPAL to express user's preferences related to the handling of their Personally Identifiable Information (PII) and web services' data-handling policies on treating the collected PIIs.",
+            description: "Language framework that extends SecPAL to express user's preferences related to the handling of their Personally Identifiable Information (PII) and web services' data-handling policies on treating the collected PIIs",
             domain: [
                 {
                     name: 'PII',
@@ -845,6 +845,278 @@ export class LanguagesComponent implements OnInit {
                     typeSrc: 'https://www.w3.org/TR/odrl-model/#infoModel',
                     nameSrc: 'ODRL Information Model 2.2'
                 } */
+            ]
+        },
+        {
+            id: 'AIR',
+            name: 'Accountability In RDF',
+            description: "Rule-based policy language based on N3Logic that supports rule nesting, rule reuse by assigning each rule a unique URI and automated action explanations performed by the AIR reasoner",
+            domain: [
+                {
+                    name: 'accountability',
+                    dbPedia: 'http://dbpedia.org/page/Accountability'
+                },
+                {
+                    name: 'privacy',
+                    dbPedia: 'http://dbpedia.org/page/Category:Privacy'
+                }
+            ],
+            w3cStatus: '',
+            dates: {
+                created: '2007',
+                lastUpdated: '2009'
+            },
+            idiom: [
+                {
+                    imageSrc: '../../assets/flags/uk_flag.png',
+                    lang: 'en',
+                    link:'http://dig.csail.mit.edu/2009/AIR/'
+                }
+            ],
+            responsible: {
+                name: 'Decentralized Information Group - MIT',
+                link: 'http://dig.csail.mit.edu//Overview.html'
+            },
+            authors: [
+                {
+                    name: 'Ankesh Khandelwal',
+                    link: 'http://www.cs.rpi.edu/~ankesh/'
+                },
+                {
+                    name: 'Jie Bao',
+                    link: 'https://dblp.uni-trier.de/pers/hd/b/Bao_0001:Jie'
+                },
+                {
+                    name: 'Lalana Kagal',
+                    link: 'http://people.csail.mit.edu/lkagal/'
+                },
+                {
+                    name: 'Ian Jacobi',
+                    link: 'https://dblp.uni-trier.de/pers/hd/j/Jacobi:Ian'
+                },
+                {
+                    name: 'Li Ding',
+                    link: 'https://dblp.uni-trier.de/pers/hd/d/Ding_0001:Li'
+                },
+                {
+                    name: 'James Hendler',
+                    link: 'https://www.cs.rpi.edu/~hendler/'
+                },
+            ],
+            elements: [
+/*                 {
+                    name: 'Abstract Action',
+                    link: ''
+                },
+                {
+                    name: 'Abstract Container',
+                    link: ''
+                },
+                {
+                    name: 'Rule Set',
+                    link: ''
+                },
+                {
+                    name: 'Rule',
+                    link: ''
+                }, */
+            ],
+            rdf: [
+                {
+                    type: 'Turtle',
+                    link: 'http://dig.csail.mit.edu/TAMI/2007/amord/air.ttl'
+                },
+                {
+                    type: 'AIR N3',
+                    link: 'http://dig.csail.mit.edu/2009/AIR/air.n3'
+                },
+                {
+                    type: 'AIR Justification N3',
+                    link: 'http://dig.csail.mit.edu/2009/AIR/airjustification.n3'
+                }
+            ],
+            documentation: [
+                {
+                    type: 'HTML',
+                    link: 'http://dig.csail.mit.edu/2009/AIR'
+                },
+                {
+                    type: 'PDF',
+                    link: 'http://dig.csail.mit.edu/2010/Papers/RR2010/paper.pdf'
+                },
+                {
+                    type: 'GitHub',
+                    link: 'https://github.com/mit-dig/air-reasoner/'
+                }
+            ],
+            examples: [
+                {
+                    type: 'sample',
+                    title: 'Examples from the AIR Language Formalization documentation',
+                    description: {
+                        name: 'AIR Language Formalization',
+                        link: 'https://tw.rpi.edu//proj/tami/AIR_Language_Formalization'
+                    },
+                    solutions: [
+                        {
+                            exampleName: 'Conference publication policy',
+                            resources: [
+                                {
+                                    language: 'N3',
+                                    link: '../assets/languages/AIR/examples/air_language_formalization-example_2_1_2.n3'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    type: 'sample',
+                    title: 'Examples from the AIR Policy Tutorial',
+                    description: {
+                        name: 'AIR Policy Tutorial',
+                        link: 'http://dig.csail.mit.edu/2009/AIR/tutorial/'
+                    },
+                    solutions: [
+                        {
+                            exampleName: 'Policy with Single Rule',
+                            resources: [
+                                {
+                                    language: 'N3',
+                                    link: '../assets/languages/AIR/examples/policy1.n3'
+                                },
+                                {
+                                    language: 'N3',
+                                    link: '../assets/languages/AIR/examples/policy2.n3'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'Rule with empty pattern',
+                            resources: [
+                                {
+                                    language: 'N3',
+                                    link: '../assets/languages/AIR/examples/policy21.n3'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'Policy with Nested Rules',
+                            resources: [
+                                {
+                                    language: 'N3',
+                                    link: '../assets/languages/AIR/examples/policy3.n3'
+                                },
+                                {
+                                    language: 'N3',
+                                    link: '../assets/languages/AIR/examples/policy4.n3'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'Policy with Non-nested Rules',
+                            resources: [
+                                {
+                                    language: 'N3',
+                                    link: '../assets/languages/AIR/examples/policy5.n3'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'Policy with Alternative Action (air:else)',
+                            resources: [
+                                {
+                                    language: 'N3',
+                                    link: '../assets/languages/AIR/examples/policy16.n3'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'Variable Quantification and Scoping',
+                            resources: [
+                                {
+                                    language: 'N3',
+                                    link: '../assets/languages/AIR/examples/policy6.n3'
+                                },
+                                {
+                                    language: 'N3',
+                                    link: '../assets/languages/AIR/examples/policy8.n3'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'Multiple Policies in one Document',
+                            resources: [
+                                {
+                                    language: 'N3',
+                                    link: '../assets/languages/AIR/examples/policy19.n3'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'Natural language explanation of the rule (air:description)',
+                            resources: [
+                                {
+                                    language: 'N3',
+                                    link: '../assets/languages/AIR/examples/policy11.n3'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'Hiding Justification',
+                            resources: [
+                                {
+                                    language: 'N3',
+                                    link: '../assets/languages/AIR/examples/policy12.n3'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'Math Policy',
+                            resources: [
+                                {
+                                    language: 'N3',
+                                    link: '../assets/languages/AIR/examples/math.n3'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'AIR Justifies',
+                            resources: [
+                                {
+                                    language: 'N3',
+                                    link: '../assets/languages/AIR/examples/justifies.n3'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'SPARQL',
+                            resources: [
+                                {
+                                    language: 'N3',
+                                    link: '../assets/languages/AIR/examples/sparql.n3'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'Log includes',
+                            resources: [
+                                {
+                                    language: 'N3',
+                                    link: '../assets/languages/AIR/examples/includes.n3'
+                                }
+                            ]
+                        },
+                    ]
+                }
+            ],
+            diagrams: [
+                {
+                    type: 'spec',
+                    name: 'AIR',
+                    imageSrc: 'http://dig.csail.mit.edu/2009/AIR/air-ont.jpg',
+                    typeSrc: 'http://dig.csail.mit.edu/2009/AIR/',
+                    nameSrc: 'AIR Web Rule Language'
+                }
             ]
         },
         {}

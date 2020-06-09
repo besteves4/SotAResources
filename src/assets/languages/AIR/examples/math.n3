@@ -1,0 +1,12 @@
+@prefix : <http://dig.csail.mit.edu/TAMI/2007/cwmrete/nonce#> .
+@prefix air: <http://dig.csail.mit.edu/TAMI/2007/amord/air#> .
+@prefix log: <http://www.w3.org/2000/10/swap/log#> .
+@prefix math: <http://www.w3.org/2000/10/swap/math#> .
+
+:math_policy a air:Policy;
+      air:rule :math-rule.
+
+:math-rule a air:Belief-rule;
+    air:label "addition rule";
+    air:if { (1 2) math:sum 3 };
+    air:then[air:assert {:MathAddition air:compliant-with :math_policy.}].
