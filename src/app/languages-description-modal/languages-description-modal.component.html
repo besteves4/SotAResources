@@ -27,8 +27,15 @@
                         <a class="authors-link" href={{ppl?.responsible.link}} target="_blank">{{ppl?.responsible.name}}</a>
                     </div>
                 </div>
+
+                <div *ngIf="ppl?.project.name.length != 0" class="row mb-2">
+                    <div class="col-11 offset-1">
+                        <strong>Project: </strong>
+                        <a class="authors-link" href={{ppl?.project.link}} target="_blank">{{ppl?.project.name}}</a>
+                    </div>
+                </div>
                 
-                <div *ngIf="ppl?.dates.created.length != 0"class="row mb-2">
+                <div *ngIf="ppl?.dates.created.length != 0" class="row mb-2">
                     <div class="col-11 offset-1">
                         <strong>Created: </strong>
                         {{ppl?.dates.created}}
@@ -73,7 +80,7 @@
                     </div>
                 </div>
                 
-                <div class="row">
+                <div *ngIf="ppl?.examples.length != 0" class="row">
                     <div class="col-10 offset-1">
                         <strong>Application scenarios: </strong> <br>
                         <app-examples-accordion [ppl]="ppl"></app-examples-accordion>

@@ -86,6 +86,10 @@ export class LanguagesComponent implements OnInit {
                 name: 'W3C P3P Specification Working Group',
                 link: 'https://www.w3.org/P3P/'
             },
+            project: {
+                name: '',
+                link: ''
+            },
             authors: [
                 {
                     name: 'Lorrie Cranor',
@@ -287,6 +291,10 @@ export class LanguagesComponent implements OnInit {
                 name: 'W3C P3P Specification Working Group',
                 link: 'https://www.w3.org/P3P/'
             },
+            project: {
+                name: '',
+                link: ''
+            },
             authors: [
                 {
                     name: 'Lorrie Cranor',
@@ -432,6 +440,10 @@ export class LanguagesComponent implements OnInit {
             responsible: {
                 name: 'W3C ODRL Community Group',
                 link: 'https://www.w3.org/community/odrl/'
+            },
+            project: {
+                name: '',
+                link: ''
             },
             authors: [
                 {
@@ -685,6 +697,10 @@ export class LanguagesComponent implements OnInit {
                 name: 'IBM Research - Almaden',
                 link: 'https://www.research.ibm.com/labs/almaden/'
             },
+            project: {
+                name: '',
+                link: ''
+            },
             authors: [
                 {
                     name: 'Rakesh Agrawal',
@@ -785,6 +801,10 @@ export class LanguagesComponent implements OnInit {
                 name: 'Microsoft Research',
                 link: 'https://www.microsoft.com/en-us/research/'
             },
+            project: {
+                name: '',
+                link: ''
+            },
             authors: [
                 {
                     name: 'Moritz Y. Becker',
@@ -876,6 +896,10 @@ export class LanguagesComponent implements OnInit {
             responsible: {
                 name: 'Decentralized Information Group - MIT',
                 link: 'http://dig.csail.mit.edu//Overview.html'
+            },
+            project: {
+                name: '',
+                link: ''
             },
             authors: [
                 {
@@ -1117,6 +1141,98 @@ export class LanguagesComponent implements OnInit {
                     typeSrc: 'http://dig.csail.mit.edu/2009/AIR/',
                     nameSrc: 'AIR Web Rule Language'
                 }
+            ]
+        },
+        {
+            id: 'POL',
+            name: 'Privacy Option Language',
+            description: "Privacy contract language, inspired on financial option contracts, that provides privacy by design through data minimisation to define privacy contracts between data controllers and data subjects",
+            domain: [
+                {
+                    name: 'privacy',
+                    dbPedia: 'http://dbpedia.org/page/Category:Privacy'
+                }
+            ],
+            w3cStatus: '',
+            dates: {
+                created: '2010',
+                lastUpdated: '2013'
+            },
+            idiom: [
+                {
+                    imageSrc: '../../assets/flags/uk_flag.png',
+                    lang: 'en',
+                    link: 'http://kau.diva-portal.org/smash/get/diva2:623452/FULLTEXT01.pdf'
+                }
+            ],
+            responsible: {
+                name: 'Department of Mathematics and Computer Science, Karlstad University',
+                link: 'https://www.kau.se/en/cs'
+            },
+            project: {
+                name: 'PETWeb II',
+                link: 'http://petweb2.projects.nislab.no/index.php/Main_Page'
+            },
+            authors: [
+                {
+                    name: 'Stefan Berthold',
+                    link: 'https://dblp.uni-trier.de/pers/b/Berthold:Stefan.html'
+                }
+            ],
+            elements: [
+/*                 {
+                    name: 'Personal data',
+                    link: ''
+                },
+                {
+                    name: 'Purpose',
+                    link: ''
+                },
+                {
+                    name: 'Observables',
+                    link: ''
+                },
+                {
+                    name: 'Time',
+                    link: ''
+                } */
+            ],
+            rdf: [
+/*                 {
+                    type: 'JSON-LD Context',
+                    link: 'https://www.w3.org/ns/odrl.jsonld'
+                } */
+            ],
+            documentation: [
+                {
+                    type: 'PDF',
+                    link: 'http://kau.diva-portal.org/smash/get/diva2:623452/FULLTEXT01.pdf'
+                }
+            ],
+            examples: [
+/*                 {
+                    type: 'sample',
+                    title: 'Examples from the S4P documentation',
+                    description: {
+                        name: 'S4P documentation',
+                        link: 'https://www.microsoft.com/en-us/research/wp-content/uploads/2010/04/main-1.pdf'
+                    },
+                    solutions: [
+                        {
+                            exampleName: 'Extended example on Annex A',
+                            resources: []
+                        }
+                    ]
+                } */
+            ],
+            diagrams: [
+                /* {
+                    type: 'spec',
+                    name: 'ODRL v2.2',
+                    imageSrc: 'https://www.w3.org/TR/odrl-model/00Model.svg',
+                    typeSrc: 'https://www.w3.org/TR/odrl-model/#infoModel',
+                    nameSrc: 'ODRL Information Model 2.2'
+                } */
             ]
         },
         {}
