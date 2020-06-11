@@ -391,12 +391,7 @@ export class LanguagesComponent implements OnInit {
                     ]
                 }
             ],
-            diagrams: [
-/*                 {
-                    type: 'APPEL v1',
-                    imageSrc: '../../assets/languages/APPEL/diagrams/APPELv1.svg'
-                } */
-            ]
+            diagrams: []
         },
         {
             id: 'ODRL',
@@ -406,19 +401,7 @@ export class LanguagesComponent implements OnInit {
                 {
                     name: 'digital rights',
                     dbPedia: 'http://dbpedia.org/page/Digital_rights'
-                },
-/*                 {
-                    name: 'duty',
-                    dbPedia: 'http://dbpedia.org/page/Duty'
-                },
-                {
-                    name: 'permission',
-                    dbPedia: 'http://dbpedia.org/page/Permission_(philosophy)'
-                },
-                {
-                    name: 'obligation',
-                    dbPedia: 'http://dbpedia.org/page/Obligation'
-                } */
+                }
             ],
             w3cStatus: 'W3C Recommendation',
             dates: {
@@ -719,18 +702,8 @@ export class LanguagesComponent implements OnInit {
                     link: 'https://dblp.org/pers/x/Xu:Yirong.html'
                 }
             ],
-            elements: [
-/*                 {
-                    name: 'Policy',
-                    link: 'https://www.w3.org/TR/odrl-vocab/#policyConcepts'
-                } */
-            ],
-            rdf: [
-/*                 {
-                    type: 'JSON-LD Context',
-                    link: 'https://www.w3.org/ns/odrl.jsonld'
-                } */
-            ],
+            elements: [],
+            rdf: [],
             documentation: [
                 {
                     type: 'PDF',
@@ -761,15 +734,7 @@ export class LanguagesComponent implements OnInit {
                     ]
                 }
             ],
-            diagrams: [
-                /* {
-                    type: 'spec',
-                    name: 'ODRL v2.2',
-                    imageSrc: 'https://www.w3.org/TR/odrl-model/00Model.svg',
-                    typeSrc: 'https://www.w3.org/TR/odrl-model/#infoModel',
-                    nameSrc: 'ODRL Information Model 2.2'
-                } */
-            ]
+            diagrams: []
         },
         {
             id: 'S4P',
@@ -819,18 +784,8 @@ export class LanguagesComponent implements OnInit {
                     link: 'https://www.microsoft.com/en-us/research/people/lbussard/'
                 }
             ],
-            elements: [
-/*                 {
-                    name: 'Policy',
-                    link: 'https://www.w3.org/TR/odrl-vocab/#policyConcepts'
-                } */
-            ],
-            rdf: [
-/*                 {
-                    type: 'JSON-LD Context',
-                    link: 'https://www.w3.org/ns/odrl.jsonld'
-                } */
-            ],
+            elements: [],
+            rdf: [],
             documentation: [
                 {
                     type: 'S4P PDF',
@@ -857,15 +812,7 @@ export class LanguagesComponent implements OnInit {
                     ]
                 }
             ],
-            diagrams: [
-                /* {
-                    type: 'spec',
-                    name: 'ODRL v2.2',
-                    imageSrc: 'https://www.w3.org/TR/odrl-model/00Model.svg',
-                    typeSrc: 'https://www.w3.org/TR/odrl-model/#infoModel',
-                    nameSrc: 'ODRL Information Model 2.2'
-                } */
-            ]
+            diagrams: []
         },
         {
             id: 'AIR',
@@ -1179,61 +1126,16 @@ export class LanguagesComponent implements OnInit {
                     link: 'https://dblp.uni-trier.de/pers/b/Berthold:Stefan.html'
                 }
             ],
-            elements: [
-/*                 {
-                    name: 'Personal data',
-                    link: ''
-                },
-                {
-                    name: 'Purpose',
-                    link: ''
-                },
-                {
-                    name: 'Observables',
-                    link: ''
-                },
-                {
-                    name: 'Time',
-                    link: ''
-                } */
-            ],
-            rdf: [
-/*                 {
-                    type: 'JSON-LD Context',
-                    link: 'https://www.w3.org/ns/odrl.jsonld'
-                } */
-            ],
+            elements: [],
+            rdf: [],
             documentation: [
                 {
                     type: 'PDF',
                     link: 'http://kau.diva-portal.org/smash/get/diva2:623452/FULLTEXT01.pdf'
                 }
             ],
-            examples: [
-/*                 {
-                    type: 'sample',
-                    title: 'Examples from the S4P documentation',
-                    description: {
-                        name: 'S4P documentation',
-                        link: 'https://www.microsoft.com/en-us/research/wp-content/uploads/2010/04/main-1.pdf'
-                    },
-                    solutions: [
-                        {
-                            exampleName: 'Extended example on Annex A',
-                            resources: []
-                        }
-                    ]
-                } */
-            ],
-            diagrams: [
-                /* {
-                    type: 'spec',
-                    name: 'ODRL v2.2',
-                    imageSrc: 'https://www.w3.org/TR/odrl-model/00Model.svg',
-                    typeSrc: 'https://www.w3.org/TR/odrl-model/#infoModel',
-                    nameSrc: 'ODRL Information Model 2.2'
-                } */
-            ]
+            examples: [],
+            diagrams: []
         },
         {}
     ]
