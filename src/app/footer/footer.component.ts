@@ -12,9 +12,23 @@ export class FooterComponent implements OnInit {
     faTwitterSquare = faTwitterSquare;
 
     footer = {
-        imageSrc: '../../assets/flags/eu_flag.jpg',
+        logos: {
+            oeg: {
+                imgSrc: './../assets/footer/logooeg.png',
+                link: 'https://www.oeg-upm.net/'
+            },
+            informatica: {
+                imgSrc: '../../assets/footer/etsiinf.jfif',
+                link: 'http://www.fi.upm.es/'
+            },
+            upm: {
+                imgSrc: '../../assets/footer/uni.jpg',
+                link: 'https://www.upm.es/'
+            }
+        },
+        imageSrc: '../../assets/footer/eu_flag.jpg',
         protect: {
-            icon: '../../assets/protect.png',
+            icon: '../../assets/footer/protect.png',
             webpage: 'https://protect-network.eu/',
             cordis: 'https://cordis.europa.eu/project/id/813497',  
             linkedin: '',
@@ -23,8 +37,7 @@ export class FooterComponent implements OnInit {
         author: {
             name: 'Beatriz Esteves',
             linkPersonalWebpage: 'https://besteves4.github.io',
-        },
-        lastUpdate : '--/--/----'
+        }
     }
     
     constructor() { }
