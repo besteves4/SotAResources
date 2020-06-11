@@ -1248,6 +1248,239 @@ export class LanguagesComponent implements OnInit {
                 }
             ]
         },
+        {
+            id: 'A-PPL',
+            name: 'Purpose-To-Use',
+            description: "Policy language that builds on the purpose-relevance-sharing principle with the aim of enforcing privacy while enabling the secondary sharing and usage of data on the web",
+            domain: [
+                {
+                    name: 'privacy',
+                    dbPedia: 'http://dbpedia.org/page/Category:Privacy'
+                }
+            ],
+            w3cStatus: '',
+            dates: {
+                created: '2014',
+                lastUpdated: ''
+            },
+            idiom: [
+                {
+                    imageSrc: '../../assets/flags/uk_flag.png',
+                    lang: 'en',
+                    link: 'https://ieeexplore.ieee.org/document/6957279'
+                }
+            ],
+            responsible: {
+                namsharinge: 'Department of Computer Science, University of Saskatchewan',
+                link: 'https://www.cs.usask.ca/'
+            },
+            project: {
+                name: '',
+                link: ''
+            },
+            authors: [
+                {
+                    name: 'Johnson Iyilade',
+                    link: 'https://dblp.org/pers/i/Iyilade:Johnson.html'
+                },
+                {
+                    name: 'Julita Vassileva',
+                    link: 'http://julita.usask.ca/'
+                }
+            ],
+            elements: [
+                {
+                    name: 'Policy',
+                    link: 'https://dblp.org/pers/i/Iyilade:Johnson.html'
+                },
+                {
+                    name: 'Data Provider',
+                    link: ''
+                },
+                {
+                    name: 'User',
+                    link: ''
+                },
+                {
+                    name: 'Purpose',
+                    link: ''
+                },
+                {
+                    name: 'Data Consumer',
+                    link: ''
+                },
+                {
+                    name: 'Retention',
+                    link: ''
+                },
+                {
+                    name: 'Data Group',
+                    link: ''
+                },
+                {
+                    name: 'Data',
+                    link: ''
+                }
+            ],
+            rdf: [],
+            documentation: [
+                {
+                    type: 'PDF',
+                    link: 'https://ieeexplore.ieee.org/document/6957279'
+                }
+            ],
+            examples: [
+                {
+                    type: 'sample',
+                    title: 'Examples from the P2U documentation',
+                    description: {
+                        name: 'P2U documentation',
+                        link: 'https://ieeexplore.ieee.org/document/6957279'
+                    },
+                    solutions: [
+                        {
+                            exampleName: 'P2U policy in XML format - Figure 2',
+                            resources: [
+                                {
+                                    language: 'GIF',
+                                    link: 'https://ieeexplore.ieee.org/mediastore_new/IEEE/content/media/6954698/6957265/6957279/6957279-fig-2-source-small.gif'
+                                }]
+                        }
+                    ]
+                }
+            ],
+            diagrams: [
+                {
+                    type: 'spec',
+                    name: 'P2U',
+                    imageSrc: 'https://ieeexplore.ieee.org/mediastore_new/IEEE/content/media/6954698/6957265/6957279/6957279-fig-1-source-small.gif',
+                    typeSrc: 'https://ieeexplore.ieee.org/document/6957279',
+                    nameSrc: 'P2U documentation'
+                }
+            ]
+        },
+        {
+            id: 'A-PPL',
+            name: 'Purpose-To-Use',
+            description: "Policy language that builds on the purpose-relevance-sharing principle with the aim of enforcing privacy while enabling the secondary sharing and usage of data on the web",
+            domain: [
+                {
+                    name: 'privacy',
+                    dbPedia: 'http://dbpedia.org/page/Category:Privacy'
+                }
+            ],
+            w3cStatus: '',
+            dates: {
+                created: '2014',
+                lastUpdated: ''
+            },
+            idiom: [
+                {
+                    imageSrc: '../../assets/flags/uk_flag.png',
+                    lang: 'en',
+                    link: 'https://ieeexplore.ieee.org/document/6957279'
+                }
+            ],
+            responsible: {
+                namsharinge: 'Department of Computer Science, University of Saskatchewan',
+                link: 'https://www.cs.usask.ca/'
+            },
+            project: {
+                name: '',
+                link: ''
+            },
+            authors: [
+                {
+                    name: 'Johnson Iyilade',
+                    link: 'https://dblp.org/pers/i/Iyilade:Johnson.html'
+                },
+                {
+                    name: 'Julita Vassileva',
+                    link: 'http://julita.usask.ca/'
+                }
+            ],
+            elements: [
+                {
+                    name: 'Policy',
+                    link: 'https://dblp.org/pers/i/Iyilade:Johnson.html'
+                },
+                {
+                    name: 'Data Provider',
+                    link: ''
+                },
+                {
+                    name: 'User',
+                    link: ''
+                },
+                {
+                    name: 'Purpose',
+                    link: ''
+                },
+                {
+                    name: 'Data Consumer',
+                    link: ''
+                },
+                {
+                    name: 'Retention',
+                    link: ''
+                },
+                {
+                    name: 'Data Group',
+                    link: ''
+                },
+                {
+                    name: 'Data',
+                    link: ''
+                }
+            ],
+            rdf: [],
+            documentation: [
+                {
+                    type: 'PDF',
+                    link: 'https://ieeexplore.ieee.org/document/6957279'
+                }
+            ],
+            examples: [
+                {
+                    type: 'sample',
+                    title: 'Examples from the P2U documentation',
+                    description: {
+                        name: 'P2U documentation',
+                        link: 'https://ieeexplore.ieee.org/document/6957279'
+                    },
+                    solutions: [
+                        {
+                            exampleName: 'P2U policy in XML format - Figure 2',
+                            resources: [
+                                {
+                                    language: 'GIF',
+                                    link: 'https://ieeexplore.ieee.org/mediastore_new/IEEE/content/media/6954698/6957265/6957279/6957279-fig-2-source-small.gif'
+                                }]
+                        }
+                    ]
+                }
+            ],
+            diagrams: [
+                {
+                    type: 'spec',
+                    name: 'P2U',
+                    imageSrc: 'https://ieeexplore.ieee.org/mediastore_new/IEEE/content/media/6954698/6957265/6957279/6957279-fig-1-source-small.gif',
+                    typeSrc: 'https://ieeexplore.ieee.org/document/6957279',
+                    nameSrc: 'P2U documentation'
+                }
+            ]
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
         {}
     ]
 }

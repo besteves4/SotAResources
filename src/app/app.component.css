@@ -1,0 +1,8 @@
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.container {
+    padding-bottom: 100px;
+}
