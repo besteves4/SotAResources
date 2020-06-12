@@ -62,5 +62,19 @@
 				</div>
 			</accordion-group>
 		</div>
+		<div *ngSwitchCase="ex.type.includes('deliverables')">
+			<accordion-group heading="Project's deliverables">		
+				<div *ngFor='let deliv of ex.deliverables'>
+					<a href="{{deliv.link}}" target="_blank">
+						{{deliv.name}}
+					</a>					
+				</div>
+				<br>
+				Check all deliverables of the {{ex.projectDeliverables.name}} project 
+				<a href="{{ex.projectDeliverables.link}}" target="_blank">
+					here
+				</a>
+			</accordion-group>
+		</div>
 	</div>
 </accordion>

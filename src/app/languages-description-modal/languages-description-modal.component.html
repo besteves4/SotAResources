@@ -21,7 +21,7 @@
                     </div>
                 </div>
 
-                <div class="row mb-2">
+                <div *ngIf="ppl?.responsible.name.length != 0" class="row mb-2">
                     <div class="col-11 offset-1">
                         <strong>Responsible: </strong>
                         <a class="authors-link" href={{ppl?.responsible.link}} target="_blank">{{ppl?.responsible.name}}</a>

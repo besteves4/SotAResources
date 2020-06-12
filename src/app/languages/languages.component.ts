@@ -1160,7 +1160,7 @@ export class LanguagesComponent implements OnInit {
                 }
             ],
             responsible: {
-                namsharinge: 'Department of Computer Science, University of Saskatchewan',
+                name: 'Department of Computer Science, University of Saskatchewan',
                 link: 'https://www.cs.usask.ca/'
             },
             project: {
@@ -1180,7 +1180,7 @@ export class LanguagesComponent implements OnInit {
             elements: [
                 {
                     name: 'Policy',
-                    link: 'https://dblp.org/pers/i/Iyilade:Johnson.html'
+                    link: ''
                 },
                 {
                     name: 'Data Provider',
@@ -1250,101 +1250,144 @@ export class LanguagesComponent implements OnInit {
         },
         {
             id: 'A-PPL',
-            name: 'Purpose-To-Use',
-            description: "Policy language that builds on the purpose-relevance-sharing principle with the aim of enforcing privacy while enabling the secondary sharing and usage of data on the web",
+            name: 'Accountable Policy Language',
+            description: "Accountability policy language that extends PPL and XACML with the notification, data location, data retention and logging concepts to provide cloud users with a way to express and enforce obligations",
             domain: [
                 {
                     name: 'privacy',
                     dbPedia: 'http://dbpedia.org/page/Category:Privacy'
+                },
+                {
+                    name: 'accountability',
+                    dbPedia: 'http://dbpedia.org/page/Accountability'
                 }
             ],
             w3cStatus: '',
             dates: {
-                created: '2014',
-                lastUpdated: ''
+                created: '2013',
+                lastUpdated: '2016'
             },
             idiom: [
                 {
                     imageSrc: '../../assets/flags/uk_flag.png',
                     lang: 'en',
-                    link: 'https://ieeexplore.ieee.org/document/6957279'
+                    link: 'http://www.eurecom.fr/en/publication/4372/download/rs-publi-4372.pdf'
                 }
             ],
             responsible: {
-                namsharinge: 'Department of Computer Science, University of Saskatchewan',
-                link: 'https://www.cs.usask.ca/'
-            },
-            project: {
                 name: '',
                 link: ''
             },
+            project: {
+                name: 'A4Cloud',
+                link: 'http://a4cloud.eu/index.html'
+            },
             authors: [
                 {
-                    name: 'Johnson Iyilade',
-                    link: 'https://dblp.org/pers/i/Iyilade:Johnson.html'
+                    name: 'Monir Azraoui',
+                    link: 'https://dblp.org/pers/a/Azraoui:Monir.html'
                 },
                 {
-                    name: 'Julita Vassileva',
-                    link: 'http://julita.usask.ca/'
+                    name: 'Kaoutar Elkhiyaoui',
+                    link: 'https://dblp.org/pers/e/Elkhiyaoui:Kaoutar.html'
+                },
+                {
+                    name: 'Melek ̈Önen',
+                    link: 'https://dblp.uni-trier.de/pers/=/=Ouml=nen:Melek.html'
+                },
+                {
+                    name: 'Karin Bernsmed',
+                    link: 'https://dblp.org/pers/b/Bernsmed:Karin.html'
+                },
+                {
+                    name: 'Anderson Santana de Oliveira',
+                    link: 'https://dblp.org/pers/o/Oliveira:Anderson_Santana_de.html'
+                },
+                {
+                    name: 'Jakub Sendor',
+                    link: 'https://dblp.org/pers/s/Sendor:Jakub.html'
                 }
             ],
             elements: [
                 {
                     name: 'Policy',
-                    link: 'https://dblp.org/pers/i/Iyilade:Johnson.html'
-                },
-                {
-                    name: 'Data Provider',
                     link: ''
                 },
                 {
-                    name: 'User',
+                    name: 'Rule',
                     link: ''
                 },
+                {
+                    name: 'Target',
+                    link: ''
+                },
+                {
+                    name: 'Resource',
+                    link: ''
+                },
+                {
+                    name: 'Action',
+                    link: ''
+                },
+                {
+                    name: 'Trigger',
+                    link: ''
+                },
+                {
+                    name: 'Subject',
+                    link: ''
+                },
+                
                 {
                     name: 'Purpose',
                     link: ''
                 },
-                {
-                    name: 'Data Consumer',
-                    link: ''
-                },
-                {
-                    name: 'Retention',
-                    link: ''
-                },
-                {
-                    name: 'Data Group',
-                    link: ''
-                },
-                {
-                    name: 'Data',
-                    link: ''
-                }
+                
             ],
             rdf: [],
             documentation: [
                 {
-                    type: 'PDF',
-                    link: 'https://ieeexplore.ieee.org/document/6957279'
+                    type: 'A-PPL PDF',
+                    link: 'http://www.eurecom.fr/en/publication/4372/download/rs-publi-4372.pdf'
+                },
+                {
+                    type: 'PPL PDF',
+                    link: 'https://air.unimi.it/retrieve/handle/2434/158842/150231/Trabelisi.pdf'
+                },
+                {
+                    type: 'XACML HTML',
+                    link: 'http://docs.oasis-open.org/xacml/3.0/xacml-3.0-core-spec-os-en.html'
                 }
             ],
             examples: [
                 {
                     type: 'sample',
-                    title: 'Examples from the P2U documentation',
+                    title: 'Examples from the A-PPL documentation',
                     description: {
-                        name: 'P2U documentation',
-                        link: 'https://ieeexplore.ieee.org/document/6957279'
+                        name: 'A-PPL documentation',
+                        link: 'http://www.eurecom.fr/en/publication/4372/download/rs-publi-4372.pdf'
                     },
                     solutions: [
                         {
-                            exampleName: 'P2U policy in XML format - Figure 2',
-                            resources: [
-                                {
-                                    language: 'GIF',
-                                    link: 'https://ieeexplore.ieee.org/mediastore_new/IEEE/content/media/6954698/6957265/6957279/6957279-fig-2-source-small.gif'
-                                }]
+                            exampleName: 'Use case: Medical sensor networks in the Cloud - section 5.1',
+                            resources: []
+                        }
+                    ]
+                },
+                {
+                    type: 'deliverables',
+                    projectDeliverables: {
+                        name: 'A4Cloud',
+                        link: 'http://cloudaccountability.eu/deliverables'
+                    },
+                    deliverables: [
+                        {
+                            name: 'D34.1 - Policy Representation Framework',
+                            link: 'http://cloudaccountability.eu/sites/default/files/D34.1%20Policy%20representation%20Framework.pdf'
+                        },
+                        {
+                            name: 'D34.2 - Policy representation and enforcement techniques',
+                            link: 'http://cloudaccountability.eu/sites/default/files/D34.2%20Policy%20representation%20and%20enforcement%20techniques.pdf'
                         }
                     ]
                 }
@@ -1352,135 +1395,12 @@ export class LanguagesComponent implements OnInit {
             diagrams: [
                 {
                     type: 'spec',
-                    name: 'P2U',
-                    imageSrc: 'https://ieeexplore.ieee.org/mediastore_new/IEEE/content/media/6954698/6957265/6957279/6957279-fig-1-source-small.gif',
-                    typeSrc: 'https://ieeexplore.ieee.org/document/6957279',
-                    nameSrc: 'P2U documentation'
+                    name: 'A-PPL',
+                    imageSrc: '../../assets/languages/A-PPL/diagrams/fig1.2-d34.1.PNG',
+                    typeSrc: 'http://cloudaccountability.eu/sites/default/files/D34.1%20Policy%20representation%20Framework.pdf',
+                    nameSrc: 'D34.1 - Policy Representation Framework'
                 }
             ]
-        },
-        {
-            id: 'A-PPL',
-            name: 'Purpose-To-Use',
-            description: "Policy language that builds on the purpose-relevance-sharing principle with the aim of enforcing privacy while enabling the secondary sharing and usage of data on the web",
-            domain: [
-                {
-                    name: 'privacy',
-                    dbPedia: 'http://dbpedia.org/page/Category:Privacy'
-                }
-            ],
-            w3cStatus: '',
-            dates: {
-                created: '2014',
-                lastUpdated: ''
-            },
-            idiom: [
-                {
-                    imageSrc: '../../assets/flags/uk_flag.png',
-                    lang: 'en',
-                    link: 'https://ieeexplore.ieee.org/document/6957279'
-                }
-            ],
-            responsible: {
-                namsharinge: 'Department of Computer Science, University of Saskatchewan',
-                link: 'https://www.cs.usask.ca/'
-            },
-            project: {
-                name: '',
-                link: ''
-            },
-            authors: [
-                {
-                    name: 'Johnson Iyilade',
-                    link: 'https://dblp.org/pers/i/Iyilade:Johnson.html'
-                },
-                {
-                    name: 'Julita Vassileva',
-                    link: 'http://julita.usask.ca/'
-                }
-            ],
-            elements: [
-                {
-                    name: 'Policy',
-                    link: 'https://dblp.org/pers/i/Iyilade:Johnson.html'
-                },
-                {
-                    name: 'Data Provider',
-                    link: ''
-                },
-                {
-                    name: 'User',
-                    link: ''
-                },
-                {
-                    name: 'Purpose',
-                    link: ''
-                },
-                {
-                    name: 'Data Consumer',
-                    link: ''
-                },
-                {
-                    name: 'Retention',
-                    link: ''
-                },
-                {
-                    name: 'Data Group',
-                    link: ''
-                },
-                {
-                    name: 'Data',
-                    link: ''
-                }
-            ],
-            rdf: [],
-            documentation: [
-                {
-                    type: 'PDF',
-                    link: 'https://ieeexplore.ieee.org/document/6957279'
-                }
-            ],
-            examples: [
-                {
-                    type: 'sample',
-                    title: 'Examples from the P2U documentation',
-                    description: {
-                        name: 'P2U documentation',
-                        link: 'https://ieeexplore.ieee.org/document/6957279'
-                    },
-                    solutions: [
-                        {
-                            exampleName: 'P2U policy in XML format - Figure 2',
-                            resources: [
-                                {
-                                    language: 'GIF',
-                                    link: 'https://ieeexplore.ieee.org/mediastore_new/IEEE/content/media/6954698/6957265/6957279/6957279-fig-2-source-small.gif'
-                                }]
-                        }
-                    ]
-                }
-            ],
-            diagrams: [
-                {
-                    type: 'spec',
-                    name: 'P2U',
-                    imageSrc: 'https://ieeexplore.ieee.org/mediastore_new/IEEE/content/media/6954698/6957265/6957279/6957279-fig-1-source-small.gif',
-                    typeSrc: 'https://ieeexplore.ieee.org/document/6957279',
-                    nameSrc: 'P2U documentation'
-                }
-            ]
-        },
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
+        }
     ]
 }
