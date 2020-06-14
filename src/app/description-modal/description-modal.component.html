@@ -1,8 +1,8 @@
-<div class="modal fade" bsModal #languagesDescriptionModal="bs-modal" tabindex="-1" role="dialog" aria-labelledby="dialog-nested-name1">
+<div class="modal fade" bsModal #descriptionModal="bs-modal" tabindex="-1" role="dialog" aria-labelledby="dialog-nested-name1">
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-body">
-                <button type="button" class="close pull-right" aria-label="Close" (click)="languagesDescriptionModal.hide()">
+                <button type="button" class="close pull-right" aria-label="Close" (click)="descriptionModal.hide()">
                     <span aria-hidden="true">&times;</span>
                 </button>
                 
@@ -77,7 +77,6 @@
                         <div class="button-wrapper" *ngFor="let element of ppl?.elements" [ngSwitch]="element.link">
                             <button *ngSwitchCase="''" type="button" class="btn btn-outline-success btn-sm mr-1">{{element.name}}</button>
                             <a *ngSwitchDefault role="button" class="btn btn-outline-success btn-sm mr-1" href={{element.link}} target="_blank">{{element.name}}</a>
-                            <!-- <a class="btn btn-outline-success btn-sm mr-1" href={{element.link}} target="_blank" role="button">{{element.name}}</a> -->
                         </div>
                     </div>
                 </div>

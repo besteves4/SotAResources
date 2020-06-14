@@ -1,0 +1,50 @@
+.table {
+    font-size: 13px;
+    text-align: center;
+}
+
+.btn {
+    font-size: 12px;
+}
+
+.button-wrapper {
+    display: inline;
+}
+
+.plus-square {
+    cursor: pointer;
+}
+
+.vertical-middle {
+    vertical-align:middle;
+}
+
+.description {
+    vertical-align:middle;
+    text-align: justify;
+    min-width: 240px;
+}
+
+.name {
+    vertical-align:middle;
+    min-width: 100px;
+}
+
+.domain {
+    vertical-align:middle;
+    min-width: 50px;
+}
+
+.resources {
+    min-width: 120px;
+    vertical-align:middle;
+}
+
+.documentation {
+    min-width: 130px;
+    vertical-align:middle;
+}
+
+.diagram {
+    vertical-align:middle;
+}

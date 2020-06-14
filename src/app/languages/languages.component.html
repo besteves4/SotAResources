@@ -28,16 +28,16 @@
                     <a class="btn btn-outline-warning btn-sm mb-1" href={{dom.dbPedia}} target="_blank" role="button">{{dom.name}}</a>
                 </div>
             </td>
-            <td class="rdf">
-                <div class="button-wrapper mr-1" *ngFor="let rdf of ppl?.rdf" [ngSwitch]="true">
-                    <a *ngSwitchCase="rdf.type.includes('XML')" class="btn btn-outline-warning btn-sm mb-1" href={{rdf.link}} target="_blank" role="button">{{rdf.type}}</a>
-                    <a *ngSwitchCase="rdf.type.includes('RDF')" class="btn btn-outline-success btn-sm mb-1" href={{rdf.link}} target="_blank" role="button">{{rdf.type}}</a>
-                    <a *ngSwitchCase="rdf.type.includes('DTD')" class="btn btn-outline-info btn-sm mb-1" href={{rdf.link}} target="_blank" role="button">{{rdf.type}}</a>
-                    <a *ngSwitchCase="rdf.type.includes('JSON-LD')" class="btn btn-outline-primary btn-sm mb-1" href={{rdf.link}} target="_blank" role="button">{{rdf.type}}</a>
-                    <a *ngSwitchCase="rdf.type.includes('Turtle')" class="btn btn-outline-danger btn-sm mb-1" href={{rdf.link}} target="_blank" role="button">{{rdf.type}}</a>
-                    <a *ngSwitchCase="rdf.type.includes('N-Triples')" class="btn btn-outline-secondary btn-sm mb-1" href={{rdf.link}} target="_blank" role="button">{{rdf.type}}</a>
-                    <a *ngSwitchCase="rdf.type.includes('N3')" class="btn btn-outline-dark btn-sm mb-1" href={{rdf.link}} target="_blank" role="button">{{rdf.type}}</a>
-                    <a *ngSwitchDefault class="btn btn-dark btn-sm mb-1" href={{rdf.link}} target="_blank" role="button">{{rdf.type}}</a>
+            <td class="resources">
+                <div class="button-wrapper mr-1" *ngFor="let res of ppl?.resources" [ngSwitch]="true">
+                    <a *ngSwitchCase="res.type.includes('XML')" class="btn btn-outline-warning btn-sm mb-1" href={{res.link}} target="_blank" role="button">{{res.type}}</a>
+                    <a *ngSwitchCase="res.type.includes('RDF')" class="btn btn-outline-success btn-sm mb-1" href={{res.link}} target="_blank" role="button">{{res.type}}</a>
+                    <a *ngSwitchCase="res.type.includes('DTD')" class="btn btn-outline-info btn-sm mb-1" href={{res.link}} target="_blank" role="button">{{res.type}}</a>
+                    <a *ngSwitchCase="res.type.includes('JSON-LD')" class="btn btn-outline-primary btn-sm mb-1" href={{res.link}} target="_blank" role="button">{{res.type}}</a>
+                    <a *ngSwitchCase="res.type.includes('Turtle')" class="btn btn-outline-danger btn-sm mb-1" href={{res.link}} target="_blank" role="button">{{res.type}}</a>
+                    <a *ngSwitchCase="res.type.includes('N-Triples')" class="btn btn-outline-secondary btn-sm mb-1" href={{res.link}} target="_blank" role="button">{{res.type}}</a>
+                    <a *ngSwitchCase="res.type.includes('N3')" class="btn btn-outline-dark btn-sm mb-1" href={{res.link}} target="_blank" role="button">{{res.type}}</a>
+                    <a *ngSwitchDefault class="btn btn-dark btn-sm mb-1" href={{res.link}} target="_blank" role="button">{{res.type}}</a>
                 </div>
             </td>
             <td class="documentation">
@@ -58,5 +58,5 @@
     </tbody>
 </table>
 
-<app-languages-description-modal #languagesDescriptionModal [ppl]="activeJob"></app-languages-description-modal>
+<app-description-modal #descriptionModal [ppl]="activeJob"></app-description-modal>
 <app-diagram-modal #diagramModal [diag]="activeDiag"></app-diagram-modal>

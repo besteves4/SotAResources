@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { LanguagesDescriptionModalComponent } from './languages-description-modal.component';
+import { DescriptionModalComponent } from './description-modal.component';
 
-describe('LanguagesDescriptionModalComponent', () => {
-  let component: LanguagesDescriptionModalComponent;
-  let fixture: ComponentFixture<LanguagesDescriptionModalComponent>;
+describe('DescriptionModalComponent', () => {
+  let component: DescriptionModalComponent;
+  let fixture: ComponentFixture<DescriptionModalComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LanguagesDescriptionModalComponent ]
+      declarations: [ DescriptionModalComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LanguagesDescriptionModalComponent);
+    fixture = TestBed.createComponent(DescriptionModalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

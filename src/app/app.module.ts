@@ -11,7 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 
 import { HomeComponent } from './home/home.component';
 import { LanguagesComponent } from './languages/languages.component';
-import { LanguagesDescriptionModalComponent } from './languages-description-modal/languages-description-modal.component';
+import { DescriptionModalComponent } from './description-modal/description-modal.component';
 import { DiagramModalComponent } from './diagram-modal/diagram-modal.component';
 import { ExamplesAccordionComponent } from './examples-accordion/examples-accordion.component';
 import { OntologiesComponent } from './ontologies/ontologies.component';
@@ -32,7 +32,7 @@ import { StartsWithPipe } from './pipes/starts-with.pipe';
         NavbarComponent,
         FooterComponent,
         LanguagesComponent,
-        LanguagesDescriptionModalComponent,
+        DescriptionModalComponent,
         DiagramModalComponent,
         ExamplesAccordionComponent,
         OntologiesComponent,
@@ -52,7 +52,7 @@ import { StartsWithPipe } from './pipes/starts-with.pipe';
         AccordionModule.forRoot()
     ],
     entryComponents: [
-        LanguagesDescriptionModalComponent,
+        DescriptionModalComponent,
         DiagramModalComponent
     ],
     providers: [],

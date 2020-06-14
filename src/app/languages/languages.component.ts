@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { faPlusSquare } from '@fortawesome/free-solid-svg-icons';
 
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
-import { LanguagesDescriptionModalComponent } from '../languages-description-modal/languages-description-modal.component';
+import { DescriptionModalComponent } from '../description-modal/description-modal.component';
 import { DiagramModalComponent } from '../diagram-modal/diagram-modal.component';
 import { element } from 'protractor';
 
@@ -15,7 +15,7 @@ import { element } from 'protractor';
 export class LanguagesComponent implements OnInit {
 
     activeJob: any;
-    @ViewChild('languagesDescriptionModal', {static: false}) languagesDescriptionModal;
+    @ViewChild('descriptionModal', {static: false}) descriptionModal;
 
     activeDiag: any;
     @ViewChild('diagramModal', {static: false}) diagramModal;
@@ -26,7 +26,7 @@ export class LanguagesComponent implements OnInit {
     
     handleClick(ppl) {
         this.activeJob = ppl;
-        this.languagesDescriptionModal.show();
+        this.descriptionModal.show();
     }
 
     handleClickDiag(diag) {
@@ -154,7 +154,7 @@ export class LanguagesComponent implements OnInit {
                     link: 'https://www.w3.org/TR/P3P/#Categories'
                 }
             ],
-            rdf: [
+            resources: [
                 {
                     type: 'RDF',
                     link: 'https://www.w3.org/TR/p3p-rdfschema/p3p-rdf-schema.xml'
@@ -327,7 +327,7 @@ export class LanguagesComponent implements OnInit {
                     link: 'https://www.w3.org/TR/P3P-preferences/#REQUEST'
                 }
             ],
-            rdf: [
+            resources: [
                 {
                     type: 'DTD',
                     link: 'https://www.w3.org/TR/P3P-preferences/APPELv1-20020415.dtd'
@@ -488,7 +488,7 @@ export class LanguagesComponent implements OnInit {
                     link: 'https://www.w3.org/TR/odrl-vocab/#conflictConcepts'
                 }
             ],
-            rdf: [
+            resources: [
                 {
                     type: 'Turtle',
                     link: 'https://www.w3.org/ns/odrl/2/ODRL22.ttl'
@@ -703,7 +703,7 @@ export class LanguagesComponent implements OnInit {
                 }
             ],
             elements: [],
-            rdf: [],
+            resources: [],
             documentation: [
                 {
                     type: 'PDF',
@@ -785,7 +785,7 @@ export class LanguagesComponent implements OnInit {
                 }
             ],
             elements: [],
-            rdf: [],
+            resources: [],
             documentation: [
                 {
                     type: 'S4P PDF',
@@ -892,7 +892,7 @@ export class LanguagesComponent implements OnInit {
                     link: ''
                 }
             ],
-            rdf: [
+            resources: [
                 {
                     type: 'Turtle',
                     link: 'http://dig.csail.mit.edu/TAMI/2007/amord/air.ttl'
@@ -1127,7 +1127,7 @@ export class LanguagesComponent implements OnInit {
                 }
             ],
             elements: [],
-            rdf: [],
+            resources: [],
             documentation: [
                 {
                     type: 'PDF',
@@ -1211,7 +1211,7 @@ export class LanguagesComponent implements OnInit {
                     link: ''
                 }
             ],
-            rdf: [],
+            resources: [],
             documentation: [
                 {
                     type: 'PDF',
@@ -1344,7 +1344,7 @@ export class LanguagesComponent implements OnInit {
                 },
                 
             ],
-            rdf: [],
+            resources: [],
             documentation: [
                 {
                     type: 'A-PPL PDF',
@@ -1476,7 +1476,7 @@ export class LanguagesComponent implements OnInit {
                     link: ''
                 } 
             ],
-            rdf: [],
+            resources: [],
             documentation: [
                 {
                     type: 'PDF',
