@@ -1401,6 +1401,123 @@ export class LanguagesComponent implements OnInit {
                     nameSrc: 'D34.1 - Policy Representation Framework'
                 }
             ]
+        },
+        {
+            id: 'DPF',
+            name: 'Declarative Policy Framework',
+            description: "Privacy policy framework that uses ontologies as a common data model to specify permissive and restrictive policies which are used to build user interfaces, so that users are not burdened with technical formalisms of the language",
+            domain: [
+                {
+                    name: 'privacy',
+                    dbPedia: 'http://dbpedia.org/page/Category:Privacy'
+                },
+                {
+                    name: 'ontology',
+                    dbPedia: ''
+                }
+            ],
+            w3cStatus: '',
+            dates: {
+                created: '2018',
+                lastUpdated: ''
+            },
+            idiom: [
+                {
+                    imageSrc: '../../assets/flags/uk_flag.png',
+                    lang: 'en',
+                    link: 'https://sunflower.csl.sri.com/wp-content/uploads/2018/05/policy-language.pdf'
+                }
+            ],
+            responsible: {
+                name: 'Defense  Advanced  Research  Projects  Agency’s (DARPA’s) Brandeis program',
+                link: ''
+            },
+            project: {
+                name: '',
+                link: ''
+            },
+            authors: [
+                {
+                    name: 'Karsten Martiny',
+                    link: 'https://dblp.org/pers/m/Martiny:Karsten.html'
+                },
+                {
+                    name: 'Daniel Elenius',
+                    link: 'https://dblp.org/pers/e/Elenius:Daniel.html'
+                },
+                {
+                    name: 'Grit Denker',
+                    link: 'https://dblp.uni-trier.de/pers/d/Denker:Grit.html'
+                }
+            ],
+            elements: [
+                {
+                    name: 'Policy rule',
+                    link: ''
+                },
+                {
+                    name: 'Policy authority',
+                    link: ''
+                },
+                {
+                    name: 'Data requester',
+                    link: ''
+                },
+                {
+                    name: 'Data',
+                    link: ''
+                },
+                {
+                    name: 'Time of request',
+                    link: ''
+                },
+                {
+                    name: 'Constraints',
+                    link: ''
+                } 
+            ],
+            rdf: [],
+            documentation: [
+                {
+                    type: 'PDF',
+                    link: 'https://sunflower.csl.sri.com/wp-content/uploads/2018/05/policy-language.pdf'
+                },
+                {
+                    type: 'PDF',
+                    link: 'https://sunflower.csl.sri.com/wp-content/uploads/2020/02/policy-overrides.pdf'
+                }
+            ],
+            examples: [
+                {
+                    type: 'sample',
+                    title: 'Examples from the DPF documentation',
+                    description: {
+                        name: '"Partial Decision Overrides in a Declarative Policy Framework" article',
+                        link: 'https://sunflower.csl.sri.com/wp-content/uploads/2020/02/policy-overrides.pdf'
+                    },
+                    solutions: [
+                        {
+                            exampleName: 'Pandemic use-case - monitor the disease’s outbreak',
+                            resources: []
+                        }
+                    ]
+                },
+                {
+                    type: 'sample',
+                    title: 'Examples from the DPF documentation',
+                    description: {
+                        name: '"Protecting Privacy with a Declarative Policy Framework" article',
+                        link: 'https://sunflower.csl.sri.com/wp-content/uploads/2018/05/policy-language.pdf'
+                    },
+                    solutions: [
+                        {
+                            exampleName: 'Pandemic use-case - monitor the disease’s outbreak',
+                            resources: []
+                        }
+                    ]
+                }
+            ],
+            diagrams: []
         }
     ]
 }
