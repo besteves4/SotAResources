@@ -32,179 +32,137 @@ export class OntologiesComponent implements OnInit {
   }
 
   table = {
-      caption: 'Relevant privacy-related policy languages',
+      caption: 'Relevant data protection vocabularies and ontologies',
       columns: [
-          'Language',
+          'Ontology',
           'Name',
           'Description',
-          'Domain',
+          'Legal Basis',
           'Resources',
           'Documentation',
           'Diagrams'
       ]
   }
 
-  privacyPolicyLanguages = [
+  ontologies = [
     {
-        id: 'P3P',
-        name: 'Platform for Privacy Preferences',
-        description: 'Specification for websites to disclose privacy protocols that can be automatically read and interpreted by user agents',
-        domain: [
+        id: 'DPKO, DPRO',
+        name: 'Data Protection Knowledge Ontology, Data Protection Reasoning Ontology',
+        description: 'Legal ontologies developed to represent data protection knowledge, focusing mainly on the correctness of files contaning personal data and respective security measures applied to them',
+/*         domain: [
             {
                 name: 'privacy',
                 dbPedia: 'http://dbpedia.org/page/Category:Privacy'
             }
+        ], */
+        legalBasis: [
+            {
+                country: '../../assets/flags/Flag_of_Spain.svg.png',
+                name: 'PPDR',
+                link: 'https://apdcat.gencat.cat/web/.content/01-autoritat/normativa/documentos/2643.pdf'
+            }
         ],
-        w3cStatus: 'W3C Obsolete Recommendation',
+        w3cStatus: '',
         dates: {
-            created: '1998',
+            created: '2008',
             lastUpdated: '2010'
         },
         idiom: [
             {
                 imageSrc: '../../assets/flags/uk_flag.png',
                 lang: 'en',
-                link:'https://www.w3.org/TR/P3P/'
-            },
-            {
-                imageSrc: '../../assets/flags/Flag_of_France.svg',
-                lang: 'fr',
-                link: 'http://www.yoyodesign.org/doc/w3c/p3p1/index.html'
-            },
-            {
-                imageSrc: '../../assets/flags/Flag_of_Japan.svg.png',
-                lang: 'jp',
-                link: 'http://www.iajapan.org/trans2japanese/w3c/rec-p3p-20020416j.html'
+                link:'https://ddd.uab.cat/pub/artpub/2010/137891/aaaisprsymser_a2010n1iENG.pdf'
             }
         ],
-        responsible: {
-            name: 'W3C P3P Specification Working Group',
-            link: 'https://www.w3.org/P3P/'
-        },
+        responsible: [
+            {
+                name: 'Institute of Law and Technology, Universitat  Autònoma  de  Barcelona (IDT-UAB)',
+                link: ''
+            },
+            {
+                name: 'S21SEC',
+                link: 'https://www.s21sec.com/'
+            }
+        ],
         project: {
-            name: '',
+            name: 'NEURONA project',
             link: ''
         },
         authors: [
             {
-                name: 'Lorrie Cranor',
-                link: 'https://lorrie.cranor.org/'
+                name: 'Núria Casellas',
+                link: 'https://dblp.org/pers/c/Casellas:Nuria.html'
             },
             {
-                name: 'Marc Langheinrich',
-                link: 'https://uc.inf.usi.ch/team/langheinrich/'
+                name: 'Juan-Emilio Nieto',
+                link: 'https://dblp.org/pers/hd/n/Nieto:Juan=Emilio'
             },
             {
-                name: 'Massimo Marchiori',
-                link: 'https://www.w3.org/People/Massimo/'
+                name: 'Albert Meroño',
+                link: 'https://www.albertmeronyo.org/'
             },
             {
-                name: 'Martin Presler-Marshall',
-                link: 'mailto:mpresler@us.ibm.com'
+                name: 'Antoni Roig',
+                link: 'https://dblp.org/pers/hd/r/Roig:Antoni'
             },
             {
-                name: 'Joseph Reagle',
-                link: 'http://reagle.org/joseph/'
+                name: 'Sergi Torralba',
+                link: 'https://dblp.uni-trier.de/pers/hd/t/Torralba:Sergi'
+            },
+            {
+                name: 'Mario Reyes',
+                link: 'https://dblp.org/pers/hd/r/Reyes:Mario'
+            },
+            {
+                name: 'Pompeu Casanovas',
+                link: 'https://scholars.latrobe.edu.au/display/pcasanovasro'
             }
         ],
         elements: [
             {
-                name: 'Policy',
-                link: 'https://www.w3.org/TR/P3P/#POLICY'
+                name: 'Data',
+                link: ''
             },
             {
-                name: 'Entity',
-                link: 'https://www.w3.org/TR/P3P/#ENTITY'
-            },
-            {
-                name: 'Access',
-                link: 'https://www.w3.org/TR/P3P/#ACCESS'
-            },
-            {
-                name: 'Disputes',
-                link: 'https://www.w3.org/TR/P3P/#DISPUTES'
-            },
-            {
-                name: 'Remedies',
-                link: 'https://www.w3.org/TR/P3P/#REMEDIES'
+                name: 'Consent',
+                link: ''
             },
             {
                 name: 'Purpose',
-                link: 'https://www.w3.org/TR/P3P/#PURPOSE'
+                link: ''
             },
             {
-                name: 'Recipient',
-                link: 'https://www.w3.org/TR/P3P/#RECPNT'
+                name: 'Security Measures',
+                link: ''
             },
             {
-                name: 'Retention',
-                link: 'https://www.w3.org/TR/P3P/#RETENTION'
+                name: 'Person',
+                link: ''
             },
             {
-                name: 'Data',
-                link: 'https://www.w3.org/TR/P3P/#DATA'
+                name: 'Treatment Process',
+                link: ''
             },
             {
-                name: 'Categories',
-                link: 'https://www.w3.org/TR/P3P/#Categories'
-            }
+                name: 'Security Degree',
+                link: ''
+            },
         ],
-        resources: [
-            {
-                type: 'RDF',
-                link: 'https://www.w3.org/TR/p3p-rdfschema/p3p-rdf-schema.xml'
-            },
-            {
-                type: 'DTD',
-                link: 'https://www.w3.org/2002/01/P3Pv1.dtd'
-            },
-            {
-                type: 'XML',
-                link: 'https://www.w3.org/2002/01/P3Pv1'
-            },
-            {
-                type: 'DATA-STRUCT XML',
-                link: 'https://www.w3.org/TR/P3P/base'
-            }
-        ],
+        resources: [],
         documentation: [
             {
-                type: 'HTML',
-                link: 'https://www.w3.org/TR/P3P/'
+                type: 'PDF',
+                link: 'https://ddd.uab.cat/pub/artpub/2010/137891/aaaisprsymser_a2010n1iENG.pdf'
             }
         ],
-        examples: [
-            {
-                type: 'sample',
-                title: 'Examples from the P3P specification',
-                description: {
-                    name: 'P3P specification',
-                    link: 'https://www.w3.org/TR/P3P/#ref_file_example'
-                },
-                solutions: [
-                    {
-                        exampleName: 'Example 2.2',
-                        resources: [
-                            {
-                                language: 'XML',
-                                link: '../assets/languages/p3p/examples/XML_ex-2-2.xml'
-                            },
-                            {
-                                language: 'RDF',
-                                link: '../assets/languages/p3p/examples/RDF_ex-2-2.xml'
-                            }
-                        ]
-                    }
-                ]
-            }
-        ],
+        examples: [],
         diagrams: [
             {
-                type: 'xsddiagram',
-                name: 'P3P v1',
-                imageSrc: '../../assets/languages/p3p/diagrams/P3Pv1.svg',
-                typeSrc: 'http://regis.cosnier.free.fr/?page=XSDDiagram',
-                nameSrc: 'XSD Diagram'
+                type: 'spec',
+                name: 'DPKO',
+                imageSrc: '../../assets/ontologies/NEURONA/diagrams/DPKO.PNG',
+                typeSrc: 'https://ddd.uab.cat/pub/artpub/2010/137891/aaaisprsymser_a2010n1iENG.pdf',
+                nameSrc: 'NEURONA Project documentation'
             }
         ]
     }

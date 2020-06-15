@@ -82,10 +82,12 @@ export class LanguagesComponent implements OnInit {
                     link: 'http://www.iajapan.org/trans2japanese/w3c/rec-p3p-20020416j.html'
                 }
             ],
-            responsible: {
-                name: 'W3C P3P Specification Working Group',
-                link: 'https://www.w3.org/P3P/'
-            },
+            responsible: [
+                {
+                    name: 'W3C P3P Specification Working Group',
+                    link: 'https://www.w3.org/P3P/'
+                }
+            ],
             project: {
                 name: '',
                 link: ''
@@ -287,10 +289,12 @@ export class LanguagesComponent implements OnInit {
                     link:'https://www.w3.org/TR/P3P-preferences/'
                 }
             ],
-            responsible: {
-                name: 'W3C P3P Specification Working Group',
-                link: 'https://www.w3.org/P3P/'
-            },
+            responsible: [
+                {
+                    name: 'W3C P3P Specification Working Group',
+                    link: 'https://www.w3.org/P3P/'
+                }
+            ],
             project: {
                 name: '',
                 link: ''
@@ -420,10 +424,12 @@ export class LanguagesComponent implements OnInit {
                     link: 'http://www.asahi-net.or.jp/~ax2s-kmtn/internet/rights/REC-odrl-vocab-20180215.html'
                 }
             ],
-            responsible: {
-                name: 'W3C ODRL Community Group',
-                link: 'https://www.w3.org/community/odrl/'
-            },
+            responsible: [
+                {
+                    name: 'W3C ODRL Community Group',
+                    link: 'https://www.w3.org/community/odrl/'
+                }
+            ],
             project: {
                 name: '',
                 link: ''
@@ -676,10 +682,12 @@ export class LanguagesComponent implements OnInit {
                     link:'http://www.rsrikant.com/papers/www03_xpref.pdf'
                 }
             ],
-            responsible: {
-                name: 'IBM Research - Almaden',
-                link: 'https://www.research.ibm.com/labs/almaden/'
-            },
+            responsible: [
+                {
+                    name: 'IBM Research - Almaden',
+                    link: 'https://www.research.ibm.com/labs/almaden/'
+                }
+            ],
             project: {
                 name: '',
                 link: ''
@@ -762,10 +770,12 @@ export class LanguagesComponent implements OnInit {
                     link:'https://www.microsoft.com/en-us/research/wp-content/uploads/2010/04/main-1.pdf'
                 }
             ],
-            responsible: {
-                name: 'Microsoft Research',
-                link: 'https://www.microsoft.com/en-us/research/'
-            },
+            responsible: [
+                {
+                    name: 'Microsoft Research',
+                    link: 'https://www.microsoft.com/en-us/research/'
+                }
+            ],
             project: {
                 name: '',
                 link: ''
@@ -840,10 +850,12 @@ export class LanguagesComponent implements OnInit {
                     link:'http://dig.csail.mit.edu/2009/AIR/'
                 }
             ],
-            responsible: {
-                name: 'Decentralized Information Group - MIT',
-                link: 'http://dig.csail.mit.edu//Overview.html'
-            },
+            responsible: [
+                {
+                    name: 'Decentralized Information Group - MIT',
+                    link: 'http://dig.csail.mit.edu//Overview.html'
+                }
+            ],
             project: {
                 name: '',
                 link: ''
@@ -1112,10 +1124,12 @@ export class LanguagesComponent implements OnInit {
                     link: 'http://kau.diva-portal.org/smash/get/diva2:623452/FULLTEXT01.pdf'
                 }
             ],
-            responsible: {
-                name: 'Department of Mathematics and Computer Science, Karlstad University',
-                link: 'https://www.kau.se/en/cs'
-            },
+            responsible: [
+                {
+                    name: 'Department of Mathematics and Computer Science, Karlstad University',
+                    link: 'https://www.kau.se/en/cs'
+                }
+            ],
             project: {
                 name: 'PETWeb II',
                 link: 'http://petweb2.projects.nislab.no/index.php/Main_Page'
@@ -1159,10 +1173,12 @@ export class LanguagesComponent implements OnInit {
                     link: 'https://ieeexplore.ieee.org/document/6957279'
                 }
             ],
-            responsible: {
-                name: 'Department of Computer Science, University of Saskatchewan',
-                link: 'https://www.cs.usask.ca/'
-            },
+            responsible: [
+                {
+                    name: 'Department of Computer Science, University of Saskatchewan',
+                    link: 'https://www.cs.usask.ca/'
+                }
+            ],
             project: {
                 name: '',
                 link: ''
@@ -1274,10 +1290,12 @@ export class LanguagesComponent implements OnInit {
                     link: 'http://www.eurecom.fr/en/publication/4372/download/rs-publi-4372.pdf'
                 }
             ],
-            responsible: {
-                name: '',
-                link: ''
-            },
+            responsible: [
+                {
+                    name: '',
+                    link: ''
+                }
+            ],
             project: {
                 name: 'A4Cloud',
                 link: 'http://a4cloud.eu/index.html'
@@ -1428,10 +1446,12 @@ export class LanguagesComponent implements OnInit {
                     link: 'https://sunflower.csl.sri.com/wp-content/uploads/2018/05/policy-language.pdf'
                 }
             ],
-            responsible: {
-                name: 'Defense  Advanced  Research  Projects  Agency’s (DARPA’s) Brandeis program',
-                link: ''
-            },
+            responsible: [
+                {
+                    name: 'Defense  Advanced  Research  Projects  Agency’s (DARPA’s) Brandeis program',
+                    link: ''
+                }
+            ],
             project: {
                 name: '',
                 link: ''
