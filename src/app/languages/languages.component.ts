@@ -1510,7 +1510,7 @@ export class LanguagesComponent implements OnInit {
             examples: [
                 {
                     type: 'sample',
-                    title: 'Examples from the DPF documentation',
+                    title: 'Examples from the "Partial Decision Overrides in a Declarative Policy Framework" article',
                     description: {
                         name: '"Partial Decision Overrides in a Declarative Policy Framework" article',
                         link: 'https://sunflower.csl.sri.com/wp-content/uploads/2020/02/policy-overrides.pdf'
@@ -1524,7 +1524,7 @@ export class LanguagesComponent implements OnInit {
                 },
                 {
                     type: 'sample',
-                    title: 'Examples from the DPF documentation',
+                    title: 'Examples from the "Protecting Privacy with a Declarative Policy Framework" article',
                     description: {
                         name: '"Protecting Privacy with a Declarative Policy Framework" article',
                         link: 'https://sunflower.csl.sri.com/wp-content/uploads/2018/05/policy-language.pdf'
