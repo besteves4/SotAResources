@@ -296,6 +296,134 @@ export class OntologiesComponent implements OnInit {
                 nameSrc: 'PPO article'
             }
         ]
+    },
+    {
+        id: 'DPO',
+        name: 'Data Protection Ontology',
+        description: '',
+        legalBasis: [
+            {
+                country: '../../assets/footer/eu_flag.jpg',
+                name: 'GDPR (early version)',
+                link: ''
+            },
+            {
+                country: '../../assets/footer/eu_flag.jpg',
+                name: 'DPD',
+                link: ''
+            },
+            {
+                country: '../../assets/footer/eu_flag.jpg',
+                name: 'Handbook', //'Handbook on European data protection law',
+                link: 'https://fra.europa.eu/sites/default/files/fra_uploads/fra-coe-edps-2018-handbook-data-protection_en.pdf'
+            }
+
+        ],
+        w3cStatus: '',
+        dates: {
+            created: '2015',
+            lastUpdated: '2016'
+        },
+        idiom: [
+            {
+                imageSrc: '../../assets/flags/uk_flag.png',
+                lang: 'en',
+                link:'https://pdfs.semanticscholar.org/e59a/5f9e9bfc990d9d62ac0102c612cade2f5642.pdf'
+            }
+        ],
+        responsible: [
+            {
+                name: 'Joint International Doctoral (Ph.D.) Degree in Law, Science and Technology (LAST-JD)',
+                link: 'http://www.last-jd.eu/'
+            }
+        ],
+        project: {
+            name: '',
+            link: ''
+        },
+        authors: [
+            {
+                name: 'Cesare Bartolini',
+                link: 'https://dblp.org/pers/b/Bartolini:Cesare.html'
+            },
+            {
+                name: 'Robert Muthuri',
+                link: 'https://dblp.org/pers/hd/m/Muthuri:Robert'
+            }
+
+        ],
+        elements: [
+            {
+                name: 'Principles',
+                link: ''
+            },
+            {
+                name: 'Rules',
+                link: ''
+            },
+            {
+                name: "Data subject's rights",
+                link: ''
+            },
+            {
+                name: "Data processing",
+                link: ''
+            },
+            {
+                name: "Person",
+                link: ''
+            },
+            {
+                name: "Personal data",
+                link: ''
+            }
+        ],
+        resources: [
+            {
+                type: 'OWL',
+                link: 'https://bitbucket.org/guerret/lu.uni.eclipse.bpmn2/src/master/resources/dataprotection.owl'
+            },
+            {
+                type: 'RDF',
+                link: 'https://bitbucket.org/guerret/lu.uni.eclipse.bpmn2/src/master/resources/dataprotection-rdf.owl'
+            },
+        ],
+        documentation: [
+            {
+                type: 'PDF',
+                link: 'https://pdfs.semanticscholar.org/e59a/5f9e9bfc990d9d62ac0102c612cade2f5642.pdf'
+            }
+        ],
+        examples: [
+            {
+                type: 'sample',
+                title: 'Extending the BPMN standard with a Data Protection Task',
+                description: {
+                    name: '"Using Ontologies to Model Data Protection Requirements in Workflows" article',
+                    link: 'https://www.researchgate.net/publication/283325872_Using_Ontologies_to_Model_Data_Protection_Requirements_in_Workflows'
+                },
+                solutions: [
+                    {
+                        exampleName: 'BPMN2 data protection extension',
+                        resources: [
+                            {
+                                language: 'Bitbucket',
+                                link: 'https://bitbucket.org/guerret/lu.uni.eclipse.bpmn2/src/master/'
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        diagrams: [
+            {
+                type: 'spec',
+                name: 'DPO',
+                imageSrc: 'https://www.researchgate.net/profile/Cesare_Bartolini/publication/283325872/figure/fig1/AS:669142571032603@1536547429862/Schema-of-the-data-protection-ontology.ppm',
+                typeSrc: 'https://www.researchgate.net/publication/283325872_Using_Ontologies_to_Model_Data_Protection_Requirements_in_Workflows',
+                nameSrc: 'DPO article'
+            }
+        ]
     }
   ]
 

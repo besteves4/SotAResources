@@ -41,6 +41,7 @@
                 <a *ngSwitchCase="res.type.includes('Turtle')" class="btn btn-outline-danger btn-sm mb-1" href={{res.link}} target="_blank" role="button">{{res.type}}</a>
                 <a *ngSwitchCase="res.type.includes('N-Triples')" class="btn btn-outline-secondary btn-sm mb-1" href={{res.link}} target="_blank" role="button">{{res.type}}</a>
                 <a *ngSwitchCase="res.type.includes('N3')" class="btn btn-outline-dark btn-sm mb-1" href={{res.link}} target="_blank" role="button">{{res.type}}</a>
+                <a *ngSwitchCase="res.type.includes('OWL')" class="btn btn-outline-light btn-sm mb-1" href={{res.link}} target="_blank" role="button">{{res.type}}</a>
                 <a *ngSwitchDefault class="btn btn-dark btn-sm mb-1" href={{res.link}} target="_blank" role="button">{{res.type}}</a>
             </div>
         </td>
