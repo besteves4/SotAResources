@@ -424,6 +424,140 @@ export class OntologiesComponent implements OnInit {
                 nameSrc: 'DPO article'
             }
         ]
+    },
+    {
+        id: 'GDPRov',
+        name: 'GDPR Provenance Ontology',
+        description: '',
+        legalBasis: [
+            {
+                country: '../../assets/footer/eu_flag.jpg',
+                name: 'GDPR',
+                link: 'https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN'
+            }
+        ],
+        w3cStatus: '',
+        dates: {
+            created: '2017',
+            lastUpdated: '2019'
+        },
+        idiom: [
+            {
+                imageSrc: '../../assets/flags/uk_flag.png',
+                lang: 'en',
+                link:'https://openscience.adaptcentre.ie/ontologies/GDPRov/docs/ontology'
+            }
+        ],
+        responsible: [
+            {
+                name: 'ADAPT Centre, Trinity College Dublin',
+                link: 'https://www.adaptcentre.ie/'
+            }
+        ],
+        project: {
+            name: '',
+            link: ''
+        },
+        authors: [
+            {
+                name: 'Harshvardhan J. Pandit',
+                link: 'https://harshp.com/research/'
+            },
+            {
+                name: 'Dave Lewis',
+                link: 'https://dblp.uni-trier.de/pers/hd/l/Lewis_0001:David'
+            }
+
+        ],
+        elements: [
+            {
+                name: 'Consent agreement template',
+                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRov/docs/ontology#ConsentAgreementTemplate'
+            },
+            {
+                name: 'Data',
+                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRov/docs/ontology#Data'
+            },
+            {
+                name: "Terms and conditions",
+                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRov/docs/ontology#TermsAndConditions'
+            },
+            {
+                name: "Process",
+                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRov/docs/ontology#Process'
+            },
+            {
+                name: "Data step",
+                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRov/docs/ontology#DataStep'
+            },
+            {
+                name: "Consent step",
+                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRov/docs/ontology#ConsentStep'
+            },
+            {
+                name: "Anonymity level",
+                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRov/docs/ontology#AnonymityLevel'
+            },
+            {
+                name: "Third party",
+                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRov/docs/ontology#ThirdParty'
+            }
+        ],
+        resources: [
+            {
+                type: 'Turtle',
+                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRov/docs/ontology.ttl'
+            },
+            {
+                type: 'RDF',
+                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRov/docs/ontology.xml'
+            },
+            {
+                type: 'N-Triples',
+                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRov/docs/ontology.nt'
+            },
+            {
+                type: 'JSON-LD',
+                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRov/docs/ontology.json'
+            }
+        ],
+        documentation: [
+            {
+                type: 'HTML',
+                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRov/docs/ontology'
+            },
+            {
+                type: 'PDF',
+                link: 'http://ceur-ws.org/Vol-1951/PrivOn2017_paper_6.pdf'
+            }
+        ],
+        examples: [
+            {
+                type: 'sample',
+                title: 'Compliance related queries using SPARQL',
+                description: {
+                    name: '"Modelling Provenance for GDPR Complianceusing Linked Open Data Vocabularies" article',
+                    link: 'http://ceur-ws.org/Vol-1951/PrivOn2017_paper_6.pdf'
+                },
+                solutions: [
+                    {
+                        exampleName: 'Query to retrieve the entities involved in acquiring user consent - Listing 1.1',
+                        resources: []
+                    },
+                    {
+                        exampleName: 'Query to retrieve data shared with third parties - Listing 1.2',
+                        resources: []
+                    }
+                ]
+            }
+        ],
+        diagrams: [
+            {
+                type: 'webvowl',
+                name: 'GDPRov v0.7',
+                imageSrc: 'https://openscience.adaptcentre.ie/ontologies/GDPRov/docs/webvowl/index.html#'
+            }
+        ]
     }
   ]
 
