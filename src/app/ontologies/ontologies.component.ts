@@ -300,7 +300,7 @@ export class OntologiesComponent implements OnInit {
     {
         id: 'DPO',
         name: 'Data Protection Ontology',
-        description: '',
+        description: "Data protection ontology based on the data protection principles, focused on the modelling of the data controllers' obligations and corresponding data subjects' rights",
         legalBasis: [
             {
                 country: '../../assets/footer/eu_flag.jpg',
@@ -310,7 +310,7 @@ export class OntologiesComponent implements OnInit {
             {
                 country: '../../assets/footer/eu_flag.jpg',
                 name: 'DPD',
-                link: ''
+                link: 'https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:31995L0046&from=en'
             },
             {
                 country: '../../assets/footer/eu_flag.jpg',
@@ -428,7 +428,7 @@ export class OntologiesComponent implements OnInit {
     {
         id: 'GDPRov',
         name: 'GDPR Provenance Ontology',
-        description: '',
+        description: 'Linked data ontology focused on the objective of conceptualizing the provenance of consent and the data life-cycle (collection, usage and storage), towards documenting GDPR compliance',
         legalBasis: [
             {
                 country: '../../assets/footer/eu_flag.jpg',
@@ -505,16 +505,16 @@ export class OntologiesComponent implements OnInit {
         ],
         resources: [
             {
-                type: 'Turtle',
-                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRov/docs/ontology.ttl'
-            },
-            {
                 type: 'RDF',
                 link: 'https://openscience.adaptcentre.ie/ontologies/GDPRov/docs/ontology.xml'
             },
             {
                 type: 'N-Triples',
                 link: 'https://openscience.adaptcentre.ie/ontologies/GDPRov/docs/ontology.nt'
+            },
+            {
+                type: 'Turtle',
+                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRov/docs/ontology.ttl'
             },
             {
                 type: 'JSON-LD',
@@ -562,7 +562,7 @@ export class OntologiesComponent implements OnInit {
     {
         id: 'GDPRtEXT',
         name: 'GDPR text EXTensions',
-        description: '',
+        description: 'Open data resource, that extends the European Legislation Identifier (ELI) ontology, with the aim of connecting GDPR concepts, through the SKOS ontology, and their respective chapter, article, point, etc.',
         legalBasis: [
             {
                 country: '../../assets/footer/eu_flag.jpg',
@@ -642,16 +642,16 @@ export class OntologiesComponent implements OnInit {
         ],
         resources: [
             {
-                type: 'Turtle',
-                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology.ttl'
-            },
-            {
                 type: 'RDF',
                 link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology.xml'
             },
             {
                 type: 'N-Triples',
                 link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology.nt'
+            },
+            {
+                type: 'Turtle',
+                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology.ttl'
             },
             {
                 type: 'JSON-LD',
