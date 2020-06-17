@@ -700,6 +700,123 @@ export class OntologiesComponent implements OnInit {
                 imageSrc: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/webvowl/index.html#'
             }
         ]
+    },
+    {
+        id: 'Cloud',
+        name: 'Cloud GDPR ontology',
+        description: "GDPR compliant ontology focused on the obligations of cloud services' providers and consumers, that takes into account the Cloud Security Alliance's (CSA) 'Code of Conduct for GDPR Compliance'",
+        legalBasis: [
+            {
+                country: '../../assets/footer/eu_flag.jpg',
+                name: 'GDPR',
+                link: 'https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN'
+            },
+            {
+                country: '../../assets/footer/eu_flag.jpg',
+                name: 'CSA CoC',
+                link: 'https://downloads.cloudsecurityalliance.org/assets/research/gdpr/CSA_Code_of_Conduct_for_GDPR_Compliance.pdf'
+            }
+        ],
+        w3cStatus: '',
+        dates: {
+            created: '2018',
+            lastUpdated: ''
+        },
+        idiom: [
+            {
+                imageSrc: '../../assets/flags/uk_flag.png',
+                lang: 'en',
+                link: 'https://ebiquity.umbc.edu/paper/html/id/827/A-Knowledge-Representation-of-Cloud-Data-controls-for-EU-GDPR-Compliance'
+            }
+        ],
+        responsible: [
+            {
+                name: 'Information Systems Department, University of Maryland Baltimore County (UMBC)',
+                link: 'https://informationsystems.umbc.edu/'
+            }
+        ],
+        project: {
+            name: '',
+            link: ''
+        },
+        authors: [
+            {
+                name: 'Lavanya Elluri',
+                link: 'https://dblp.org/pers/hd/e/Elluri:Lavanya'
+            },
+            {
+                name: 'Karuna Pande Joshi',
+                link: 'http://karuna.informationsystems.umbc.edu/'
+            }
+        ],
+        elements: [
+            {
+                name: 'CSA controls',
+                link: ''
+            },
+            {
+                name: 'Common obligations',
+                link: ''
+            },
+            {
+                name: 'Consumer obligations',
+                link: ''
+            },
+            {
+                name: 'Provider obligations',
+                link: ''
+            },
+            {
+                name: 'Stakeholders',
+                link: ''
+            }
+        ],
+        resources: [
+            {
+                type: 'OWL',
+                link: 'https://ebiquity.umbc.edu/_file_directory_/resources/377.rdf'
+            }
+        ],
+        documentation: [
+            {
+                type: 'RDF',
+                link: 'https://ebiquity.umbc.edu/paper/owl/id/827/A-Knowledge-Representation-of-Cloud-Data-controls-for-EU-GDPR-Compliance'
+            },
+            {
+                type: 'PDF',
+                link: 'https://ebiquity.umbc.edu/_file_directory_/papers/891.pdf'
+            }
+        ],
+        examples: [
+            {
+                type: 'sample',
+                title: 'Data compliance ontology for GDPR and PCI DSS',
+                description: {
+                    name: '"An Integrated Knowledge Graph to Automate GDPR and PCI DSS Compliance" article',
+                    link: 'https://ebiquity.umbc.edu/_file_directory_/papers/907.pdf'
+                },
+                solutions: [
+                    {
+                        exampleName: 'Extend Cloud GDPR ontology to comply with the Payment Card Industry Data Security Standard (PCI DSS)',
+                        resources: [
+                            {
+                                language: 'PNG',
+                                link: 'https://d3i71xaburhd42.cloudfront.net/9171119bce7659b82f1b9d7387c7c178fccd169b/4-Figure3-1.png'
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        diagrams: [
+            {
+                type: 'spec',
+                name: 'Cloud',
+                imageSrc: '../../assets/ontologies/Cloud/diagrams/fig1.PNG',
+                typeSrc: 'https://ebiquity.umbc.edu/_file_directory_/papers/891.pdf',
+                nameSrc: 'Cloud GDPR ontology article'
+            }
+        ]
     }
   ]
 
