@@ -817,6 +817,222 @@ export class OntologiesComponent implements OnInit {
                 nameSrc: 'Cloud GDPR ontology article'
             }
         ]
+    },
+    {
+        id: 'SPLog',
+        name: 'SPECIAL Policy Log Vocabulary',
+        description: 'Log vocabulary build to record data processing events and consent that should comply with the consent actions given by the data owners. SPLog uses the SPL language to instantiate the content of a log entry content',
+        legalBasis: [
+            {
+                country: '../../assets/footer/eu_flag.jpg',
+                name: 'GDPR',
+                link: 'https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN'
+            }
+        ],
+        w3cStatus: '',
+        dates: {
+            created: '2017',
+            lastUpdated: '2019'
+        },
+        idiom: [
+            {
+                imageSrc: '../../assets/flags/uk_flag.png',
+                lang: 'en',
+                link: 'https://ai.wu.ac.at/policies/policylog/'
+            }
+        ],
+        responsible: [],
+        project: {
+            name: 'Scalable Policy-awarE linked data arChitecture For prIvacy, trAnsparency and compLiance (SPECIAL) project',
+            link: 'https://www.specialprivacy.eu/'
+        },
+        authors: [
+            {
+                name: 'Piero A. Bonatti',
+                link: 'http://wpage.unina.it/pieroandrea.bonatti/'
+            },
+            {
+                name: 'Wouter Dullaert',
+                link: 'https://wdullaer.com/'
+            },
+            {
+                name: 'Javier D. Fernández',
+                link: 'https://dblp.org/pers/f/Fern=aacute=ndez:Javier_D=.html'
+            },
+            {
+                name: 'Sabrina Kirrane',
+                link: 'http://sabrinakirrane.com/'
+            },
+            {
+                name: 'Uros Milosevic',
+                link: 'https://dblp.org/pers/hd/m/Milosevic:Uros'
+            },
+            {
+                name: 'Axel Polleres',
+                link: 'https://aic.ai.wu.ac.at/~polleres/'
+            }
+        ],
+        elements: [
+            {
+                name: 'Log',
+                link: 'https://ai.wu.ac.at/policies/policylog/#log'
+            },
+            {
+                name: 'Log entry',
+                link: 'https://ai.wu.ac.at/policies/policylog/#log-entries'
+            },
+            {
+                name: 'Log entry group',
+                link: 'https://ai.wu.ac.at/policies/policylog/#grouping'
+            },
+            {
+                name: 'Log metadata',
+                link: 'https://ai.wu.ac.at/policies/policylog/#h2_metadata'
+            },
+            {
+                name: 'Log provenance',
+                link: 'https://ai.wu.ac.at/policies/policylog/#h2_provenance'
+            }
+        ],
+        resources: [
+            {
+                type: 'OWL',
+                link: 'https://www.specialprivacy.eu/images/documents/splog.owl'
+            }
+        ],
+        documentation: [
+            {
+                type: 'HTML',
+                link: 'https://ai.wu.ac.at/policies/policylog/'
+            },
+            {
+                type: 'PDF',
+                link: 'https://www.specialprivacy.eu/images/documents/Kirrane-2018-ESWC.pdf'
+            },
+            {
+                type: 'GitHub',
+                link: 'https://github.com/specialprivacy'
+            }
+        ],
+        examples: [
+            {
+                type: 'sample',
+                title: 'Examples from the SPLog specification',
+                description: {
+                    name: 'SPLog specification',
+                    link: 'https://ai.wu.ac.at/policies/policylog/'
+                },
+                solutions: [
+                    {
+                        exampleName: 'Example 1: Log description',
+                        resources: [
+                            {
+                                language: 'Turtle',
+                                link: 'https://ai.wu.ac.at/policies/policylog/#ex1'
+                            }
+                        ]
+                    },
+                    {
+                        exampleName: 'Example 2: A processing event',
+                        resources: [
+                            {
+                                language: 'Turtle',
+                                link: 'https://ai.wu.ac.at/policies/policylog/#ex2'
+                            }
+                        ]
+                    },
+                    {
+                        exampleName: 'Example 3: Event content',
+                        resources: [
+                            {
+                                language: 'Turtle',
+                                link: 'https://ai.wu.ac.at/policies/policylog/#exContent'
+                            }
+                        ]
+                    },
+                    {
+                        exampleName: 'Example 4: Immutable record',
+                        resources: [
+                            {
+                                language: 'Turtle',
+                                link: 'https://ai.wu.ac.at/policies/policylog/#ex4'
+                            }
+                        ]
+                    },
+                    {
+                        exampleName: 'Example 5: Log grouping',
+                        resources: [
+                            {
+                                language: 'Turtle',
+                                link: 'https://ai.wu.ac.at/policies/policylog/#ex5'
+                            }
+                        ]
+                    },
+                    {
+                        exampleName: 'Example 6: Integrating several events using provenance information in named graphs',
+                        resources: [
+                            {
+                                language: 'Turtle',
+                                link: 'https://ai.wu.ac.at/policies/policylog/#ex6'
+                            }
+                        ]
+                    },
+                    {
+                        exampleName: 'Example 7: Storing raw data (CSV)',
+                        resources: [
+                            {
+                                language: 'Turtle',
+                                link: 'https://ai.wu.ac.at/policies/policylog/#ex7'
+                            }
+                        ]
+                    },
+                    {
+                        exampleName: 'Example 8: Storing RDF data',
+                        resources: [
+                            {
+                                language: 'Turtle',
+                                link: 'https://ai.wu.ac.at/policies/policylog/#ex8'
+                            }
+                        ]
+                    },
+                    {
+                        exampleName: 'Example 9: Referring to external JSON',
+                        resources: [
+                            {
+                                language: 'Turtle',
+                                link: 'https://ai.wu.ac.at/policies/policylog/#ex9'
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                type: 'deliverables',
+                projectDeliverables: {
+                    name: 'SPECIAL',
+                    link: 'https://www.specialprivacy.eu/publications/public-deliverables'
+                },
+                deliverables: [
+                    {
+                        name: 'D2.3 - Transparency Framework V1',
+                        link: 'https://www.specialprivacy.eu/images/documents/SPECIAL_D23_M14_V10.pdf'
+                    },
+                    {
+                        name: 'D2.7 - Transparency Framework V2',
+                        link: 'https://www.specialprivacy.eu/images/documents/SPECIAL_D27_M23_V10.pdf'
+                    }
+                ]
+            }
+        ],
+        diagrams: [
+            {
+                type: 'spec',
+                name: 'SPLog v1.0',
+                imageSrc: 'https://ai.wu.ac.at/policies/policylog/images/log.png',
+                typeSrc: 'https://ai.wu.ac.at/policies/policylog/',
+                nameSrc: 'SPLog specification'
+            }
+        ]
     }
   ]
 
