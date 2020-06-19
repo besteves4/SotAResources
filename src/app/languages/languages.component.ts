@@ -88,10 +88,7 @@ export class LanguagesComponent implements OnInit {
                     link: 'https://www.w3.org/P3P/'
                 }
             ],
-            project: {
-                name: '',
-                link: ''
-            },
+            project: [],
             authors: [
                 {
                     name: 'Lorrie Cranor',
@@ -295,10 +292,7 @@ export class LanguagesComponent implements OnInit {
                     link: 'https://www.w3.org/P3P/'
                 }
             ],
-            project: {
-                name: '',
-                link: ''
-            },
+            project: [],
             authors: [
                 {
                     name: 'Lorrie Cranor',
@@ -430,10 +424,7 @@ export class LanguagesComponent implements OnInit {
                     link: 'https://www.w3.org/community/odrl/'
                 }
             ],
-            project: {
-                name: '',
-                link: ''
-            },
+            project: [],
             authors: [
                 {
                     name: 'Renato Iannella',
@@ -688,10 +679,7 @@ export class LanguagesComponent implements OnInit {
                     link: 'https://www.research.ibm.com/labs/almaden/'
                 }
             ],
-            project: {
-                name: '',
-                link: ''
-            },
+            project: [],
             authors: [
                 {
                     name: 'Rakesh Agrawal',
@@ -776,10 +764,7 @@ export class LanguagesComponent implements OnInit {
                     link: 'https://www.microsoft.com/en-us/research/'
                 }
             ],
-            project: {
-                name: '',
-                link: ''
-            },
+            project: [],
             authors: [
                 {
                     name: 'Moritz Y. Becker',
@@ -856,10 +841,7 @@ export class LanguagesComponent implements OnInit {
                     link: 'http://dig.csail.mit.edu//Overview.html'
                 }
             ],
-            project: {
-                name: '',
-                link: ''
-            },
+            project: [],
             authors: [
                 {
                     name: 'Ankesh Khandelwal',
@@ -1130,10 +1112,12 @@ export class LanguagesComponent implements OnInit {
                     link: 'https://www.kau.se/en/cs'
                 }
             ],
-            project: {
-                name: 'PETWeb II',
-                link: 'http://petweb2.projects.nislab.no/index.php/Main_Page'
-            },
+            project: [
+                {
+                    name: 'PETWeb II',
+                    link: 'http://petweb2.projects.nislab.no/index.php/Main_Page'
+                }
+            ],
             authors: [
                 {
                     name: 'Stefan Berthold',
@@ -1179,10 +1163,7 @@ export class LanguagesComponent implements OnInit {
                     link: 'https://www.cs.usask.ca/'
                 }
             ],
-            project: {
-                name: '',
-                link: ''
-            },
+            project: [],
             authors: [
                 {
                     name: 'Johnson Iyilade',
@@ -1290,16 +1271,13 @@ export class LanguagesComponent implements OnInit {
                     link: 'http://www.eurecom.fr/en/publication/4372/download/rs-publi-4372.pdf'
                 }
             ],
-            responsible: [
+            responsible: [],
+            project: [
                 {
-                    name: '',
-                    link: ''
+                    name: 'A4Cloud',
+                    link: 'http://a4cloud.eu/index.html'
                 }
             ],
-            project: {
-                name: 'A4Cloud',
-                link: 'http://a4cloud.eu/index.html'
-            },
             authors: [
                 {
                     name: 'Monir Azraoui',
@@ -1452,10 +1430,7 @@ export class LanguagesComponent implements OnInit {
                     link: ''
                 }
             ],
-            project: {
-                name: '',
-                link: ''
-            },
+            project: [],
             authors: [
                 {
                     name: 'Karsten Martiny',
@@ -1566,10 +1541,12 @@ export class LanguagesComponent implements OnInit {
                 }
             ],
             responsible: [],
-            project: {
-                name: 'Scalable Policy-awarE linked data arChitecture For prIvacy, trAnsparency and compLiance (SPECIAL) project',
-                link: 'https://www.specialprivacy.eu/'
-            },
+            project: [
+                {
+                    name: 'Scalable Policy-awarE linked data arChitecture For prIvacy, trAnsparency and compLiance (SPECIAL) project',
+                    link: 'https://www.specialprivacy.eu/'
+                }
+            ],
             authors: [
                 {
                     name: 'Piero A. Bonatti',

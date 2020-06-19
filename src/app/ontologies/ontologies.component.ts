@@ -49,12 +49,6 @@ export class OntologiesComponent implements OnInit {
         id: 'DPKO, DPRO',
         name: 'Data Protection Knowledge Ontology, Data Protection Reasoning Ontology',
         description: 'Legal ontologies developed to represent data protection knowledge, focusing mainly on the correctness of files contaning personal data and respective security measures applied to them',
-/*         domain: [
-            {
-                name: 'privacy',
-                dbPedia: 'http://dbpedia.org/page/Category:Privacy'
-            }
-        ], */
         legalBasis: [
             {
                 country: '../../assets/flags/Flag_of_Spain.svg.png',
@@ -84,10 +78,12 @@ export class OntologiesComponent implements OnInit {
                 link: 'https://www.s21sec.com/'
             }
         ],
-        project: {
-            name: 'NEURONA project',
-            link: ''
-        },
+        project: [
+            {
+                name: 'NEURONA project',
+                link: ''
+            }
+        ],
         authors: [
             {
                 name: 'Núria Casellas',
@@ -189,10 +185,7 @@ export class OntologiesComponent implements OnInit {
                 link: 'http://www.deri.ie/' // not working
             }
         ],
-        project: {
-            name: '',
-            link: ''
-        },
+        project: [],
         authors: [
             {
                 name: 'Owen Sacco',
@@ -337,10 +330,7 @@ export class OntologiesComponent implements OnInit {
                 link: 'http://www.last-jd.eu/'
             }
         ],
-        project: {
-            name: '',
-            link: ''
-        },
+        project: [],
         authors: [
             {
                 name: 'Cesare Bartolini',
@@ -454,10 +444,7 @@ export class OntologiesComponent implements OnInit {
                 link: 'https://www.adaptcentre.ie/'
             }
         ],
-        project: {
-            name: '',
-            link: ''
-        },
+        project: [],
         authors: [
             {
                 name: 'Harshvardhan J. Pandit',
@@ -588,10 +575,7 @@ export class OntologiesComponent implements OnInit {
                 link: 'https://www.adaptcentre.ie/'
             }
         ],
-        project: {
-            name: '',
-            link: ''
-        },
+        project: [],
         authors: [
             {
                 name: 'Harshvardhan J. Pandit',
@@ -735,10 +719,7 @@ export class OntologiesComponent implements OnInit {
                 link: 'https://informationsystems.umbc.edu/'
             }
         ],
-        project: {
-            name: '',
-            link: ''
-        },
+        project: [],
         authors: [
             {
                 name: 'Lavanya Elluri',
@@ -842,10 +823,12 @@ export class OntologiesComponent implements OnInit {
             }
         ],
         responsible: [],
-        project: {
-            name: 'Scalable Policy-awarE linked data arChitecture For prIvacy, trAnsparency and compLiance (SPECIAL) project',
-            link: 'https://www.specialprivacy.eu/'
-        },
+        project: [
+            {
+                name: 'Scalable Policy-awarE linked data arChitecture For prIvacy, trAnsparency and compLiance (SPECIAL) project',
+                link: 'https://www.specialprivacy.eu/'
+            }
+        ],
         authors: [
             {
                 name: 'Piero A. Bonatti',
@@ -1031,6 +1014,126 @@ export class OntologiesComponent implements OnInit {
                 imageSrc: 'https://ai.wu.ac.at/policies/policylog/images/log.png',
                 typeSrc: 'https://ai.wu.ac.at/policies/policylog/',
                 nameSrc: 'SPLog specification'
+            }
+        ]
+    },
+    {
+        id: 'PrOnto',
+        name: 'Privacy Ontology for legal reasoning',
+        description: 'Legal ontology with the aim of modelling the relationships between privacy agents, data types, processing operations and deontic specifications to support compliance with the GDPR',
+        legalBasis: [
+            {
+                country: '../../assets/footer/eu_flag.jpg',
+                name: 'GDPR',
+                link: 'https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN'
+            }
+        ],
+        w3cStatus: '',
+        dates: {
+            created: '2018',
+            lastUpdated: ''
+        },
+        idiom: [
+            {
+                imageSrc: '../../assets/flags/uk_flag.png',
+                lang: 'en',
+                link: 'https://cris.unibo.it/retrieve/handle/11585/648022/467479/POST%20PRINT%20PrOntoPrivacyOntologyForLegalReasoning.pdf'
+            }
+        ],
+        responsible: [],
+        project: [
+            {
+                name: 'MIning  and  REasoning  with  Legal  texts (MIREL) project',
+                link: 'https://www.mirelproject.eu/'
+            },
+            {
+                name: 'DAta Protection REgulation COmpliance (DAPRECO) project',
+                link: 'https://www.fnr.lu/projects/data-protection-regulation-compliance/'
+            }
+        ],
+        authors: [
+            {
+                name: 'Monica Palmirani',
+                link: 'https://www.unibo.it/sitoweb/monica.palmirani/en'
+            },
+            {
+                name: 'Michele Martoni',
+                link: 'https://www.unibo.it/sitoweb/michele.martoni/en'
+            },
+            {
+                name: 'Arianna Rossi',
+                link: 'https://dblp.org/pers/hd/r/Rossi:Arianna'
+            },
+            {
+                name: 'Cesare Bartolini',
+                link: 'https://dblp.org/pers/b/Bartolini:Cesare.html'
+            },
+            {
+                name: 'Livio Robaldo',
+                link: 'https://dblp.org/pers/hd/r/Robaldo:Livio'
+            }
+        ],
+        elements: [
+            {
+                name: 'Data',
+                link: ''
+            },
+            {
+                name: 'Agents',
+                link: ''
+            },
+            {
+                name: 'Processing',
+                link: ''
+            },
+            {
+                name: 'Rights',
+                link: ''
+            },
+            {
+                name: 'Purposes',
+                link: ''
+            },
+        ],
+        resources: [],
+        documentation: [
+            {
+                type: 'PDF',
+                link: 'https://cris.unibo.it/retrieve/handle/11585/648022/467479/POST%20PRINT%20PrOntoPrivacyOntologyForLegalReasoning.pdf'
+            }
+        ],
+        examples: [
+            {
+                type: 'sample',
+                title: 'Examples from the "PrOnto: Privacy Ontology for Legal Reasoning" article',
+                description: {
+                    name: '"PrOnto: Privacy Ontology for Legal Reasoning" article',
+                    link: 'https://cris.unibo.it/retrieve/handle/11585/648022/467479/POST%20PRINT%20PrOntoPrivacyOntologyForLegalReasoning.pdf'
+                },
+                solutions: [
+                    {
+                        exampleName: 'SPARQL queries - section 5',
+                        resources: []
+                    }
+                ]
+            },
+            {
+                type: 'deliverables',
+                projectDeliverables: {
+                    name: 'MIREL',
+                    link: 'https://www.mirelproject.eu/publications.php'
+                },
+                deliverables: [
+                ]
+            }
+        ],
+        diagrams: [ // add more figures from https://www.semanticscholar.org/paper/PrOnto%3A-Privacy-Ontology-for-Legal-Reasoning-Palmirani-Martoni/cf52aa17e41f4e6aec9c9a6972f6e16c1988f5f8
+            {
+                type: 'spec',
+                name: 'PrOnto',
+                imageSrc: 'https://d3i71xaburhd42.cloudfront.net/cf52aa17e41f4e6aec9c9a6972f6e16c1988f5f8/8-Figure1-1.png',
+                typeSrc: 'https://cris.unibo.it/retrieve/handle/11585/648022/467479/POST%20PRINT%20PrOntoPrivacyOntologyForLegalReasoning.pdf',
+                nameSrc: 'PrOnto article'
             }
         ]
     }
