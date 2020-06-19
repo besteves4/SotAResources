@@ -1538,6 +1538,233 @@ export class LanguagesComponent implements OnInit {
                 }
             ],
             diagrams: []
+        },
+        {
+            id: 'SPL',
+            name: 'SPECIAL Usage Policy Language',
+            description: "Usage language that can be used to specify in formal terms both the data subjects' consent and the data controllers' usage policies, to be in compliance with the GDPR",
+            domain: [
+                {
+                    name: 'privacy',
+                    dbPedia: 'http://dbpedia.org/page/Category:Privacy'
+                },
+                {
+                    name: 'transparency',
+                    dbPedia: 'http://dbpedia.org/page/Category:Transparency_(behavior)'
+                }
+            ],
+            w3cStatus: '',
+            dates: {
+                created: '2017',
+                lastUpdated: '2019'
+            },
+            idiom: [
+                {
+                    imageSrc: '../../assets/flags/uk_flag.png',
+                    lang: 'en',
+                    link: 'https://ai.wu.ac.at/policies/policylanguage/'
+                }
+            ],
+            responsible: [],
+            project: {
+                name: 'Scalable Policy-awarE linked data arChitecture For prIvacy, trAnsparency and compLiance (SPECIAL) project',
+                link: 'https://www.specialprivacy.eu/'
+            },
+            authors: [
+                {
+                    name: 'Piero A. Bonatti',
+                    link: 'http://wpage.unina.it/pieroandrea.bonatti/'
+                },
+                {
+                    name: 'Sabrina Kirrane',
+                    link: 'http://sabrinakirrane.com/'
+                },
+                {
+                    name: 'Iliana Mineva Petrova',
+                    link: 'https://dblp.org/pers/p/Petrova:Iliana_M=.html'
+                },
+                {
+                    name: 'Luigi Sauro',
+                    link: 'https://dblp.uni-trier.de/pers/s/Sauro:Luigi.html'
+                },
+                {
+                    name: 'Eva Schlehahn',
+                    link: 'https://dblp.org/pers/s/Schlehahn:Eva.html'
+                },
+            ],
+            elements: [
+                {
+                    name: 'Data',
+                    link: 'https://www.specialprivacy.eu/vocabs/data'
+                },
+                {
+                    name: 'Duration',
+                    link: 'https://www.specialprivacy.eu/vocabs/duration'
+                },
+                {
+                    name: 'Location',
+                    link: 'https://www.specialprivacy.eu/vocabs/locations'
+                },
+                {
+                    name: 'Processing',
+                    link: 'https://www.specialprivacy.eu/vocabs/processing'
+                },
+                {
+                    name: 'Purpose',
+                    link: 'https://www.specialprivacy.eu/vocabs/purposes'
+                },
+                {
+                    name: 'Recipient',
+                    link: 'https://www.specialprivacy.eu/vocabs/recipients'
+                }
+            ],
+            resources: [
+                {
+                    type: 'OWL',
+                    link: 'https://www.specialprivacy.eu/images/documents/func_usage-policy-language-1.0.owl'
+                }
+            ],
+            documentation: [
+                {
+                    type: 'HTML',
+                    link: 'https://ai.wu.ac.at/policies/policylanguage/'
+                },
+                {
+                    type: 'PDF',
+                    link: 'https://www.specialprivacy.eu/images/documents/Kirrane-2018-ESWC.pdf'
+                },
+                {
+                    type: 'GitHub',
+                    link: 'https://github.com/specialprivacy'
+                }
+            ],
+            examples: [
+                {
+                    type: 'sample',
+                    title: 'Examples from the SPL specification',
+                    description: {
+                        name: 'SPL specification',
+                        link: 'https://ai.wu.ac.at/policies/policylanguage/'
+                    },
+                    solutions: [
+                        {
+                            exampleName: 'Example 1: Abstract policy',
+                            resources: [
+                                {
+                                    language: 'OWL',
+                                    link: 'https://ai.wu.ac.at/policies/policylanguage/#ex1'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'Example 2: General usage policy in SPECIAL',
+                            resources: [
+                                {
+                                    language: 'OWL',
+                                    link: 'https://ai.wu.ac.at/policies/policylanguage/#ex2'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'Example 3: General usage policy in SPECIAL including a logical equivalence',
+                            resources: [
+                                {
+                                    language: 'OWL',
+                                    link: 'https://ai.wu.ac.at/policies/policylanguage/#ex3'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'Example 4: Ellaborated policy',
+                            resources: [
+                                {
+                                    language: 'OWL',
+                                    link: 'https://ai.wu.ac.at/policies/policylanguage/#ex4'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'Example 5: Sticky policies',
+                            resources: [
+                                {
+                                    language: 'OWL',
+                                    link: 'https://ai.wu.ac.at/policies/policylanguage/#ex5'
+                                }
+                            ]
+                        },
+                    ]
+                },
+                {
+                    type: 'deliverables',
+                    projectDeliverables: {
+                        name: 'SPECIAL',
+                        link: 'https://www.specialprivacy.eu/publications/public-deliverables'
+                    },
+                    deliverables: [
+                        {
+                            name: 'D2.1 - Policy Language V1',
+                            link: 'https://www.specialprivacy.eu/images/documents/SPECIAL_D21_M12_V10.pdf'
+                        },
+                        {
+                            name: 'D2.5 - Policy Language V2',
+                            link: 'https://www.specialprivacy.eu/images/documents/SPECIAL_D25_M21_V10.pdf'
+                        }
+                    ]
+                },
+                {
+                    type: 'use-case',
+                    heading: {
+                        title: 'Proximus',
+                        imageSrc: 'https://media-exp1.licdn.com/dms/image/C4D0BAQEzyH2v-_XUqg/company-logo_200_200/0?e=2159024400&v=beta&t=UiruiM5e4sRZKjEc31nrjo2DDU3DaEjmqhGUFh1sMg4'
+                    },
+                    institution: {
+                        name: 'Proximus',
+                        link: 'https://www.proximus.be/en/'
+                    },
+                    specifications: [
+                        {
+                            name: 'Personalized touristic recommendations',
+                            resources: [
+                                {
+                                    type: 'PDF',
+                                    link: 'https://www.specialprivacy.eu/images/documents/report-D5.pdf'
+                                },
+                                {
+                                    type: 'OWL',
+                                    link: '../../assets/languages/SPL/examples/proximus.owl'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    type: 'use-case',
+                    heading: {
+                        title: 'Thomson Reuters',
+                        imageSrc: 'https://i7.pngflow.com/pngimage/471/378/png-thomson-reuters-corporation-business-avox-limited-reuters-tv-business-orange-people-logo-symmetry-clipart.png'
+                    },
+                    institution: {
+                        name: 'Thomson Reuters',
+                        link: 'https://www.thomsonreuters.com/en.html'
+                    },
+                    specifications: [
+                        {
+                            name: 'Support anti-money laundering requirements.',
+                            resources: [
+                                {
+                                    type: 'PDF',
+                                    link: 'https://www.specialprivacy.eu/images/documents/report-D5.pdf'
+                                },
+                                {
+                                    type: 'OWL',
+                                    link: '../../assets/languages/SPL/examples/tr.owl'
+                                }
+                            ]
+                        }
+                    ]
+                },
+            ],
+            diagrams: []
         }
     ]
 }

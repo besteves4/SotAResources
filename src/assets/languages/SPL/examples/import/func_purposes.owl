@@ -1,0 +1,210 @@
+Prefix(svpu:=<http://www.specialprivacy.eu/vocabs/purposes#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(spl:=<http://www.specialprivacy.eu/langs/usage-policy#>)
+
+
+Ontology(<http://www.specialprivacy.eu/vocabs/purposes>
+
+Declaration(Class(svpu:Account))
+Declaration(Class(svpu:Admin))
+Declaration(Class(svpu:AnyContact))
+Declaration(Class(svpu:Arts))
+Declaration(Class(svpu:AuxPurpose))
+Declaration(Class(svpu:Browsing))
+Declaration(Class(svpu:Charity))
+Declaration(Class(svpu:Communicate))
+Declaration(Class(svpu:Current))
+Declaration(Class(svpu:Custom))
+Declaration(Class(svpu:Delivery))
+Declaration(Class(svpu:Develop))
+Declaration(Class(svpu:Downloads))
+Declaration(Class(svpu:Education))
+Declaration(Class(svpu:Feedback))
+Declaration(Class(svpu:Finmgt))
+Declaration(Class(svpu:Gambling))
+Declaration(Class(svpu:Gaming))
+Declaration(Class(svpu:Government))
+Declaration(Class(svpu:Health))
+Declaration(Class(svpu:Historical))
+Declaration(Class(svpu:Login))
+Declaration(Class(svpu:Marketing))
+Declaration(Class(svpu:News))
+Declaration(Class(svpu:OtherContact))
+Declaration(Class(svpu:Payment))
+Declaration(Class(svpu:Sales))
+Declaration(Class(svpu:Search))
+Declaration(Class(svpu:State))
+Declaration(Class(svpu:Tailoring))
+Declaration(Class(svpu:Telemarketing))
+############################
+#   Classes
+############################
+
+# Class: svpu:Account (svpu:Account)
+
+SubClassOf(svpu:Account svpu:AuxPurpose)
+
+# Class: svpu:Admin (svpu:Admin)
+
+SubClassOf(svpu:Admin spl:AnyPurpose)
+
+# Class: svpu:AnyContact (svpu:AnyContact)
+
+SubClassOf(svpu:AnyContact spl:AnyPurpose)
+
+# Class: svpu:Arts (svpu:Arts)
+
+SubClassOf(svpu:Arts svpu:Current)
+
+# Class: svpu:AuxPurpose (svpu:AuxPurpose)
+
+SubClassOf(svpu:AuxPurpose spl:AnyPurpose)
+
+# Class: svpu:Browsing (svpu:Browsing)
+
+SubClassOf(svpu:Browsing svpu:Current)
+
+# Class: svpu:Charity (svpu:Charity)
+
+SubClassOf(svpu:Charity svpu:Current)
+
+# Class: svpu:Communicate (svpu:Communicate)
+
+SubClassOf(svpu:Communicate svpu:Current)
+
+# Class: svpu:Current (svpu:Current)
+
+SubClassOf(svpu:Current spl:AnyPurpose)
+
+# Class: svpu:Custom (svpu:Custom)
+
+SubClassOf(svpu:Custom svpu:AuxPurpose)
+
+# Class: svpu:Delivery (svpu:Delivery)
+
+SubClassOf(svpu:Delivery svpu:AuxPurpose)
+
+# Class: svpu:Develop (svpu:Develop)
+
+SubClassOf(svpu:Develop spl:AnyPurpose)
+
+# Class: svpu:Downloads (svpu:Downloads)
+
+SubClassOf(svpu:Downloads svpu:Current)
+
+# Class: svpu:Education (svpu:Education)
+
+SubClassOf(svpu:Education svpu:Current)
+
+# Class: svpu:Feedback (svpu:Feedback)
+
+SubClassOf(svpu:Feedback svpu:AuxPurpose)
+
+# Class: svpu:Finmgt (svpu:Finmgt)
+
+SubClassOf(svpu:Finmgt svpu:Current)
+
+# Class: svpu:Gambling (svpu:Gambling)
+
+SubClassOf(svpu:Gambling svpu:Current)
+
+# Class: svpu:Gaming (svpu:Gaming)
+
+SubClassOf(svpu:Gaming svpu:Current)
+
+# Class: svpu:Government (svpu:Government)
+
+SubClassOf(svpu:Government svpu:Current)
+
+# Class: svpu:Health (svpu:Health)
+
+SubClassOf(svpu:Health svpu:Current)
+
+# Class: svpu:Historical (svpu:Historical)
+
+SubClassOf(svpu:Historical spl:AnyPurpose)
+
+# Class: svpu:Login (svpu:Login)
+
+SubClassOf(svpu:Login svpu:AuxPurpose)
+
+# Class: svpu:Marketing (svpu:Marketing)
+
+SubClassOf(svpu:Marketing svpu:AuxPurpose)
+
+# Class: svpu:News (svpu:News)
+
+SubClassOf(svpu:News svpu:Current)
+
+# Class: svpu:OtherContact (svpu:OtherContact)
+
+SubClassOf(svpu:OtherContact svpu:AnyContact)
+DisjointClasses(svpu:OtherContact svpu:Telemarketing)
+
+# Class: svpu:Payment (svpu:Payment)
+
+SubClassOf(svpu:Payment svpu:AuxPurpose)
+
+# Class: svpu:Sales (svpu:Sales)
+
+SubClassOf(svpu:Sales svpu:Current)
+
+# Class: svpu:Search (svpu:Search)
+
+SubClassOf(svpu:Search svpu:Current)
+
+# Class: svpu:State (svpu:State)
+
+SubClassOf(svpu:State svpu:AuxPurpose)
+
+# Class: svpu:Tailoring (svpu:Tailoring)
+
+SubClassOf(svpu:Tailoring spl:AnyPurpose)
+
+# Class: svpu:Telemarketing (svpu:Telemarketing)
+
+SubClassOf(svpu:Telemarketing svpu:AnyContact)
+
+
+DisjointClasses(
+   svpu:Account
+   svpu:Custom
+   svpu:Delivery
+   svpu:Feedback
+   svpu:Login
+   svpu:Marketing
+   svpu:Payment
+   svpu:State
+)
+
+DisjointClasses(
+   svpu:Admin
+   svpu:AnyContact
+   svpu:AuxPurpose
+   svpu:Current
+   svpu:Develop
+   svpu:Historical
+   svpu:Tailoring
+)
+
+DisjointClasses(
+   svpu:Arts
+   svpu:Browsing
+   svpu:Charity
+   svpu:Communicate
+   svpu:Downloads
+   svpu:Education
+   svpu:Finmgt
+   svpu:Gambling
+   svpu:Gaming
+   svpu:Government
+   svpu:Health
+   svpu:News
+   svpu:Sales
+   svpu:Search
+)
+)
