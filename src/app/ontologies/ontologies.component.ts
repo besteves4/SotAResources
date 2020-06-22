@@ -1409,6 +1409,206 @@ export class OntologiesComponent implements OnInit {
                 nameSrc: 'D3.1 - Compliance ontology BPR4GDPR deliverable'
             }
         ]
+    },
+    {
+        id: 'DPV',
+        name: 'Data Privacy Vocabulary',
+        description: "Data privacy vocabulary with the main purpose of providing a taxonomy of terms to annotate and categorize the handling of personal data in accordance with the GDPR and which can be extended to cover other data protection legislations",
+        legalBasis: [
+            {
+                country: '../../assets/footer/eu_flag.jpg',
+                name: 'GDPR',
+                link: 'https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN'
+            }
+        ],
+        w3cStatus: 'W3C Community Group Draft',
+        dates: {
+            created: '2018',
+            lastUpdated: ''
+        },
+        idiom: [
+            {
+                imageSrc: '../../assets/flags/uk_flag.png',
+                lang: 'en',
+                link: 'http://doras.dcu.ie/23801/1/DPVCG___ODBASE.pdf'
+            }
+        ],
+        responsible: [
+            {
+                name: 'Data Privacy Vocabularies and Controls Community Group (DPVCG)',
+                link: 'https://www.w3.org/community/dpvcg/'
+            }
+        ],
+        project: [],
+        authors: [
+            {
+                name: 'Harshvardhan J. Pandit',
+                link: 'https://harshp.com/research/'
+            },
+            {
+                name: 'Axel Polleres',
+                link: 'https://aic.ai.wu.ac.at/~polleres/'
+            },
+            {
+                name: 'Bert Bos',
+                link: 'https://dblp.org/pers/hd/b/Bos:Bert'
+            },
+            {
+                name: 'Rob Brennan',
+                link: 'https://dblp.org/pers/hd/b/Brennan:Rob'
+            },
+            {
+                name: 'Bud Bruegger',
+                link: 'https://dblp.org/pers/hd/b/Bruegger:Bud_P='
+            },
+            {
+                name: 'Fajar J. Ekaputra',
+                link: 'https://dblp.org/pers/hd/e/Ekaputra:Fajar_J='
+            },
+            {
+                name: 'Javier D. Fernández',
+                link: 'https://dblp.org/pers/f/Fern=aacute=ndez:Javier_D=.html'
+            },
+            {
+                name: 'Ramisa Gachpaz Hamed',
+                link: 'https://dblp.org/pers/hd/h/Hamed:Roghaiyeh_Gachpaz'
+            },
+            {
+                name: 'Elmar Kiesling',
+                link: 'https://dblp.org/pers/hd/k/Kiesling:Elmar'
+            },
+            {
+                name: 'Mark Lizar',
+                link: 'https://dblp.org/pers/hd/l/Lizar:Mark'
+            },
+            {
+                name: 'Eva Schlehahn',
+                link: 'https://dblp.org/pers/hd/s/Schlehahn:Eva'
+            },
+            {
+                name: 'Simon Steyskal',
+                link: 'https://dblp.org/pers/hd/s/Steyskal:Simon'
+            },
+            {
+                name: 'Rigo Wenning',
+                link: 'https://dblp.org/pers/hd/w/Wenning:Rigo'
+            }
+        ],
+        elements: [
+            {
+                name: 'Personal data categories',
+                link: 'https://www.w3.org/ns/dpv#vocab-personal-data-categories'
+            },
+            {
+                name: 'Purposes',
+                link: 'https://www.w3.org/ns/dpv#vocab-purposes'
+            },
+            {
+                name: 'Processing categories',
+                link: 'https://www.w3.org/ns/dpv#vocab-processing-categories'
+            },
+            {
+                name: 'Technical and organisational measures',
+                link: 'https://www.w3.org/ns/dpv#vocab-technical-organisational-measures'
+            },
+            {
+                name: 'Consent',
+                link: 'https://www.w3.org/ns/dpv#vocab-consent'
+            },
+            {
+                name: 'Recipient',
+                link: 'https://www.w3.org/ns/dpv#recipient'
+            },
+            {
+                name: 'Data controller',
+                link: 'https://www.w3.org/ns/dpv#data-controller'
+            },
+            {
+                name: 'Data subject',
+                link: 'https://www.w3.org/ns/dpv#data-subject'
+            },
+            {
+                name: 'GDPR legal basis',
+                link: 'https://www.w3.org/ns/dpv-gdpr'
+            }
+        ],
+        resources: [
+            {
+                type: 'DPV RDF',
+                link: 'https://github.com/dpvcg/dpv/blob/master/dpv.xml'
+            },
+            {
+                type: 'DPV Turtle',
+                link: 'https://www.w3.org/ns/dpv.ttl'
+            },
+            {
+                type: 'DPV JSON-LD',
+                link: 'https://github.com/dpvcg/dpv/blob/master/dpv.jsonld'
+            },
+            {
+                type: 'DPV N3',
+                link: 'https://github.com/dpvcg/dpv/blob/master/dpv.n3'
+            },
+            {
+                type: 'DPV GDPR RDF',
+                link: 'https://github.com/dpvcg/dpv-gdpr/blob/master/rdf/dpv-gdpr.xml'
+            },
+            {
+                type: 'DPV GDPR Turtle',
+                link: 'https://github.com/dpvcg/dpv-gdpr/blob/master/rdf/dpv-gdpr.ttl'
+            },
+            {
+                type: 'DPV GDPR JSON-LD',
+                link: 'https://github.com/dpvcg/dpv-gdpr/blob/master/rdf/dpv-gdpr.jsonld'
+            },
+            {
+                type: 'DPV GDPR N3',
+                link: 'https://github.com/dpvcg/dpv-gdpr/blob/master/rdf/dpv-gdpr.n3'
+            }
+        ],
+        documentation: [
+            {
+                type: 'DPV HTML',
+                link: 'https://www.w3.org/ns/dpv'
+            },
+            {
+                type: 'DPV GDPR HTML',
+                link: 'https://www.w3.org/ns/dpv-gdpr'
+            },
+            {
+                type: 'PDF',
+                link: 'http://doras.dcu.ie/23801/1/DPVCG___ODBASE.pdf'
+            },
+            {
+                type: 'GitHub',
+                link: 'https://github.com/dpvcg'
+            }
+        ],
+        examples: [
+            {
+                type: 'sample',
+                title: 'Examples from the W3C DPVCG',
+                description: {
+                    name: 'W3C DPVCG',
+                    link: 'https://www.w3.org/community/dpvcg/2019/12/12/data-protection-aspects-of-online-shopping-a-use-case/'
+                },
+                solutions: [
+                    {
+                        exampleName: 'Data Protection Aspects of Online Shopping – A Use Case',
+                        resources: []
+                    }
+                ]
+            }
+        ],
+        diagrams: [
+            {
+                type: 'spec',
+                name: 'DPV v0.1',
+                imageSrc: 'https://www.w3.org/ns/diagrams/personaldatahandling.png',
+                typeSrc: 'https://www.w3.org/ns/dpv',
+                nameSrc: 'DPV specification'
+            }
+        ]
     }
   ]
 

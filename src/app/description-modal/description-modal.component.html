@@ -66,7 +66,7 @@
                     <div class="col-11 offset-1">
                         <strong>Authors: </strong> <br>
                         <div class="button-wrapper" *ngFor="let author of ppl?.authors">
-                            <a class="btn btn-outline-info btn-sm mr-1" href={{author.link}} target="_blank" role="button">{{author.name}}</a>
+                            <a class="btn btn-outline-info btn-sm mr-1 mb-1" href={{author.link}} target="_blank" role="button">{{author.name}}</a>
                         </div>
                     </div>
                 </div>
@@ -75,8 +75,8 @@
                     <div class="col-11 offset-1">
                         <strong>Main elements: </strong> <br>
                         <div class="button-wrapper" *ngFor="let element of ppl?.elements" [ngSwitch]="element.link">
-                            <button *ngSwitchCase="''" type="button" class="btn btn-outline-success btn-sm mr-1">{{element.name}}</button>
-                            <a *ngSwitchDefault role="button" class="btn btn-outline-success btn-sm mr-1" href={{element.link}} target="_blank">{{element.name}}</a>
+                            <button *ngSwitchCase="''" type="button" class="btn btn-outline-success btn-sm mr-1 mb-1">{{element.name}}</button>
+                            <a *ngSwitchDefault role="button" class="btn btn-outline-success btn-sm mr-1 mb-1" href={{element.link}} target="_blank">{{element.name}}</a>
                         </div>
                     </div>
                 </div>
