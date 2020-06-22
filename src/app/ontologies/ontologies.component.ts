@@ -697,7 +697,7 @@ export class OntologiesComponent implements OnInit {
             },
             {
                 country: '../../assets/footer/eu_flag.jpg',
-                name: 'CSA CoC',
+                name: 'CSA Code of Conduct',
                 link: 'https://downloads.cloudsecurityalliance.org/assets/research/gdpr/CSA_Code_of_Conduct_for_GDPR_Compliance.pdf'
             }
         ],
@@ -1134,6 +1134,169 @@ export class OntologiesComponent implements OnInit {
                 imageSrc: 'https://d3i71xaburhd42.cloudfront.net/cf52aa17e41f4e6aec9c9a6972f6e16c1988f5f8/8-Figure1-1.png',
                 typeSrc: 'https://cris.unibo.it/retrieve/handle/11585/648022/467479/POST%20PRINT%20PrOntoPrivacyOntologyForLegalReasoning.pdf',
                 nameSrc: 'PrOnto article'
+            }
+        ]
+    },
+    {
+        id: 'GConsent',
+        name: 'GDPR Consent ontology',
+        description: 'Ontology focused on the concept of consent as one of the legal basis for the processing of personal data under the GDPR. Represents the consent lyfecycle for GDPR compliance, modelling several states of consent (given, expired, unknown, ...)',
+        legalBasis: [
+            {
+                country: '../../assets/footer/eu_flag.jpg',
+                name: 'GDPR',
+                link: 'https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN'
+            },
+            {
+                country: '../../assets/footer/eu_flag.jpg',
+                name: 'Guidelines on consent',
+                link: 'https://edpb.europa.eu/sites/edpb/files/files/file1/edpb_guidelines_202005_consent_en.pdf'
+            }
+        ],
+        w3cStatus: '',
+        dates: {
+            created: '2018',
+            lastUpdated: ''
+        },
+        idiom: [
+            {
+                imageSrc: '../../assets/flags/uk_flag.png',
+                lang: 'en',
+                link: 'http://openscience.adaptcentre.ie/ontologies/gconsent/main.html'
+            }
+        ],
+        responsible: [
+            {
+                name: 'ADAPT Centre, Trinity College Dublin',
+                link: 'https://www.adaptcentre.ie/'
+            }
+        ],
+        project: [],
+        authors: [
+            {
+                name: 'Harshvardhan J. Pandit',
+                link: 'https://harshp.com/research/'
+            },
+            {
+                name: 'Christophe Debruyne',
+                link: 'https://chrdebru.github.io/'
+            },
+            {
+                name: "Declan O'Sullivan",
+                link: 'https://dblp.org/pers/o/O=Sullivan:Declan.html'
+            },
+            {
+                name: 'Dave Lewis',
+                link: 'https://dblp.uni-trier.de/pers/hd/l/Lewis_0001:David'
+            }
+        ],
+        elements: [
+            {
+                name: 'Consent',
+                link: 'http://openscience.adaptcentre.ie/ontologies/GConsent/docs/ontology#Consent'
+            },
+            {
+                name: 'Status',
+                link: 'http://openscience.adaptcentre.ie/ontologies/GConsent/docs/ontology#Status'
+            },
+            {
+                name: 'Data subject',
+                link: 'http://openscience.adaptcentre.ie/ontologies/GConsent/docs/ontology#DataSubject'
+            },
+            {
+                name: 'Personal data',
+                link: 'http://openscience.adaptcentre.ie/ontologies/GConsent/docs/ontology#PersonalData'
+            },
+            {
+                name: 'Purpose',
+                link: 'http://openscience.adaptcentre.ie/ontologies/GConsent/docs/ontology#Purpose'
+            },
+            {
+                name: 'Processing',
+                link: 'http://openscience.adaptcentre.ie/ontologies/GConsent/docs/ontology#Processing'
+            }
+        ],
+        resources: [
+            {
+                type: 'RDF',
+                link: 'http://openscience.adaptcentre.ie/ontologies/GConsent/docs/ontology.xml'
+            },
+            {
+                type: 'N-Triples',
+                link: 'http://openscience.adaptcentre.ie/ontologies/GConsent/docs/ontology.nt'
+            },
+            {
+                type: 'Turtle',
+                link: 'http://openscience.adaptcentre.ie/ontologies/GConsent/docs/ontology.ttl'
+            },
+            {
+                type: 'JSON-LD',
+                link: 'http://openscience.adaptcentre.ie/ontologies/GConsent/docs/ontology.json'
+            }
+        ],
+        documentation: [
+            {
+                type: 'PDF',
+                link: 'http://openscience.adaptcentre.ie/ontologies/gconsent/main.html'
+            },
+            {
+                type: 'HTML',
+                link: 'http://openscience.adaptcentre.ie/ontologies/GConsent/docs/ontology'
+            },
+        ],
+        examples: [
+            {
+                type: 'sample',
+                title: 'Examples from the GConsent specification',
+                description: {
+                    name: 'GConsent specification',
+                    link: 'http://openscience.adaptcentre.ie/ontologies/GConsent/docs/ontology'
+                },
+                solutions: [
+                    {
+                        exampleName: 'Change in Consent State - Example 1',
+                        resources: [
+                            {
+                                language: 'PNG',
+                                link: 'http://openscience.adaptcentre.ie/ontologies/GConsent/docs/diagrams/consent_invalidated_data_activity.png'
+                            }
+                        ]
+                    },
+                    {
+                        exampleName: 'Capturing Given Consent - Example 2',
+                        resources: [
+                            {
+                                language: 'PNG',
+                                link: 'http://openscience.adaptcentre.ie/ontologies/GConsent/docs/diagrams/example_ds1.png'
+                            }
+                        ]
+                    },
+                    {
+                        exampleName: 'Capturing Consent Given via Delegation - Example 3',
+                        resources: [
+                            {
+                                language: 'PNG',
+                                link: 'http://openscience.adaptcentre.ie/ontologies/GConsent/docs/diagrams/example_ds2.png'
+                            }
+                        ]
+                    },
+                    {
+                        exampleName: 'Capturing Consent where Data is shared with a Third Party - Example 4',
+                        resources: [
+                            {
+                                language: 'PNG',
+                                link: 'http://openscience.adaptcentre.ie/ontologies/GConsent/docs/diagrams/example_ds3.png'
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        diagrams: [ // add more figures from http://openscience.adaptcentre.ie/ontologies/gconsent/main.html
+            {
+                type: 'webvowl',
+                name: 'GConsent v0.5',
+                imageSrc: 'http://openscience.adaptcentre.ie/ontologies/GConsent/docs/webvowl/index.html#'
             }
         ]
     }
