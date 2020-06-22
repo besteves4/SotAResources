@@ -1299,6 +1299,116 @@ export class OntologiesComponent implements OnInit {
                 imageSrc: 'http://openscience.adaptcentre.ie/ontologies/GConsent/docs/webvowl/index.html#'
             }
         ]
+    },
+    {
+        id: 'IMO',
+        name: 'BPR4GDPR Information Model Ontology',
+        description: "Ontology that focuses on the entities and respective roles that are involved in the organizations' lifecycle of processes, with the main goal of providing a framework to reinforce the implementation of GDPR inside organizations",
+        legalBasis: [
+            {
+                country: '../../assets/footer/eu_flag.jpg',
+                name: 'GDPR',
+                link: 'https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN'
+            }
+        ],
+        w3cStatus: '',
+        dates: {
+            created: '2018',
+            lastUpdated: ''
+        },
+        idiom: [
+            {
+                imageSrc: '../../assets/flags/uk_flag.png',
+                lang: 'en',
+                link: 'https://www.bpr4gdpr.eu/wp-content/uploads/2019/06/D3.1-Compliance-Ontology-1.0.pdf'
+            }
+        ],
+        responsible: [],
+        project: [
+            {
+                name: 'Business Process Re-engineering and functional toolkit for GDPR compliance (BPR4GDPR) project',
+                link: 'https://www.bpr4gdpr.eu/'
+            },
+        ],
+        authors: [
+            {
+                name: 'Georgios Lioudakis',
+                link: 'https://dblp.org/pers/l/Lioudakis:Georgios_V=.html'
+            },
+            {
+                name: 'Davide Cascone',
+                link: 'https://dblp.org/pers/hd/c/Cascone:Davide'
+            }
+        ],
+        elements: [
+            {
+                name: 'Data types',
+                link: ''
+            },
+            {
+                name: 'Roles',
+                link: ''
+            },
+            {
+                name: 'Operations',
+                link: ''
+            },
+            {
+                name: 'Machine types',
+                link: ''
+            },
+            {
+                name: 'Organization types',
+                link: ''
+            },
+            {
+                name: 'Event types',
+                link: ''
+            },
+            {
+                name: 'Context types',
+                link: ''
+            },
+            {
+                name: 'Purposes',
+                link: ''
+            },
+            {
+                name: 'Attributes',
+                link: ''
+            }
+        ],
+        resources: [],
+        documentation: [
+            {
+                type: 'PDF',
+                link: 'https://www.bpr4gdpr.eu/wp-content/uploads/2019/06/D3.1-Compliance-Ontology-1.0.pdf'
+            }
+        ],
+        examples: [
+            {
+                type: 'deliverables',
+                projectDeliverables: {
+                    name: 'BPR4GDPR',
+                    link: 'https://www.bpr4gdpr.eu/results/deliverables/'
+                },
+                deliverables: [
+                    {
+                        name: 'D3.1 - Compliance ontology',
+                        link: 'https://www.bpr4gdpr.eu/wp-content/uploads/2019/06/D3.1-Compliance-Ontology-1.0.pdf'
+                    },
+                ]
+            }
+        ],
+        diagrams: [
+            {
+                type: 'spec',
+                name: 'IMO',
+                imageSrc: '../../assets/ontologies/IMO/diagrams/fig3_d31.PNG',
+                typeSrc: 'https://www.bpr4gdpr.eu/wp-content/uploads/2019/06/D3.1-Compliance-Ontology-1.0.pdf',
+                nameSrc: 'D3.1 - Compliance ontology BPR4GDPR deliverable'
+            }
+        ]
     }
   ]
 
