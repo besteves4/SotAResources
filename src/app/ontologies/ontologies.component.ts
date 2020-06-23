@@ -1538,30 +1538,29 @@ export class OntologiesComponent implements OnInit {
                 link: 'https://github.com/dpvcg/dpv/blob/master/dpv.xml'
             },
             {
-                type: 'DPV Turtle',
-                link: 'https://www.w3.org/ns/dpv.ttl'
-            },
-            {
-                type: 'DPV JSON-LD',
-                link: 'https://github.com/dpvcg/dpv/blob/master/dpv.jsonld'
-            },
-            {
-                type: 'DPV N3',
-                link: 'https://github.com/dpvcg/dpv/blob/master/dpv.n3'
-            },
-            {
                 type: 'DPV GDPR RDF',
                 link: 'https://github.com/dpvcg/dpv-gdpr/blob/master/rdf/dpv-gdpr.xml'
+            },
+            {
+                type: 'DPV Turtle',
+                link: 'https://www.w3.org/ns/dpv.ttl'
             },
             {
                 type: 'DPV GDPR Turtle',
                 link: 'https://github.com/dpvcg/dpv-gdpr/blob/master/rdf/dpv-gdpr.ttl'
             },
             {
+                type: 'DPV JSON-LD',
+                link: 'https://github.com/dpvcg/dpv/blob/master/dpv.jsonld'
+            },
+            {
                 type: 'DPV GDPR JSON-LD',
                 link: 'https://github.com/dpvcg/dpv-gdpr/blob/master/rdf/dpv-gdpr.jsonld'
             },
             {
+                type: 'DPV N3',
+                link: 'https://github.com/dpvcg/dpv/blob/master/dpv.n3'
+            },{
                 type: 'DPV GDPR N3',
                 link: 'https://github.com/dpvcg/dpv-gdpr/blob/master/rdf/dpv-gdpr.n3'
             }

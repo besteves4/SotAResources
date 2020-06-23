@@ -36,12 +36,12 @@
 }
 
 .resources {
-    min-width: 120px;
+    min-width: 125px;
     vertical-align:middle;
 }
 
 .documentation {
-    min-width: 130px;
+    /* min-width: 130px; */
     vertical-align:middle;
 }
 

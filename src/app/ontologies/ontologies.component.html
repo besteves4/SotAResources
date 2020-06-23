@@ -11,21 +11,21 @@
     </tr>
 </thead>
 <tbody>
-    <tr *ngFor="let ppl of ontologies">
-        <th scope="row" class="vertical-middle clickable" (click)="handleClick(ppl)">
+    <tr *ngFor="let ppl of ontologies" class="clickable" (click)="handleClick(ppl)">
+        <th scope="row" class="vertical-middle">
             {{ppl.id}}
         </th>
-        <td class="name clickable" (click)="handleClick(ppl)">
+        <td class="name">
             {{ppl.name}}
         </td>
-        <td class="description clickable" (click)="handleClick(ppl)">
+        <td class="description">
             <div>
                 {{ppl.description}}
             </div>
         </td>
         <td class="legal">
-            <div class="button-wrapper" *ngFor="let legal of ppl?.legalBasis">
-                <a class="btn btn-outline-info btn-sm mr-1" href={{legal.link}} target="_blank" role="button">
+            <div class="button-wrapper mr-1" *ngFor="let legal of ppl?.legalBasis">
+                <a class="btn btn-outline-info btn-sm mb-1" href={{legal.link}} target="_blank" role="button">
                     <span class="idiom">
                         <img src={{legal.country}} height="12" mr-1> {{legal.name}}
                     </span>
