@@ -190,10 +190,6 @@ export class LanguagesComponent implements OnInit {
                             exampleName: 'Example 2.2',
                             resources: [
                                 {
-                                    language: 'XML',
-                                    link: '../assets/languages/p3p/examples/XML_ex-2-2.xml'
-                                },
-                                {
                                     language: 'RDF',
                                     link: '../assets/languages/p3p/examples/RDF_ex-2-2.xml'
                                 }
@@ -202,10 +198,6 @@ export class LanguagesComponent implements OnInit {
                         {
                             exampleName: 'Example 2.5',
                             resources: [
-                                {
-                                    language: 'XML',
-                                    link: '../assets/languages/p3p/examples/XML_ex-2-5.xml'
-                                },
                                 {
                                     language: 'RDF',
                                     link: '../assets/languages/p3p/examples/RDF_ex-2-5.xml'
@@ -216,10 +208,6 @@ export class LanguagesComponent implements OnInit {
                             exampleName: 'Example 2.6',
                             resources: [
                                 {
-                                    language: 'XML',
-                                    link: '../assets/languages/p3p/examples/XML_ex-2-6.xml'
-                                },
-                                {
                                     language: 'RDF',
                                     link: '../assets/languages/p3p/examples/RDF_ex-2-6.xml'
                                 }
@@ -229,10 +217,6 @@ export class LanguagesComponent implements OnInit {
                             exampleName: "CatalogExample's Privacy Policy for Browsers - Example 3.1",
                             resources: [
                                 {
-                                    language: 'XML',
-                                    link: '../assets/languages/p3p/examples/XML_ex-3-1.xml'
-                                },
-                                {
                                     language: 'RDF',
                                     link: '../assets/languages/p3p/examples/RDF_ex-3-1.xml'
                                 }
@@ -241,10 +225,6 @@ export class LanguagesComponent implements OnInit {
                         {
                             exampleName: "CatalogExample's Privacy Policy for Shoppers - Example 3.2",
                             resources: [
-                                {
-                                    language: 'XML',
-                                    link: '../assets/languages/p3p/examples/XML_ex-3-2.xml'
-                                },
                                 {
                                     language: 'RDF',
                                     link: '../assets/languages/p3p/examples/RDF_ex-3-2.xml'
@@ -352,39 +332,19 @@ export class LanguagesComponent implements OnInit {
                     solutions: [
                         {
                             exampleName: '"Almost Anonymous" Ruleset',
-                            resources: [
-                                {
-                                    language: 'XML',
-                                    link: '../assets/languages/APPEL/examples/XML_ex-B1.xml'
-                                }
-                            ]
+                            resources: []
                         },
                         {
                             exampleName: '"Privacy And Commerce" Ruleset',
-                            resources: [
-                                {
-                                    language: 'XML',
-                                    link: '../assets/languages/APPEL/examples/XML_ex-B2.xml'
-                                }
-                            ]
+                            resources: []
                         },
                         {
                             exampleName: '"Look For The Seal" Ruleset',
-                            resources: [
-                                {
-                                    language: 'XML',
-                                    link: '../assets/languages/APPEL/examples/XML_ex-B3.xml'
-                                }
-                            ]
+                            resources: []
                         },
                         {
                             exampleName: '"Information Only" Ruleset',
-                            resources: [
-                                {
-                                    language: 'XML',
-                                    link: '../assets/languages/APPEL/examples/XML_ex-B4.xml'
-                                }
-                            ]
+                            resources: []
                         }
                     ]
                 }
@@ -536,30 +496,15 @@ export class LanguagesComponent implements OnInit {
                     solutions: [
                         {
                             exampleName: 'XML Example - Example 1',
-                            resources: [
-                                {
-                                    language: 'XML',
-                                    link: '../assets/languages/ODRL/examples/XML_ex-1.xml'
-                                }
-                            ]
+                            resources: []
                         },
                         {
                             exampleName: 'XML Linking - Example 2',
-                            resources: [
-                                {
-                                    language: 'XML',
-                                    link: '../assets/languages/ODRL/examples/XML_ex-2.xml'
-                                }
-                            ]
+                            resources: []
                         },
                         {
                             exampleName: 'Logical Constraints - Example 3',
-                            resources: [
-                                {
-                                    language: 'XML',
-                                    link: '../assets/languages/ODRL/examples/XML_ex-3.xml'
-                                }
-                            ]
+                            resources: []
                         }
                     ]
                 },
@@ -920,17 +865,12 @@ export class LanguagesComponent implements OnInit {
                     title: 'Examples from the AIR Language Formalization documentation',
                     description: {
                         name: 'AIR Language Formalization',
-                        link: 'https://tw.rpi.edu//proj/tami/AIR_Language_Formalization'
+                        link: 'https://tw.rpi.edu//proj/tami/AIR_Language_Formalization#2.1.2._Example_AIR-program'
                     },
                     solutions: [
                         {
                             exampleName: 'Conference publication policy',
-                            resources: [
-                                {
-                                    language: 'N3',
-                                    link: '../assets/languages/AIR/examples/air_language_formalization-example_2_1_2.n3'
-                                }
-                            ]
+                            resources: []
                         }
                     ]
                 },
