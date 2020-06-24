@@ -60,7 +60,10 @@ export class LanguagesComponent implements OnInit {
                     dbPedia: 'http://dbpedia.org/page/Category:Privacy'
                 }
             ],
-            w3cStatus: 'W3C Obsolete Recommendation',
+            license: {
+                name: 'W3C Obsolete Recommendation',
+                link: 'https://www.w3.org/2018/Process-20180201/#rec-rescind'
+            },
             dates: {
                 created: '1998',
                 lastUpdated: '2010'
@@ -254,7 +257,10 @@ export class LanguagesComponent implements OnInit {
                     dbPedia: 'http://dbpedia.org/page/Category:Privacy'
                 }
             ],
-            w3cStatus: 'W3C Working Draft',
+            license: {
+                name: 'W3C Working Draft',
+                link: 'https://www.w3.org/2018/Process-20180201/#working-draft'
+            },
             dates: {
                 created: '1998',
                 lastUpdated: '2002'
@@ -361,7 +367,10 @@ export class LanguagesComponent implements OnInit {
                     dbPedia: 'http://dbpedia.org/page/Digital_rights'
                 }
             ],
-            w3cStatus: 'W3C Recommendation',
+            license: {
+                name: 'W3C Recommendation',
+                link: 'https://www.w3.org/2018/Process-20180201/#rec-publication'
+            },
             dates: {
                 created: '2001',
                 lastUpdated: '2019'
@@ -606,7 +615,10 @@ export class LanguagesComponent implements OnInit {
                     dbPedia: 'http://dbpedia.org/page/Preference'
                 }
             ],
-            w3cStatus: '',
+            license: {
+                name: '',
+                link: ''
+            },
             dates: {
                 created: '2003',
                 lastUpdated: ''
@@ -691,7 +703,10 @@ export class LanguagesComponent implements OnInit {
                     dbPedia: 'http://dbpedia.org/page/Preference'
                 }
             ],
-            w3cStatus: '',
+            license: {
+                name: '',
+                link: ''
+            },
             dates: {
                 created: '2009',
                 lastUpdated: '2010'
@@ -768,7 +783,10 @@ export class LanguagesComponent implements OnInit {
                     dbPedia: 'http://dbpedia.org/page/Category:Privacy'
                 }
             ],
-            w3cStatus: '',
+            license: {
+                name: '',
+                link: ''
+            },
             dates: {
                 created: '2007',
                 lastUpdated: '2009'
@@ -1034,7 +1052,10 @@ export class LanguagesComponent implements OnInit {
                     dbPedia: 'http://dbpedia.org/page/Category:Privacy'
                 }
             ],
-            w3cStatus: '',
+            license: {
+                name: '',
+                link: ''
+            },
             dates: {
                 created: '2010',
                 lastUpdated: '2013'
@@ -1085,7 +1106,10 @@ export class LanguagesComponent implements OnInit {
                     dbPedia: 'http://dbpedia.org/page/Category:Privacy'
                 }
             ],
-            w3cStatus: '',
+            license: {
+                name: '',
+                link: ''
+            },
             dates: {
                 created: '2014',
                 lastUpdated: ''
@@ -1199,7 +1223,10 @@ export class LanguagesComponent implements OnInit {
                     dbPedia: 'http://dbpedia.org/page/Accountability'
                 }
             ],
-            w3cStatus: '',
+            license: {
+                name: '',
+                link: ''
+            },
             dates: {
                 created: '2013',
                 lastUpdated: '2016'
@@ -1352,7 +1379,10 @@ export class LanguagesComponent implements OnInit {
                     dbPedia: ''
                 }
             ],
-            w3cStatus: '',
+            license: {
+                name: '',
+                link: ''
+            },
             dates: {
                 created: '2018',
                 lastUpdated: ''
@@ -1468,7 +1498,10 @@ export class LanguagesComponent implements OnInit {
                     dbPedia: 'http://dbpedia.org/page/Category:Transparency_(behavior)'
                 }
             ],
-            w3cStatus: '',
+            license: {
+                name: '',
+                link: ''
+            },
             dates: {
                 created: '2017',
                 lastUpdated: '2019'

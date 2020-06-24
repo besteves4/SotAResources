@@ -56,7 +56,10 @@ export class OntologiesComponent implements OnInit {
                 link: 'https://apdcat.gencat.cat/web/.content/01-autoritat/normativa/documentos/2643.pdf'
             }
         ],
-        w3cStatus: '',
+        license: {
+            name: '',
+            link: ''
+        },
         dates: {
             created: '2008',
             lastUpdated: '2010'
@@ -167,7 +170,10 @@ export class OntologiesComponent implements OnInit {
         name: 'Privacy Preference Ontology',
         description: 'Lightweight vocabulary to create fine-grained privacy preferences for Linked Data, specifically to allow or restrict access to data within RDF documents',
         legalBasis: [],
-        w3cStatus: '',
+        license: {
+            name: '',
+            link: ''
+        },
         dates: {
             created: '2011',
             lastUpdated: '2013'
@@ -312,7 +318,10 @@ export class OntologiesComponent implements OnInit {
             }
 
         ],
-        w3cStatus: '',
+        license: {
+            name: '',
+            link: ''
+        },
         dates: {
             created: '2015',
             lastUpdated: '2016'
@@ -382,6 +391,10 @@ export class OntologiesComponent implements OnInit {
             {
                 type: 'PDF',
                 link: 'https://pdfs.semanticscholar.org/e59a/5f9e9bfc990d9d62ac0102c612cade2f5642.pdf'
+            },
+            {
+                type: 'PDF',
+                link: 'https://orbilu.uni.lu/bitstream/10993/22383/1/main.pdf'
             }
         ],
         examples: [
@@ -390,7 +403,7 @@ export class OntologiesComponent implements OnInit {
                 title: 'Extending the BPMN standard with a Data Protection Task',
                 description: {
                     name: '"Using Ontologies to Model Data Protection Requirements in Workflows" article',
-                    link: 'https://www.researchgate.net/publication/283325872_Using_Ontologies_to_Model_Data_Protection_Requirements_in_Workflows'
+                    link: 'https://orbilu.uni.lu/bitstream/10993/22383/1/main.pdf'
                 },
                 solutions: [
                     {
@@ -426,7 +439,10 @@ export class OntologiesComponent implements OnInit {
                 link: 'https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN'
             }
         ],
-        w3cStatus: '',
+        license: {
+            name: '',
+            link: ''
+        },
         dates: {
             created: '2017',
             lastUpdated: '2019'
@@ -557,7 +573,10 @@ export class OntologiesComponent implements OnInit {
                 link: 'https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN'
             }
         ],
-        w3cStatus: '',
+        license: {
+            name: '',
+            link: ''
+        },
         dates: {
             created: '2018',
             lastUpdated: '2020'
@@ -701,7 +720,10 @@ export class OntologiesComponent implements OnInit {
                 link: 'https://downloads.cloudsecurityalliance.org/assets/research/gdpr/CSA_Code_of_Conduct_for_GDPR_Compliance.pdf'
             }
         ],
-        w3cStatus: '',
+        license: {
+            name: '',
+            link: ''
+        },
         dates: {
             created: '2018',
             lastUpdated: ''
@@ -810,7 +832,10 @@ export class OntologiesComponent implements OnInit {
                 link: 'https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN'
             }
         ],
-        w3cStatus: '',
+        license: {
+            name: '',
+            link: ''
+        },
         dates: {
             created: '2017',
             lastUpdated: '2019'
@@ -1028,7 +1053,10 @@ export class OntologiesComponent implements OnInit {
                 link: 'https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN'
             }
         ],
-        w3cStatus: '',
+        license: {
+            name: '',
+            link: ''
+        },
         dates: {
             created: '2018',
             lastUpdated: ''
@@ -1153,7 +1181,10 @@ export class OntologiesComponent implements OnInit {
                 link: 'https://edpb.europa.eu/sites/edpb/files/files/file1/edpb_guidelines_202005_consent_en.pdf'
             }
         ],
-        w3cStatus: '',
+        license: {
+            name: '',
+            link: ''
+        },
         dates: {
             created: '2018',
             lastUpdated: ''
@@ -1311,7 +1342,10 @@ export class OntologiesComponent implements OnInit {
                 link: 'https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN'
             }
         ],
-        w3cStatus: '',
+        license: {
+            name: '',
+            link: ''
+        },
         dates: {
             created: '2018',
             lastUpdated: ''
@@ -1421,7 +1455,10 @@ export class OntologiesComponent implements OnInit {
                 link: 'https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN'
             }
         ],
-        w3cStatus: 'W3C Community Group Draft',
+        license: {
+            name: 'W3C Community Group Draft',
+            link: ''
+        },
         dates: {
             created: '2018',
             lastUpdated: ''
@@ -1581,6 +1618,10 @@ export class OntologiesComponent implements OnInit {
             {
                 type: 'GitHub',
                 link: 'https://github.com/dpvcg'
+            },
+            {
+                type: 'Wiki',
+                link: 'https://www.w3.org/community/dpvcg/wiki/Main_Page'
             }
         ],
         examples: [
