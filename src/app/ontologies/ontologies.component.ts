@@ -440,8 +440,8 @@ export class OntologiesComponent implements OnInit {
             }
         ],
         license: {
-            name: '',
-            link: ''
+            name: 'CC-by-4.0',
+            link: 'https://creativecommons.org/licenses/by/4.0/'
         },
         dates: {
             created: '2017',
@@ -522,6 +522,10 @@ export class OntologiesComponent implements OnInit {
             {
                 type: 'JSON-LD',
                 link: 'https://openscience.adaptcentre.ie/ontologies/GDPRov/docs/ontology.json'
+            },
+            {
+                type: 'OWL',
+                link: 'http://purl.org/adaptcentre/openscience/ontologies/GDPRov'
             }
         ],
         documentation: [
@@ -574,8 +578,8 @@ export class OntologiesComponent implements OnInit {
             }
         ],
         license: {
-            name: '',
-            link: ''
+            name: 'CC-by-4.0',
+            link: 'https://creativecommons.org/licenses/by/4.0/'
         },
         dates: {
             created: '2018',
@@ -1620,7 +1624,7 @@ export class OntologiesComponent implements OnInit {
                 link: 'https://github.com/dpvcg'
             },
             {
-                type: 'Wiki',
+                type: 'DPV CG Wiki',
                 link: 'https://www.w3.org/community/dpvcg/wiki/Main_Page'
             }
         ],

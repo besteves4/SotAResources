@@ -492,6 +492,10 @@ export class LanguagesComponent implements OnInit {
                 {
                     type: 'ODRL Model',
                     link: 'https://www.w3.org/TR/odrl-model/'
+                },
+                {
+                    type: 'POE WG Wiki',
+                    link: 'https://www.w3.org/2016/poe/wiki/Main_Page'
                 }
             ],
             examples: [
@@ -1499,8 +1503,8 @@ export class LanguagesComponent implements OnInit {
                 }
             ],
             license: {
-                name: '',
-                link: ''
+                name: 'CC-by-4.0',
+                link: 'https://creativecommons.org/licenses/by/4.0/'
             },
             dates: {
                 created: '2017',
@@ -1682,6 +1686,10 @@ export class LanguagesComponent implements OnInit {
                                 {
                                     type: 'OWL',
                                     link: '../../assets/languages/SPL/examples/proximus.owl'
+                                },
+                                {
+                                    type: 'DPV CG Wiki',
+                                    link: 'https://www.w3.org/community/dpvcg/wiki/SPECIAL/Proximus_use_case'
                                 }
                             ]
                         }
@@ -1708,6 +1716,10 @@ export class LanguagesComponent implements OnInit {
                                 {
                                     type: 'OWL',
                                     link: '../../assets/languages/SPL/examples/tr.owl'
+                                },
+                                {
+                                    type: 'DPV CG Wiki',
+                                    link: 'https://www.w3.org/community/dpvcg/wiki/SPECIAL/TR_use_case'
                                 }
                             ]
                         }

@@ -17,17 +17,10 @@
                         <a *ngSwitchCase="ppl?.license.name.includes('W3C Obsolete Recommendation')" class="btn btn-dark btn-sm float-right" href={{ppl?.license.link}} target="_blank" role="button">{{ppl?.license.name}}</a>
                         <a *ngSwitchCase="ppl?.license.name.includes('W3C Working Draft') || ppl?.license.name.includes('W3C Recommendation')" class="btn w3c-working-draft btn-sm float-right" href={{ppl?.license.link}} target="_blank" role="button">{{ppl?.license.name}}</a>
                         <a *ngSwitchCase="ppl?.license.name.includes('W3C Community Group Draft')" class="btn btn-success btn-sm float-right" href={{ppl?.license.link}} target="_blank" role="button">{{ppl?.license.name}}</a>
+                        <a *ngSwitchCase="ppl?.license.name.includes('CC-by-4.0')" class="btn cc-four btn-sm float-right" href={{ppl?.license.link}} target="_blank" role="button">{{ppl?.license.name}}</a>
                         <a *ngSwitchCase="ppl?.license.name.length==0" href=""></a>
                         <a *ngSwitchDefault class="btn btn-warning btn-sm mb-1" href="#" target="_blank" role="button">{{ppl?.license.name}}</a>
                     </div>
-
-<!--                     <div class="col-3" [ngSwitch]="true">
-                        <a *ngSwitchCase="ppl?.license.name.includes('W3C Obsolete Recommendation')" class="btn btn-dark btn-sm float-right" href="https://www.w3.org/2018/Process-20180201/#rec-rescind" target="_blank" role="button">{{ppl?.w3cStatus}}</a>
-                        <a *ngSwitchCase="'W3C Working Draft'" class="btn w3c-working-draft btn-sm float-right" href="https://www.w3.org/2018/Process-20180201/#working-draft" target="_blank" role="button">{{ppl?.w3cStatus}}</a>
-                        <a *ngSwitchCase="'W3C Recommendation'" class="btn w3c-working-draft btn-sm float-right" href="https://www.w3.org/2018/Process-20180201/#rec-publication" target="_blank" role="button">{{ppl?.w3cStatus}}</a>
-                        <a *ngSwitchCase="''" href=""></a>
-                        <a *ngSwitchDefault class="btn btn-warning btn-sm mb-1" href="#" target="_blank" role="button">{{ppl?.w3cStatus}}</a>
-                    </div> -->
                 </div>
 
                 <div *ngIf="ppl?.responsible.length != 0" class="row mb-2">

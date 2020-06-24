@@ -18,3 +18,12 @@
 .w3c-working-draft:hover {
     background-color: #004f88;
 }
+
+.cc-four {
+    background-color: #00b2d5;
+    color: white;
+}
+
+.cc-four:hover {
+    background-color: #008eaa;
+}
