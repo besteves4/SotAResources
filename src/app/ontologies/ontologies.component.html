@@ -34,20 +34,20 @@
         </td>
         <td class="resources">
             <div class="button-wrapper mr-1" *ngFor="let res of ppl?.resources" [ngSwitch]="true">
-                <a *ngSwitchCase="res.type.includes('XML')" class="btn btn-outline-warning btn-sm mb-1" href={{res.link}} target="_blank" role="button">{{res.type}}</a>
+                <a *ngSwitchCase="res.type.includes('XML')" class="btn btn-outline-warning orange-btn btn-sm mb-1" href={{res.link}} target="_blank" role="button">{{res.type}}</a>
                 <a *ngSwitchCase="res.type.includes('RDF')" class="btn btn-outline-success btn-sm mb-1" href={{res.link}} target="_blank" role="button">{{res.type}}</a>
                 <a *ngSwitchCase="res.type.includes('DTD')" class="btn btn-outline-info btn-sm mb-1" href={{res.link}} target="_blank" role="button">{{res.type}}</a>
                 <a *ngSwitchCase="res.type.includes('JSON-LD')" class="btn btn-outline-primary btn-sm mb-1" href={{res.link}} target="_blank" role="button">{{res.type}}</a>
                 <a *ngSwitchCase="res.type.includes('Turtle')" class="btn btn-outline-danger btn-sm mb-1" href={{res.link}} target="_blank" role="button">{{res.type}}</a>
                 <a *ngSwitchCase="res.type.includes('N-Triples')" class="btn btn-outline-secondary btn-sm mb-1" href={{res.link}} target="_blank" role="button">{{res.type}}</a>
                 <a *ngSwitchCase="res.type.includes('N3')" class="btn btn-outline-dark btn-sm mb-1" href={{res.link}} target="_blank" role="button">{{res.type}}</a>
-                <a *ngSwitchCase="res.type.includes('OWL')" class="btn btn-outline-light btn-sm mb-1" href={{res.link}} target="_blank" role="button">{{res.type}}</a>
+                <a *ngSwitchCase="res.type.includes('OWL')" class="btn btn-outline-light purple-btn btn-sm mb-1" href={{res.link}} target="_blank" role="button">{{res.type}}</a>
                 <a *ngSwitchDefault class="btn btn-dark btn-sm mb-1" href={{res.link}} target="_blank" role="button">{{res.type}}</a>
             </div>
         </td>
         <td class="documentation">
             <div class="button-wrapper mr-1" *ngFor="let doc of ppl?.documentation" [ngSwitch]="true">
-                <a *ngSwitchCase="doc.type.includes('HTML') || doc.type.includes('Vocab') || doc.type.includes('Model')" class="btn btn-outline-warning btn-sm mb-1" href={{doc.link}} target="_blank" role="button">{{doc.type}}</a>
+                <a *ngSwitchCase="doc.type.includes('HTML') || doc.type.includes('Vocab') || doc.type.includes('Model')" class="btn btn-outline-warning orange-btn btn-sm mb-1" href={{doc.link}} target="_blank" role="button">{{doc.type}}</a>
                 <a *ngSwitchCase="doc.type.includes('GitHub')" class="btn btn-outline-success btn-sm mb-1" href={{doc.link}} target="_blank" role="button">{{doc.type}}</a>
                 <a *ngSwitchCase="doc.type.includes('PDF')" class="btn btn-outline-danger btn-sm mb-1" href={{doc.link}} target="_blank" role="button">{{doc.type}}</a>
                 <a *ngSwitchCase="doc.type.includes('RDF')" class="btn btn-outline-success btn-sm mb-1" href={{doc.link}} target="_blank" role="button">{{doc.type}}</a>
@@ -56,9 +56,9 @@
         </td>
         <td class="diagram">
             <div class="button-wrapper mr-1" *ngFor="let diag of ppl?.diagrams" [ngSwitch]="true">
-                <a *ngSwitchCase="diag.type.includes('xsddiagram')" class="btn btn-outline-warning btn-sm clickable" role="button" (click)="handleClickDiag(diag)">{{diag.name}}</a>
-                <a *ngSwitchCase="diag.type.includes('spec')" class="btn btn-outline-warning btn-sm clickable" role="button" (click)="handleClickDiag(diag)">{{diag.name}}</a>
-                <a *ngSwitchCase="diag.type.includes('webvowl')" class="btn btn-outline-warning btn-sm" href={{diag.imageSrc}} target="_blank" role="button">{{diag.name}}</a>
+                <a *ngSwitchCase="diag.type.includes('xsddiagram')" class="btn btn-outline-warning orange-btn btn-sm clickable" role="button" (click)="handleClickDiag(diag)">{{diag.name}}</a>
+                <a *ngSwitchCase="diag.type.includes('spec')" class="btn btn-outline-warning orange-btn btn-sm clickable" role="button" (click)="handleClickDiag(diag)">{{diag.name}}</a>
+                <a *ngSwitchCase="diag.type.includes('webvowl')" class="btn btn-outline-warning orange-btn btn-sm" href={{diag.imageSrc}} target="_blank" role="button">{{diag.name}}</a>
             </div>
         </td>
     </tr>
