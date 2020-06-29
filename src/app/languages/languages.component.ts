@@ -1101,6 +1101,146 @@ export class LanguagesComponent implements OnInit {
             diagrams: []
         },
         {
+            id: 'PPO',
+            name: 'Privacy Preference Ontology',
+            description: 'Lightweight vocabulary to create fine-grained privacy preferences for Linked Data, specifically to allow or restrict access to data within RDF documents',
+            domain: [
+                {
+                    name: 'privacy',
+                    dbPedia: 'http://dbpedia.org/page/Category:Privacy'
+                },
+                {
+                    name: 'preference',
+                    dbPedia: 'http://dbpedia.org/page/Preference'
+                }
+            ],
+            license: {
+                name: '',
+                link: ''
+            },
+            dates: {
+                created: '2011',
+                lastUpdated: '2013'
+            },
+            idiom: [
+                {
+                    imageSrc: '../../assets/flags/uk_flag.png',
+                    lang: 'en',
+                    link:'http://vocab.deri.ie/ppo#'
+                }
+            ],
+            responsible: [
+                {
+                    name: 'Digital Enterprise Research Institute (DERI), National University of Ireland',
+                    link: 'http://www.deri.ie/' // not working
+                }
+            ],
+            project: [],
+            authors: [
+                {
+                    name: 'Owen Sacco',
+                    link: 'https://sites.google.com/site/owensacco/home'
+                },
+                {
+                    name: 'Alexandre Passant',
+                    link: 'https://dblp.org/pers/p/Passant:Alexandre.html'
+                }
+            ],
+            elements: [
+                {
+                    name: 'Access Space',
+                    link: 'http://vocab.deri.ie/ppo#AccessSpace'
+                },
+                {
+                    name: 'Operators',
+                    link: 'http://vocab.deri.ie/ppo#Operator'
+                },
+                {
+                    name: 'Condition',
+                    link: 'http://vocab.deri.ie/ppo#Condition'
+                },
+                {
+                    name: 'Create',
+                    link: 'http://vocab.deri.ie/ppo#Create'
+                },
+                {
+                    name: 'Update',
+                    link: 'http://vocab.deri.ie/ppo#Update'
+                },
+                {
+                    name: 'Delete',
+                    link: 'http://vocab.deri.ie/ppo#Delete'
+                },
+                {
+                    name: 'Privacy Preference',
+                    link: 'http://vocab.deri.ie/ppo#PrivacyPreference'
+                },
+            ],
+            resources: [
+                {
+                    type: 'Turtle',
+                    link: 'http://vocab.deri.ie/ppo.ttl'
+                },
+                {
+                    type: 'RDF',
+                    link: 'http://vocab.deri.ie/ppo.rdf'
+                },
+            ],
+            documentation: [
+                {
+                    type: 'HTML',
+                    link: 'http://vocab.deri.ie/ppo#'
+                },
+                {
+                    type: 'PDF',
+                    link: 'http://ceur-ws.org/Vol-813/ldow2011-paper01.pdf'
+                }
+            ],
+            examples: [
+                {
+                    type: 'sample',
+                    title: 'Examples from the "A Privacy Preference Ontology (PPO) for Linked Data" article',
+                    description: {
+                        name: '"A Privacy Preference Ontology (PPO) for Linked Data"',
+                        link: 'http://ceur-ws.org/Vol-813/ldow2011-paper01.pdf'
+                    },
+                    solutions: [
+                        {
+                            exampleName: 'Restrict access to phone number to whoever works at DERI - Section 3.2',
+                            resources: []
+                        },
+                        {
+                            exampleName: 'Restrict access to a post using the tags of said post - Section 3.2',
+                            resources: []
+                        }
+                    ]
+                },
+                {
+                    type: 'sample',
+                    title: 'Examples from the "A Privacy Preference Manager for the Social Semantic Web" article',
+                    description: {
+                        name: '"A Privacy Preference Manager for the Social Semantic Web" article',
+                        link: 'http://ceur-ws.org/Vol-781/paper6.pdf'
+                    },
+                    solutions: [
+                        {
+                            exampleName: 'MyPrivacyManager: privacy preference manager for users to create and manage preferences using PPO',
+                            resources: []
+                        }
+                    ]
+                },
+            ],
+            diagrams: [
+                {
+                    type: 'spec',
+                    name: 'PPO',
+                    imageSrc: '../../assets/ontologies/PPO/diagrams/ppo.PNG',
+                    typeSrc: 'http://ceur-ws.org/Vol-813/ldow2011-paper01.pdf',
+                    nameSrc: 'PPO article'
+                }
+            ]
+        },
+        {
             id: 'P2U',
             name: 'Purpose-To-Use',
             description: "Policy language that builds on the purpose-relevance-sharing principle with the aim of enforcing privacy while enabling the secondary sharing and usage of data on the web",
