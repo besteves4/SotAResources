@@ -1629,6 +1629,140 @@ export class LanguagesComponent implements OnInit {
             diagrams: []
         },
         {
+            id: 'PMO',
+            name: 'BPR4GDPR Policy Model Ontology',
+            description: "Rule-based framework that extends BPR4GDPR's Information Model Ontology (IMO) to define permissions, prohibitions and obligations over actions under specific purposes and contexts",
+            domain: [
+                {
+                    name: 'digital rights',
+                    dbPedia: 'http://dbpedia.org/page/Digital_rights'
+                }
+            ],
+            license: {
+                name: '',
+                link: ''
+            },
+            dates: {
+                created: '2019',
+                lastUpdated: ''
+            },
+            idiom: [
+                {
+                    imageSrc: '../../assets/flags/uk_flag.png',
+                    lang: 'en',
+                    link: 'https://www.bpr4gdpr.eu/wp-content/uploads/2019/06/D2.3-Initial-Specification-of-BPR4GDPR-architecture-%E2%80%94-final.pdf'
+                }
+            ],
+            responsible: [],
+            project: [
+                {
+                    name: 'Business Process Re-engineering and functional toolkit for GDPR compliance (BPR4GDPR) project',
+                    link: 'https://www.bpr4gdpr.eu/'
+                },
+            ],
+            authors: [
+                {
+                    name: 'Nikolaos Dellas',
+                    link: 'https://dblp.org/pers/d/Dellas:Nikolaos_L=.html'
+                }
+            ],
+            elements: [
+                {
+                    name: 'Rules',
+                    link: ''
+                },
+                {
+                    name: 'Actions',
+                    link: ''
+                },
+                {
+                    name: 'Required actions',
+                    link: ''
+                },
+                {
+                    name: 'Concrete entities',
+                    link: ''
+                },
+                {
+                    name: 'Enhanced entities',
+                    link: ''
+                },
+                {
+                    name: 'Expressions',
+                    link: ''
+                },
+                {
+                    name: 'Skeletons',
+                    link: ''
+                }
+            ],
+            resources: [],
+            documentation: [
+                {
+                    type: 'PDF',
+                    link: 'https://www.bpr4gdpr.eu/wp-content/uploads/2019/06/D2.3-Initial-Specification-of-BPR4GDPR-architecture-%E2%80%94-final.pdf'
+                },
+                {
+                    type: 'PDF',
+                    link: 'https://www.researchgate.net/publication/260706010_Leveraging_Ontologies_upon_a_Holistic_Privacy-Aware_Access_Control_Model'
+                }
+            ],
+            examples: [
+                {
+                    type: 'sample',
+                    title: 'Examples from the "Leveraging Ontologies upon a Holistic Privacy-Aware Access Control Model" article',
+                    description: {
+                        name: '"Leveraging Ontologies upon a Holistic Privacy-Aware Access Control Model" article',
+                        link: 'https://www.researchgate.net/publication/260706010_Leveraging_Ontologies_upon_a_Holistic_Privacy-Aware_Access_Control_Model'
+                    },
+                    solutions: [
+                        {
+                            exampleName: 'Example rule for the health sector - Figure 3',
+                            resources: [
+                                {
+                                    language: 'PNG',
+                                    link: 'https://www.researchgate.net/profile/Joaquin_Garcia-Alfaro/publication/260706010/figure/fig3/AS:296857856167938@1447787836426/Example-of-Ontological-Access-Control-Rule.png'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    type: 'deliverables',
+                    projectDeliverables: {
+                        name: 'BPR4GDPR',
+                        link: 'https://www.bpr4gdpr.eu/results/deliverables/'
+                    },
+                    deliverables: [
+                        {
+                            name: 'D2.3 - Initial Specification of BPR4GDPR architecture',
+                            link: 'https://www.bpr4gdpr.eu/wp-content/uploads/2019/06/D2.3-Initial-Specification-of-BPR4GDPR-architecture-%E2%80%94-final.pdf'
+                        },
+                        {
+                            name: 'D3.1 - Compliance ontology',
+                            link: 'https://www.bpr4gdpr.eu/wp-content/uploads/2019/06/D3.1-Compliance-Ontology-1.0.pdf'
+                        },
+                    ]
+                }
+            ],
+            diagrams: [
+                {
+                    type: 'spec',
+                    name: 'PMO',
+                    imageSrc: 'https://www.researchgate.net/profile/Joaquin_Garcia-Alfaro/publication/260706010/figure/fig2/AS:296857856167937@1447787836378/Policy-Model-Ontology-PMO.png',
+                    typeSrc: 'https://www.researchgate.net/publication/260706010_Leveraging_Ontologies_upon_a_Holistic_Privacy-Aware_Access_Control_Model',
+                    nameSrc: '"Leveraging Ontologies upon a Holistic Privacy-Aware Access Control Model" article'
+                },
+                {
+                    type: 'spec',
+                    name: 'PMO rules format',
+                    imageSrc: '../../assets/languages/PMO/diagrams/PMOformat_fig5_d23.PNG',
+                    typeSrc: 'https://www.bpr4gdpr.eu/wp-content/uploads/2019/06/D2.3-Initial-Specification-of-BPR4GDPR-architecture-%E2%80%94-final.pdf',
+                    nameSrc: 'D2.3 - Initial Specification of BPR4GDPR architecture'
+                }
+            ]
+        },
+        {
             id: 'SPL',
             name: 'SPECIAL Usage Policy Language',
             description: "Usage language that can be used to specify in formal terms both the data subjects' consent and the data controllers' usage policies, to be in compliance with the GDPR",

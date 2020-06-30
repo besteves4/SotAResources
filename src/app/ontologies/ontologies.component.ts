@@ -1290,9 +1290,32 @@ export class OntologiesComponent implements OnInit {
             {
                 type: 'PDF',
                 link: 'https://www.bpr4gdpr.eu/wp-content/uploads/2019/06/D3.1-Compliance-Ontology-1.0.pdf'
+            },
+            {
+                type: 'PDF',
+                link: 'https://www.researchgate.net/publication/260706010_Leveraging_Ontologies_upon_a_Holistic_Privacy-Aware_Access_Control_Model'
             }
         ],
         examples: [
+            {
+                type: 'sample',
+                title: 'Examples from the "Leveraging Ontologies upon a Holistic Privacy-Aware Access Control Model" article',
+                description: {
+                    name: '"Leveraging Ontologies upon a Holistic Privacy-Aware Access Control Model" article',
+                    link: 'https://www.researchgate.net/publication/260706010_Leveraging_Ontologies_upon_a_Holistic_Privacy-Aware_Access_Control_Model'
+                },
+                solutions: [
+                    {
+                        exampleName: 'Example rule for the health sector - Figure 3',
+                        resources: [
+                            {
+                                language: 'PNG',
+                                link: 'https://www.researchgate.net/profile/Joaquin_Garcia-Alfaro/publication/260706010/figure/fig3/AS:296857856167938@1447787836426/Example-of-Ontological-Access-Control-Rule.png'
+                            }
+                        ]
+                    }
+                ]
+            },
             {
                 type: 'deliverables',
                 projectDeliverables: {
@@ -1304,6 +1327,10 @@ export class OntologiesComponent implements OnInit {
                         name: 'D3.1 - Compliance ontology',
                         link: 'https://www.bpr4gdpr.eu/wp-content/uploads/2019/06/D3.1-Compliance-Ontology-1.0.pdf'
                     },
+                    {
+                        name: 'D2.3 - Initial Specification of BPR4GDPR architecture',
+                        link: 'https://www.bpr4gdpr.eu/wp-content/uploads/2019/06/D2.3-Initial-Specification-of-BPR4GDPR-architecture-%E2%80%94-final.pdf'
+                    }
                 ]
             }
         ],
@@ -1311,9 +1338,9 @@ export class OntologiesComponent implements OnInit {
             {
                 type: 'spec',
                 name: 'IMO',
-                imageSrc: '../../assets/ontologies/IMO/diagrams/fig3_d31.PNG',
-                typeSrc: 'https://www.bpr4gdpr.eu/wp-content/uploads/2019/06/D3.1-Compliance-Ontology-1.0.pdf',
-                nameSrc: 'D3.1 - Compliance ontology BPR4GDPR deliverable'
+                imageSrc: 'https://www.researchgate.net/profile/Joaquin_Garcia-Alfaro/publication/260706010/figure/fig1/AS:296857856167936@1447787836335/Information-Model-Ontology-IMO.png',
+                typeSrc: 'https://www.researchgate.net/publication/260706010_Leveraging_Ontologies_upon_a_Holistic_Privacy-Aware_Access_Control_Model',
+                nameSrc: '"Leveraging Ontologies upon a Holistic Privacy-Aware Access Control Model" article'
             }
         ]
     },
