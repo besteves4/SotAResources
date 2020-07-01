@@ -48,7 +48,7 @@ export class OntologiesComponent implements OnInit {
     {
         id: 'DPKO, DPRO',
         name: 'Data Protection Knowledge Ontology, Data Protection Reasoning Ontology',
-        description: 'Legal ontologies developed to represent data protection knowledge, focusing mainly on the correctness of files contaning personal data and respective security measures applied to them',
+        description: 'Legal ontologies developed to represent data protection knowledge, focusing mainly on the correctness of files containing personal data and respective security measures applied to them',
         legalBasis: [
             {
                 country: '../../assets/flags/Flag_of_Spain.svg.png',
@@ -1041,7 +1041,7 @@ export class OntologiesComponent implements OnInit {
     {
         id: 'GConsent',
         name: 'GDPR Consent ontology',
-        description: 'Ontology focused on the concept of consent as one of the legal basis for the processing of personal data under the GDPR. Represents the consent lyfecycle for GDPR compliance, modelling several states of consent (given, expired, unknown, ...)',
+        description: 'Ontology focused on the concept of consent as one of the legal basis for the processing of personal data under the GDPR. Represents the consent life cycle for GDPR compliance, modelling several states of consent (given, expired, unknown, ...)',
         legalBasis: [
             {
                 country: '../../assets/footer/eu_flag.jpg',
@@ -1207,7 +1207,7 @@ export class OntologiesComponent implements OnInit {
     {
         id: 'IMO',
         name: 'BPR4GDPR Information Model Ontology',
-        description: "Ontology that focuses on the entities and respective roles that are involved in the organizations' lifecycle of processes, with the main goal of providing a framework to reinforce the implementation of GDPR inside organizations",
+        description: "Ontology that focuses on the entities and respective roles that are involved in the organizations' life cycle of processes, with the main goal of providing a framework to reinforce the implementation of GDPR inside organizations",
         legalBasis: [
             {
                 country: '../../assets/footer/eu_flag.jpg',
