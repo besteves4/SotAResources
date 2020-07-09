@@ -486,12 +486,16 @@ export class LanguagesComponent implements OnInit {
                     link: 'https://www.w3.org/TR/odrl-vocab/'
                 },
                 {
-                    type: 'GitHub',
-                    link: 'https://github.com/w3c/poe'
-                },
-                {
                     type: 'ODRL Model',
                     link: 'https://www.w3.org/TR/odrl-model/'
+                },
+                {
+                    type: 'ODRL CG GitHub',
+                    link: 'https://github.com/w3c/odrl'
+                },
+                {
+                    type: 'POE WG GitHub',
+                    link: 'https://github.com/w3c/poe'
                 },
                 {
                     type: 'POE WG Wiki',
@@ -1095,6 +1099,10 @@ export class LanguagesComponent implements OnInit {
                 {
                     type: 'PDF',
                     link: 'http://kau.diva-portal.org/smash/get/diva2:623452/FULLTEXT01.pdf'
+                },
+                {
+                    type: 'PDF',
+                    link: 'https://link.springer.com/content/pdf/10.1007%2F978-3-642-20769-3_3.pdf'
                 }
             ],
             examples: [],
