@@ -74,7 +74,7 @@ export class OntologiesComponent implements OnInit {
         responsible: [
             {
                 name: 'Institute of Law and Technology, Universitat  Autònoma  de  Barcelona (IDT-UAB)',
-                link: ''
+                link: 'http://idt.uab.cat/'
             },
             {
                 name: 'S21SEC',
@@ -84,7 +84,7 @@ export class OntologiesComponent implements OnInit {
         project: [
             {
                 name: 'NEURONA project',
-                link: ''
+                link: 'http://idt.uab.cat/index.php/competitive-projects/#2008'
             }
         ],
         authors: [
@@ -697,7 +697,7 @@ export class OntologiesComponent implements OnInit {
     {
         id: 'SPLog',
         name: 'SPECIAL Policy Log Vocabulary',
-        description: 'Log vocabulary build to record data processing events and consent that should comply with the consent actions given by the data owners. SPLog uses the SPL language to instantiate the content of a log entry content',
+        description: 'Log vocabulary built to record data processing events and consent that should comply with the consent actions given by the data owners. SPLog uses the SPL language to instantiate the content of a log entry',
         legalBasis: [
             {
                 country: '../../assets/footer/eu_flag.jpg',
@@ -1024,8 +1024,7 @@ export class OntologiesComponent implements OnInit {
                     name: 'MIREL',
                     link: 'https://www.mirelproject.eu/publications.php'
                 },
-                deliverables: [
-                ]
+                deliverables: []
             }
         ],
         diagrams: [ // add more figures from https://www.semanticscholar.org/paper/PrOnto%3A-Privacy-Ontology-for-Legal-Reasoning-Palmirani-Martoni/cf52aa17e41f4e6aec9c9a6972f6e16c1988f5f8
