@@ -1346,7 +1346,7 @@ export class OntologiesComponent implements OnInit {
     {
         id: 'DPV',
         name: 'Data Privacy Vocabulary',
-        description: "Data privacy vocabulary with the main purpose of providing a taxonomy of terms to annotate and categorize the handling of personal data in accordance with the GDPR and which can be extended to cover other data protection legislations",
+        description: "Data privacy vocabularies with the main purpose of providing a taxonomy of terms to annotate and categorize the handling of personal data in accordance with the GDPR and which can be extended to cover other data protection legislations",
         legalBasis: [
             {
                 country: '../../assets/footer/eu_flag.jpg',
