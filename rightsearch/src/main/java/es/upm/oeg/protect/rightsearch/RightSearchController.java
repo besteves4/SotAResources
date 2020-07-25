@@ -1,21 +1,6 @@
 package es.upm.oeg.protect.rightsearch;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.OutputStreamWriter;
-import java.io.Writer;
-import java.util.List;
-import io.swagger.annotations.ApiImplicitParam;
-import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiResponse;
-import io.swagger.annotations.ApiResponses;
-import io.swagger.annotations.ExampleProperty;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.logging.Level;
-import javax.annotation.PostConstruct;
 import javax.servlet.ServletContext;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -57,17 +42,6 @@ public class RightSearchController {
             logger.error(e.getCause().toString());
         }
         return "";
-    }
-    
-    
-    @PostConstruct
-    public void initIt() {
-	  logger.info("Init Models" );
-          try{
-           
-          }catch(Exception e){
-          logger.error("Unable to start service at deploy time. "+e);
-          }
     }
     
     @RequestMapping(value ="/status", method = RequestMethod.GET)
