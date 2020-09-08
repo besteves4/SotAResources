@@ -35,8 +35,9 @@ public class RightSearchController {
     @ResponseBody
     public String getRights(@RequestBody String text) throws Exception {
         try {
-            
+            System.out.println("Searching for: " + text);
             String json = RightsFinder.find(text);
+            System.out.println("Found: " + json);
             return json;
                 
         } catch (Exception e) {
@@ -49,6 +50,7 @@ public class RightSearchController {
     @RequestMapping(value ="/status", method = RequestMethod.GET)
     @ResponseBody
     public String status() {
+        System.out.println("I have been asked for the status hahaha");
         return "version 1.0";
     }
   
