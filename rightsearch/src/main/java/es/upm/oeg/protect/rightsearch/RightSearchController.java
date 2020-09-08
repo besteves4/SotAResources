@@ -1,5 +1,6 @@
 package es.upm.oeg.protect.rightsearch;
 
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import javax.servlet.ServletContext;
 import org.apache.log4j.Logger;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @author vroddon
  */
 @Controller
+@Api(tags = "RightsSearch", value = "RightsSearch")
 public class RightSearchController {
 
     @Autowired
@@ -29,7 +31,7 @@ public class RightSearchController {
             value = "/rights",
             consumes = "text/plain;charset=UTF-8",
             produces= "application/json;charset=UTF-8",
-            method = RequestMethod.GET)
+            method = RequestMethod.POST)
     @ResponseBody
     public String getRights(@RequestBody String text) throws Exception {
         try {

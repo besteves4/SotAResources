@@ -7,6 +7,9 @@ HTTP Rest API service to find rights references in ontologies
 # run
 `java -jar target/rightsearch-1.0.jar`
 
+# See the service 
+http://localhost:8080/swagger-ui.html
+
 
 Víctor Rodríguez-Doncel, Beatriz Esteves
 Ontology Engineering Group

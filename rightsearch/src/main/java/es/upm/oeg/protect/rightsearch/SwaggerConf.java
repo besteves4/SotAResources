@@ -1,5 +1,4 @@
-package es.upm.oeg.pal.dm;
-
+package es.upm.oeg.protect.rightsearch;
 
 
 import org.springframework.context.annotation.Bean;
