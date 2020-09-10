@@ -1,0 +1,95 @@
+<div class="modal fade" bsModal #descriptionModal="bs-modal" tabindex="-1" role="dialog" aria-labelledby="dialog-nested-name1">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close pull-right" aria-label="Close" (click)="descriptionModal.hide()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                
+                <div class="row mt-2 mb-2">
+                    <div class="col-8 offset-1">
+                        <h3 class="language-title">
+                            {{ppl?.id}} - {{ppl?.name}}
+                        </h3>
+                    </div>
+
+                    <div class="col-3" [ngSwitch]="true">
+                        <a *ngSwitchCase="ppl?.license.name.includes('W3C Obsolete Recommendation')" class="btn btn-dark btn-sm float-right" href={{ppl?.license.link}} target="_blank" role="button">{{ppl?.license.name}}</a>
+                        <a *ngSwitchCase="ppl?.license.name.includes('W3C Working Draft') || ppl?.license.name.includes('W3C Recommendation')" class="btn w3c-working-draft btn-sm float-right" href={{ppl?.license.link}} target="_blank" role="button">{{ppl?.license.name}}</a>
+                        <a *ngSwitchCase="ppl?.license.name.includes('W3C Community Group Draft')" class="btn btn-success btn-sm float-right" href={{ppl?.license.link}} target="_blank" role="button">{{ppl?.license.name}}</a>
+                        <a *ngSwitchCase="ppl?.license.name.includes('CC-by-4.0')" class="btn cc-four btn-sm float-right" href={{ppl?.license.link}} target="_blank" role="button">{{ppl?.license.name}}</a>
+                        <a *ngSwitchCase="ppl?.license.name.length==0" href=""></a>
+                        <a *ngSwitchDefault class="btn btn-warning btn-sm mb-1" href="#" target="_blank" role="button">{{ppl?.license.name}}</a>
+                    </div>
+                </div>
+
+                <div *ngIf="ppl?.responsible.length != 0" class="row mb-2">
+                    <strong class="col-11 offset-1">Responsibles: </strong>
+                    <div class="col-11 offset-1" *ngFor="let resp of ppl?.responsible">
+                        <a class="authors-link" href={{resp.link}} target="_blank">{{resp.name}}</a>
+                    </div>
+                </div>
+
+                <div *ngIf="ppl?.project.length != 0" class="row mb-2">
+                    <strong class="col-11 offset-1">Projects: </strong>
+                    <div class="col-11 offset-1" *ngFor="let proj of ppl?.project">
+                        <a class="authors-link" href={{proj.link}} target="_blank">{{proj.name}}</a>
+                    </div>
+                </div>
+                
+                <div *ngIf="ppl?.dates.created.length != 0" class="row mb-2">
+                    <div class="col-11 offset-1">
+                        <strong>Created: </strong>
+                        {{ppl?.dates.created}}
+                    </div>
+                </div>
+
+                <div *ngIf="ppl?.dates.lastUpdated.length != 0" class="row mb-2">
+                    <div class="col-11 offset-1">
+                        <strong>Last updated: </strong>
+                        {{ppl?.dates.lastUpdated}}
+                    </div>
+                </div>
+
+                <div class="row mb-2">
+                    <div class="col-11 offset-1">
+                        <strong>Languages: </strong> <br>
+                        <div class="button-wrapper" *ngFor="let idiom of ppl?.idiom">
+                            <a class="btn btn-outline-info btn-sm mr-1" href={{idiom.link}} target="_blank" role="button">
+                                <span class="idiom">
+                                    <img src={{idiom.imageSrc}} height="12" mr-1> {{idiom.lang}}
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-2">
+                    <div class="col-11 offset-1">
+                        <strong>Authors: </strong> <br>
+                        <div class="button-wrapper" *ngFor="let author of ppl?.authors">
+                            <a class="btn btn-outline-info btn-sm mr-1 mb-1" href={{author.link}} target="_blank" role="button">{{author.name}}</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div *ngIf="ppl?.elements.length != 0" class="row mb-2">
+                    <div class="col-11 offset-1">
+                        <strong>Main elements: </strong> <br>
+                        <div class="button-wrapper" *ngFor="let element of ppl?.elements" [ngSwitch]="element.link">
+                            <button *ngSwitchCase="''" type="button" class="btn btn-outline-success btn-sm mr-1 mb-1">{{element.name}}</button>
+                            <a *ngSwitchDefault role="button" class="btn btn-outline-success btn-sm mr-1 mb-1" href={{element.link}} target="_blank">{{element.name}}</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div *ngIf="ppl?.examples.length != 0" class="row">
+                    <div class="col-10 offset-1">
+                        <strong>Application scenarios: </strong> <br>
+                        <app-examples-accordion [ppl]="ppl"></app-examples-accordion>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

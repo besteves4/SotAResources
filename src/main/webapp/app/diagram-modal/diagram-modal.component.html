@@ -1,0 +1,36 @@
+<div class="modal fade" bsModal #diagramModal="bs-modal" tabindex="-1" role="dialog" aria-labelledby="dialog-nested-name1">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close pull-right" aria-label="Close" (click)="diagramModal.hide()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                
+                <div class="diagram" [ngSwitch]="true">
+                    <div *ngSwitchCase="diag?.type.includes('xsddiagram')">
+                        <figure>
+                            <img src= {{diag?.imageSrc}} alt='missing' />
+                            <figcaption>
+                                Figure generated using
+                                <a href={{diag?.typeSrc}} target="_blank">{{diag?.nameSrc}}</a>.
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div *ngSwitchCase="diag?.type.includes('spec')">
+                        <figure>
+                            <img src= {{diag?.imageSrc}} alt='missing' />
+                            <figcaption>
+                                Figure extracted from the
+                                <a href={{diag?.typeSrc}} target="_blank">{{diag?.nameSrc}}</a>.
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>

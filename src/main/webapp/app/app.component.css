@@ -1,0 +1,15 @@
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.container {
+    padding-bottom: 100px;
+}
+
+.api {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+}

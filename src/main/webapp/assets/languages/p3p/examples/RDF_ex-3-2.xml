@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+    Example 3.2 P3P Policy from P3P spec
+
+    $Id: ex-3-2.xml,v 1.1 2018/08/27 15:46:20 plehegar Exp $
+-->
+
+<!DOCTYPE rdf:RDF [
+  <!ENTITY rdf     "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs    "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY p3p     "http://www.w3.org/2002/01/p3prdfv1#">
+]>
+
+<rdf:RDF
+  xmlns:rdf ="&rdf;" 
+  xmlns:rdfs="&rdfs;"
+  xmlns:p3p ="&p3p;">
+
+  <p3p:Policy rdf:ID="forShoppers">
+    <p3p:disclosure  rdf:resource=
+        "http://www.catalog.example.com/Privacy/PrivacyPracticeShopping.html"/>
+    <p3p:optInstructions rdf:resource=
+                                "http://catalog.example.com/preferences.html"/>
+
+    <p3p:entity rdf:parseType="Resource">
+
+      <p3p:business.name rdf:value="CatalogExample"/>
+
+      <p3p:business.contact-info.online.e.email
+                   rdf:value="catalog@example.com"/>
+
+      <p3p:contact.telecom.telephone.intcode rdf:value="1"/>
+      <p3p:contact.telecom.telephone.loccode rdf:value="248"/>
+      <p3p:contact.telecom.telephone.number  rdf:value="928-8932"/>
+
+      <p3p:contact.postal.street     rdf:value="4000 Lincoln Ave."/>
+      <p3p:contact.postal.city       rdf:value="Birmingham"/>
+      <p3p:contact.postal.stateprov  rdf:value="MI"/>
+      <p3p:contact.postal.postalcode rdf:value="48009"/>
+      <p3p:contact.postal.country    rdf:value="USA"/>
+
+    </p3p:entity>
+
+    <p3p:access rdf:resource="&p3p;Info-contact-and-other"/>
+
+    <p3p:disputeResolution>
+      <p3p:DisputeResolution-independent-organization>
+        <p3p:service rdf:resource="http://www.PrivacySeal.example.org"/>
+        <p3p:shortDescription>PrivacySeal.example.org</p3p:shortDescription>
+        <p3p:img>
+          <p3p:Image 
+             rdf:about="http://www.PrivacySeal.example.org/Logo.gif">
+            <p3p:imageAltText>PrivacySeal's logo</p3p:imageAltText>
+          </p3p:Image>
+        </p3p:img>
+        <p3p:remedy rdf:resource="&p3p;Remedy-correct"/>
+      </p3p:DisputeResolution-independent-organization>
+    </p3p:disputeResolution>
+
+    <p3p:statement rdf:parseType="Resource">
+
+      <p3p:consequence>
+        We record some information in order to serve your request 
+        and to secure and improve our Web site.
+      </p3p:consequence>
+        
+      <p3p:purposeAlways rdf:resource="&p3p;Purpose-admin"/>
+      <p3p:purposeAlways rdf:resource="&p3p;Purpose-develop"/>
+
+      <p3p:recipientAlways rdf:type="&p3p;Recipient-ours"/>
+      <p3p:rentention    rdf:resource="&p3p;Rentention-stated-purpose"/>
+
+      <p3p:data rdf:parseType="Resource">
+        <rdf:predicate rdf:resource="&p3p;user.name"/>
+      </p3p:data>
+      <p3p:data rdf:parseType="Resource">
+        <rdf:predicate rdf:resource="&p3p;user.home-info.contact.postal"/>
+      </p3p:data>
+      <p3p:data rdf:parseType="Resource">
+        <rdf:predicate rdf:resource="&p3p;user.home-info.contact.telephone"/>
+      </p3p:data>
+      <p3p:data rdf:parseType="Resource">
+        <rdf:predicate 
+            rdf:resource="&p3p;user.business-info.contact.online.email"/>
+      </p3p:data>
+      <p3p:data rdf:parseType="Resource">
+        <rdf:predicate rdf:resource="&p3p;user.business-info.contact.postal"/>
+      </p3p:data>
+      <p3p:data rdf:parseType="Resource">
+        <rdf:predicate 
+           rdf:resource="&p3p;user.business-info.contact.telephone"/>
+      </p3p:data>
+
+      <p3p:data rdf:parseType="Resource">
+        <rdf:predicate rdf:resource="&p3p;user.login.id"/>
+      </p3p:data>
+      <p3p:data rdf:parseType="Resource">
+        <rdf:predicate rdf:resource="&p3p;user.login.password"/>
+      </p3p:data>
+
+    </p3p:statement>   
+
+    <p3p:statement rdf:parseType="Resource">
+
+      <p3p:consequence>
+        At your request, we will send you carefully selected marketing 
+        solicitations that we think you will be interested in.
+      </p3p:consequence>
+        
+      <p3p:purposeOptIn  rdf:resource="&p3p;Purpose-contact"/>
+      <p3p:purposeOptIn  rdf:resource="&p3p;Purpose-individual-decision"/>
+      <p3p:purposeOptIn  rdf:resource="&p3p;Purpose-tailoring"/>
+
+      <p3p:recipientAlways rdf:type="&p3p;Recipient-ours"/>
+      <p3p:recipientOptIn  rdf:type="&p3p;Recipient-same"/>
+      <p3p:rentention      rdf:resource="&p3p;Rentention-stated-purpose"/>
+
+      <p3p:data rdf:parseType="Resource">
+        <rdf:predicate rdf:resource="&p3p;user.name"/>
+      </p3p:data>
+      <p3p:data rdf:parseType="Resource">
+        <rdf:predicate rdf:resource="&p3p;user.home-info.contact.postal"/>
+      </p3p:data>
+      <p3p:data rdf:parseType="Resource">
+        <rdf:predicate rdf:resource="&p3p;user.home-info.contact.telephone"/>
+      </p3p:data>
+      <p3p:data rdf:parseType="Resource">
+        <rdf:predicate 
+            rdf:resource="&p3p;user.business-info.contact.online.email"/>
+      </p3p:data>
+      <p3p:data rdf:parseType="Resource">
+        <rdf:predicate rdf:resource="&p3p;user.business-info.contact.postal"/>
+      </p3p:data>
+      <p3p:data rdf:parseType="Resource">
+        <rdf:predicate 
+          rdf:resource="&p3p;user.business-info.contact.telephone"/>
+      </p3p:data>
+    </p3p:statement>        
+
+    <p3p:statement rdf:parseType="Resource">
+
+      <p3p:consequence>
+        We allow you to set a password so that you
+        can access your own information.
+      </p3p:consequence>
+
+      <p3p:purposeOptIn rdf:resource="&p3p;Purpose-individual-decision"/>
+
+      <p3p:recipientAlways rdf:type="&p3p;Recipient-ours"/>
+      <p3p:rentention    rdf:resource="&p3p;Rentention-stated-purpose"/>
+
+      <p3p:data>
+        <p3p:Dynamic.miscdata  rdf:type="&p3p;Category-uniqueid"/>
+      </p3p:data>
+    </p3p:statement>             
+
+    <p3p:statement rdf:parseType="Resource">
+
+      <p3p:consequence>
+        At your request, we will tailor our site and 
+        highlight products related to your interests.   
+      </p3p:consequence>
+
+      <p3p:purposeOptIn rdf:resource="&p3p;Purpose-pseudo-decision"/>
+      <p3p:purposeOptIn rdf:resource="&p3p;Purpose-tailoring"/>
+
+      <p3p:recipientAlways rdf:type="&p3p;Recipient-ours"/>
+      <p3p:rentention    rdf:resource="&p3p;Rentention-stated-purpose"/>
+
+      <p3p:data rdf:parseType="Resource">
+        <rdf:predicate rdf:resource="user.bdate.ymd.year"/>
+      </p3p:data>
+      <p3p:data rdf:parseType="Resource">
+        <rdf:predicate rdf:resource="user.gender"/>
+      </p3p:data>
+    </p3p:statement>                
+
+    <p3p:statement rdf:parseType="Resource">
+
+      <p3p:consequence>
+        We tailor our site based on your past visits.  
+      </p3p:consequence>
+
+      <p3p:purposeAlways rdf:resource="&p3p;Purpose-tailoring"/>
+      <p3p:purposeOptIn rdf:resource="&p3p;Purpose-develop"/>
+
+      <p3p:recipientAlways rdf:type="&p3p;Recipient-ours"/>
+      <p3p:rentention    rdf:resource="&p3p;Rentention-stated-purpose"/>
+
+      <p3p:data rdf:parseType="Resource">
+        <rdf:predicate rdf:resource="&p3p;dynamic.cookies"/>
+        <rdf:object    rdf:type="&p3p;Category-state"/>
+      </p3p:data>
+      <p3p:data rdf:parseType="Resource">
+        <rdf:predicate rdf:resource="&p3p;dynamic.miscdata"/>
+        <rdf:object    rdf:type="&p3p;Category-preference"/>
+      </p3p:data>
+    </p3p:statement>
+  </p3p:Policy>
+</rdf:RDF>
+
+<!--
+  $Log: ex-3-2.xml,v $
+  Revision 1.1  2018/08/27 15:46:20  plehegar
+  New
+
+  Revision 1.1  2002/01/25 16:42:53  dom
+  Installed for publication
+
+  Revision 1.2  2002/01/24 17:08:42  rigo
+  copy pasted schema into the note and added all the xml-files.
+
+  Revision 1.1  2002/01/24 10:36:09  rigo
+  revision after bugfixes and issue resolution with Brian McBride
+
+
+  Revisions prior to loading into W3C CVS repository
+
+  Revision 1.2  2001/12/06 12:22:45  bwm
+  changes associated with flattening the data schema
+
+  Revision 1.1  2001/12/05 00:47:20  bwm
+  initial version
+
+
+-->
+
+
+
+
+
+
+

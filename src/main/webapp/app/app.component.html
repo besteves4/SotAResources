@@ -1,0 +1,12 @@
+<div class='wrapper'>
+    <app-navbar></app-navbar>
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="api">
+        <button (click)="testApp()">Test connection with Rest API</button>
+        <br><br>
+        <span>{{result}}</span>
+    </div>
+    <app-footer></app-footer>
+</div>

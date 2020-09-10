@@ -1,0 +1,45 @@
+<footer class ="footer">
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-2">
+                Developed by 
+                <a class="author" href={{footer.author.linkPersonalWebpage}} target="_blank">
+                    {{footer.author.name}}
+                </a>
+            </div>
+            <div class="col-3">
+                <div class="row">
+                    <div class="mr-3">
+                        <a href={{footer.logos.oeg.link}}>
+                            <img src={{footer.logos.oeg.imgSrc}} height="60">
+                        </a>
+                    </div>
+                    <div class="mr-3">
+                        <a href={{footer.logos.informatica.link}}>
+                            <img src={{footer.logos.informatica.imgSrc}} height="60" mr-1>
+                        </a>
+                    </div>
+                    <div>
+                        <a href={{footer.logos.upm.link}}>
+                            <img src={{footer.logos.upm.imgSrc}} height="60" mr-1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1">
+                <span class="euFlag">
+                    <img src={{footer.imageSrc}} height="60" mr-1>
+                </span>
+            </div>
+            <div class="col-6">
+                <span>
+                    This project has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie grant agreement No 
+                    <a class="author" href={{footer.protect.cordis}} target="_blank">813497</a>
+                    <a class="twitter ml-2" href={{footer.protect.twitter}} target="_blank">
+                        <fa-icon [icon]="faTwitterSquare"></fa-icon>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>
