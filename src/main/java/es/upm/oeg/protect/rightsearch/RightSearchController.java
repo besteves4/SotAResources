@@ -24,14 +24,12 @@ public class RightSearchController {
     ServletContext context;
 
     static Logger logger = Logger.getLogger(Controller.class);
-
      
     @ApiOperation(value = "Finds references to rights in a collection of ontologies")
     @RequestMapping(
             value = "/rights",
-            consumes = "text/plain;charset=UTF-8",
             produces= "application/json;charset=UTF-8",
-            method = RequestMethod.POST)
+            method = RequestMethod.GET)
     @ResponseBody
     public String getRights(@RequestBody String text) throws Exception {
         try {
@@ -44,7 +42,7 @@ public class RightSearchController {
             logger.error("Error in REST service",e);
             logger.error(e.getCause().toString());
         }
-        return "";
+        return "{}";
     }
     
     @RequestMapping(value ="/status", method = RequestMethod.GET)
