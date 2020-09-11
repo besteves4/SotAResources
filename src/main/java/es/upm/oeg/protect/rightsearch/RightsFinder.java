@@ -76,7 +76,7 @@ public class RightsFinder {
         while (classes.hasNext()) {
             try {
                 OntClass next = (OntClass) classes.next();
-                System.out.println("Clase: " + next.getURI());
+        //        System.out.println("Clase: " + next.getURI());
                 String name = next.getLocalName().toLowerCase();
                 String sear = text.toLowerCase();
 

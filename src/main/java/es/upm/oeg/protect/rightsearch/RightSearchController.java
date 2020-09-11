@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RequestParam;
         
 
 /**
@@ -31,7 +32,7 @@ public class RightSearchController {
             produces= "application/json;charset=UTF-8",
             method = RequestMethod.GET)
     @ResponseBody
-    public String getRights(@RequestBody String text) throws Exception {
+    public String getRights(@RequestParam String text) throws Exception {
         try {
             System.out.println("Searching for: " + text);
             String json = RightsFinder.find(text);
