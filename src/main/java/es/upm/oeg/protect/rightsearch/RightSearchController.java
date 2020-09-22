@@ -55,7 +55,7 @@ public class RightSearchController {
     @ResponseBody
     public String status() {
         System.out.println("I have been asked for the status hahaha");
-        return "version 1.0";
+        return "version 1.1";
     }
 
     @RequestMapping(value = "/deploy", method = RequestMethod.GET)
