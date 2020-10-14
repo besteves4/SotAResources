@@ -10,6 +10,7 @@
 /src/main/resources/static/*.js
 /src/main/resources/static/*.ico
 /src/main/resources/static/*.html
+/src/main/resources/static/*.map
 # Only exists if Bazel was run
 /bazel-out
 
