@@ -6,7 +6,8 @@ import { HomeComponent } from './home/home.component';
 import { LanguagesComponent } from './languages/languages.component';
 import { OntologiesComponent } from './ontologies/ontologies.component';
 
-const routes: Routes = [{
+const routes: Routes = [
+    {
         path: '',
         pathMatch: 'full',
         redirectTo: 'home'
