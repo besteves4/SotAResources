@@ -35,8 +35,14 @@ export class FooterComponent implements OnInit {
             twitter: 'https://twitter.com/ItnProtect'
         },
         author: {
-            name: 'Beatriz Esteves',
-            linkPersonalWebpage: 'https://besteves4.github.io',
+            bia: {
+                name: 'Beatriz Esteves',
+                linkPersonalWebpage: 'https://besteves4.github.io'
+            },
+            victor: {
+                name: 'Víctor Rodríguez-Doncel',
+                linkPersonalWebpage: 'http://cosasbuenas.es/'
+            }
         }
     }
     
