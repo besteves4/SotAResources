@@ -14,15 +14,15 @@ export class FooterComponent implements OnInit {
     footer = {
         logos: {
             oeg: {
-                imgSrc: './../assets/footer/logooeg.png',
+                imgSrc: '/sota/assets/footer/logooeg.png',
                 link: 'https://www.oeg-upm.net/'
             },
             informatica: {
-                imgSrc: '../../assets/footer/etsiinf.jfif',
+                imgSrc: './assets/footer/etsiinf.jfif',
                 link: 'http://www.fi.upm.es/'
             },
             upm: {
-                imgSrc: '../assets/footer/uni.jpg',
+                imgSrc: 'https://protect.oeg.fi.upm.es/sota/assets/footer/uni.jpg',
                 link: 'https://www.upm.es/'
             }
         },
