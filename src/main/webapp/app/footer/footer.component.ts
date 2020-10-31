@@ -22,7 +22,7 @@ export class FooterComponent implements OnInit {
                 link: 'http://www.fi.upm.es/'
             },
             upm: {
-                imgSrc: '../../assets/footer/uni.jpg',
+                imgSrc: '../assets/footer/uni.jpg',
                 link: 'https://www.upm.es/'
             }
         },
