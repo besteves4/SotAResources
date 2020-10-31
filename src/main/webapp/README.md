@@ -16,7 +16,7 @@ Run `npm run build` to build the project. The build artifacts will be stored in 
 
 
 
-Víctor Rodríguez-Doncel, Beatriz Esteves
+Beatriz Esteves, Víctor Rodríguez-Doncel
 Ontology Engineering Group
 
 This work has been supported with funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie grant agreement No 813497

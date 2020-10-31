@@ -14,7 +14,7 @@ export class FooterComponent implements OnInit {
     footer = {
         logos: {
             oeg: {
-                imgSrc: '/sota/assets/footer/logooeg.png',
+                imgSrc: './assets/footer/logooeg.png',
                 link: 'https://www.oeg-upm.net/'
             },
             informatica: {
@@ -22,13 +22,13 @@ export class FooterComponent implements OnInit {
                 link: 'http://www.fi.upm.es/'
             },
             upm: {
-                imgSrc: 'https://protect.oeg.fi.upm.es/sota/assets/footer/uni.jpg',
+                imgSrc: './assets/footer/uni.jpg',
                 link: 'https://www.upm.es/'
             }
         },
-        imageSrc: '../../assets/footer/eu_flag.jpg',
+        imageSrc: './assets/footer/eu_flag.jpg',
         protect: {
-            icon: '../../assets/footer/protect.png',
+            icon: './assets/footer/protect.png',
             webpage: 'https://protect-network.eu/',
             cordis: 'https://cordis.europa.eu/project/id/813497',  
             linkedin: '',
@@ -40,7 +40,7 @@ export class FooterComponent implements OnInit {
                 linkPersonalWebpage: 'https://besteves4.github.io'
             },
             victor: {
-                name: 'Víctor Rodríguez Doncel',
+                name: 'Víctor Rodríguez-Doncel',
                 linkPersonalWebpage: 'http://cosasbuenas.es/'
             }
         }

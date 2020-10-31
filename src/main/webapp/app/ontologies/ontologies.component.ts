@@ -51,7 +51,7 @@ export class OntologiesComponent implements OnInit {
         description: 'Legal ontologies developed to represent data protection knowledge, focusing mainly on the correctness of files containing personal data and respective security measures applied to them',
         legalBasis: [
             {
-                country: '../../assets/flags/Flag_of_Spain.svg.png',
+                country: './assets/flags/Flag_of_Spain.svg.png',
                 name: 'PPDR',
                 link: 'https://apdcat.gencat.cat/web/.content/01-autoritat/normativa/documentos/2643.pdf'
             }
@@ -66,7 +66,7 @@ export class OntologiesComponent implements OnInit {
         },
         idiom: [
             {
-                imageSrc: '../../assets/flags/uk_flag.png',
+                imageSrc: './assets/flags/uk_flag.png',
                 lang: 'en',
                 link:'https://ddd.uab.cat/pub/artpub/2010/137891/aaaisprsymser_a2010n1iENG.pdf'
             }
@@ -159,7 +159,7 @@ export class OntologiesComponent implements OnInit {
             {
                 type: 'spec',
                 name: 'DPKO',
-                imageSrc: '../../assets/ontologies/NEURONA/diagrams/DPKO.PNG',
+                imageSrc: './assets/ontologies/NEURONA/diagrams/DPKO.PNG',
                 typeSrc: 'https://ddd.uab.cat/pub/artpub/2010/137891/aaaisprsymser_a2010n1iENG.pdf',
                 nameSrc: 'NEURONA Project article'
             }
@@ -171,17 +171,17 @@ export class OntologiesComponent implements OnInit {
         description: "Data protection ontology based on the data protection principles, focused on the modelling of the data controllers' obligations and corresponding data subjects' rights",
         legalBasis: [
             {
-                country: '../../assets/footer/eu_flag.jpg',
+                country: './assets/footer/eu_flag.jpg',
                 name: 'GDPR (early version)',
                 link: ''
             },
             {
-                country: '../../assets/footer/eu_flag.jpg',
+                country: './assets/footer/eu_flag.jpg',
                 name: 'DPD',
                 link: 'https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:31995L0046&from=en'
             },
             {
-                country: '../../assets/footer/eu_flag.jpg',
+                country: './assets/footer/eu_flag.jpg',
                 name: 'Handbook', //'Handbook on European data protection law',
                 link: 'https://fra.europa.eu/sites/default/files/fra_uploads/fra-coe-edps-2018-handbook-data-protection_en.pdf'
             }
@@ -197,7 +197,7 @@ export class OntologiesComponent implements OnInit {
         },
         idiom: [
             {
-                imageSrc: '../../assets/flags/uk_flag.png',
+                imageSrc: './assets/flags/uk_flag.png',
                 lang: 'en',
                 link:'https://pdfs.semanticscholar.org/e59a/5f9e9bfc990d9d62ac0102c612cade2f5642.pdf'
             }
@@ -303,7 +303,7 @@ export class OntologiesComponent implements OnInit {
         description: 'Linked data ontology focused on the objective of conceptualizing the provenance of consent and the data life-cycle (collection, usage and storage), towards documenting GDPR compliance',
         legalBasis: [
             {
-                country: '../../assets/footer/eu_flag.jpg',
+                country: './assets/footer/eu_flag.jpg',
                 name: 'GDPR',
                 link: 'https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN'
             }
@@ -318,7 +318,7 @@ export class OntologiesComponent implements OnInit {
         },
         idiom: [
             {
-                imageSrc: '../../assets/flags/uk_flag.png',
+                imageSrc: './assets/flags/uk_flag.png',
                 lang: 'en',
                 link:'https://openscience.adaptcentre.ie/ontologies/GDPRov/docs/ontology'
             }
@@ -441,7 +441,7 @@ export class OntologiesComponent implements OnInit {
         description: 'Open data resource, that extends the European Legislation Identifier (ELI) ontology, with the aim of connecting GDPR concepts, through the SKOS ontology, and their respective chapter, article, point, etc.',
         legalBasis: [
             {
-                country: '../../assets/footer/eu_flag.jpg',
+                country: './assets/footer/eu_flag.jpg',
                 name: 'GDPR',
                 link: 'https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN'
             }
@@ -456,7 +456,7 @@ export class OntologiesComponent implements OnInit {
         },
         idiom: [
             {
-                imageSrc: '../../assets/flags/uk_flag.png',
+                imageSrc: './assets/flags/uk_flag.png',
                 lang: 'en',
                 link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology'
             }
@@ -583,12 +583,12 @@ export class OntologiesComponent implements OnInit {
         description: "GDPR compliant ontology focused on the obligations of cloud services' providers and consumers, that takes into account the Cloud Security Alliance's (CSA) 'Code of Conduct for GDPR Compliance'",
         legalBasis: [
             {
-                country: '../../assets/footer/eu_flag.jpg',
+                country: './assets/footer/eu_flag.jpg',
                 name: 'GDPR',
                 link: 'https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN'
             },
             {
-                country: '../../assets/footer/eu_flag.jpg',
+                country: './assets/footer/eu_flag.jpg',
                 name: 'CSA Code of Conduct',
                 link: 'https://downloads.cloudsecurityalliance.org/assets/research/gdpr/CSA_Code_of_Conduct_for_GDPR_Compliance.pdf'
             }
@@ -603,7 +603,7 @@ export class OntologiesComponent implements OnInit {
         },
         idiom: [
             {
-                imageSrc: '../../assets/flags/uk_flag.png',
+                imageSrc: './assets/flags/uk_flag.png',
                 lang: 'en',
                 link: 'https://ebiquity.umbc.edu/paper/html/id/827/A-Knowledge-Representation-of-Cloud-Data-controls-for-EU-GDPR-Compliance'
             }
@@ -688,7 +688,7 @@ export class OntologiesComponent implements OnInit {
             {
                 type: 'spec',
                 name: 'Cloud',
-                imageSrc: '../../assets/ontologies/Cloud/diagrams/fig1.PNG',
+                imageSrc: './assets/ontologies/Cloud/diagrams/fig1.PNG',
                 typeSrc: 'https://ebiquity.umbc.edu/_file_directory_/papers/891.pdf',
                 nameSrc: 'Cloud GDPR ontology article'
             }
@@ -700,7 +700,7 @@ export class OntologiesComponent implements OnInit {
         description: 'Log vocabulary built to record data processing events and consent that should comply with the consent actions given by the data owners. SPLog uses the SPL language to instantiate the content of a log entry',
         legalBasis: [
             {
-                country: '../../assets/footer/eu_flag.jpg',
+                country: './assets/footer/eu_flag.jpg',
                 name: 'GDPR',
                 link: 'https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN'
             }
@@ -715,7 +715,7 @@ export class OntologiesComponent implements OnInit {
         },
         idiom: [
             {
-                imageSrc: '../../assets/flags/uk_flag.png',
+                imageSrc: './assets/flags/uk_flag.png',
                 lang: 'en',
                 link: 'https://ai.wu.ac.at/policies/policylog/'
             }
@@ -921,7 +921,7 @@ export class OntologiesComponent implements OnInit {
         description: 'Legal ontology with the aim of modelling the relationships between privacy agents, data types, processing operations and deontic specifications to support compliance with the GDPR',
         legalBasis: [
             {
-                country: '../../assets/footer/eu_flag.jpg',
+                country: './assets/footer/eu_flag.jpg',
                 name: 'GDPR',
                 link: 'https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN'
             }
@@ -936,7 +936,7 @@ export class OntologiesComponent implements OnInit {
         },
         idiom: [
             {
-                imageSrc: '../../assets/flags/uk_flag.png',
+                imageSrc: './assets/flags/uk_flag.png',
                 lang: 'en',
                 link: 'https://cris.unibo.it/retrieve/handle/11585/648022/467479/POST%20PRINT%20PrOntoPrivacyOntologyForLegalReasoning.pdf'
             }
@@ -1043,12 +1043,12 @@ export class OntologiesComponent implements OnInit {
         description: 'Ontology focused on the concept of consent as one of the legal basis for the processing of personal data under the GDPR. Represents the consent life cycle for GDPR compliance, modelling several states of consent (given, expired, unknown, ...)',
         legalBasis: [
             {
-                country: '../../assets/footer/eu_flag.jpg',
+                country: './assets/footer/eu_flag.jpg',
                 name: 'GDPR',
                 link: 'https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN'
             },
             {
-                country: '../../assets/footer/eu_flag.jpg',
+                country: './assets/footer/eu_flag.jpg',
                 name: 'Guidelines on consent',
                 link: 'https://edpb.europa.eu/sites/edpb/files/files/file1/edpb_guidelines_202005_consent_en.pdf'
             }
@@ -1063,7 +1063,7 @@ export class OntologiesComponent implements OnInit {
         },
         idiom: [
             {
-                imageSrc: '../../assets/flags/uk_flag.png',
+                imageSrc: './assets/flags/uk_flag.png',
                 lang: 'en',
                 link: 'http://openscience.adaptcentre.ie/ontologies/gconsent/main.html'
             }
@@ -1209,7 +1209,7 @@ export class OntologiesComponent implements OnInit {
         description: "Ontology that focuses on the entities and respective roles that are involved in the organizations' life cycle of processes, with the main goal of providing a framework to reinforce the implementation of GDPR inside organizations",
         legalBasis: [
             {
-                country: '../../assets/footer/eu_flag.jpg',
+                country: './assets/footer/eu_flag.jpg',
                 name: 'GDPR',
                 link: 'https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN'
             }
@@ -1224,7 +1224,7 @@ export class OntologiesComponent implements OnInit {
         },
         idiom: [
             {
-                imageSrc: '../../assets/flags/uk_flag.png',
+                imageSrc: './assets/flags/uk_flag.png',
                 lang: 'en',
                 link: 'https://www.bpr4gdpr.eu/wp-content/uploads/2019/06/D3.1-Compliance-Ontology-1.0.pdf'
             }
@@ -1349,7 +1349,7 @@ export class OntologiesComponent implements OnInit {
         description: "Data privacy vocabularies with the main purpose of providing a taxonomy of terms to annotate and categorize the handling of personal data in accordance with the GDPR and which can be extended to cover other data protection legislations",
         legalBasis: [
             {
-                country: '../../assets/footer/eu_flag.jpg',
+                country: './assets/footer/eu_flag.jpg',
                 name: 'GDPR',
                 link: 'https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN'
             }
@@ -1364,7 +1364,7 @@ export class OntologiesComponent implements OnInit {
         },
         idiom: [
             {
-                imageSrc: '../../assets/flags/uk_flag.png',
+                imageSrc: './assets/flags/uk_flag.png',
                 lang: 'en',
                 link: 'http://doras.dcu.ie/23801/1/DPVCG___ODBASE.pdf'
             }
