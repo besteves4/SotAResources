@@ -40,7 +40,7 @@ export class FooterComponent implements OnInit {
                 linkPersonalWebpage: 'https://besteves4.github.io'
             },
             victor: {
-                name: 'Víctor Rodríguez-Doncel',
+                name: 'Víctor Rodríguez Doncel',
                 linkPersonalWebpage: 'http://cosasbuenas.es/'
             }
         }
