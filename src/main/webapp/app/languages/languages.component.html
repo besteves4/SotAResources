@@ -52,8 +52,8 @@
             </td>
             <td class="diagram">
                 <div class="button-wrapper mr-1" *ngFor="let diag of ppl?.diagrams" [ngSwitch]="true">
-                    <a *ngSwitchCase="diag.type.includes('xsddiagram')" class="btn orange-btn btn-sm clickable" role="button" (click)="handleClickDiag(diag)">{{diag.name}}</a>
-                    <a *ngSwitchCase="diag.type.includes('spec')" class="btn orange-btn btn-sm clickable" role="button" (click)="handleClickDiag(diag)">{{diag.name}}</a>
+                    <a *ngSwitchCase="diag.type.includes('xsddiagram')" class="btn orange-btn btn-sm mb-1 clickable" role="button" (click)="handleClickDiag(diag)">{{diag.name}}</a>
+                    <a *ngSwitchCase="diag.type.includes('spec')" class="btn orange-btn btn-sm mb-1 clickable" role="button" (click)="handleClickDiag(diag)">{{diag.name}}</a>
                 </div>
             </td>
         </tr>

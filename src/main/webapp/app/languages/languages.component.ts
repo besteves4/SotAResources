@@ -53,7 +53,7 @@ export class LanguagesComponent implements OnInit {
         {
             id: 'P3P',
             name: 'Platform for Privacy Preferences',
-            description: 'Specification for websites to disclose privacy protocols that can be automatically read and interpreted by user agents',
+            description: 'Specification for websites to disclose privacy protocols that can be automatically read and interpreted by user agents',
             domain: [
                 {
                     name: 'privacy',
@@ -70,17 +70,17 @@ export class LanguagesComponent implements OnInit {
             },
             idiom: [
                 {
-                    imageSrc: '../../assets/flags/uk_flag.png',
+                    imageSrc: './assets/flags/uk_flag.png',
                     lang: 'en',
                     link:'https://www.w3.org/TR/P3P/'
                 },
                 {
-                    imageSrc: '../../assets/flags/Flag_of_France.svg',
+                    imageSrc: './assets/flags/Flag_of_France.svg',
                     lang: 'fr',
                     link: 'http://www.yoyodesign.org/doc/w3c/p3p1/index.html'
                 },
                 {
-                    imageSrc: '../../assets/flags/Flag_of_Japan.svg.png',
+                    imageSrc: './assets/flags/Flag_of_Japan.svg.png',
                     lang: 'jp',
                     link: 'http://www.iajapan.org/trans2japanese/w3c/rec-p3p-20020416j.html'
                 }
@@ -194,7 +194,7 @@ export class LanguagesComponent implements OnInit {
                             resources: [
                                 {
                                     language: 'RDF',
-                                    link: '../assets/languages/p3p/examples/RDF_ex-2-2.xml'
+                                    link: './assets/languages/p3p/examples/RDF_ex-2-2.xml'
                                 }
                             ]
                         },
@@ -203,7 +203,7 @@ export class LanguagesComponent implements OnInit {
                             resources: [
                                 {
                                     language: 'RDF',
-                                    link: '../assets/languages/p3p/examples/RDF_ex-2-5.xml'
+                                    link: './assets/languages/p3p/examples/RDF_ex-2-5.xml'
                                 }
                             ]
                         },
@@ -212,7 +212,7 @@ export class LanguagesComponent implements OnInit {
                             resources: [
                                 {
                                     language: 'RDF',
-                                    link: '../assets/languages/p3p/examples/RDF_ex-2-6.xml'
+                                    link: './assets/languages/p3p/examples/RDF_ex-2-6.xml'
                                 }
                             ]
                         },
@@ -221,7 +221,7 @@ export class LanguagesComponent implements OnInit {
                             resources: [
                                 {
                                     language: 'RDF',
-                                    link: '../assets/languages/p3p/examples/RDF_ex-3-1.xml'
+                                    link: './assets/languages/p3p/examples/RDF_ex-3-1.xml'
                                 }
                             ]
                         },
@@ -230,7 +230,7 @@ export class LanguagesComponent implements OnInit {
                             resources: [
                                 {
                                     language: 'RDF',
-                                    link: '../assets/languages/p3p/examples/RDF_ex-3-2.xml'
+                                    link: './assets/languages/p3p/examples/RDF_ex-3-2.xml'
                                 }
                             ]
                         }
@@ -241,7 +241,7 @@ export class LanguagesComponent implements OnInit {
                 {
                     type: 'xsddiagram',
                     name: 'P3P v1',
-                    imageSrc: '../../assets/languages/p3p/diagrams/P3Pv1.svg',
+                    imageSrc: './assets/languages/p3p/diagrams/P3Pv1.svg',
                     typeSrc: 'http://regis.cosnier.free.fr/?page=XSDDiagram',
                     nameSrc: 'XSD Diagram'
                 }
@@ -267,7 +267,7 @@ export class LanguagesComponent implements OnInit {
             },
             idiom: [
                 {
-                    imageSrc: '../../assets/flags/uk_flag.png',
+                    imageSrc: './assets/flags/uk_flag.png',
                     lang: 'en',
                     link:'https://www.w3.org/TR/P3P-preferences/'
                 }
@@ -377,12 +377,12 @@ export class LanguagesComponent implements OnInit {
             },
             idiom: [
                 {
-                    imageSrc: '../../assets/flags/uk_flag.png',
+                    imageSrc: './assets/flags/uk_flag.png',
                     lang: 'en',
                     link:'https://www.w3.org/TR/odrl-vocab/'
                 },
                 {
-                    imageSrc: '../../assets/flags/Flag_of_Japan.svg.png',
+                    imageSrc: './assets/flags/Flag_of_Japan.svg.png',
                     lang: 'jp',
                     link: 'http://www.asahi-net.or.jp/~ax2s-kmtn/internet/rights/REC-odrl-vocab-20180215.html'
                 }
@@ -633,7 +633,7 @@ export class LanguagesComponent implements OnInit {
             },
             idiom: [
                 {
-                    imageSrc: '../../assets/flags/uk_flag.png',
+                    imageSrc: './assets/flags/uk_flag.png',
                     lang: 'en',
                     link:'http://www.rsrikant.com/papers/www03_xpref.pdf'
                 }
@@ -721,7 +721,7 @@ export class LanguagesComponent implements OnInit {
             },
             idiom: [
                 {
-                    imageSrc: '../../assets/flags/uk_flag.png',
+                    imageSrc: './assets/flags/uk_flag.png',
                     lang: 'en',
                     link:'https://www.microsoft.com/en-us/research/wp-content/uploads/2010/04/main-1.pdf'
                 }
@@ -801,7 +801,7 @@ export class LanguagesComponent implements OnInit {
             },
             idiom: [
                 {
-                    imageSrc: '../../assets/flags/uk_flag.png',
+                    imageSrc: './assets/flags/uk_flag.png',
                     lang: 'en',
                     link:'http://dig.csail.mit.edu/2009/AIR/'
                 }
@@ -913,11 +913,11 @@ export class LanguagesComponent implements OnInit {
                             resources: [
                                 {
                                     language: 'N3',
-                                    link: '../assets/languages/AIR/examples/policy1.n3'
+                                    link: './assets/languages/AIR/examples/policy1.n3'
                                 },
                                 {
                                     language: 'N3',
-                                    link: '../assets/languages/AIR/examples/policy2.n3'
+                                    link: './assets/languages/AIR/examples/policy2.n3'
                                 }
                             ]
                         },
@@ -926,7 +926,7 @@ export class LanguagesComponent implements OnInit {
                             resources: [
                                 {
                                     language: 'N3',
-                                    link: '../assets/languages/AIR/examples/policy21.n3'
+                                    link: './assets/languages/AIR/examples/policy21.n3'
                                 }
                             ]
                         },
@@ -935,11 +935,11 @@ export class LanguagesComponent implements OnInit {
                             resources: [
                                 {
                                     language: 'N3',
-                                    link: '../assets/languages/AIR/examples/policy3.n3'
+                                    link: './assets/languages/AIR/examples/policy3.n3'
                                 },
                                 {
                                     language: 'N3',
-                                    link: '../assets/languages/AIR/examples/policy4.n3'
+                                    link: './assets/languages/AIR/examples/policy4.n3'
                                 }
                             ]
                         },
@@ -948,7 +948,7 @@ export class LanguagesComponent implements OnInit {
                             resources: [
                                 {
                                     language: 'N3',
-                                    link: '../assets/languages/AIR/examples/policy5.n3'
+                                    link: './assets/languages/AIR/examples/policy5.n3'
                                 }
                             ]
                         },
@@ -957,7 +957,7 @@ export class LanguagesComponent implements OnInit {
                             resources: [
                                 {
                                     language: 'N3',
-                                    link: '../assets/languages/AIR/examples/policy16.n3'
+                                    link: './assets/languages/AIR/examples/policy16.n3'
                                 }
                             ]
                         },
@@ -966,11 +966,11 @@ export class LanguagesComponent implements OnInit {
                             resources: [
                                 {
                                     language: 'N3',
-                                    link: '../assets/languages/AIR/examples/policy6.n3'
+                                    link: './assets/languages/AIR/examples/policy6.n3'
                                 },
                                 {
                                     language: 'N3',
-                                    link: '../assets/languages/AIR/examples/policy8.n3'
+                                    link: './assets/languages/AIR/examples/policy8.n3'
                                 }
                             ]
                         },
@@ -979,7 +979,7 @@ export class LanguagesComponent implements OnInit {
                             resources: [
                                 {
                                     language: 'N3',
-                                    link: '../assets/languages/AIR/examples/policy19.n3'
+                                    link: './assets/languages/AIR/examples/policy19.n3'
                                 }
                             ]
                         },
@@ -988,7 +988,7 @@ export class LanguagesComponent implements OnInit {
                             resources: [
                                 {
                                     language: 'N3',
-                                    link: '../assets/languages/AIR/examples/policy11.n3'
+                                    link: './assets/languages/AIR/examples/policy11.n3'
                                 }
                             ]
                         },
@@ -997,7 +997,7 @@ export class LanguagesComponent implements OnInit {
                             resources: [
                                 {
                                     language: 'N3',
-                                    link: '../assets/languages/AIR/examples/policy12.n3'
+                                    link: './assets/languages/AIR/examples/policy12.n3'
                                 }
                             ]
                         },
@@ -1006,7 +1006,7 @@ export class LanguagesComponent implements OnInit {
                             resources: [
                                 {
                                     language: 'N3',
-                                    link: '../assets/languages/AIR/examples/math.n3'
+                                    link: './assets/languages/AIR/examples/math.n3'
                                 }
                             ]
                         },
@@ -1015,7 +1015,7 @@ export class LanguagesComponent implements OnInit {
                             resources: [
                                 {
                                     language: 'N3',
-                                    link: '../assets/languages/AIR/examples/justifies.n3'
+                                    link: './assets/languages/AIR/examples/justifies.n3'
                                 }
                             ]
                         },
@@ -1024,7 +1024,7 @@ export class LanguagesComponent implements OnInit {
                             resources: [
                                 {
                                     language: 'N3',
-                                    link: '../assets/languages/AIR/examples/sparql.n3'
+                                    link: './assets/languages/AIR/examples/sparql.n3'
                                 }
                             ]
                         },
@@ -1033,7 +1033,7 @@ export class LanguagesComponent implements OnInit {
                             resources: [
                                 {
                                     language: 'N3',
-                                    link: '../assets/languages/AIR/examples/includes.n3'
+                                    link: './assets/languages/AIR/examples/includes.n3'
                                 }
                             ]
                         },
@@ -1070,7 +1070,7 @@ export class LanguagesComponent implements OnInit {
             },
             idiom: [
                 {
-                    imageSrc: '../../assets/flags/uk_flag.png',
+                    imageSrc: './assets/flags/uk_flag.png',
                     lang: 'en',
                     link: 'http://kau.diva-portal.org/smash/get/diva2:623452/FULLTEXT01.pdf'
                 }
@@ -1132,7 +1132,7 @@ export class LanguagesComponent implements OnInit {
             },
             idiom: [
                 {
-                    imageSrc: '../../assets/flags/uk_flag.png',
+                    imageSrc: './assets/flags/uk_flag.png',
                     lang: 'en',
                     link:'http://vocab.deri.ie/ppo#'
                 }
@@ -1242,7 +1242,7 @@ export class LanguagesComponent implements OnInit {
                 {
                     type: 'spec',
                     name: 'PPO',
-                    imageSrc: '../../assets/ontologies/PPO/diagrams/ppo.PNG',
+                    imageSrc: './assets/ontologies/PPO/diagrams/ppo.PNG',
                     typeSrc: 'http://ceur-ws.org/Vol-813/ldow2011-paper01.pdf',
                     nameSrc: 'PPO article'
                 }
@@ -1268,7 +1268,7 @@ export class LanguagesComponent implements OnInit {
             },
             idiom: [
                 {
-                    imageSrc: '../../assets/flags/uk_flag.png',
+                    imageSrc: './assets/flags/uk_flag.png',
                     lang: 'en',
                     link: 'https://ieeexplore.ieee.org/document/6957279'
                 }
@@ -1385,7 +1385,7 @@ export class LanguagesComponent implements OnInit {
             },
             idiom: [
                 {
-                    imageSrc: '../../assets/flags/uk_flag.png',
+                    imageSrc: './assets/flags/uk_flag.png',
                     lang: 'en',
                     link: 'http://www.eurecom.fr/en/publication/4372/download/rs-publi-4372.pdf'
                 }
@@ -1511,7 +1511,7 @@ export class LanguagesComponent implements OnInit {
                 {
                     type: 'spec',
                     name: 'A-PPL',
-                    imageSrc: '../../assets/languages/A-PPL/diagrams/fig1.2-d34.1.PNG',
+                    imageSrc: './assets/languages/A-PPL/diagrams/fig1.2-d34.1.PNG',
                     typeSrc: 'http://cloudaccountability.eu/sites/default/files/D34.1%20Policy%20representation%20Framework.pdf',
                     nameSrc: 'D34.1 - Policy Representation Framework'
                 }
@@ -1541,7 +1541,7 @@ export class LanguagesComponent implements OnInit {
             },
             idiom: [
                 {
-                    imageSrc: '../../assets/flags/uk_flag.png',
+                    imageSrc: './assets/flags/uk_flag.png',
                     lang: 'en',
                     link: 'https://sunflower.csl.sri.com/wp-content/uploads/2018/05/policy-language.pdf'
                 }
@@ -1656,7 +1656,7 @@ export class LanguagesComponent implements OnInit {
             },
             idiom: [
                 {
-                    imageSrc: '../../assets/flags/uk_flag.png',
+                    imageSrc: './assets/flags/uk_flag.png',
                     lang: 'en',
                     link: 'https://www.bpr4gdpr.eu/wp-content/uploads/2019/06/D2.3-Initial-Specification-of-BPR4GDPR-architecture-%E2%80%94-final.pdf'
                 }
@@ -1764,7 +1764,7 @@ export class LanguagesComponent implements OnInit {
                 {
                     type: 'spec',
                     name: 'PMO rules format',
-                    imageSrc: '../../assets/languages/PMO/diagrams/PMOformat_fig5_d23.PNG',
+                    imageSrc: './assets/languages/PMO/diagrams/PMOformat_fig5_d23.PNG',
                     typeSrc: 'https://www.bpr4gdpr.eu/wp-content/uploads/2019/06/D2.3-Initial-Specification-of-BPR4GDPR-architecture-%E2%80%94-final.pdf',
                     nameSrc: 'D2.3 - Initial Specification of BPR4GDPR architecture'
                 }
@@ -1794,7 +1794,7 @@ export class LanguagesComponent implements OnInit {
             },
             idiom: [
                 {
-                    imageSrc: '../../assets/flags/uk_flag.png',
+                    imageSrc: './assets/flags/uk_flag.png',
                     lang: 'en',
                     link: 'https://ai.wu.ac.at/policies/policylanguage/'
                 }
@@ -1967,7 +1967,7 @@ export class LanguagesComponent implements OnInit {
                                 },
                                 {
                                     type: 'OWL',
-                                    link: '../../assets/languages/SPL/examples/proximus.owl'
+                                    link: './assets/languages/SPL/examples/proximus.owl'
                                 },
                                 {
                                     type: 'DPV CG Wiki',
@@ -1997,7 +1997,7 @@ export class LanguagesComponent implements OnInit {
                                 },
                                 {
                                     type: 'OWL',
-                                    link: '../../assets/languages/SPL/examples/tr.owl'
+                                    link: './assets/languages/SPL/examples/tr.owl'
                                 },
                                 {
                                     type: 'DPV CG Wiki',
