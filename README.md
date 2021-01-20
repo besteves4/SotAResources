@@ -8,10 +8,10 @@ HTTP Rest API service to find rights references in ontologies
 `java -jar target/rightsearch-1.0.jar`
 
 # See the service 
-http://localhost:8080/swagger-ui.html
+http://localhost:8093/sota/swagger-ui.html
 
 # See the webpage
-http://localhost:8080/
+http://localhost:8093/sota
 
 ---
 
