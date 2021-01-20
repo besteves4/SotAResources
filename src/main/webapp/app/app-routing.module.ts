@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { LanguagesComponent } from './languages/languages.component';
 import { OntologiesComponent } from './ontologies/ontologies.component';
+import { SearcherComponent } from './searcher/searcher.component';
 
 const routes: Routes = [
     {
@@ -23,6 +24,10 @@ const routes: Routes = [
     {
         path: 'ontologies',
         component: OntologiesComponent
+    },
+    {
+        path: 'searcher',
+        component: SearcherComponent
     },
     {
         path: '**',

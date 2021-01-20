@@ -15,6 +15,7 @@ import { DescriptionModalComponent } from './description-modal/description-modal
 import { DiagramModalComponent } from './diagram-modal/diagram-modal.component';
 import { ExamplesAccordionComponent } from './examples-accordion/examples-accordion.component';
 import { OntologiesComponent } from './ontologies/ontologies.component';
+import { SearcherComponent } from './searcher/searcher.component';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CommonModule } from '@angular/common';
@@ -36,6 +37,7 @@ import { StartsWithPipe } from './pipes/starts-with.pipe';
         DiagramModalComponent,
         ExamplesAccordionComponent,
         OntologiesComponent,
+        SearcherComponent,
         DividerPipe,
         OrderByPositionPipe,
         StartsWithPipe
