@@ -38,7 +38,7 @@ public class RightsFinder {
         String find = RightsFinder.find(searchterm);
         System.out.println("===================================");
         System.out.println("Searching for: " + searchterm);
-        System.out.println("Foun: " + find);
+        System.out.println("Found: " + find);
     }
 
     public static void init() {
