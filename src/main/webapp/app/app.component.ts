@@ -15,7 +15,7 @@ export class AppComponent {
 
   public testApp(): void {
     this.result = 'loading....';
-    this.http.get('/status', { responseType: 'text' }).subscribe((data: string) => {
+    this.http.get('/sota/status', { responseType: 'text' }).subscribe((data: string) => {
       console.log(data);
       this.result = data;
     });
