@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Scanner;
 import java.util.Set;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
@@ -41,19 +42,61 @@ public class RightsFinder {
         System.out.println("Foun: " + find);
     }
 
+
     public static void init() {
         models = new ArrayList();
         try {
+            /*
             RightsFinder rf = new RightsFinder();
             String[] ontologynames = rf.getResourceListing(RightsFinder.class, "ontologies/");
             for (String ontologyname : ontologynames) {
+                System.out.println("Trying to read " + ontologyname);
                 Model model = readEntry(ontologyname);
-                models.add(model);
+                if (model != null) {
+                    models.add(model);
+                }
+            }*/
+            
+            String uri = "http://cosasbuenas.es/static/def/odrl.ttl";
+            Model omodel = readModel(uri);
+            if (omodel!=null)
+            {
+                System.out.println("Successfully read " + uri);
+                models.add(omodel);        
             }
+            String uri2 = "http://cosasbuenas.es/static/def/ppo.ttl";
+            omodel = readModel(uri2);
+            if (omodel!=null)
+            {
+                System.out.println("Successfully read " + uri);
+                models.add(omodel);        
+            }
+
+            
+            System.out.println("A total of " + models.size() + " models has been loaded.");
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
+    
+    private static Model readModel(String uri)
+    {
+        try{
+            String ontotext = new Scanner(new URL(uri).openStream(), "UTF-8").useDelimiter("\\A").next();
+            StringReader reader = new StringReader(ontotext);
+            Model model = ModelFactory.createDefaultModel();
+            model.read(reader, null, "TURTLE");
+            OntModel omodel = ModelFactory.createOntologyModel();
+            omodel.addSubModel(model); 
+            return omodel;
+        }catch(Exception e)
+        {
+            e.printStackTrace();
+            return null;
+        }
+        
+    }
+    
 
     public static String find(String text) {
         if (models == null) {
@@ -76,7 +119,7 @@ public class RightsFinder {
         while (classes.hasNext()) {
             try {
                 OntClass next = (OntClass) classes.next();
-        //        System.out.println("Clase: " + next.getURI());
+                //        System.out.println("Clase: " + next.getURI());
                 String name = next.getLocalName().toLowerCase();
                 String sear = text.toLowerCase();
 
