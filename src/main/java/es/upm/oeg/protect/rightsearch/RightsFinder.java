@@ -58,20 +58,30 @@ public class RightsFinder {
             }*/
             
             String uri = "http://cosasbuenas.es/static/def/odrl.ttl";
-            Model omodel = readModel(uri);
-            if (omodel!=null)
+            String base = "http://cosasbuenas.es/static/def/";
+            String ontos[]={"air.ttl","cloud.rdf", "dpo.owl", "dpv-gdpr.ttl", "dpv.ttl", "func_usage-policy-language-1.0.owl", "gconsent.ttl", "gdprov.ttl", "gdprtext.ttl", "odrl.ttl", "p3p-rdf-schema.xml", "ppo.ttl", "splog.owl"};
+            
+            for(String onto : ontos)
             {
-                System.out.println("Successfully read " + uri);
-                models.add(omodel);        
+                String uonto = base + onto;
+                Model omodel = readModel(uonto);
+                if (omodel!=null)
+                {
+                    System.out.println("Successfully read " + uri);
+                    models.add(omodel);        
+                }
+                else
+                    System.out.println("Error with " + uri);
             }
-            String uri2 = "http://cosasbuenas.es/static/def/ppo.ttl";
+            
+/*            String uri2 = "http://cosasbuenas.es/static/def/ppo.ttl";
             omodel = readModel(uri2);
             if (omodel!=null)
             {
                 System.out.println("Successfully read " + uri);
                 models.add(omodel);        
             }
-
+*/
             
             System.out.println("A total of " + models.size() + " models has been loaded.");
         } catch (Exception e) {
