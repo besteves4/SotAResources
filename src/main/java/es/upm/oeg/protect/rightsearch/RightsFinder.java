@@ -70,7 +70,7 @@ public class RightsFinder {
             
             String uri = "http://cosasbuenas.es/static/def/odrl.ttl";
             String base = "http://cosasbuenas.es/static/def/";
-            String ontos[]={"air.ttl","cloud.rdf", "dpo.owl", "dpv-gdpr.ttl", "dpv.ttl", "func_usage-policy-language-1.0.owl", "gconsent.ttl", "gdprov.ttl", "gdprtext.ttl", "odrl.ttl", "p3p-rdf-schema.xml", "ppo.ttl", "splog.owl"};
+            String ontos[]={"air.ttl","cloud.ttl", "dpo.owl", "dpv-gdpr.ttl", "dpv.ttl", "func.ttl", "gconsent.ttl", "gdprov.ttl", "gdprtext.ttl", "odrl.ttl", "p3p.ttl", "ppo.ttl", "splog.ttl"};
             
             for(String onto : ontos)
             {
@@ -78,11 +78,11 @@ public class RightsFinder {
                 Model omodel = readModel(uonto);
                 if (omodel!=null)
                 {
-                    Historial.add("Successfully read " + uri);
+                    Historial.add("Successfully read " + uonto);
                     models.add(omodel);        
                 }
                 else
-                    Historial.add("Error with " + uri);
+                    Historial.add("Error with " + uonto);
             }
             Historial.add("A total of " + models.size() + " models has been loaded.");
         } catch (Exception e) {
