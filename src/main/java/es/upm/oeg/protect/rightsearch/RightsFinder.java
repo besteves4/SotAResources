@@ -158,9 +158,9 @@ public class RightsFinder {
 
                 if (name.contains(sear)) {
                     SearchResult sr = new SearchResult();
-                    sr.ontologyname = "this should be the ontology name TO DO";
+                    sr.ontologyname = "ontologyname";
                     sr.element = next.toString();
-                    sr.elementdescription = "this should be the triples describing the element";
+                    sr.elementdescription = "n/a";
                     list.add(sr);
                 }
             } catch (Exception e2) {
@@ -177,9 +177,9 @@ public class RightsFinder {
 
             if (name.contains(sear)) {
                 SearchResult sr = new SearchResult();
-                sr.ontologyname = "this should be the ontology name TO DO";
+                sr.ontologyname = "ontologyname";
                 sr.element = next.toString();
-                sr.elementdescription = "this should be the triples describing the element";
+                sr.elementdescription = "n/a";
                 list.add(sr);
             }
         }

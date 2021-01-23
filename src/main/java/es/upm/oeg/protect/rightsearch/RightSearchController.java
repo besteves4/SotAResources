@@ -34,10 +34,7 @@ public class RightSearchController {
     static Logger logger = Logger.getLogger(Controller.class);
 
     @ApiOperation(value = "Finds references to rights in a collection of ontologies")
-    @RequestMapping(
-            value = "/rights",
-            produces = "application/json;charset=UTF-8",
-            method = RequestMethod.GET)
+    @RequestMapping(value = "/rights",produces = "application/json;charset=UTF-8",method = RequestMethod.GET)
     @ResponseBody
     public String getRights(@RequestParam String text) throws Exception {
         Historial.add("invoked rights " + text);
@@ -54,7 +51,7 @@ public class RightSearchController {
         return "{}";
     }
 
-    @RequestMapping(value = "/status", method = RequestMethod.GET)
+    @RequestMapping(value = "/status", method = RequestMethod.GET, produces = "text/plain")
     @ResponseBody
     public String status() {
         System.out.println("I have been asked for the status.");
