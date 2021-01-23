@@ -12,8 +12,10 @@ import java.net.URL;
 import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.Enumeration;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.jar.JarEntry;
@@ -49,6 +51,7 @@ public class RightsFinder {
     }
     
 
+    public static Map<Model, String> modelnames= new HashMap();
     public static boolean initialized = false;
     public static void init() {
         if (initialized)
@@ -70,7 +73,7 @@ public class RightsFinder {
             
             String uri = "http://cosasbuenas.es/static/def/odrl.ttl";
             String base = "http://cosasbuenas.es/static/def/";
-            String ontos[]={"air.ttl","cloud.ttl", "dpo.owl", "dpv-gdpr.ttl", "dpv.ttl", "func.ttl", "gconsent.ttl", "gdprov.ttl", "gdprtext.ttl", "odrl.ttl", "p3p.ttl", "ppo.ttl", "splog.ttl"};
+            String ontos[]={"air.ttl","cloud.ttl", "dpo.ttl", "dpv-gdpr.ttl", "dpv.ttl", "func.ttl", "gconsent.ttl", "gdprov.ttl", "gdprtext.ttl", "odrl.ttl", "p3p.ttl", "ppo.ttl", "splog.ttl"};
             
             for(String onto : ontos)
             {
@@ -79,6 +82,7 @@ public class RightsFinder {
                 if (omodel!=null)
                 {
                     Historial.add("Successfully read " + uonto);
+                    modelnames.put(omodel, onto.replace(".ttl",""));
                     models.add(omodel);        
                 }
                 else
@@ -116,6 +120,9 @@ public class RightsFinder {
             List<SearchResult> results = findElementInModel(model, text);
             for (SearchResult sr : results) {
                 String result = sr.element;
+                String modelname = modelnames.get(model);
+                if (modelname!=null)
+                    sr.ontologyname=modelname;
                 return result;
             }
         }

@@ -9,6 +9,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
  */
 public class SearchResult {
 
+    public String element = "";
+    public String elementdescription = "";
     public String ontologyname = "";
 
     public String getOntologyname() {
@@ -34,8 +36,6 @@ public class SearchResult {
     public void setElementdescription(String elementdescription) {
         this.elementdescription = elementdescription;
     }
-    public String element = "";
-    public String elementdescription = "";
 
     public String toJSON() {
         try {
