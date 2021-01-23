@@ -42,8 +42,12 @@ public class RightsFinder {
         System.out.println("Foun: " + find);
     }
 
-
+    public static boolean initialized = false;
     public static void init() {
+        if (initialized)
+            return;
+        initialized=true;
+        
         models = new ArrayList();
         try {
             /*
