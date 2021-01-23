@@ -16,6 +16,8 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * Controller for the REST API service
@@ -38,6 +40,7 @@ public class RightSearchController {
             method = RequestMethod.GET)
     @ResponseBody
     public String getRights(@RequestParam String text) throws Exception {
+        Historial.add("invoked rights " + text);
         try {
             System.out.println("Searching for: " + text);
             String json = RightsFinder.find(text);
@@ -54,13 +57,30 @@ public class RightSearchController {
     @RequestMapping(value = "/status", method = RequestMethod.GET)
     @ResponseBody
     public String status() {
-        System.out.println("I have been asked for the status hahaha");
-        return "version 1.1";
+        System.out.println("I have been asked for the status.");
+
+        Historial.add("invoked status");
+
+        String s = "version 1.1\n";
+        int conta = 0;
+        for (Historial h : Historial.log) {
+            try {
+                s += new SimpleDateFormat("yyyy-mm-dd hh:mm:ss").format(h.date) + " " + h.text + "\n";
+            } catch (Exception exx) {
+
+            }
+            conta++;
+            if (conta > 1000) {
+                break;
+            }
+        }
+        return s;
     }
 
     @RequestMapping(value = "/deploy", method = RequestMethod.GET)
     @ResponseBody
     public String deploy() {
+        Historial.add("invoked deploy ");
         System.out.println("Deploying!");
         ProcessBuilder processBuilder = new ProcessBuilder();
         processBuilder.command("/protect/deploy.sh");
@@ -86,11 +106,11 @@ public class RightSearchController {
                 System.err.println("error " + exitVal);
             }
 
-            } catch (IOException e) {
-                e.printStackTrace();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return "Deployed";
     }
 

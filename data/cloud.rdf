@@ -1,0 +1,439 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/lavi/ontologies/2018/2/GDPR_Obligations_May2018"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/lavi/ontologies/2018/2/GDPR_Obligations_May2018">
+    <Prefix name="" IRI="http://www.semanticweb.org/lavi/ontologies/2018/2/untitled-ontology-35#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">version 1, March 2018</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ontology describing articles and security controls for EU&apos;s General Data Protection Regulation (GDPR) . It includes the corresponding Cloud Security Alliance (CSA) controls</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Lavanya Elluri and Karuna P Joshi
+University of Maryland, Baltimore County,
+Baltimore, MD, USA</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Art.29"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Transfer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Art.25"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Art.37"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Art.28(2-4),10"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Right_to_liability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GDPR_Articles"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Common_Responsiblites"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Protection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cooperation_with_SA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Processing_Activities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Art.32"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Art.44"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Consumer_Responsiblities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CSA_Controls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Obligations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CSP_relevant_contacts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Art.24"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transfer_Principles"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Processing_Security"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Compliance_Declaration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Personal_Data_Breach"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Identify_Representatives"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Art.3(1)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Art.31"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hire_Data_Protection_Officer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stake_Holders"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Art.27"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Common_Obligations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Providers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#General_Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Consumer_Obligations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Territorial_Scope"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Art.28(1)"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Breach_Notification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Provider_Obligations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Compliance_and_Accountability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Joint_Consumers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Art.30"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Security"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Art.82"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasConsumerObliged"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Consumers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCSAcontrol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Processor_Responsibilites"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coomunicate_Data_Breach"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Art.26"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Art.34"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProviderObliged"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Art.5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Processing_under_Authority"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Record_Keeping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Retention_Deletion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Art.33"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cooperation"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Art.24"/>
+        <Class IRI="#GDPR_Articles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Art.25"/>
+        <Class IRI="#GDPR_Articles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Art.26"/>
+        <Class IRI="#GDPR_Articles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Art.27"/>
+        <Class IRI="#GDPR_Articles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Art.29"/>
+        <Class IRI="#GDPR_Articles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Art.30"/>
+        <Class IRI="#GDPR_Articles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Art.31"/>
+        <Class IRI="#GDPR_Articles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Art.32"/>
+        <Class IRI="#GDPR_Articles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Art.33"/>
+        <Class IRI="#GDPR_Articles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Art.34"/>
+        <Class IRI="#GDPR_Articles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Art.37"/>
+        <Class IRI="#GDPR_Articles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Art.44"/>
+        <Class IRI="#GDPR_Articles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Art.5"/>
+        <Class IRI="#GDPR_Articles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Art.82"/>
+        <Class IRI="#GDPR_Articles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CSA_Controls"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CSP_relevant_contacts"/>
+        <Class IRI="#CSA_Controls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Common_Obligations"/>
+        <Class IRI="#Obligations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Common_Responsiblites"/>
+        <Class IRI="#Common_Obligations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Compliance_Declaration"/>
+        <Class IRI="#Consumer_Obligations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Compliance_and_Accountability"/>
+        <Class IRI="#CSA_Controls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Consumer_Obligations"/>
+        <Class IRI="#Obligations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Consumer_Responsiblities"/>
+        <Class IRI="#Consumer_Obligations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Consumers"/>
+        <Class IRI="#Stake_Holders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coomunicate_Data_Breach"/>
+        <Class IRI="#Consumer_Obligations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cooperation"/>
+        <Class IRI="#CSA_Controls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cooperation_with_SA"/>
+        <Class IRI="#Common_Obligations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Breach_Notification"/>
+        <Class IRI="#Common_Obligations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Protection"/>
+        <Class IRI="#Consumer_Obligations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Retention_Deletion"/>
+        <Class IRI="#CSA_Controls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Security"/>
+        <Class IRI="#CSA_Controls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Transfer"/>
+        <Class IRI="#CSA_Controls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GDPR_Articles"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#General_Information"/>
+        <Class IRI="#CSA_Controls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hire_Data_Protection_Officer"/>
+        <Class IRI="#Provider_Obligations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Identify_Representatives"/>
+        <Class IRI="#Consumer_Obligations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Joint_Consumers"/>
+        <Class IRI="#Consumer_Obligations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Obligations"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Personal_Data_Breach"/>
+        <Class IRI="#CSA_Controls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Processing_Activities"/>
+        <Class IRI="#Common_Obligations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Processing_Security"/>
+        <Class IRI="#Common_Obligations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Processing_under_Authority"/>
+        <Class IRI="#Provider_Obligations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Processor_Responsibilites"/>
+        <Class IRI="#Provider_Obligations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Provider_Obligations"/>
+        <Class IRI="#Obligations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Providers"/>
+        <Class IRI="#Stake_Holders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Record_Keeping"/>
+        <Class IRI="#CSA_Controls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Right_to_liability"/>
+        <Class IRI="#Common_Obligations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stake_Holders"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Territorial_Scope"/>
+        <Class IRI="#Common_Obligations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transfer_Principles"/>
+        <Class IRI="#Provider_Obligations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Art.28(1)"/>
+        <Class IRI="#GDPR_Articles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Art.28(2-4),10"/>
+        <Class IRI="#GDPR_Articles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Art.3(1)"/>
+        <Class IRI="#GDPR_Articles"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCSAcontrol"/>
+        <Class IRI="#Obligations"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasConsumerObliged"/>
+        <Class IRI="#Consumers"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasProviderObliged"/>
+        <Class IRI="#Providers"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCSAcontrol"/>
+        <Class IRI="#CSA_Controls"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasConsumerObliged"/>
+        <Class IRI="#Common_Obligations"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasConsumerObliged"/>
+        <Class IRI="#Consumer_Obligations"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProviderObliged"/>
+        <Class IRI="#Common_Obligations"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProviderObliged"/>
+        <Class IRI="#Provider_Obligations"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

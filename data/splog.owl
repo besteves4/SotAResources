@@ -1,0 +1,388 @@
+@prefix : <http://www.specialprivacy.eu/langs/splog#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix spl: <http://www.specialprivacy.eu/langs/usage-policy#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://www.specialprivacy.eu/langs/splog> a owl:Ontology ;
+	rdfs:seeAlso "https://aic.ai.wu.ac.at/qadlod/policyLog/" ;
+	owl:versionInfo "0.3"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.specialprivacy.eu/langs/splog#activity
+
+:activity a owl:ObjectProperty ;
+	rdfs:domain :LogEntry ;
+	rdfs:range :Activity .
+# 
+# http://www.specialprivacy.eu/langs/splog#case
+
+:case a owl:ObjectProperty ;
+	rdfs:subPropertyOf owl:topObjectProperty ;
+	rdfs:domain :LogEntry ;
+	rdfs:range :Case .
+# 
+# http://www.specialprivacy.eu/langs/splog#controller
+
+:controller a owl:ObjectProperty ;
+	rdfs:subPropertyOf prov:agent ;
+	rdfs:domain :ConsentAssertion ;
+	rdfs:range :Controller .
+# 
+# http://www.specialprivacy.eu/langs/splog#dataSubject
+
+:dataSubject a owl:ObjectProperty ;
+	rdfs:subPropertyOf prov:wasAssociatedWith ;
+	rdfs:domain :LogEntry ;
+	rdfs:range :DataSubject .
+# 
+# http://www.specialprivacy.eu/langs/splog#dataSubjectGroup
+
+:dataSubjectGroup a owl:ObjectProperty ;
+	rdfs:subPropertyOf prov:wasAssociatedWith ;
+	rdfs:domain :DataSubjectGroup ;
+	rdfs:range :DataSubject .
+# 
+# http://www.specialprivacy.eu/langs/splog#dimension
+
+:dimension a owl:ObjectProperty ;
+	rdfs:subPropertyOf :logEntryContent ;
+	rdfs:domain :LogEntryGroup ;
+	rdfs:range :LogEntryContent .
+# 
+# http://www.specialprivacy.eu/langs/splog#entryMember
+
+:entryMember a owl:ObjectProperty ;
+	rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#member> ;
+	rdfs:domain :LogEntryGroup ;
+	rdfs:range :LogEntry .
+# 
+# http://www.specialprivacy.eu/langs/splog#hashAlgorithm
+
+:hashAlgorithm a owl:ObjectProperty ;
+	rdfs:domain :ImmutableRecord ;
+	rdfs:range :HashAlgorithm .
+# 
+# http://www.specialprivacy.eu/langs/splog#hashKeyLength
+
+:hashKeyLength a owl:ObjectProperty ;
+	rdfs:subPropertyOf owl:topObjectProperty ;
+	rdfs:domain :ImmutableRecord ;
+	rdfs:range :HashKeyLength .
+# 
+# http://www.specialprivacy.eu/langs/splog#immutableRecord
+
+:immutableRecord a owl:ObjectProperty ;
+	rdfs:subPropertyOf prov:wasGeneratedBy ;
+	rdfs:domain :LogEntry ;
+	rdfs:range :ImmutableRecord .
+# 
+# http://www.specialprivacy.eu/langs/splog#logEntry
+
+:logEntry a owl:ObjectProperty ;
+	rdfs:subPropertyOf prov:wasGeneratedBy ;
+	rdfs:domain :Log ;
+	rdfs:range :LogEntry .
+# 
+# http://www.specialprivacy.eu/langs/splog#logEntryContent
+
+:logEntryContent a owl:ObjectProperty ;
+	rdfs:domain :LogEntry ;
+	rdfs:range :LogEntryContent ;
+	rdfs:comment "Associates the Event with its content" .
+# 
+# http://www.specialprivacy.eu/langs/splog#logEntryGroup
+
+:logEntryGroup a owl:ObjectProperty ;
+	rdfs:subPropertyOf prov:wasGeneratedBy ;
+	rdfs:domain :Log ;
+	rdfs:range :LogEntryGroup .
+# 
+# http://www.specialprivacy.eu/langs/splog#performedBy
+
+:performedBy a owl:ObjectProperty ;
+	rdfs:domain :Activity ;
+	rdfs:range prov:Agent .
+# 
+# http://www.specialprivacy.eu/langs/splog#processor
+
+:processor a owl:ObjectProperty ;
+	rdfs:subPropertyOf prov:agent ;
+	rdfs:domain :Log ;
+	rdfs:range :Processor .
+# 
+# http://www.specialprivacy.eu/langs/splog#recipient
+
+:recipient a owl:ObjectProperty ;
+	rdfs:domain :SharingEvent ;
+	rdfs:range :Recipient .
+# 
+# http://www.specialprivacy.eu/langs/splog#revoke
+
+:revoke a owl:ObjectProperty ;
+	rdfs:domain :ConsentRevocation ;
+	rdfs:range :ConsentAssertion .
+# 
+# http://www.specialprivacy.eu/langs/splog#subjectMember
+
+:subjectMember a owl:ObjectProperty ;
+	rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#member> .
+# 
+# http://www.w3.org/2004/02/skos/core#member
+
+<http://www.w3.org/2004/02/skos/core#member> a owl:ObjectProperty .
+# 
+# http://www.w3.org/ns/prov#agent
+
+prov:agent a owl:ObjectProperty .
+# 
+# http://www.w3.org/ns/prov#wasAssociatedWith
+
+prov:wasAssociatedWith a owl:ObjectProperty .
+# 
+# http://www.w3.org/ns/prov#wasGeneratedBy
+
+prov:wasGeneratedBy a owl:ObjectProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/issued
+
+dct:issued a owl:DatatypeProperty .
+# 
+# http://www.specialprivacy.eu/langs/splog#contentHash
+
+:contentHash a owl:DatatypeProperty ;
+	rdfs:domain :ImmutableRecord ;
+	rdfs:range xsd:base64Binary .
+# 
+# http://www.specialprivacy.eu/langs/splog#message
+
+:message a owl:DatatypeProperty ;
+	rdfs:domain :LogEntry ;
+	rdfs:range xsd:string .
+# 
+# http://www.specialprivacy.eu/langs/splog#transactionTime
+
+:transactionTime a owl:DatatypeProperty ;
+	rdfs:subPropertyOf dct:issued ;
+	rdfs:domain :LogEntry ;
+	rdfs:range xsd:dateTimeStamp .
+# 
+# http://www.specialprivacy.eu/langs/splog#userHash
+
+:userHash a owl:DatatypeProperty ;
+	rdfs:domain :ImmutableRecord ;
+	rdfs:range xsd:base64Binary .
+# 
+# http://www.specialprivacy.eu/langs/splog#validityEndTime
+
+:validityEndTime a owl:DatatypeProperty ;
+	rdfs:domain :LogEntryGroup ;
+	rdfs:range xsd:dateTimeStamp .
+# 
+# http://www.specialprivacy.eu/langs/splog#validityStartTime
+
+:validityStartTime a owl:DatatypeProperty ;
+	rdfs:domain :LogEntryGroup ;
+	rdfs:range xsd:dateTimeStamp .
+# 
+# http://www.specialprivacy.eu/langs/splog#validityTime
+
+:validityTime a owl:DatatypeProperty ;
+	rdfs:subPropertyOf prov:atTime ;
+	rdfs:domain :LogEntry ;
+	rdfs:range xsd:dateTimeStamp .
+# 
+# http://www.w3.org/ns/prov#atTime
+
+prov:atTime a owl:DatatypeProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.specialprivacy.eu/langs/splog#Activity
+
+:Activity a owl:Class ;
+	rdfs:comment "a BPM activity"@en ;
+	rdfs:label "Activity"@en .
+# 
+# http://www.specialprivacy.eu/langs/splog#Case
+
+:Case a owl:Class ;
+	rdfs:comment "a BPM case"@en ;
+	rdfs:label "Case"@en .
+# 
+# http://www.specialprivacy.eu/langs/splog#ConsentAssertion
+
+:ConsentAssertion a owl:Class ;
+	rdfs:subClassOf :PolicyEntry ;
+	rdfs:comment "A consent provided by a data subject"@en ;
+	rdfs:label "Consent Assertion"@en .
+# 
+# http://www.specialprivacy.eu/langs/splog#ConsentRevocation
+
+:ConsentRevocation a owl:Class ;
+	rdfs:subClassOf :PolicyEntry ;
+	rdfs:comment "The revocation of a given consent"@en ;
+	rdfs:label "Consent Revocation"@en .
+# 
+# http://www.specialprivacy.eu/langs/splog#Controller
+
+:Controller a owl:Class ;
+	rdfs:subClassOf prov:Agent ;
+	rdfs:comment "Controller as defined by Art. 4 (7) of the GDPR"@en ;
+	rdfs:label "Controller"@en .
+# 
+# http://www.specialprivacy.eu/langs/splog#DataEvent
+
+:DataEvent a owl:Class ;
+	rdfs:subClassOf :LogEntry ;
+	rdfs:comment "Log entries that are actually events on the data, such as data processing and sharing events"@en ;
+	rdfs:label "Data Event"@en .
+# 
+# http://www.specialprivacy.eu/langs/splog#DataSubject
+
+:DataSubject a owl:Class ;
+	rdfs:subClassOf prov:Agent ;
+	rdfs:comment "Natural person as per Art. 4 (1) of the GDPR"@en ;
+	rdfs:label "Data Subject"@en .
+# 
+# http://www.specialprivacy.eu/langs/splog#DataSubjectGroup
+
+:DataSubjectGroup a owl:Class ;
+	rdfs:subClassOf :DataSubject ;
+	rdfs:comment "A goup of one or more data subjects"@en ;
+	rdfs:label "Data Subject Group"@en .
+# 
+# http://www.specialprivacy.eu/langs/splog#HashAlgorithm
+
+:HashAlgorithm a owl:Class ;
+	rdfs:comment "Defines an algorithm for hashing"@en ;
+	rdfs:label "Hash Algorithm"@en .
+# 
+# http://www.specialprivacy.eu/langs/splog#HashKeyLength
+
+:HashKeyLength a owl:Class ;
+	rdfs:comment "Defines the key length of a Hash Algorithm"@en ;
+	rdfs:label "Hash Key Length"@en .
+# 
+# http://www.specialprivacy.eu/langs/splog#ImmutableRecord
+
+:ImmutableRecord a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:comment "the immutable record of an event"@en ;
+	rdfs:label "Immutable Record"@en .
+# 
+# http://www.specialprivacy.eu/langs/splog#Log
+
+:Log a owl:Class ;
+	rdfs:subClassOf prov:Entity ;
+	rdfs:comment "A Log is a collection of data that records data processing and sharing events as well as consent-related activities (acquisition and revocation)"@en ;
+	rdfs:label "Log"@en .
+# 
+# http://www.specialprivacy.eu/langs/splog#LogEntry
+
+:LogEntry a owl:Class ;
+	rdfs:subClassOf prov:Activity ;
+	rdfs:comment """A log entry contains information about a processing and sharing event associated to a
+data subject, as well as actions related to the consent provided (or revoked) by a data
+subject"""@en ;
+	rdfs:label "Log Entry"@en .
+# 
+# http://www.specialprivacy.eu/langs/splog#LogEntryContent
+
+:LogEntryContent a owl:Class ;
+	rdfs:subClassOf spl:Authorization ;
+	rdfs:comment "The content of a log entry in terms of the data involved, how is data processed, the purpose of the process, where and for how long is the data stored and potential disclosures to third parties"@en ;
+	rdfs:label "Log Entry Content"@en .
+# 
+# http://www.specialprivacy.eu/langs/splog#LogEntryGroup
+
+:LogEntryGroup a owl:Class ;
+	rdfs:subClassOf :LogEntry ;
+	rdfs:comment "a log entry group contains information about one or more log entries"@en ;
+	rdfs:label "Log Entry Group"@en .
+# 
+# http://www.specialprivacy.eu/langs/splog#PolicyEntry
+
+:PolicyEntry a owl:Class ;
+	rdfs:subClassOf :LogEntry ;
+	rdfs:comment "Log entries related to policies and consent"@en ;
+	rdfs:label "Policy Entry"@en .
+# 
+# http://www.specialprivacy.eu/langs/splog#Process
+
+:Process a owl:Class ;
+	rdfs:comment "a BPM process"@en ;
+	rdfs:label "Process"@en .
+# 
+# http://www.specialprivacy.eu/langs/splog#ProcessingEvent
+
+:ProcessingEvent a owl:Class ;
+	rdfs:subClassOf :DataEvent ;
+	rdfs:comment "A data processing event"@en ;
+	rdfs:label "Data Processing Event"@en .
+# 
+# http://www.specialprivacy.eu/langs/splog#Processor
+
+:Processor a owl:Class ;
+	rdfs:subClassOf prov:Agent ;
+	rdfs:comment "Processor as defined by Art. 4 (8) of the GDPR"@en ;
+	rdfs:label "Processor"@en .
+# 
+# http://www.specialprivacy.eu/langs/splog#Recipient
+
+:Recipient a owl:Class ;
+	rdfs:subClassOf prov:Agent ;
+	rdfs:comment "recipient as defined by Art. 4 (9) of the GDPR"@en ;
+	rdfs:label "Recipient"@en .
+# 
+# http://www.specialprivacy.eu/langs/splog#SharingEvent
+
+:SharingEvent a owl:Class ;
+	rdfs:subClassOf :DataEvent ;
+	rdfs:comment "A data sharing event"@en ;
+	rdfs:label "Data Sharing Event"@en .
+# 
+# http://www.specialprivacy.eu/langs/usage-policy#Authorization
+
+spl:Authorization a owl:Class .
+# 
+# http://www.w3.org/ns/prov#Activity
+
+prov:Activity a owl:Class .
+# 
+# http://www.w3.org/ns/prov#Agent
+
+prov:Agent a owl:Class .
+# 
+# http://www.w3.org/ns/prov#Entity
+
+prov:Entity a owl:Class .
+# 
+# Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi

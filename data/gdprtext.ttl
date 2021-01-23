@@ -1,0 +1,2499 @@
+@prefix : <https://w3id.org/GDPRtEXT#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/GDPRtEXT> .
+
+<https://w3id.org/GDPRtEXT> rdf:type owl:Ontology ;
+                             owl:versionIRI <https://w3id.org/GDPRtEXT/v/0.7> ;
+                             <http://purl.org/dc/elements/1.1/creator> "Harshvardhan J. Pandit" ;
+                             <http://purl.org/dc/elements/1.1/description> "The General Data Protection Regulation (GDPR) is comprised of several articles, each with points that refer to specific concepts. The general convention of referring to these points and concepts is to quote the specific article or point using a human-readable reference. This ontology provides a way to refer to the points within the GDPR using the EurLex ontology published by the European Publication Office. It also defines the concepts defined, mentioned, and requried by the GDPR using the Simple Knowledge Organization System (SKOS) ontology." ;
+                             <http://purl.org/dc/elements/1.1/title> "GDPRtEXT" ;
+                             <http://purl.org/dc/terms/abstract> "The General Data Protection Regulation (GDPR) defines legal obligations over the use of personal data by organisations. This ontology aims to identify and model such terms and obligations as an OWL vocabulary and to directly link the terms to their occurence, usage, and influence in the GDPR text." ;
+                             <http://purl.org/dc/terms/created> "2017-08-15"^^xsd:date ;
+                             <http://purl.org/dc/terms/creator> "http://purl.org/adaptcentre/people/HJP"^^xsd:anyURI ;
+                             <http://purl.org/dc/terms/description> "This ontology extends the canonical (official) GDPR text with additional annotations" ;
+                             <http://purl.org/dc/terms/modified> "2020-03-31"^^xsd:date ;
+                             <http://purl.org/dc/terms/publisher> <http://purl.org/adaptcentre/people/ADAPT> ;
+                             <http://purl.org/dc/terms/source> <http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679> ;
+                             <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/draft> ;
+                             <http://purl.org/vocab/vann/preferredNamespacePrefix> "gdprtext" ;
+                             <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/GDPRtEXT" ;
+                             rdfs:comment "GDPRtEXT provides a SKOS glossary of terms associated with GDPR and an ontology to represent the GDPR text as a set of RDF resources" ;
+                             rdfs:label "GDPR text EXTensions" ;
+                             rdfs:seeAlso <https://w3id.org/GConsent> ,
+                                          <https://w3id.org/GDPRov> ,
+                                          "\"GDPRtEXT - GDPR as a Linked Data Resource\" by Harshvardhan J. Pandit*, Kaniz Fatema, Declan O'Sullivan, Dave Lewis. Published in Proceedigns of 15th European Semantic Web Conference (ESWC), Resource Track. Crete, Heraklion, Greece. 2018. https://doi.org/10.1007/978-3-319-93417-4_31"^^rdfs:Literal ;
+                             owl:priorVersion <https://w3id.org/GDPRtEXT/v/0.6> ;
+                             owl:versionInfo 0.7 ;
+                             <http://xmlns.com/foaf/0.1/homepage> "https://openscience.adaptcentre.ie/projects/GDPRtEXT/" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.linkedmodel.org/schema/vaem#rationale
+<http://www.linkedmodel.org/schema/vaem#rationale> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#preflabel
+<http://www.w3.org/2004/02/skos/core#preflabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/homepage
+<http://xmlns.com/foaf/0.1/homepage> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/GDPRtEXT#involves
+:involves rdf:type owl:AnnotationProperty ;
+          rdfs:comment "It signifies that two concepts are related within the context of the GDPR." ;
+          rdfs:label "involves" .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://data.europa.eu/eli/ontology#has_part
+<http://data.europa.eu/eli/ontology#has_part> rdf:type owl:ObjectProperty ,
+                                                       owl:TransitiveProperty .
+
+
+###  http://data.europa.eu/eli/ontology#is_part_of
+<http://data.europa.eu/eli/ontology#is_part_of> rdf:type owl:ObjectProperty ,
+                                                         owl:TransitiveProperty .
+
+
+###  https://w3id.org/GDPRtEXT#hasArticle
+:hasArticle rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <http://data.europa.eu/eli/ontology#has_part> ;
+            rdf:type owl:FunctionalProperty ;
+            rdfs:domain <http://data.europa.eu/eli/ontology#LegalResourceSubdivision> ;
+            rdfs:range :Article ;
+            rdfs:comment "indicates the legal resource has the Article" ;
+            rdfs:label "has Article" .
+
+
+###  https://w3id.org/GDPRtEXT#hasChapter
+:hasChapter rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <http://data.europa.eu/eli/ontology#has_part> ;
+            rdf:type owl:FunctionalProperty ;
+            rdfs:domain <http://data.europa.eu/eli/ontology#LegalResource> ;
+            rdfs:range :Chapter ;
+            rdfs:comment "indicates the legal resource has the Chapter" ;
+            rdfs:label "has Chapter" .
+
+
+###  https://w3id.org/GDPRtEXT#hasCitation
+:hasCitation rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://data.europa.eu/eli/ontology#has_part> ;
+             rdfs:domain <http://data.europa.eu/eli/ontology#LegalResourceSubdivision> ;
+             rdfs:range :Citation ;
+             rdfs:comment "indicates that the legal resource has the referenced citation" ;
+             rdfs:label "has Citation" .
+
+
+###  https://w3id.org/GDPRtEXT#hasPoint
+:hasPoint rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf <http://data.europa.eu/eli/ontology#has_part> ;
+          rdf:type owl:FunctionalProperty ;
+          rdfs:domain <http://data.europa.eu/eli/ontology#LegalResourceSubdivision> ;
+          rdfs:range :Point ;
+          rdfs:comment "indicates the legal resource has the Point" ;
+          rdfs:label "has Point" .
+
+
+###  https://w3id.org/GDPRtEXT#hasRecital
+:hasRecital rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <http://data.europa.eu/eli/ontology#has_part> ;
+            rdf:type owl:FunctionalProperty ;
+            rdfs:domain <http://data.europa.eu/eli/ontology#LegalResourceSubdivision> ;
+            rdfs:range :Recital ;
+            rdfs:comment "indicates the legal resource has the Recital" ;
+            rdfs:label "has Recital" .
+
+
+###  https://w3id.org/GDPRtEXT#hasSection
+:hasSection rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <http://data.europa.eu/eli/ontology#has_part> ;
+            rdf:type owl:FunctionalProperty ;
+            rdfs:domain <http://data.europa.eu/eli/ontology#LegalResourceSubdivision> ;
+            rdfs:range :Section ;
+            rdfs:comment "indicates the legal resource has the Section" ;
+            rdfs:label "has Section" .
+
+
+###  https://w3id.org/GDPRtEXT#hasSubPoint
+:hasSubPoint rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://data.europa.eu/eli/ontology#has_part> ;
+             rdf:type owl:FunctionalProperty ;
+             rdfs:domain <http://data.europa.eu/eli/ontology#LegalResourceSubdivision> ;
+             rdfs:range :SubPoint ;
+             rdfs:comment "indicates the legal resource has the SubPoint" ;
+             rdfs:label "has SubPoint" .
+
+
+###  https://w3id.org/GDPRtEXT#isPartOfArticle
+:isPartOfArticle rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf <http://data.europa.eu/eli/ontology#is_part_of> ;
+                 rdf:type owl:FunctionalProperty ;
+                 rdfs:domain <http://data.europa.eu/eli/ontology#LegalResourceSubdivision> ;
+                 rdfs:range :Article ;
+                 rdfs:comment "represents a legal resource subdivision to be part of a article" ;
+                 rdfs:label "is part of Article" .
+
+
+###  https://w3id.org/GDPRtEXT#isPartOfChapter
+:isPartOfChapter rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf <http://data.europa.eu/eli/ontology#is_part_of> ;
+                 rdf:type owl:FunctionalProperty ;
+                 rdfs:domain <http://data.europa.eu/eli/ontology#LegalResourceSubdivision> ;
+                 rdfs:range :Chapter ;
+                 rdfs:comment "represents a legal resource subdivision to be part of a chapter" ;
+                 rdfs:label "is part of Chapter" .
+
+
+###  https://w3id.org/GDPRtEXT#isPartOfPoint
+:isPartOfPoint rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <http://data.europa.eu/eli/ontology#is_part_of> ;
+               rdf:type owl:FunctionalProperty ;
+               rdfs:domain <http://data.europa.eu/eli/ontology#LegalResourceSubdivision> ;
+               rdfs:range :Point ;
+               rdfs:comment "represents a legal resource subdivision to be part of a point" ;
+               rdfs:label "is part of Point" .
+
+
+###  https://w3id.org/GDPRtEXT#isPartOfSection
+:isPartOfSection rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf <http://data.europa.eu/eli/ontology#is_part_of> ;
+                 rdf:type owl:FunctionalProperty ;
+                 rdfs:domain <http://data.europa.eu/eli/ontology#LegalResourceSubdivision> ;
+                 rdfs:range :Section ;
+                 rdfs:comment "represents a legal resource subdivision to be part of a section" ;
+                 rdfs:label "is part of Section" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://data.europa.eu/eli/ontology#LegalResource
+<http://data.europa.eu/eli/ontology#LegalResource> rdf:type owl:Class .
+
+
+###  http://data.europa.eu/eli/ontology#LegalResourceSubdivision
+<http://data.europa.eu/eli/ontology#LegalResourceSubdivision> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+###  https://w3id.org/GDPRtEXT#Accountability
+:Accountability rdf:type owl:Class ;
+                rdfs:subClassOf :Principle ;
+                rdfs:comment "The principle of accountability states that the controller shall be responsible for, and be able to demonstrate compliance with the processing of personal data as defined by the justifications permissible under the GDPR"@en ;
+                rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article5-2> ,
+                                 <https://w3id.org/GDPRtEXT/gdpr#recital85> ;
+                rdfs:label "Principle of Accountability" ;
+                :involves :Compliance ,
+                          :ControllerResponsibility ,
+                          :LawfulBasisForProcessing ,
+                          :Processing .
+
+
+###  https://w3id.org/GDPRtEXT#Accuracy
+:Accuracy rdf:type owl:Class ;
+          rdfs:subClassOf :Principle ;
+          rdfs:comment "The principle of accuracy states that personal data must be accurate and, where necessary, kept up to date; every reasonable step must be taken to ensure that personal data that are inaccurate, having regard to the purposes for which they are processed, are erased or rectified without delay."@en ;
+          rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article5-1-d> ,
+                           <https://w3id.org/GDPRtEXT/gdpr#recital39> ;
+          rdfs:label "Principle of Accuracy" ;
+          :involves :EraseData ,
+                    :KeptUpToDate ,
+                    :PersonalData ,
+                    :RectifyData ,
+                    :RectifyInaccuracy .
+
+
+###  https://w3id.org/GDPRtEXT#AccuracyIsContested
+:AccuracyIsContested rdf:type owl:Class ;
+                     rdfs:subClassOf :RightToRestrictProcessing ;
+                     rdfs:comment "The data subject can exercise the right to restrict processing of their personal data when the accuracy of personal data is contested"@en ;
+                     rdfs:label "Accuracy is contested" ;
+                     :involves :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#AccurateCollection
+:AccurateCollection rdf:type owl:Class ;
+                    rdfs:subClassOf :ObligationForCollectionOfPersonalData ;
+                    rdfs:comment "This obligation specifies that the collection of (or collected) personal data should in an accurate form - i.e. the personal data should be accurate."@en ;
+                    rdfs:label "Accurate Collection" ;
+                    :involves :CollectionOfPersonalData ,
+                              :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#Activity
+:Activity rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+          rdfs:comment "An Activity signifies some process(es) or step(s) towards specific deed(s), action(s), function(s), or sphere(s) of action."@en ;
+          rdfs:label "Activity" .
+
+
+###  https://w3id.org/GDPRtEXT#AdequateForProcessing
+:AdequateForProcessing rdf:type owl:Class ;
+                       rdfs:subClassOf :RetentionOfPersonalData ;
+                       rdfs:comment "Only the personal data adequat for required processing should be maintained"@en ;
+                       rdfs:label "Adequate for processing" ;
+                       :involves :Processing ,
+                                 :StoreData .
+
+
+###  https://w3id.org/GDPRtEXT#AdherenceToSealCertification
+:AdherenceToSealCertification rdf:type owl:Class ;
+                              rdfs:subClassOf :ConditionsForSealsAndCertifications ;
+                              rdfs:comment "The seal or certification does not reduce or impact the responsiblity of the controller or processor for compliance with the GDPR"@en ;
+                              rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article42-4> ,
+                                               <https://w3id.org/GDPRtEXT/gdpr#article42-6> ;
+                              rdfs:label "Adherence" .
+
+
+###  https://w3id.org/GDPRtEXT#AnonymousData
+:AnonymousData rdf:type owl:Class ;
+               rdfs:subClassOf :Data ;
+               rdfs:comment "Data is termed to be anonymous if it cannot be connected or associated with individual person or persons that have provided or are associated with it."@en ;
+               rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#recital26> ;
+               rdfs:label "Anonymous Data" ;
+               :involves :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#AppointingSubProcessors
+:AppointingSubProcessors rdf:type owl:Class ;
+                         rdfs:subClassOf :ProcessorObligation ;
+                         rdfs:comment "These are the obligations for Processors over appointing sub-processors"@en ;
+                         rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article28-2> ,
+                                          <https://w3id.org/GDPRtEXT/gdpr#article28-4> ;
+                         rdfs:label "Appointing Sub-Processors" ;
+                         :involves :Processor ,
+                                   :SubProcessor .
+
+
+###  https://w3id.org/GDPRtEXT#AppointmentOfProcessors
+:AppointmentOfProcessors rdf:type owl:Class ;
+                         rdfs:subClassOf :Activity ,
+                                         :ControllerObligation ;
+                         rdfs:comment "These are the obligations specified by the GDPR for the appointment of Processors by Controllers."@en ;
+                         rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article28-1> ,
+                                          <https://w3id.org/GDPRtEXT/gdpr#article28-2> ,
+                                          <https://w3id.org/GDPRtEXT/gdpr#article28-3> ,
+                                          <https://w3id.org/GDPRtEXT/gdpr#recital81> ;
+                         rdfs:label "Appointment of Processors" ;
+                         :involves :Controller ,
+                                   :Processor .
+
+
+###  https://w3id.org/GDPRtEXT#ArchiveData
+:ArchiveData rdf:type owl:Class ;
+             rdfs:subClassOf :DataActivity ;
+             rdfs:comment "An activity where personal data is archived" ;
+             rdfs:label "Archive Data" ;
+             :involves :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#Article
+:Article rdf:type owl:Class ;
+         rdfs:subClassOf <http://data.europa.eu/eli/ontology#LegalResourceSubdivision> ;
+         rdfs:comment "Article in GDPR text" ;
+         rdfs:isDefinedBy <http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679> ;
+         rdfs:label "Article" ;
+         <http://www.w3.org/2004/02/skos/core#example> """gdpr:article10 a eli:LegalResourceSubdivision,
+        GDPRtEXT:Article ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterII ;
+    eli:number \"10\"^^xsd:string ;
+    eli:title_alternative \"Article 10\"^^xsd:string ;
+    GDPRtEXT:hasPoint gdpr:article10-1 ;
+    GDPRtEXT:isPartOfChapter gdpr:chapterII .""" .
+
+
+###  https://w3id.org/GDPRtEXT#AssistInComplyingWithRights
+:AssistInComplyingWithRights rdf:type owl:Class ;
+                             rdfs:subClassOf :ProcessorObligation ;
+                             rdfs:comment "Processors must assist Controllers in complying with the various rights provided by the GDPR to data subjects which can be exercised at any time."@en ;
+                             rdfs:label "Assist in complying with rights" ;
+                             :involves :Compliance ,
+                                       :Controller ,
+                                       :Processor ,
+                                       :Rights .
+
+
+###  https://w3id.org/GDPRtEXT#AutomatedDecisionMakingWithSignificantEffect
+:AutomatedDecisionMakingWithSignificantEffect rdf:type owl:Class ;
+                                              rdfs:subClassOf :AutomatedProcessing ,
+                                                              :FactorsForImpactAssessment ;
+                                              rdfs:comment "This type of processing involves automated processing that does decision making having significant effects on the data subject."@en ,
+                                                           "Automated decision making with significant effect" ;
+                                              rdfs:label "Automatic decision making with significant effect" ;
+                                              :involves :DataSubject ,
+                                                        :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#AutomatedProcessing
+:AutomatedProcessing rdf:type owl:Class ;
+                     rdfs:subClassOf :Processing ;
+                     rdfs:comment "This is automated processing of data subject's personal data."@en ;
+                     rdfs:label "Automated Processing" ;
+                     :involves :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#CanBeWithdrawnEasilyConsentObligation
+:CanBeWithdrawnEasilyConsentObligation rdf:type owl:Class ;
+                                       rdfs:subClassOf :ObligationForObtainingConsent ;
+                                       rdfs:comment "This obligation states that the data subject should be able to withdraw the consent as easily as it was to give it."@en ;
+                                       rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article7-3> ,
+                                                        <https://w3id.org/GDPRtEXT/gdpr#recital42> ,
+                                                        <https://w3id.org/GDPRtEXT/gdpr#recital65> ;
+                                       rdfs:label "Can be withdrawn easily" ;
+                                       :involves :GivenConsent ,
+                                                 :WithdrawingConsent .
+
+
+###  https://w3id.org/GDPRtEXT#Certification
+:Certification rdf:type owl:Class ;
+               rdfs:subClassOf :SealsAndCertification ;
+               rdfs:comment "A certification pertaining to GDPR compliance"@en ;
+               rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#recital77> ,
+                                <https://w3id.org/GDPRtEXT/gdpr#recital81> ;
+               rdfs:label "Certification" .
+
+
+###  https://w3id.org/GDPRtEXT#CertificationBody
+:CertificationBody rdf:type owl:Class ;
+                   rdfs:subClassOf :Entity ;
+                   rdfs:comment "A Certification Body is an entity that can award/issue/renew a certification pertaining to compliance towards the GDPR." ;
+                   rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article43> ;
+                   rdfs:label "Certification Body" ;
+                   :involves :Certification ,
+                             :Seal .
+
+
+###  https://w3id.org/GDPRtEXT#Chapter
+:Chapter rdf:type owl:Class ;
+         rdfs:subClassOf <http://data.europa.eu/eli/ontology#LegalResourceSubdivision> ;
+         rdfs:comment "Chapter in GDPR text" ;
+         rdfs:isDefinedBy <http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679> ;
+         rdfs:label "Chapter" ;
+         <http://www.w3.org/2004/02/skos/core#example> """gdpr:chapterI a eli:LegalResourceSubdivision,
+        GDPRtEXT:Chapter ;
+    eli:is_part_of gdpr:GDPR ;
+    eli:number \"I\"^^xsd:string ;
+    eli:title \"General provisions\"^^xsd:string ;
+    eli:title_alternative \"Chapter I\"^^xsd:string ;
+    GDPRtEXT:hasArticle gdpr:article1,
+        gdpr:article2,
+        gdpr:article3,
+        gdpr:article4 .""" .
+
+
+###  https://w3id.org/GDPRtEXT#Citation
+:Citation rdf:type owl:Class ;
+          rdfs:subClassOf <http://data.europa.eu/eli/ontology#LegalResourceSubdivision> ;
+          rdfs:comment "Citation in GDPR text" ;
+          rdfs:isDefinedBy <http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679> ;
+          rdfs:label "Citation" ;
+          <http://www.w3.org/2004/02/skos/core#example> """gdpr:citation1 a eli:LegalResourceSubdivision,
+        GDPRtEXT:Citation ;
+    eli:description \"OJ C 229, 31.7.2012, p. 90.\"^^xsd:string ;
+    eli:is_part_of gdpr:GDPR ;
+    eli:number \"1\"^^xsd:string .""" .
+
+
+###  https://w3id.org/GDPRtEXT#ClearExplanationOfProcessingConsentObligation
+:ClearExplanationOfProcessingConsentObligation rdf:type owl:Class ;
+                                               rdfs:subClassOf :ObligationForObtainingConsent ;
+                                               rdfs:comment "Obtaining consent must provide clear explanations of the processing involved over the personal data"@en ;
+                                               rdfs:label "Clear explanation" ;
+                                               :involves :Processing .
+
+
+###  https://w3id.org/GDPRtEXT#CodeOfConduct
+:CodeOfConduct rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+               rdfs:comment "A Code of Conduct for the purpose of specifying the application of GDPR which may be monitored, evaluated, or processed by a third party appointed by the organisation."@en ;
+               rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article40-2> ,
+                                <https://w3id.org/GDPRtEXT/gdpr#recital77> ,
+                                <https://w3id.org/GDPRtEXT/gdpr#recital81> ,
+                                <https://w3id.org/GDPRtEXT/gdpr#recital98> ,
+                                <https://w3id.org/GDPRtEXT/gdpr#recital99> ;
+               rdfs:label "Code of Conduct" .
+
+
+###  https://w3id.org/GDPRtEXT#CollectionMechanism
+:CollectionMechanism rdf:type owl:Class ;
+                     rdfs:subClassOf :CollectionOfPersonalData ;
+                     rdfs:comment "Specifies collection mechanism used to collect personal data" ;
+                     rdfs:label "Collection Mechanism" .
+
+
+###  https://w3id.org/GDPRtEXT#CollectionOfPersonalData
+:CollectionOfPersonalData rdf:type owl:Class ;
+                          rdfs:subClassOf :DataActivity ;
+                          rdfs:comment "Collection of Personal Data is an Activity that deals with acquiring data subject's personal data through some model of interaction."@en ;
+                          rdfs:label "Collection of Personal Data"@en ;
+                          :involves :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#Compliance
+:Compliance rdf:type owl:Class ;
+            rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+            rdfs:comment "Represents the act of complying with the obligations and actions specified by the GDPR."@en ;
+            rdfs:label "Compliance" .
+
+
+###  https://w3id.org/GDPRtEXT#ComplianceWithControllersInstructions
+:ComplianceWithControllersInstructions rdf:type owl:Class ;
+                                       rdfs:subClassOf :ProcessorObligation ;
+                                       rdfs:comment "The processor has an obligation to comply with the controller's instructions"@en ;
+                                       rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article29> ;
+                                       rdfs:label "Compliance with Controller's instructions" ;
+                                       :involves :Controller ,
+                                                 :Processor .
+
+
+###  https://w3id.org/GDPRtEXT#ConditionsForSealsAndCertifications
+:ConditionsForSealsAndCertifications rdf:type owl:Class ;
+                                     rdfs:subClassOf :SealsAndCertification ;
+                                     rdfs:comment "GDPR mentions some conditions or criterion for the creation and issuing of seals and certifications pertaining to GDPR compliance"@en ;
+                                     rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article42> ,
+                                                      <https://w3id.org/GDPRtEXT/gdpr#article43> ;
+                                     rdfs:label "Awarding Seals and Certifications" ;
+                                     :involves :AdherenceToSealCertification ,
+                                               :MaximumValidity3Years ,
+                                               :VoluntarySystemOfAccredition .
+
+
+###  https://w3id.org/GDPRtEXT#ConfirmingOrMatchingDatasets
+:ConfirmingOrMatchingDatasets rdf:type owl:Class ;
+                              rdfs:subClassOf :FactorsForImpactAssessment ,
+                                              :Processing ;
+                              rdfs:comment "This type of processing involves matching data subject's identity or personal data in different datasets."@en ;
+                              rdfs:label "Confirming or matching datasets" ;
+                              :involves :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#Consent
+:Consent rdf:type owl:Class ;
+         rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+         rdfs:comment "Consent in the context of the GDPR refers to the assent or agreement by the data subject in relation to their personal data for the proposed processing activities associated with one or more organisations."@en ;
+         rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article4-11> ,
+                          <https://w3id.org/GDPRtEXT/gdpr#article6-1> ,
+                          <https://w3id.org/GDPRtEXT/gdpr#recital32> ,
+                          <https://w3id.org/GDPRtEXT/gdpr#recital40> ;
+         rdfs:label "Consent" .
+
+
+###  https://w3id.org/GDPRtEXT#ConsentActivity
+:ConsentActivity rdf:type owl:Class ;
+                 rdfs:subClassOf :Activity ;
+                 rdfs:comment "An activity involving data subject's consent." ;
+                 rdfs:label "Consent Activity" ;
+                 :involves :Consent .
+
+
+###  https://w3id.org/GDPRtEXT#ContextOfDataCollection
+:ContextOfDataCollection rdf:type owl:Class ;
+                         rdfs:subClassOf :PurposeOfNewProcessing ;
+                         rdfs:comment "The purpose of new processing should take the context of how the original data was collected into consideration"@en ;
+                         rdfs:label "Context of data collection" ;
+                         :involves :CollectionOfPersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#ContractWithDataSubject
+:ContractWithDataSubject rdf:type owl:Class ;
+                         rdfs:subClassOf :LawfulBasisForProcessing ;
+                         rdfs:comment "The lawful basis for processing personal data is provided through a contract with the data subject."@en ;
+                         rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article6-1-b> ,
+                                          <https://w3id.org/GDPRtEXT/gdpr#recital44> ;
+                         rdfs:label "Contract with Data Subject" ;
+                         :involves :DataSubject .
+
+
+###  https://w3id.org/GDPRtEXT#Controller
+:Controller rdf:type owl:Class ;
+            rdfs:subClassOf :Entity ;
+            rdfs:comment "The natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data."@en ;
+            rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article28-10> ,
+                             <https://w3id.org/GDPRtEXT/gdpr#article4-7> ,
+                             <https://w3id.org/GDPRtEXT/gdpr#article6-5> ;
+            rdfs:label "Controller" .
+
+
+###  https://w3id.org/GDPRtEXT#ControllerAccountability
+:ControllerAccountability rdf:type owl:Class ;
+                          rdfs:subClassOf :ControllerObligation ;
+                          rdfs:comment "These obligations specify the accountability of the Controller."@en ;
+                          rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article5-2> ,
+                                           <https://w3id.org/GDPRtEXT/gdpr#recital85> ;
+                          rdfs:label "Controller Accountability" ;
+                          :involves :Controller .
+
+
+###  https://w3id.org/GDPRtEXT#ControllerHasTakenAction
+:ControllerHasTakenAction rdf:type owl:Class ;
+                          rdfs:subClassOf :ExceptionsOnReportingDataSubjectsOfBreach ;
+                          rdfs:comment "The data subjects were not notified about the data breach because the controller had already taken action regarding the data breach."@en ;
+                          rdfs:label "Controller has taken action" ;
+                          :involves :Controller ,
+                                    :DataBreach .
+
+
+###  https://w3id.org/GDPRtEXT#ControllerObligation
+:ControllerObligation rdf:type owl:Class ;
+                      rdfs:subClassOf :Obligation ;
+                      rdfs:comment "These are the obligations specified by the GDPR as being specifically the responsbility of the Controller."@en ;
+                      rdfs:label "Controller Obligation" ;
+                      :involves :Controller .
+
+
+###  https://w3id.org/GDPRtEXT#ControllerRepresentative
+:ControllerRepresentative rdf:type owl:Class ;
+                          rdfs:subClassOf :Entity ;
+                          rdfs:comment "A natural or legal person established in the Union who, designated by the controllerin writing, represents the controller with regard to their respective obligations under the GDPR."@en ;
+                          rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article27> ,
+                                           <https://w3id.org/GDPRtEXT/gdpr#article4-17> ,
+                                           <https://w3id.org/GDPRtEXT/gdpr#recital80> ;
+                          rdfs:label "Controller Representative" ;
+                          :involves :Controller .
+
+
+###  https://w3id.org/GDPRtEXT#ControllerResponsibility
+:ControllerResponsibility rdf:type owl:Class ;
+                          rdfs:subClassOf :ControllerObligation ;
+                          rdfs:comment "These obligations specify the responsiblity of the Controller"@en ;
+                          rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article24> ,
+                                           <https://w3id.org/GDPRtEXT/gdpr#recital74> ;
+                          rdfs:label "Controller Responsibility" ;
+                          :involves :Controller .
+
+
+###  https://w3id.org/GDPRtEXT#CooperateWithDPA
+:CooperateWithDPA rdf:type owl:Class ;
+                  rdfs:subClassOf :ControllerObligation ,
+                                  :ProcessorObligation ;
+                  rdfs:comment "This obligation specifies the Controller/Processor must co-operate with the Data Protection Authority (DPA)."@en ;
+                  rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article31> ,
+                                   <https://w3id.org/GDPRtEXT/gdpr#recital82> ;
+                  rdfs:label "Co-operate with DPA" ;
+                  :involves :DPA .
+
+
+###  https://w3id.org/GDPRtEXT#CriminalData
+:CriminalData rdf:type owl:Class ;
+              rdfs:subClassOf :SensitivePersonalData ;
+              rdfs:comment "Personal data related to criminal convictions and offences."@en ;
+              rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article10> ,
+                               <https://w3id.org/GDPRtEXT/gdpr#recital19> ,
+                               <https://w3id.org/GDPRtEXT/gdpr#recital50> ,
+                               <https://w3id.org/GDPRtEXT/gdpr#recital73> ,
+                               <https://w3id.org/GDPRtEXT/gdpr#recital80> ,
+                               <https://w3id.org/GDPRtEXT/gdpr#recital91> ,
+                               <https://w3id.org/GDPRtEXT/gdpr#recital97> ;
+              rdfs:label "Crime data" ;
+              :involves :DataSubject .
+
+
+###  https://w3id.org/GDPRtEXT#CrossBorderTransfer
+:CrossBorderTransfer rdf:type owl:Class ;
+                     rdfs:subClassOf :DataActivity ,
+                                     :FactorsForImpactAssessment ;
+                     rdfs:comment "Cross-border data transfer refers to data transfer crossing the boundaries of EU (legislative) region."@en ;
+                     rdfs:label "Cross-border Transfer" ;
+                     :involves :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#DPA
+:DPA rdf:type owl:Class ;
+     rdfs:subClassOf :Entity ;
+     rdfs:comment "The Data Protection Authority (DPA) is a public institution responsible for monitoring the application of data protection laws."@en ;
+     rdfs:label "DPA" .
+
+
+###  https://w3id.org/GDPRtEXT#DPO
+:DPO rdf:type owl:Class ;
+     rdfs:subClassOf :Entity ;
+     rdfs:comment "The Data Protection Officer (DPO) is an individual(s) appointed by the organisation to monitor compliance and assist in complying with the GDPR."@en ;
+     rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article38-6> ,
+                      <https://w3id.org/GDPRtEXT/gdpr#article39> ;
+     rdfs:label "DPO" ;
+     :involves :Controller ,
+               :MonitorCompliance ,
+               :NotifyDataSubjectAboutDPOForDataBreach ,
+               :Processor .
+
+
+###  https://w3id.org/GDPRtEXT#DPOObligation
+:DPOObligation rdf:type owl:Class ;
+               rdfs:subClassOf :Obligation ;
+               rdfs:comment "These are the obligations specified for the Data Protection Office (DPO) within the  GDPR"@en ;
+               rdfs:label "DPO Obligation" ;
+               :involves :DPO .
+
+
+###  https://w3id.org/GDPRtEXT#Data
+:Data rdf:type owl:Class ;
+      rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+      rdfs:comment "A generic term to refer to Data."@en ;
+      rdfs:label "Data" .
+
+
+###  https://w3id.org/GDPRtEXT#DataActivity
+:DataActivity rdf:type owl:Class ;
+              rdfs:subClassOf :Activity ;
+              rdfs:comment "An activity involving personal data of data subject(s)." ;
+              rdfs:label "Data Activity" ;
+              :involves :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#DataBreach
+:DataBreach rdf:type owl:Class ;
+            rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+            rdfs:comment "A data breach is the intentional or unintentional release of secure or private/confidential information to an untrusted environment."@en ;
+            rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article4-12> ;
+            rdfs:label "Data Breach" ;
+            :involves :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#DataMinimisation
+:DataMinimisation rdf:type owl:Class ;
+                  rdfs:subClassOf :Principle ;
+                  rdfs:comment "The principle of data minimisation states that personal data must be adequate, relevant and limited to what is necessary in relation to the purposes for which they are processed."@en ;
+                  rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article5-1-c> ,
+                                   <https://w3id.org/GDPRtEXT/gdpr#recital39> ;
+                  rdfs:label "Principle of Data Minimisation" ;
+                  :involves :AccurateCollection ,
+                            :ExplicitPurpose ,
+                            :PersonalData ,
+                            :Processing ,
+                            :SpecifiedPurpose .
+
+
+###  https://w3id.org/GDPRtEXT#DataNoLongerNeededForOriginalPurpose
+:DataNoLongerNeededForOriginalPurpose rdf:type owl:Class ;
+                                      rdfs:subClassOf :RightToRestrictProcessing ;
+                                      rdfs:comment "The data subject can exercise the right to restrict processing of their personal data when the personal data is no longer required for the original purpose it was collected under"@en ;
+                                      rdfs:label "Data no longer needed for original purpose" ;
+                                      :involves :CollectionOfPersonalData ,
+                                                :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#DataProtectionByDesignAndByDefault
+:DataProtectionByDesignAndByDefault rdf:type owl:Class ;
+                                    rdfs:subClassOf :ControllerObligation ;
+                                    rdfs:comment "This obligation requires Controllers to follow data protection by design and by default."@en ;
+                                    rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article25> ,
+                                                     <https://w3id.org/GDPRtEXT/gdpr#recital78> ;
+                                    rdfs:label "Data protection by design and default" ;
+                                    :involves :Controller .
+
+
+###  https://w3id.org/GDPRtEXT#DataSecurity
+:DataSecurity rdf:type owl:Class ;
+              rdfs:subClassOf :ControllerObligation ,
+                              :ProcessorObligation ;
+              rdfs:comment "These are obligations regarding security of data managed by the Controllers."@en ;
+              rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article28-1> ,
+                               <https://w3id.org/GDPRtEXT/gdpr#article28-3-e> ,
+                               <https://w3id.org/GDPRtEXT/gdpr#article28-4> ,
+                               <https://w3id.org/GDPRtEXT/gdpr#article32> ,
+                               <https://w3id.org/GDPRtEXT/gdpr#recital83> ;
+              rdfs:label "Data Security" ;
+              :involves :Controller ,
+                        :PersonalData ,
+                        :SecurityOfPersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#DataSubject
+:DataSubject rdf:type owl:Class ;
+             rdfs:subClassOf :Entity ;
+             rdfs:comment "An individual or entity to whom their personal data relates."@en ;
+             rdfs:label "Data Subject" .
+
+
+###  https://w3id.org/GDPRtEXT#DataWasInferredOrDerived
+:DataWasInferredOrDerived rdf:type owl:Class ;
+                          rdfs:subClassOf :ExclusionException ;
+                          rdfs:comment "The obligation or activity coult not be completed because the data was inferred or derived, and therefore did not come from the data subject or other sources."@en ;
+                          rdfs:label "Data inferred or derived" ;
+                          :involves :Data .
+
+
+###  https://w3id.org/GDPRtEXT#DemonstratingConsent
+:DemonstratingConsent rdf:type owl:Class ;
+                      rdfs:subClassOf :Activity ,
+                                      :Compliance ;
+                      rdfs:comment "The act of demonstrating consent is an activity whereby previously acquired consent is provided as sufficient justification for processing activities involving data subject's personal information."@en ;
+                      rdfs:label "Demonstrating Consent" ;
+                      :involves :GivenConsent ,
+                                :ValidConsent .
+
+
+###  https://w3id.org/GDPRtEXT#DirectMarketing
+:DirectMarketing rdf:type owl:Class ;
+                 rdfs:subClassOf :Marketing ;
+                 rdfs:comment "Type of  Marketing that reaches data subjects directly by communications directly addressed to the data subject." ;
+                 rdfs:label "Direct Marketing" ;
+                 :involves :DataSubject .
+
+
+###  https://w3id.org/GDPRtEXT#EmploymentLaw
+:EmploymentLaw rdf:type owl:Class ;
+               rdfs:subClassOf :LawfulBasisForProcessing ;
+               rdfs:comment "Lawful basis for processing is provided by Employment Law"@en ;
+               rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article9-2-b> ;
+               rdfs:label "Employment Law" .
+
+
+###  https://w3id.org/GDPRtEXT#Entity
+:Entity rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+        rdfs:comment "A general term for any institution, company, corporation, partnership, government agency, university, or any other organization including  individuals."@en ;
+        rdfs:label "Entity" .
+
+
+###  https://w3id.org/GDPRtEXT#EraseData
+:EraseData rdf:type owl:Class ;
+           rdfs:subClassOf :DataActivity ;
+           rdfs:comment "An activity that erases data" ;
+           rdfs:label "Erase Data" ;
+           :involves :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#EraseWhenConsentWasWithdrawn
+:EraseWhenConsentWasWithdrawn rdf:type owl:Class ;
+                              rdfs:subClassOf :RightOfErasure ;
+                              rdfs:comment "The right of erasure applies when the data subject withdraws given consent"@en ;
+                              rdfs:label "Erase if conesnt was withdrawn" ;
+                              :involves :EraseData ,
+                                        :GivenConsent ,
+                                        :WithdrawingConsent .
+
+
+###  https://w3id.org/GDPRtEXT#EraseWhenDataIsNoLongerNeededForOriginalPurpose
+:EraseWhenDataIsNoLongerNeededForOriginalPurpose rdf:type owl:Class ;
+                                                 rdfs:subClassOf :RightOfErasure ;
+                                                 rdfs:comment "The right to erasure applies where data is no longer needed for original purposes for which it was collected"@en ;
+                                                 rdfs:label "Erase if no longer needed for original purpose" ;
+                                                 :involves :CollectionOfPersonalData ,
+                                                           :EraseData ,
+                                                           :ExplicitPurpose .
+
+
+###  https://w3id.org/GDPRtEXT#EvaluationOfDataSubject
+:EvaluationOfDataSubject rdf:type owl:Class ;
+                         rdfs:subClassOf :FactorsForImpactAssessment ;
+                         rdfs:comment "Whether the proposed activity involves the evaluation of the data subject."@en ;
+                         rdfs:label "Evaluation of data subjects" ;
+                         :involves :DataSubject .
+
+
+###  https://w3id.org/GDPRtEXT#ExceptionsOnReportingDataSubjectsOfBreach
+:ExceptionsOnReportingDataSubjectsOfBreach rdf:type owl:Class ;
+                                           rdfs:subClassOf :ExclusionException ;
+                                           rdfs:comment "Exceptions associated with compliance for reporting data breach to the affected data subjects."@en ;
+                                           rdfs:label "Exceptions on reporting data breach" ;
+                                           :involves :ReportDataBreach .
+
+
+###  https://w3id.org/GDPRtEXT#ExclusionException
+:ExclusionException rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+                    rdfs:comment "Exclusions and Exemptions provided by the GDPR for not complying with the specified obligations."@en ;
+                    rdfs:label "Exlcusions and Exceptions" .
+
+
+###  https://w3id.org/GDPRtEXT#ExemptedByNationalLaw
+:ExemptedByNationalLaw rdf:type owl:Class ;
+                       rdfs:subClassOf :LawfulBasisForProcessing ;
+                       rdfs:comment "Lawful basis for processing is provided by National Law"@en ;
+                       rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article9-4> ;
+                       rdfs:label "Exempted by National Law" .
+
+
+###  https://w3id.org/GDPRtEXT#ExemptedWithoutProofOfDataSubjectIdentity
+:ExemptedWithoutProofOfDataSubjectIdentity rdf:type owl:Class ;
+                                           rdfs:subClassOf :ExclusionException ;
+                                           rdfs:comment "The request or activity could not or was not completed because there was no sufficient proof of the data subject's identity."@en ;
+                                           rdfs:label "Exempted without identity" ;
+                                           :involves :IdentificationOfDataSubject .
+
+
+###  https://w3id.org/GDPRtEXT#ExerciseRights
+:ExerciseRights rdf:type owl:Class ;
+                rdfs:subClassOf :Activity ;
+                rdfs:comment "The activity represents exercising of rights provided by GDPR by the data subject."@en ;
+                rdfs:label "Exercise Rights" ;
+                :involves :DataSubject ,
+                          :Rights .
+
+
+###  https://w3id.org/GDPRtEXT#ExistenceOfSafeguards
+:ExistenceOfSafeguards rdf:type owl:Class ;
+                       rdfs:subClassOf :PurposeOfNewProcessing ;
+                       rdfs:comment "The purpose of new processing should take into context the existence of appropriate safeguards"@en ;
+                       rdfs:label "Existence of safeguards" ;
+                       :involves :PersonalData ,
+                                 :SecurityOfPersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#ExplicitPurpose
+:ExplicitPurpose rdf:type owl:Class ;
+                 rdfs:subClassOf :ObligationForCollectionOfPersonalData ;
+                 rdfs:comment "This obligation specifies that the collected (or collection) of personal data should be for/with explicit purposes."@en ;
+                 rdfs:label "Explicit Purpose" ;
+                 :involves :CollectionOfPersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#FactorsForImpactAssessment
+:FactorsForImpactAssessment rdf:type owl:Class ;
+                            rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+                            rdfs:comment "These are the factors stated by the GDPR for Impact Assessment."@en ;
+                            rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article35> ,
+                                             <https://w3id.org/GDPRtEXT/gdpr#recital84> ,
+                                             <https://w3id.org/GDPRtEXT/gdpr#recital90> ,
+                                             <https://w3id.org/GDPRtEXT/gdpr#recital91> ,
+                                             <https://w3id.org/GDPRtEXT/gdpr#recital92> ,
+                                             <https://w3id.org/GDPRtEXT/gdpr#recital93> ,
+                                             <https://w3id.org/GDPRtEXT/gdpr#recital94> ;
+                            rdfs:label "Factors for Impact Assessment" ;
+                            :involves :ImpactAssessment .
+
+
+###  https://w3id.org/GDPRtEXT#FreedomsProtection
+:FreedomsProtection rdf:type owl:Class ;
+                    rdfs:subClassOf :ExclusionException ;
+                    rdfs:comment "The stated obligation could not be completed as it concerns rights protection."@en ;
+                    rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#recital16> ;
+                    rdfs:label "Rights protection" .
+
+
+###  https://w3id.org/GDPRtEXT#FreelyGivenConsentObligation
+:FreelyGivenConsentObligation rdf:type owl:Class ;
+                              rdfs:subClassOf :ValidConsent ;
+                              rdfs:comment "GDPR obligation that specifies consent must be freely given by the data subject for it to be valid."@en ;
+                              rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article7-4> ,
+                                               <https://w3id.org/GDPRtEXT/gdpr#recital32> ;
+                              rdfs:label "Freely given" ;
+                              :involves :GivenConsent ,
+                                        :ObtainingConsent .
+
+
+###  https://w3id.org/GDPRtEXT#GeneticData
+:GeneticData rdf:type owl:Class ;
+             rdfs:subClassOf :SensitivePersonalData ;
+             rdfs:comment "Personal data relating to the inherited or acquired genetic characteristics of a natural person which result from the analysis of a biological sample from the natural person in question, in particular chromosomal, deoxyribonucleic acid (DNA) or ribonucleic acid (RNA) analysis, or from the analysis of another element enabling equivalent information to be obtained."@en ;
+             rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#recital34> ;
+             rdfs:label "Genetic Data" ;
+             :involves :DataSubject .
+
+
+###  https://w3id.org/GDPRtEXT#GivenConsent
+:GivenConsent rdf:type owl:Class ;
+              rdfs:subClassOf :Consent ,
+                              :LawfulBasisForProcessing ;
+              rdfs:comment "Given Consent refers specifically to the form of consent given by the data subject in relation to their personal data and the proposed usage by activities."@en ;
+              rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article6-1-a> ,
+                               <https://w3id.org/GDPRtEXT/gdpr#article9-2-a> ,
+                               <https://w3id.org/GDPRtEXT/gdpr#recital32> ,
+                               <https://w3id.org/GDPRtEXT/gdpr#recital42> ,
+                               <https://w3id.org/GDPRtEXT/gdpr#recital43> ;
+              rdfs:label "Given Consent" ;
+              :involves :DataSubject ,
+                        :PersonalData ,
+                        :Processing .
+
+
+###  https://w3id.org/GDPRtEXT#HarmWasRemote
+:HarmWasRemote rdf:type owl:Class ;
+               rdfs:subClassOf :ExceptionsOnReportingDataSubjectsOfBreach ;
+               rdfs:comment "The data subjects were not notified about the data breach because the harm was deemed to be remote."@en ;
+               rdfs:label "Harm was remote" ;
+               :involves :DataBreach .
+
+
+###  https://w3id.org/GDPRtEXT#HealthData
+:HealthData rdf:type owl:Class ;
+            rdfs:subClassOf :SensitivePersonalData ;
+            rdfs:comment "Personal data related to the physical or mental health of a natural person, including the provision of health care services, which reveal information about his or her health status."@en ;
+            rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article4-15> ,
+                             <https://w3id.org/GDPRtEXT/gdpr#recital35> ,
+                             <https://w3id.org/GDPRtEXT/gdpr#recital53> ,
+                             <https://w3id.org/GDPRtEXT/gdpr#recital54> ;
+            rdfs:label "Health data" ;
+            :involves :DataSubject .
+
+
+###  https://w3id.org/GDPRtEXT#HistoricStatisticScientificPurposes
+:HistoricStatisticScientificPurposes rdf:type owl:Class ;
+                                     rdfs:subClassOf :LawfulBasisForProcessing ;
+                                     rdfs:comment "Lawful basis if provided by the GDPR for processing related to historic, statistical, or scientific purposes."@en ;
+                                     rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article21-6> ,
+                                                      <https://w3id.org/GDPRtEXT/gdpr#article83-1> ,
+                                                      <https://w3id.org/GDPRtEXT/gdpr#article9-2-j> ,
+                                                      <https://w3id.org/GDPRtEXT/gdpr#recital156> ;
+                                     rdfs:label "Historic, Statistical, or Scientific purposes" .
+
+
+###  https://w3id.org/GDPRtEXT#IdentifiableForRequiredProcessing
+:IdentifiableForRequiredProcessing rdf:type owl:Class ;
+                                   rdfs:subClassOf :RetentionOfPersonalData ;
+                                   rdfs:comment "Retention of personal data should be identifiable for the requried processing"@en ;
+                                   rdfs:label "Identifiable for required processing" ;
+                                   :involves :IdentificationOfDataSubject ,
+                                             :StoreData .
+
+
+###  https://w3id.org/GDPRtEXT#IdentificationOfDataSubject
+:IdentificationOfDataSubject rdf:type owl:Class ;
+                             rdfs:subClassOf :Activity ;
+                             rdfs:comment "Activity where the data subject is explicitly identified through direct or indirect means." ;
+                             rdfs:label "Identification of Data Subject" ;
+                             :involves :DataSubject .
+
+
+###  https://w3id.org/GDPRtEXT#IfAndWhereControllerIsProcessingData
+:IfAndWhereControllerIsProcessingData rdf:type owl:Class ;
+                                      rdfs:subClassOf :RightToAccessPersonalData ;
+                                      rdfs:comment "The right to access personal data also includes information about whether and where the controller is processing the data subject's personal data"@en ;
+                                      rdfs:label "If and where Controller is processing" ;
+                                      :involves :Controller ,
+                                                :PersonalData ,
+                                                :Processing .
+
+
+###  https://w3id.org/GDPRtEXT#ImpactAssessment
+:ImpactAssessment rdf:type owl:Class ;
+                  rdfs:subClassOf :Activity ;
+                  rdfs:comment "The activity wherein the controller carries out an assessment of the impact of the envisaged processing operations on the protection of personal data."@en ;
+                  rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#recital90> ;
+                  rdfs:label "Impact Assessment" ;
+                  :involves :FactorsForImpactAssessment ,
+                            :PersonalData ,
+                            :Processing .
+
+
+###  https://w3id.org/GDPRtEXT#ImplementTechnicalMeasuresForCompliance
+:ImplementTechnicalMeasuresForCompliance rdf:type owl:Class ;
+                                         rdfs:subClassOf :ControllerResponsibility ;
+                                         rdfs:comment "This obligation requires Controllers to implement the required technical measures necessary for compliance of the GDPR"@en ;
+                                         rdfs:label "Implement technical measures" ;
+                                         :involves :Compliance ,
+                                                   :Controller .
+
+
+###  https://w3id.org/GDPRtEXT#ImposeConfidentialityObligationOnPersonnel
+:ImposeConfidentialityObligationOnPersonnel rdf:type owl:Class ;
+                                            rdfs:subClassOf :ProcessorObligation ;
+                                            rdfs:comment "The processor must impose confidentiality agreements on its personnel in relation to handling of personal data"@en ;
+                                            rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article28-3-b> ,
+                                                             <https://w3id.org/GDPRtEXT/gdpr#article29> ;
+                                            rdfs:label "Impose confidentiality obligations on personnel" ;
+                                            :involves :Processor .
+
+
+###  https://w3id.org/GDPRtEXT#InfoAboutAutomatedProcessingWithSignificantEffectsOnDataSubject
+:InfoAboutAutomatedProcessingWithSignificantEffectsOnDataSubject rdf:type owl:Class ;
+                                                                 rdfs:subClassOf :RightToAccessPersonalData ;
+                                                                 rdfs:comment "The right to access personal data also includes information about automated processing that has significant effects on the data subject."@en ;
+                                                                 rdfs:label "Information about automated processing with significant effects" ;
+                                                                 :involves :AutomatedProcessing ,
+                                                                           :DataSubject .
+
+
+###  https://w3id.org/GDPRtEXT#InfoAboutCategoriesOfRecipientsDataSharedWith
+:InfoAboutCategoriesOfRecipientsDataSharedWith rdf:type owl:Class ;
+                                               rdfs:subClassOf :RightToAccessPersonalData ;
+                                               rdfs:comment "The right to access personal data also includes information about the categories of recipients the data is shared with."@en ;
+                                               rdfs:label "Information about categories of recipients" ;
+                                               :involves :PersonalData ,
+                                                         :RecordCategoriesOfRecipientsWhereDataShared ,
+                                                         :ShareDataWithThirdParty .
+
+
+###  https://w3id.org/GDPRtEXT#InfoAboutCatgegoriesOfDataBeingProcessed
+:InfoAboutCatgegoriesOfDataBeingProcessed rdf:type owl:Class ;
+                                          rdfs:subClassOf :RightToAccessPersonalData ;
+                                          rdfs:comment "The right to access personal data also includes information about categories of data being processed"@en ;
+                                          rdfs:label "Information about categories of data being processed" ;
+                                          :involves :PersonalData ,
+                                                    :Processing .
+
+
+###  https://w3id.org/GDPRtEXT#InfoAboutExistenceOfRights
+:InfoAboutExistenceOfRights rdf:type owl:Class ;
+                            rdfs:subClassOf :RightToAccessPersonalData ;
+                            rdfs:comment "The right to access personal data also includes information about the existence of rights provided by the GDPR to the data subject"@en ;
+                            rdfs:label "Information about rights" ;
+                            :involves :Rights .
+
+
+###  https://w3id.org/GDPRtEXT#InfoAboutProcessing
+:InfoAboutProcessing rdf:type owl:Class ;
+                     rdfs:subClassOf :RightToAccessPersonalData ;
+                     rdfs:comment "The right to access personal data also includes information about the processing of personal data of the data subject"@en ;
+                     rdfs:label "Information about processing" ;
+                     :involves :PersonalData ,
+                               :Processing .
+
+
+###  https://w3id.org/GDPRtEXT#InfoAboutSourceOfData
+:InfoAboutSourceOfData rdf:type owl:Class ;
+                       rdfs:subClassOf :RightToAccessPersonalData ;
+                       rdfs:comment "The right to access personal data also includes information about the source of the personal data"@en ;
+                       rdfs:label "Information about data source" ;
+                       :involves :CollectionOfPersonalData ,
+                                 :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#InfoAboutStoragePeriod
+:InfoAboutStoragePeriod rdf:type owl:Class ;
+                        rdfs:subClassOf :RightToAccessPersonalData ;
+                        rdfs:comment "The right to access personal data also includes information about the storage period of the data subject's personal data"@en ;
+                        rdfs:label "Information about storage period" ;
+                        :involves :PersonalData ,
+                                  :StoreData .
+
+
+###  https://w3id.org/GDPRtEXT#InformControllerOfConflictWithLaw
+:InformControllerOfConflictWithLaw rdf:type owl:Class ;
+                                   rdfs:subClassOf :ProcessorObligation ;
+                                   rdfs:comment "In case of conflict with the controller's intructions and the law, the processor must immediately inform the controller of this conflict"@en ;
+                                   rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article28-3-4> ;
+                                   rdfs:label "Inform Controller of conflict with law" ;
+                                   :involves :Controller .
+
+
+###  https://w3id.org/GDPRtEXT#InformationAboutThirdParties
+:InformationAboutThirdParties rdf:type owl:Class ;
+                              rdfs:subClassOf :RightToBasicInformationAboutProcessing ;
+                              rdfs:comment "The right to basic information also provides data subject's with information about third parties involved in the processing."@en ;
+                              rdfs:label "Information about third parties" ;
+                              :involves :Controller ,
+                                        :Processor ,
+                                        :ShareDataWithThirdParty .
+
+
+###  https://w3id.org/GDPRtEXT#InformationShouldBeConcise
+:InformationShouldBeConcise rdf:type owl:Class ;
+                            rdfs:subClassOf :RightToTransparency ;
+                            rdfs:comment "The information provided under the right to transparency should be concise"@en ;
+                            rdfs:label "Concise" ;
+                            :involves :RightToTransparency .
+
+
+###  https://w3id.org/GDPRtEXT#InformationShouldBeEasilyAccessible
+:InformationShouldBeEasilyAccessible rdf:type owl:Class ;
+                                     rdfs:subClassOf :RightToTransparency ;
+                                     rdfs:comment "The information provided under the right to transparency should be easily accessible"@en ;
+                                     rdfs:label "Easily Accessible" ;
+                                     :involves :RightToTransparency .
+
+
+###  https://w3id.org/GDPRtEXT#InformationShouldBeIntelligible
+:InformationShouldBeIntelligible rdf:type owl:Class ;
+                                 rdfs:subClassOf :RightToTransparency ;
+                                 rdfs:comment "The information provided under the right to transparency should be intelligible"@en ;
+                                 rdfs:label "Intelligible" ;
+                                 :involves :RightToTransparency .
+
+
+###  https://w3id.org/GDPRtEXT#InformationShouldBeTransparent
+:InformationShouldBeTransparent rdf:type owl:Class ;
+                                rdfs:subClassOf :RightToTransparency ;
+                                rdfs:comment "The information provided under the right to transparency should be transparent and clear (i.e. not umambigious or vague)"@en ;
+                                rdfs:label "Transparent" ;
+                                :involves :LawfulnessFairnessAndTransparency ,
+                                          :RightToTransparency .
+
+
+###  https://w3id.org/GDPRtEXT#InformedConsentObligation
+:InformedConsentObligation rdf:type owl:Class ;
+                           rdfs:subClassOf :ValidConsent ;
+                           rdfs:comment "GDPR obligation that specifies consent must be informed for it be valid."@en ;
+                           rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article4-11> ,
+                                            <https://w3id.org/GDPRtEXT/gdpr#article7-1> ,
+                                            <https://w3id.org/GDPRtEXT/gdpr#recital32> ,
+                                            <https://w3id.org/GDPRtEXT/gdpr#recital42> ;
+                           rdfs:label "Informed" ;
+                           :involves :DataActivity ,
+                                     :GivenConsent ,
+                                     :ObtainingConsent ,
+                                     :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#IntegrityAndConfidentiality
+:IntegrityAndConfidentiality rdf:type owl:Class ;
+                             rdfs:subClassOf :Principle ;
+                             rdfs:comment "The principle of integrity and confidentiality states that personal data must be  processed in a manner that ensures appropriate security of the personal data, including protection against unauthorised or unlawful processing and against accidental loss, destruction or damage, using appropriate technical or organisational measures."@en ;
+                             rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article24-1> ,
+                                              <https://w3id.org/GDPRtEXT/gdpr#article25-1> ,
+                                              <https://w3id.org/GDPRtEXT/gdpr#article25-2> ,
+                                              <https://w3id.org/GDPRtEXT/gdpr#article28> ,
+                                              <https://w3id.org/GDPRtEXT/gdpr#article32> ,
+                                              <https://w3id.org/GDPRtEXT/gdpr#article39> ,
+                                              <https://w3id.org/GDPRtEXT/gdpr#article5-1-f> ,
+                                              <https://w3id.org/GDPRtEXT/gdpr#recital156> ,
+                                              <https://w3id.org/GDPRtEXT/gdpr#recital29> ,
+                                              <https://w3id.org/GDPRtEXT/gdpr#recital71> ;
+                             rdfs:label "Principle of Integrity and Confidentiality" ;
+                             :involves :DataSecurity ,
+                                       :PersonalData ,
+                                       :Processing ,
+                                       :ProtectionAgainstAccidentalLoss ,
+                                       :ProtectionAgainstDamage ,
+                                       :ProtectionAgainstDestruction .
+
+
+###  https://w3id.org/GDPRtEXT#IsImpossible
+:IsImpossible rdf:type owl:Class ;
+              rdfs:subClassOf :ExclusionException ;
+              rdfs:comment "The obligation or activity could not be completed as it was deemed to be impossible."@en ;
+              rdfs:label "Is impossible" .
+
+
+###  https://w3id.org/GDPRtEXT#JointController
+:JointController rdf:type owl:Class ;
+                 rdfs:subClassOf :Controller ;
+                 rdfs:comment "A joint controller is two or more controllers jointly determine the purposes and means of processing."@en ;
+                 rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article26> ,
+                                  <https://w3id.org/GDPRtEXT/gdpr#article4-7> ,
+                                  <https://w3id.org/GDPRtEXT/gdpr#recital79> ;
+                 rdfs:label "Joint Controller" ;
+                 :involves :Controller .
+
+
+###  https://w3id.org/GDPRtEXT#KeptUpToDate
+:KeptUpToDate rdf:type owl:Class ;
+              rdfs:subClassOf :RetentionOfPersonalData ;
+              rdfs:comment "Retained personal data must be kept up-to-date"@en ;
+              rdfs:label "Kept up to date" ;
+              :involves :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#LargeScaleProcessing
+:LargeScaleProcessing rdf:type owl:Class ;
+                      rdfs:subClassOf :FactorsForImpactAssessment ,
+                                      :Processing ;
+                      rdfs:comment "The processing of personal data at a large scale of quantity or significant proportions."@en ;
+                      rdfs:label "Large scale processing" ;
+                      :involves :PersonalData ,
+                                :Processing .
+
+
+###  https://w3id.org/GDPRtEXT#LawfulBasisForProcessing
+:LawfulBasisForProcessing rdf:type owl:Class ;
+                          rdfs:subClassOf :Obligation ;
+                          rdfs:comment "This provides the basis for lawful processing of personal data."@en ;
+                          rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article6-1> ,
+                                           <https://w3id.org/GDPRtEXT/gdpr#recital39> ,
+                                           <https://w3id.org/GDPRtEXT/gdpr#recital40> ,
+                                           <https://w3id.org/GDPRtEXT/gdpr#recital41> ;
+                          rdfs:label "Lawful Basis" ;
+                          :involves :Processing .
+
+
+###  https://w3id.org/GDPRtEXT#LawfulnessFairnessAndTransparency
+:LawfulnessFairnessAndTransparency rdf:type owl:Class ;
+                                   rdfs:subClassOf :Principle ;
+                                   rdfs:comment "The principle of lawfulness, fairness, and transparency states that personal data must be processed lawfully, fairly and in a transparent manner in relation to the data subject."@en ;
+                                   rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article5-1-a> ,
+                                                    <https://w3id.org/GDPRtEXT/gdpr#recital39> ;
+                                   rdfs:label "Principle of Lawfulness, Fairness, and Transparency" ;
+                                   :involves :Data ,
+                                             :LawfulBasisForProcessing ,
+                                             :Processing .
+
+
+###  https://w3id.org/GDPRtEXT#LegalClaims
+:LegalClaims rdf:type owl:Class ;
+             rdfs:subClassOf :LawfulBasisForProcessing ;
+             rdfs:comment "Lawful basis for processing is provided by legal claims."@en ;
+             rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article9-2-f> ;
+             rdfs:label "Legal Claims" .
+
+
+###  https://w3id.org/GDPRtEXT#LegalObligation
+:LegalObligation rdf:type owl:Class ;
+                 rdfs:subClassOf :LawfulBasisForProcessing ;
+                 rdfs:comment "Lawful basis for processing is covered by legal obligation(s)."@en ;
+                 rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article6-1-c> ,
+                                  <https://w3id.org/GDPRtEXT/gdpr#article6-3> ,
+                                  <https://w3id.org/GDPRtEXT/gdpr#recital45> ;
+                 rdfs:label "Legal Obligations" .
+
+
+###  https://w3id.org/GDPRtEXT#LegitimateInterest
+:LegitimateInterest rdf:type owl:Class ;
+                    rdfs:subClassOf :LawfulBasisForProcessing ;
+                    rdfs:comment "Lawful basis for processing is provided through the legitimate interests pursued by the Controller or by a third party"@en ;
+                    rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article6-1-f> ,
+                                     <https://w3id.org/GDPRtEXT/gdpr#recital47> ,
+                                     <https://w3id.org/GDPRtEXT/gdpr#recital48> ;
+                    rdfs:label "Legitimate Interests" ;
+                    :involves :DataSubject .
+
+
+###  https://w3id.org/GDPRtEXT#LegitimatePurpose
+:LegitimatePurpose rdf:type owl:Class ;
+                   rdfs:subClassOf :ObligationForCollectionOfPersonalData ;
+                   rdfs:comment "This specifies that the collection (or collected) personal data should be used/specified to be used for legitimate purposes."@en ;
+                   rdfs:label "Legitimate purpose" ;
+                   :involves :CollectionOfPersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#LiabilityOfJointController
+:LiabilityOfJointController rdf:type owl:Class ;
+                            rdfs:subClassOf :ControllerObligation ;
+                            rdfs:comment "These specify the liability of Joint Controllers, i.e. cases where more than one Controller share the responsiblity."@en ;
+                            rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article26-3> ,
+                                             <https://w3id.org/GDPRtEXT/gdpr#article82-3> ,
+                                             <https://w3id.org/GDPRtEXT/gdpr#article82-5> ,
+                                             <https://w3id.org/GDPRtEXT/gdpr#recital146> ,
+                                             <https://w3id.org/GDPRtEXT/gdpr#recital79> ;
+                            rdfs:label "Liability of Joint-Controllers" ;
+                            :involves :JointController .
+
+
+###  https://w3id.org/GDPRtEXT#LimitedForProcessing
+:LimitedForProcessing rdf:type owl:Class ;
+                      rdfs:subClassOf :RetentionOfPersonalData ;
+                      rdfs:comment "Personal data retained should be limited in its use only for the requried processing"@en ;
+                      rdfs:label "Limited for processing" ;
+                      :involves :PersonalData ,
+                                :Processing .
+
+
+###  https://w3id.org/GDPRtEXT#LinkBetweenNewAndOldPurpose
+:LinkBetweenNewAndOldPurpose rdf:type owl:Class ;
+                             rdfs:subClassOf :PurposeOfNewProcessing ;
+                             rdfs:comment "Whether there is a link between the new and old purposes of processing"@en ;
+                             rdfs:label "Lnk between new and old processing" ;
+                             :involves :Processing ,
+                                       :PurposeOfNewProcessing .
+
+
+###  https://w3id.org/GDPRtEXT#MadePublicByDataSubject
+:MadePublicByDataSubject rdf:type owl:Class ;
+                         rdfs:subClassOf :LawfulBasisForProcessing ;
+                         rdfs:comment "Lawful basis is provided through the data being publicly made available by the data subject"@en ;
+                         rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article9-2-e> ;
+                         rdfs:label "Made Public" ;
+                         :involves :DataSubject .
+
+
+###  https://w3id.org/GDPRtEXT#MaintainRecordOfBreach
+:MaintainRecordOfBreach rdf:type owl:Class ;
+                        rdfs:subClassOf :ReportDataBreach ;
+                        rdfs:comment "GDPR mandates the recording of data breaches and its effects."@en ;
+                        rdfs:label "Maintain Record of Breach" ;
+                        :involves :DataBreach .
+
+
+###  https://w3id.org/GDPRtEXT#MaintainRecordsOfProcessingActivities
+:MaintainRecordsOfProcessingActivities rdf:type owl:Class ;
+                                       rdfs:subClassOf :ControllerObligation ,
+                                                       :ProcessorObligation ;
+                                       rdfs:comment "This obligation requires the Controller/Processor to maintain adequate records about their processing activities."@en ;
+                                       rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article30> ,
+                                                        <https://w3id.org/GDPRtEXT/gdpr#article30-2> ,
+                                                        <https://w3id.org/GDPRtEXT/gdpr#recital82> ,
+                                                        <https://w3id.org/GDPRtEXT/gdpr#recital89> ;
+                                       rdfs:label "Maintain records for processing" ;
+                                       :involves :Processing .
+
+
+###  https://w3id.org/GDPRtEXT#Marketing
+:Marketing rdf:type owl:Class ;
+           rdfs:subClassOf :Activity ;
+           rdfs:comment "The process or technique of promoting, selling, and distributing a product or service." ;
+           rdfs:label "Marketing" .
+
+
+###  https://w3id.org/GDPRtEXT#MaximumValidity3Years
+:MaximumValidity3Years rdf:type owl:Class ;
+                       rdfs:subClassOf :ConditionsForSealsAndCertifications ;
+                       rdfs:comment "The maximum validity for all seals and certifications should be 3 years from the date of issue."@en ;
+                       rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article42-7> ;
+                       rdfs:label "Maximum validty 3 years" .
+
+
+###  https://w3id.org/GDPRtEXT#MedicalDiagnosisTreatment
+:MedicalDiagnosisTreatment rdf:type owl:Class ;
+                           rdfs:subClassOf :LawfulBasisForProcessing ;
+                           rdfs:comment "Lawful basis for processing is provided by the GDPR for medical or diagnostics purposes pertaining to the data subject"@en ;
+                           rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article9-2-3> ,
+                                            <https://w3id.org/GDPRtEXT/gdpr#article9-3> ;
+                           rdfs:label "Medical or Diagnostics" ;
+                           :involves :DataSubject .
+
+
+###  https://w3id.org/GDPRtEXT#MonitorCompliance
+:MonitorCompliance rdf:type owl:Class ;
+                   rdfs:subClassOf :Activity ,
+                                   :Compliance ,
+                                   :DPOObligation ;
+                   rdfs:comment "The activity or process of overseeing an organisation's compliance."@en ;
+                   rdfs:label "Monitor Compliance" ;
+                   :involves :Obligation ,
+                             :Principle ,
+                             :Rights .
+
+
+###  https://w3id.org/GDPRtEXT#NationalSecurity
+:NationalSecurity rdf:type owl:Class ;
+                  rdfs:subClassOf :ExclusionException ;
+                  rdfs:comment "The stated obligation could not be completed as it concerns national security."@en ;
+                  rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#recital16> ;
+                  rdfs:label "National Security" .
+
+
+###  https://w3id.org/GDPRtEXT#NatureOfPersonalData
+:NatureOfPersonalData rdf:type owl:Class ;
+                      rdfs:subClassOf :PurposeOfNewProcessing ;
+                      rdfs:comment "The nature of the personal data involved, whether it is sensitive or confidential."@en ;
+                      rdfs:label "Nature of data involved" ;
+                      :involves :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#NoChargeLeviedForRightToAccess
+:NoChargeLeviedForRightToAccess rdf:type owl:Class ;
+                                rdfs:subClassOf :RightToAccessPersonalData ;
+                                rdfs:comment "The right to access personal data should not incur any undue charge levied on the data subject for exercising their right"@en ;
+                                rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article12-5> ,
+                                                 <https://w3id.org/GDPRtEXT/gdpr#article15-3> ,
+                                                 <https://w3id.org/GDPRtEXT/gdpr#article15-4> ,
+                                                 <https://w3id.org/GDPRtEXT/gdpr#recital59> ;
+                                rdfs:label "No charges levied" ;
+                                :involves :Rights .
+
+
+###  https://w3id.org/GDPRtEXT#NotForProfitOrg
+:NotForProfitOrg rdf:type owl:Class ;
+                 rdfs:subClassOf :LawfulBasisForProcessing ;
+                 rdfs:comment "Lawful basis is provided by the GDPR for activities of/for not-for-profit organisations"@en ;
+                 rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article9-2-d> ;
+                 rdfs:label "Not-for-profit organisation" .
+
+
+###  https://w3id.org/GDPRtEXT#NotFromSilenceOrInactivityConsentObligation
+:NotFromSilenceOrInactivityConsentObligation rdf:type owl:Class ;
+                                             rdfs:subClassOf :ObligationForObtainingConsent ;
+                                             rdfs:comment "Consent should not be obtained from silence or inactivity of the data subject"@en ;
+                                             rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#recital32> ;
+                                             rdfs:label "Not from silence or inactivity" ;
+                                             :involves :GivenConsent .
+
+
+###  https://w3id.org/GDPRtEXT#NotFurtherProcessedThanOriginalPurpose
+:NotFurtherProcessedThanOriginalPurpose rdf:type owl:Class ;
+                                        rdfs:subClassOf :ObligationForCollectionOfPersonalData ;
+                                        rdfs:comment "This obligation specifies that the collected personal data should not be processed beyond the purpose for which it was originally collected without an updated consent for the proposed purposes."@en ;
+                                        rdfs:label "Not further processed" ;
+                                        :involves :Processing .
+
+
+###  https://w3id.org/GDPRtEXT#NotificationRequiresDisproportionateEfforts
+:NotificationRequiresDisproportionateEfforts rdf:type owl:Class ;
+                                             rdfs:subClassOf :ExceptionsOnReportingDataSubjectsOfBreach ,
+                                                             :RequiresDisproportionateEfforts ;
+                                             rdfs:comment "The data subjects were not notified about the data breach because it required disproportionate efforts."@en ;
+                                             rdfs:label "Notification requires disproportionate efforts" ;
+                                             :involves :ReportDataBreach .
+
+
+###  https://w3id.org/GDPRtEXT#NotifyDataSubjectAboutConsequencesOfDataBreach
+:NotifyDataSubjectAboutConsequencesOfDataBreach rdf:type owl:Class ;
+                                                rdfs:subClassOf :NotifyDataSubjectOfBreach ;
+                                                rdfs:comment "Affected data subject's must be notified about the consequences of the data breach."@en ;
+                                                rdfs:label "Notify consequences of breach" ;
+                                                :involves :DataBreach .
+
+
+###  https://w3id.org/GDPRtEXT#NotifyDataSubjectAboutDPOForDataBreach
+:NotifyDataSubjectAboutDPOForDataBreach rdf:type owl:Class ;
+                                        rdfs:subClassOf :NotifyDataSubjectOfBreach ;
+                                        rdfs:comment "Affected data subjects must be notified with the name and contact of the DPO responsible/handling for the data breach."@en ;
+                                        rdfs:label "Notify about DPO" ;
+                                        :involves :DataBreach ,
+                                                  :DataSubject .
+
+
+###  https://w3id.org/GDPRtEXT#NotifyDataSubjectOfBreach
+:NotifyDataSubjectOfBreach rdf:type owl:Class ;
+                           rdfs:subClassOf :ReportDataBreach ;
+                           rdfs:comment "Affected data subjects must be notified of the data breach and its effects."@en ;
+                           rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article34> ,
+                                            <https://w3id.org/GDPRtEXT/gdpr#recital73> ,
+                                            <https://w3id.org/GDPRtEXT/gdpr#recital86> ,
+                                            <https://w3id.org/GDPRtEXT/gdpr#recital87> ,
+                                            <https://w3id.org/GDPRtEXT/gdpr#recital88> ;
+                           rdfs:label "Notify Data Subject of Breach" ;
+                           :involves :DataBreach ,
+                                     :DataSubject .
+
+
+###  https://w3id.org/GDPRtEXT#NotifyDataSubjectOfMeasuresTakenForDataBreach
+:NotifyDataSubjectOfMeasuresTakenForDataBreach rdf:type owl:Class ;
+                                               rdfs:subClassOf :NotifyDataSubjectOfBreach ;
+                                               rdfs:comment "Affect data subjets must be notified of the measures taken against the data breach."@en ;
+                                               rdfs:label "Notify measures taken" ;
+                                               :involves :DataBreach ,
+                                                         :DataSubject .
+
+
+###  https://w3id.org/GDPRtEXT#Obligation
+:Obligation rdf:type owl:Class ;
+            rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+            rdfs:comment "These are the obligations specified by the GDPR. Following the obligations is necessary for compliance."@en ;
+            rdfs:label "Obligation" .
+
+
+###  https://w3id.org/GDPRtEXT#ObligationForCollectionOfPersonalData
+:ObligationForCollectionOfPersonalData rdf:type owl:Class ;
+                                       rdfs:subClassOf :Obligation ;
+                                       rdfs:comment "Collection of Personal Data is an Activity that deals with acquiring data subject's personal data through some model of interaction."@en ;
+                                       rdfs:label "Obligation for data collection" ;
+                                       :involves :CollectionOfPersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#ObligationForObtainingConsent
+:ObligationForObtainingConsent rdf:type owl:Class ;
+                               rdfs:subClassOf :Obligation ;
+                               rdfs:comment "These are the obligations specified by the GDPR for obtaining consent"@en ;
+                               rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#recital32> ;
+                               rdfs:label "Obligation for obtaining consent" ;
+                               :involves :ObtainingConsent .
+
+
+###  https://w3id.org/GDPRtEXT#ObtainingConsent
+:ObtainingConsent rdf:type owl:Class ;
+                  rdfs:subClassOf :ConsentActivity ;
+                  rdfs:comment "The act of getting a data subject's consent."@en ;
+                  rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#recital32> ;
+                  rdfs:label "Obtaining Consent from Data Subject" ;
+                  :involves :DataSubject ,
+                            :GivenConsent .
+
+
+###  https://w3id.org/GDPRtEXT#OnlyActOnDocumentedInstructionFromController
+:OnlyActOnDocumentedInstructionFromController rdf:type owl:Class ;
+                                              rdfs:subClassOf :ProcessorObligation ;
+                                              rdfs:comment "The processor must only act on the intructions provided and documented by the controller"@en ;
+                                              rdfs:label "Only act on Controller instructions" ;
+                                              :involves :Controller .
+
+
+###  https://w3id.org/GDPRtEXT#OutsideMaterialScope
+:OutsideMaterialScope rdf:type owl:Class ;
+                      rdfs:subClassOf :ExclusionException ;
+                      rdfs:comment "The activity was deemed to be outside the material scope of the GDPR."@en ;
+                      rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article2-2> ,
+                                       <https://w3id.org/GDPRtEXT/gdpr#article2-3> ;
+                      rdfs:label "Outside Material Scope" .
+
+
+###  https://w3id.org/GDPRtEXT#PersonalData
+:PersonalData rdf:type owl:Class ;
+              rdfs:subClassOf :Data ;
+              rdfs:comment "Personal data means any information relating to an identified or identifiable natural person (‘data subject’); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person."@en ;
+              rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article4-1> ,
+                               <https://w3id.org/GDPRtEXT/gdpr#recital26> ;
+              rdfs:label "Personal Data" ;
+              :involves :DataSubject .
+
+
+###  https://w3id.org/GDPRtEXT#Point
+:Point rdf:type owl:Class ;
+       rdfs:subClassOf <http://data.europa.eu/eli/ontology#LegalResourceSubdivision> ;
+       rdfs:comment "Point in GDPR text" ;
+       rdfs:isDefinedBy <http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679> ;
+       rdfs:label "Point" ;
+       <http://www.w3.org/2004/02/skos/core#example> """gdpr:article27-2 a eli:LegalResourceSubdivision,
+        GDPRtEXT:Point ;
+    eli:description \"The obligation laid down in paragraph 1 of this Article shall not apply to:\"^^xsd:string ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:article27,
+        gdpr:chapterIV,
+        gdpr:chapterIV-1 ;
+    eli:number \"2\"^^xsd:string ;
+    eli:title_alternative \"Article27(2)\"^^xsd:string ;
+    GDPRtEXT:hasSubPoint gdpr:article27-2-a,
+        gdpr:article27-2-b ;
+    GDPRtEXT:isPartOfArticle gdpr:article27 ;
+    GDPRtEXT:isPartOfChapter gdpr:chapterIV ;
+    GDPRtEXT:isPartOfSection gdpr:chapterIV-1 .""" .
+
+
+###  https://w3id.org/GDPRtEXT#PossibleConsequenceForDataSubject
+:PossibleConsequenceForDataSubject rdf:type owl:Class ;
+                                   rdfs:subClassOf :PurposeOfNewProcessing ;
+                                   rdfs:comment "The possible consequences of the change in processing for the data subject"@en ;
+                                   rdfs:label "Consequences for data subjects" ;
+                                   :involves :DataSubject .
+
+
+###  https://w3id.org/GDPRtEXT#Principle
+:Principle rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+           rdfs:comment "A Principle is a rule or standard defined by the GDPR which is essential to be followed for compliance"@en ;
+           rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#chapter2> ;
+           rdfs:label "Principle" .
+
+
+###  https://w3id.org/GDPRtEXT#PrivacyByDesign
+:PrivacyByDesign rdf:type owl:Class ;
+                 rdfs:subClassOf :ControllerObligation ;
+                 rdfs:comment "Privacy by Design is the approach of taking privacy into consideration throughout the whole planning and execution processes."@en ;
+                 rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article25> ,
+                                  <https://w3id.org/GDPRtEXT/gdpr#recital78> ;
+                 rdfs:label "Privacy by Design" .
+
+
+###  https://w3id.org/GDPRtEXT#Processing
+:Processing rdf:type owl:Class ;
+            owl:equivalentClass :UseData ;
+            rdfs:subClassOf :Activity ;
+            rdfs:comment "Processing here refers to an Activity that acts on the Data Subject's personal information."@en ;
+            rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article4-2> ;
+            rdfs:label "Processing" ;
+            :involves :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#ProcessingAffectedVulnerableIndividuals
+:ProcessingAffectedVulnerableIndividuals rdf:type owl:Class ;
+                                         rdfs:subClassOf :FactorsForImpactAssessment ,
+                                                         :Processing ;
+                                         rdfs:comment "This type of processing involves data subjects that are vulnerable, such as children, or people with disabilities."@en ;
+                                         rdfs:label "Processing affected or vulnerable individuals" ;
+                                         :involves :DataSubject ,
+                                                   :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#ProcessingIsUnlawful
+:ProcessingIsUnlawful rdf:type owl:Class ;
+                      rdfs:subClassOf :RightToRestrictProcessing ;
+                      rdfs:comment "The data subject can exercise the right to restrict processing of their personal data when the processing is unlawful"@en ;
+                      rdfs:label "Processing is unlawful" ;
+                      :involves :PersonalData ,
+                                :UnlawfulProcessing .
+
+
+###  https://w3id.org/GDPRtEXT#ProcessingSensitiveData
+:ProcessingSensitiveData rdf:type owl:Class ;
+                         rdfs:subClassOf :FactorsForImpactAssessment ,
+                                         :Processing ;
+                         rdfs:comment "This involves processing involving sensitive personal data."@en ;
+                         rdfs:label "Processing sensitive data" ;
+                         :involves :SensitivePersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#ProcessingUsingUntestedTechnologies
+:ProcessingUsingUntestedTechnologies rdf:type owl:Class ;
+                                     rdfs:subClassOf :FactorsForImpactAssessment ,
+                                                     :Processing ;
+                                     rdfs:comment "This type of processing uses technologies that are new or have not yet been deemed to be fit or stable for usage."@en ;
+                                     rdfs:label "Processing using untested technologies" ;
+                                     :involves :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#Processor
+:Processor rdf:type owl:Class ;
+           rdfs:subClassOf :Entity ;
+           rdfs:comment "A natural or legal person, public authority, agency or other body which processes personal data on behalf of the controller."@en ;
+           rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article4-8> ;
+           rdfs:label "Processor" ;
+           :involves :Controller .
+
+
+###  https://w3id.org/GDPRtEXT#ProcessorControllerAgreement
+:ProcessorControllerAgreement rdf:type owl:Class ;
+                              rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+                              rdfs:comment "Signifies the agreement between Controller and Processors for processing of personal data" ;
+                              rdfs:label "Agreement between Processor and Controller" ;
+                              :involves :AppointmentOfProcessors ,
+                                        :Controller ,
+                                        :Processor .
+
+
+###  https://w3id.org/GDPRtEXT#ProcessorObligation
+:ProcessorObligation rdf:type owl:Class ;
+                     rdfs:subClassOf :Obligation ;
+                     rdfs:comment "These are the obligations specified by the GDPR in the context of Processors"@en ;
+                     rdfs:label "Processor Obligations" ;
+                     :involves :Processor .
+
+
+###  https://w3id.org/GDPRtEXT#ProcessorRepresentative
+:ProcessorRepresentative rdf:type owl:Class ;
+                         rdfs:subClassOf :Entity ;
+                         rdfs:comment "A natural or legal person established in the Union who, designated by the processor in writing, represents the processor with regard to their respective obligations under the GDPR."@en ;
+                         rdfs:label "Processor Representative" ;
+                         :involves :Processor .
+
+
+###  https://w3id.org/GDPRtEXT#PropogateRightsToThirdParties
+:PropogateRightsToThirdParties rdf:type owl:Class ;
+                               rdfs:subClassOf :Activity ,
+                                               :ControllerObligation ,
+                                               :ProcessorObligation ;
+                               rdfs:comment "To propogate a data subject's right once they have been exercised to other third parties that are involved through the data subject's personal data."@en ;
+                               rdfs:label "Propogate rights to Third Parties" ;
+                               :involves :Controller ,
+                                         :Processor ,
+                                         :Rights .
+
+
+###  https://w3id.org/GDPRtEXT#ProtectionAgainstAccidentalLoss
+:ProtectionAgainstAccidentalLoss rdf:type owl:Class ;
+                                 rdfs:subClassOf :SecurityOfPersonalData ;
+                                 rdfs:comment "Protection of data subject's personal data  against accidental loss."@en ;
+                                 rdfs:label "Protection against accidental loss" ;
+                                 :involves :DataSecurity ,
+                                           :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#ProtectionAgainstDamage
+:ProtectionAgainstDamage rdf:type owl:Class ;
+                         rdfs:subClassOf :SecurityOfPersonalData ;
+                         rdfs:comment "Protection of data subject's personal data  against damage to the data."@en ;
+                         rdfs:label "Protection against damage" ;
+                         :involves :DataSecurity ,
+                                   :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#ProtectionAgainstDestruction
+:ProtectionAgainstDestruction rdf:type owl:Class ;
+                              rdfs:subClassOf :SecurityOfPersonalData ;
+                              rdfs:comment "Protection of data subject's personal data  against destruction of data."@en ;
+                              rdfs:label "Protection against destruction" ;
+                              :involves :DataSecurity ,
+                                        :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#ProtectionAgainstUnlawfulProcessing
+:ProtectionAgainstUnlawfulProcessing rdf:type owl:Class ;
+                                     rdfs:subClassOf :SecurityOfPersonalData ;
+                                     rdfs:comment "Protection of data subject's personal data  against unlawful processing of data."@en ;
+                                     rdfs:label "Protection against unlawful processing" ;
+                                     :involves :DataSecurity ,
+                                               :PersonalData ,
+                                               :UnlawfulProcessing .
+
+
+###  https://w3id.org/GDPRtEXT#ProvideControllerWithInfoForCompliance
+:ProvideControllerWithInfoForCompliance rdf:type owl:Class ;
+                                        rdfs:subClassOf :ProcessorObligation ;
+                                        rdfs:comment "The processor must provide the controller with the information necessary to demonstrate compliance"@en ;
+                                        rdfs:label "Provide information for compliance" ;
+                                        :involves :Compliance ,
+                                                  :Controller .
+
+
+###  https://w3id.org/GDPRtEXT#ProvideCopyOfPersonalData
+:ProvideCopyOfPersonalData rdf:type owl:Class ;
+                           rdfs:subClassOf :DataActivity ,
+                                           :RightOfDataPortability ;
+                           rdfs:comment "The right of data portability requries providing a copy of the data subject's personal data"@en ;
+                           rdfs:label "Provide copy of Personal Data" ;
+                           :involves :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#PseudoAnonymousData
+:PseudoAnonymousData rdf:type owl:Class ;
+                     rdfs:subClassOf :Data ;
+                     rdfs:comment "Personal data that can no longer be attributed to a specific data subject without the use of additional information."@en ;
+                     rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article25-1> ,
+                                      <https://w3id.org/GDPRtEXT/gdpr#article4-5> ,
+                                      <https://w3id.org/GDPRtEXT/gdpr#article40-2-d> ,
+                                      <https://w3id.org/GDPRtEXT/gdpr#article6-4-e> ,
+                                      <https://w3id.org/GDPRtEXT/gdpr#article89-1> ,
+                                      <https://w3id.org/GDPRtEXT/gdpr#recital156> ,
+                                      <https://w3id.org/GDPRtEXT/gdpr#recital26> ,
+                                      <https://w3id.org/GDPRtEXT/gdpr#recital28> ,
+                                      <https://w3id.org/GDPRtEXT/gdpr#recital29> ,
+                                      <https://w3id.org/GDPRtEXT/gdpr#recital32-1-a> ,
+                                      <https://w3id.org/GDPRtEXT/gdpr#recital75> ,
+                                      <https://w3id.org/GDPRtEXT/gdpr#recital78> ;
+                     rdfs:label "Pseudo-anonymous data" ;
+                     :involves :DataSubject .
+
+
+###  https://w3id.org/GDPRtEXT#PublicInterest
+:PublicInterest rdf:type owl:Class ;
+                rdfs:subClassOf :LawfulBasisForProcessing ;
+                rdfs:comment "Lawful basis is provided by the GDPR as being in the interest of the public"@en ;
+                rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article6-1-e> ,
+                                 <https://w3id.org/GDPRtEXT/gdpr#article9-2-g> ,
+                                 <https://w3id.org/GDPRtEXT/gdpr#article9-2-i> ,
+                                 <https://w3id.org/GDPRtEXT/gdpr#recital45> ;
+                rdfs:label "Public Interest" .
+
+
+###  https://w3id.org/GDPRtEXT#PurposeLimitation
+:PurposeLimitation rdf:type owl:Class ;
+                   rdfs:subClassOf :Principle ;
+                   rdfs:comment "The principle of purpose limitation states that personal data must be collected for specified, explicit and legitimate purposes and not further processed in a manner that is incompatible with those purposes; further processing for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes shall, in accordance with Article 89(1) of the GDPR, not be considered to be incompatible with the initial purposes."@en ;
+                   rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article5-1-b> ,
+                                    <https://w3id.org/GDPRtEXT/gdpr#recital50> ;
+                   rdfs:label "Principle of Purpose Limitation" ;
+                   :involves :ArchiveData ,
+                             :CollectionOfPersonalData ,
+                             :ExplicitPurpose ,
+                             :HistoricStatisticScientificPurposes ,
+                             :LegitimatePurpose ,
+                             :NotFurtherProcessedThanOriginalPurpose ,
+                             :PersonalData ,
+                             :SpecifiedPurpose .
+
+
+###  https://w3id.org/GDPRtEXT#PurposeOfNewProcessing
+:PurposeOfNewProcessing rdf:type owl:Class ;
+                        rdfs:subClassOf :LawfulBasisForProcessing ;
+                        rdfs:comment "These are the obligations over determining the new or changed purposes of processing"@en ;
+                        rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article6-4> ,
+                                         <https://w3id.org/GDPRtEXT/gdpr#recital50> ;
+                        rdfs:label "Purpose of new processing" ;
+                        :involves :Processing .
+
+
+###  https://w3id.org/GDPRtEXT#R17
+:R17 rdf:type owl:Class ;
+     rdfs:subClassOf :ExclusionException ;
+     rdfs:comment "Related to Regulation (EC) No. 45/2001"@en ;
+     rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#recital17> ;
+     rdfs:label "Regulation (EC) No 45/2001" .
+
+
+###  https://w3id.org/GDPRtEXT#R18
+:R18 rdf:type owl:Class ;
+     rdfs:subClassOf :ExclusionException ;
+     rdfs:comment "Exempted as the GDPR does not apply to personal or household activity that does not have a professional or commercial activity associated with it."@en ;
+     rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#recital18> ;
+     rdfs:label "Personal or Household activity" .
+
+
+###  https://w3id.org/GDPRtEXT#R19
+:R19 rdf:type owl:Class ;
+     rdfs:subClassOf :ExclusionException ;
+     rdfs:comment "Exempted as it involves areas covered by Directive (EU) 2016/680"@en ;
+     rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#recital19> ;
+     rdfs:label "Covered by Directive (EU) 2016/680" .
+
+
+###  https://w3id.org/GDPRtEXT#RacialData
+:RacialData rdf:type owl:Class ;
+            rdfs:subClassOf :SensitivePersonalData ;
+            rdfs:comment "Personal data revealing racial or ethnic origin."@en ;
+            rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#recital51> ;
+            rdfs:label "Racial origin data" ;
+            :involves :DataSubject .
+
+
+###  https://w3id.org/GDPRtEXT#Recital
+:Recital rdf:type owl:Class ;
+         rdfs:subClassOf <http://data.europa.eu/eli/ontology#LegalResourceSubdivision> ;
+         rdfs:comment "Regulation in GDPR text" ;
+         rdfs:isDefinedBy <http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679> ;
+         rdfs:label "Regulation" ;
+         <http://www.w3.org/2004/02/skos/core#example> """gdpr:recital1 a eli:LegalResourceSubdivision,
+        GDPRtEXT:Recital ;
+    eli:description \"The protection of natural persons in relation to the processing of personal data is a fundamental right. Article 8(1) of the Charter of Fundamental Rights of the European Union (the ‘Charter’) and Article 16(1) of the Treaty on the Functioning of the European Union (TFEU) provide that everyone has the right to the protection of personal data concerning him or her.\"^^xsd:string ;
+    eli:is_part_of gdpr:GDPR ;
+    eli:number \"1\"^^xsd:string .""" .
+
+
+###  https://w3id.org/GDPRtEXT#RecordCategoriesOfDataSubjectsAndPersonalData
+:RecordCategoriesOfDataSubjectsAndPersonalData rdf:type owl:Class ;
+                                               rdfs:subClassOf :MaintainRecordsOfProcessingActivities ;
+                                               rdfs:comment "This obligation requires Controllers to record the categories of data subjects and the personal data involved in processing/activities."@en ;
+                                               rdfs:label "Categories of data subjects and personal data" ;
+                                               :involves :DataSubject ,
+                                                         :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#RecordCategoriesOfRecipientsWhereDataShared
+:RecordCategoriesOfRecipientsWhereDataShared rdf:type owl:Class ;
+                                             rdfs:subClassOf :MaintainRecordsOfProcessingActivities ;
+                                             rdfs:comment "This obligation requires Controllers to record the categories of recipients the personal data was shared with."@en ;
+                                             rdfs:label "Record categories of recipients" ;
+                                             :involves :ShareDataWithThirdParty .
+
+
+###  https://w3id.org/GDPRtEXT#RecordCrossBorderDataTransfer
+:RecordCrossBorderDataTransfer rdf:type owl:Class ;
+                               rdfs:subClassOf :MaintainRecordsOfProcessingActivities ;
+                               rdfs:comment "This obligation requires Controllers to record the cross-border data transfers."@en ;
+                               rdfs:label "Record cross-border transfers" ;
+                               :involves :CrossBorderTransfer .
+
+
+###  https://w3id.org/GDPRtEXT#RecordDataRetentionPeriod
+:RecordDataRetentionPeriod rdf:type owl:Class ;
+                           rdfs:subClassOf :MaintainRecordsOfProcessingActivities ;
+                           rdfs:comment "This obligation requires Controllers to record the data retention period of personal data."@en ;
+                           rdfs:label "Record data retention periods" ;
+                           :involves :StoreData .
+
+
+###  https://w3id.org/GDPRtEXT#RecordPurposeOfProcessing
+:RecordPurposeOfProcessing rdf:type owl:Class ;
+                           rdfs:subClassOf :MaintainRecordsOfProcessingActivities ;
+                           rdfs:comment "This obligation requires Controllers to record the purpose of processing associated with personal data and the given consent."@en ;
+                           rdfs:label "Record purpose of processing" ;
+                           :involves :Processing .
+
+
+###  https://w3id.org/GDPRtEXT#RecordSecurityMeasures
+:RecordSecurityMeasures rdf:type owl:Class ;
+                        rdfs:subClassOf :MaintainRecordsOfProcessingActivities ;
+                        rdfs:comment "This obligation requires Controllers to record the measures taken to ensure adequate safety measures of personal data and the involved activities."@en ;
+                        rdfs:label "Record security measures" ;
+                        :involves :SecurityOfPersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#RectifyData
+:RectifyData rdf:type owl:Class ;
+             rdfs:subClassOf :DataActivity ;
+             rdfs:comment "An activity that rectifies data" ;
+             rdfs:label "Rectify Data" ;
+             :involves :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#RectifyInaccuracy
+:RectifyInaccuracy rdf:type owl:Class ;
+                   rdfs:subClassOf :RetentionOfPersonalData ;
+                   rdfs:comment "Any inaccuracies or discrepancies in the retained data must be rectified"@en ;
+                   rdfs:label "Rectify Inaccuracies" ;
+                   :involves :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#RegulatoryAuthority
+:RegulatoryAuthority rdf:type owl:Class ;
+                     rdfs:subClassOf :Entity ;
+                     rdfs:comment "The authority responsible for regulating data protection laws."@en ;
+                     rdfs:label "Regulatory Authority" .
+
+
+###  https://w3id.org/GDPRtEXT#RelevantForProcessing
+:RelevantForProcessing rdf:type owl:Class ;
+                       rdfs:subClassOf :RetentionOfPersonalData ;
+                       rdfs:comment "Any retained personal data must be relevant for subsiquent processing"@en ;
+                       rdfs:label "Relevant for processing" ;
+                       :involves :PersonalData ,
+                                 :Processing .
+
+
+###  https://w3id.org/GDPRtEXT#ReportDataBreach
+:ReportDataBreach rdf:type owl:Class ;
+                  rdfs:subClassOf :Activity ,
+                                  :Compliance ,
+                                  :ControllerObligation ;
+                  rdfs:comment "The act of reporting a data breach to entities mentioned within the GDPR. These are the Data Protection Authority (DPA), and in the case of Processors, the Controller they have an agreement with."@en ;
+                  rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article33> ,
+                                   <https://w3id.org/GDPRtEXT/gdpr#recital73> ,
+                                   <https://w3id.org/GDPRtEXT/gdpr#recital85> ,
+                                   <https://w3id.org/GDPRtEXT/gdpr#recital86> ,
+                                   <https://w3id.org/GDPRtEXT/gdpr#recital87> ,
+                                   <https://w3id.org/GDPRtEXT/gdpr#recital88> ;
+                  rdfs:label "Report Data Breach" ;
+                  :involves :DataBreach ,
+                            :MaintainRecordOfBreach ,
+                            :NotifyDataSubjectOfBreach ,
+                            :ReportDataBreachToDPAWithin72Hours .
+
+
+###  https://w3id.org/GDPRtEXT#ReportDataBreachToController
+:ReportDataBreachToController rdf:type owl:Class ;
+                              rdfs:subClassOf :ProcessorObligation ,
+                                              :ReportDataBreach ;
+                              rdfs:comment "The occurence of a data breach must be reported to the Controller."@en ;
+                              rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article33-2> ;
+                              rdfs:label "Report data breach to Controller" ;
+                              :involves :Controller ,
+                                        :DataBreach ,
+                                        :Processor ,
+                                        :ReportDataBreach .
+
+
+###  https://w3id.org/GDPRtEXT#ReportDataBreachToDPAWithin72Hours
+:ReportDataBreachToDPAWithin72Hours rdf:type owl:Class ;
+                                    rdfs:subClassOf :ReportDataBreach ;
+                                    rdfs:comment "The occurence of a data breach must be reported to the Data Protection Authority (DPA) within 72 hours"@en ;
+                                    rdfs:label "Report breach to DPA within 72 hours" ;
+                                    :involves :DPA ,
+                                              :DataBreach .
+
+
+###  https://w3id.org/GDPRtEXT#RequiresDisproportionateEfforts
+:RequiresDisproportionateEfforts rdf:type owl:Class ;
+                                 rdfs:subClassOf :ExclusionException ;
+                                 rdfs:comment "The stated obligation or activity could not be completed as it requires disproportionate efforts to complete."@en ;
+                                 rdfs:label "Requires disproportionate efforts" .
+
+
+###  https://w3id.org/GDPRtEXT#RequiresWrittenConsentOfControllerToAppointSubProcessor
+:RequiresWrittenConsentOfControllerToAppointSubProcessor rdf:type owl:Class ;
+                                                         rdfs:subClassOf :AppointingSubProcessors ;
+                                                         rdfs:comment "Appointing a sub-processor requires the written consent of the controller specifying permission or consent"@en ;
+                                                         rdfs:label "Written consent of Controller" ;
+                                                         :involves :Consent ,
+                                                                   :Controller ,
+                                                                   :SubProcessor .
+
+
+###  https://w3id.org/GDPRtEXT#RestrictionsOnCrossBorderTransfers
+:RestrictionsOnCrossBorderTransfers rdf:type owl:Class ;
+                                    rdfs:subClassOf :ProcessorObligation ;
+                                    rdfs:comment "These provide restrictions on cross-border transfers for Processors"@en ;
+                                    rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article44> ;
+                                    rdfs:label "Restrictions on cross-border transfers" ;
+                                    :involves :CrossBorderTransfer ,
+                                              :Processor .
+
+
+###  https://w3id.org/GDPRtEXT#RetentionOfPersonalData
+:RetentionOfPersonalData rdf:type owl:Class ;
+                         rdfs:subClassOf :Obligation ;
+                         rdfs:comment "These are the obligations specified by the GDPR on the retention of personal data"@en ;
+                         rdfs:label "Data Retention" ;
+                         :involves :PersonalData ,
+                                   :StoreData .
+
+
+###  https://w3id.org/GDPRtEXT#ReturnOrDestroyPersonalDataAtEndTerm
+:ReturnOrDestroyPersonalDataAtEndTerm rdf:type owl:Class ;
+                                      rdfs:subClassOf :ProcessorObligation ;
+                                      rdfs:comment "The processor must return or destroy personal data at the end of term (of its agreement with the controller)"@en ;
+                                      rdfs:label "Return or destroy data" ;
+                                      :involves :EraseData ,
+                                                :Processor ,
+                                                :ProcessorControllerAgreement .
+
+
+###  https://w3id.org/GDPRtEXT#RightOfDataPortability
+:RightOfDataPortability rdf:type owl:Class ;
+                        rdfs:subClassOf :Rights ;
+                        rdfs:comment "The data subject has the right to receive the personal data concerning him or her, which he or she has provided to a controller, in a structured, commonly used and machine-readable format and has the right to transmit those data to another controller without hindrance from the controller to which the personal data have been provided."@en ;
+                        rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article20> ,
+                                         <https://w3id.org/GDPRtEXT/gdpr#recital68> ,
+                                         <https://w3id.org/GDPRtEXT/gdpr#recital73> ;
+                        rdfs:label "Right of Data Portability" ;
+                        :involves :CollectionOfPersonalData ,
+                                  :DataSubject ,
+                                  :PersonalData ,
+                                  :ProvideCopyOfPersonalData ,
+                                  :ShouldBeCommonlyUsedFormat ,
+                                  :ShouldBeMachineReadable ,
+                                  :ShouldBeStructured ,
+                                  :ShouldSupportReuse .
+
+
+###  https://w3id.org/GDPRtEXT#RightOfErasure
+:RightOfErasure rdf:type owl:Class ;
+                rdfs:subClassOf :Rights ;
+                rdfs:comment "The data subject has the right to obtain erasure of their personal data"@en ;
+                rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article17> ,
+                                 <https://w3id.org/GDPRtEXT/gdpr#recital65> ,
+                                 <https://w3id.org/GDPRtEXT/gdpr#recital66> ,
+                                 <https://w3id.org/GDPRtEXT/gdpr#recital68> ;
+                rdfs:label "Right of Erasure" ;
+                :involves :DataSubject ,
+                          :EraseData ,
+                          :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#RightToAccessPersonalData
+:RightToAccessPersonalData rdf:type owl:Class ;
+                           rdfs:subClassOf :Rights ;
+                           rdfs:comment "The data subject shall have the right to obtain from the controller confirmation as to whether or not personal data concerning him or her are being processed, and, where that is the case, access to the personal data along with additional information about it."@en ;
+                           rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article15> ,
+                                            <https://w3id.org/GDPRtEXT/gdpr#recital63> ;
+                           rdfs:label "Right to Access Personal Data" ;
+                           :involves :DataSubject ,
+                                     :PersonalData ,
+                                     :Processing ,
+                                     :ProvideCopyOfPersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#RightToBasicInformationAboutProcessing
+:RightToBasicInformationAboutProcessing rdf:type owl:Class ;
+                                        rdfs:subClassOf :Rights ;
+                                        rdfs:comment "The right to basic information about processing provides data subjects with information about the processing activities involving their personal data"@en ;
+                                        rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article13> ,
+                                                         <https://w3id.org/GDPRtEXT/gdpr#article14> ,
+                                                         <https://w3id.org/GDPRtEXT/gdpr#recital58> ,
+                                                         <https://w3id.org/GDPRtEXT/gdpr#recital60> ;
+                                        rdfs:label "Right to basic information about processing of personal data" ;
+                                        :involves :DataSubject ,
+                                                  :Processing .
+
+
+###  https://w3id.org/GDPRtEXT#RightToNotBeEvaluatedThroughAutomatedProcessing
+:RightToNotBeEvaluatedThroughAutomatedProcessing rdf:type owl:Class ;
+                                                 rdfs:subClassOf :Rights ;
+                                                 rdfs:comment "The data subject has a right to not be evaluated through automated processing"@en ;
+                                                 rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article22> ,
+                                                                  <https://w3id.org/GDPRtEXT/gdpr#recital71> ,
+                                                                  <https://w3id.org/GDPRtEXT/gdpr#recital75> ;
+                                                 rdfs:label "Right to not be evaluated through automated processing" ;
+                                                 :involves :AutomatedProcessing ,
+                                                           :DataSubject .
+
+
+###  https://w3id.org/GDPRtEXT#RightToObjectForDirectMarketting
+:RightToObjectForDirectMarketting rdf:type owl:Class ;
+                                  rdfs:subClassOf :Rights ;
+                                  rdfs:comment "The data subject has a right to object to direct marketting based on their personal data"@en ;
+                                  rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article21-2-3> ,
+                                                   <https://w3id.org/GDPRtEXT/gdpr#recital70> ;
+                                  rdfs:label "Right to object direct marketting" ;
+                                  :involves :DataSubject ,
+                                            :DirectMarketing .
+
+
+###  https://w3id.org/GDPRtEXT#RightToObjectToProcessing
+:RightToObjectToProcessing rdf:type owl:Class ;
+                           rdfs:subClassOf :Rights ;
+                           rdfs:comment "The data subject has the right to object to processing of their personal data"@en ;
+                           rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article21> ,
+                                            <https://w3id.org/GDPRtEXT/gdpr#recital50> ,
+                                            <https://w3id.org/GDPRtEXT/gdpr#recital59> ,
+                                            <https://w3id.org/GDPRtEXT/gdpr#recital69> ,
+                                            <https://w3id.org/GDPRtEXT/gdpr#recital70> ,
+                                            <https://w3id.org/GDPRtEXT/gdpr#recital73> ;
+                           rdfs:label "Right to object processing" ;
+                           :involves :DataSubject ,
+                                     :PersonalData ,
+                                     :Processing .
+
+
+###  https://w3id.org/GDPRtEXT#RightToRectification
+:RightToRectification rdf:type owl:Class ;
+                      rdfs:subClassOf :Rights ;
+                      rdfs:comment "The data subject has a right to recitify their personal data"@en ;
+                      rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article16> ,
+                                       <https://w3id.org/GDPRtEXT/gdpr#article5-1-d> ,
+                                       <https://w3id.org/GDPRtEXT/gdpr#recital39> ,
+                                       <https://w3id.org/GDPRtEXT/gdpr#recital59> ,
+                                       <https://w3id.org/GDPRtEXT/gdpr#recital65> ,
+                                       <https://w3id.org/GDPRtEXT/gdpr#recital73> ;
+                      rdfs:label "Right to rectify" ;
+                      :involves :DataSubject ,
+                                :RectifyData .
+
+
+###  https://w3id.org/GDPRtEXT#RightToRestrictProcessing
+:RightToRestrictProcessing rdf:type owl:Class ;
+                           rdfs:subClassOf :Rights ;
+                           rdfs:comment "The data subject has the rights to restrict the processing of their personal data"@en ;
+                           rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article18> ,
+                                            <https://w3id.org/GDPRtEXT/gdpr#recital67> ;
+                           rdfs:label "Right to restrict processing" ;
+                           :involves :AccuracyIsContested ,
+                                     :DataNoLongerNeededForOriginalPurpose ,
+                                     :DataSubject ,
+                                     :Processing ,
+                                     :ProcessingIsUnlawful .
+
+
+###  https://w3id.org/GDPRtEXT#RightToTransparency
+:RightToTransparency rdf:type owl:Class ;
+                     rdfs:subClassOf :Rights ;
+                     rdfs:comment "The right to transparency requires controllers to provide information about the processing activities as well as personal data and its usage in a transparent manner"@en ;
+                     rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article12> ,
+                                      <https://w3id.org/GDPRtEXT/gdpr#article13> ,
+                                      <https://w3id.org/GDPRtEXT/gdpr#article14> ,
+                                      <https://w3id.org/GDPRtEXT/gdpr#article5-1-a> ,
+                                      <https://w3id.org/GDPRtEXT/gdpr#recital39> ,
+                                      <https://w3id.org/GDPRtEXT/gdpr#recital58> ,
+                                      <https://w3id.org/GDPRtEXT/gdpr#recital60> ;
+                     rdfs:label "Right to Transparency" ;
+                     :involves :Controller ,
+                               :DataSubject ,
+                               :InformationShouldBeConcise ,
+                               :InformationShouldBeEasilyAccessible ,
+                               :InformationShouldBeIntelligible ,
+                               :InformationShouldBeTransparent ,
+                               :LawfulnessFairnessAndTransparency ,
+                               :PersonalData ,
+                               :Processing .
+
+
+###  https://w3id.org/GDPRtEXT#Rights
+:Rights rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+        rdfs:comment "The GDPR provides several rights to the data subjects which may be exercised at any time by the data subject and which are mandatory for the organisation to provide, comply with, and inform the data subject about."@en ;
+        rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article12-2> ,
+                         <https://w3id.org/GDPRtEXT/gdpr#recital59> ;
+        rdfs:label "Data Subject's Rights" .
+
+
+###  https://w3id.org/GDPRtEXT#RightsProtection
+:RightsProtection rdf:type owl:Class ;
+                  rdfs:subClassOf :ExclusionException ;
+                  rdfs:comment "The stated obligation could not be completed as it concerns freedoms protection."@en ;
+                  rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#recital16> ;
+                  rdfs:label "Freedoms protection" .
+
+
+###  https://w3id.org/GDPRtEXT#Seal
+:Seal rdf:type owl:Class ;
+      rdfs:subClassOf :SealsAndCertification ;
+      rdfs:comment "A seal pertaining to GDPR compliance"@en ;
+      rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#recital77> ,
+                       <https://w3id.org/GDPRtEXT/gdpr#recital81> ;
+      rdfs:label "Seal" .
+
+
+###  https://w3id.org/GDPRtEXT#SealsAndCertification
+:SealsAndCertification rdf:type owl:Class ;
+                       rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+                       rdfs:comment "GDPR provides for the creation and provision of seals and certificates pertaining to compliance or related activities"@en ;
+                       rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article42> ,
+                                        <https://w3id.org/GDPRtEXT/gdpr#recital77> ,
+                                        <https://w3id.org/GDPRtEXT/gdpr#recital81> ;
+                       rdfs:label "Seals and Certifications" ;
+                       :involves :ConditionsForSealsAndCertifications .
+
+
+###  https://w3id.org/GDPRtEXT#Section
+:Section rdf:type owl:Class ;
+         rdfs:subClassOf <http://data.europa.eu/eli/ontology#LegalResourceSubdivision> ;
+         rdfs:comment "Section in GDPR text" ;
+         rdfs:isDefinedBy <http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679> ;
+         rdfs:label "Section" ;
+         <http://www.w3.org/2004/02/skos/core#example> """gdpr:chapterIV-5 a eli:LegalResourceSubdivision,
+        GDPRtEXT:Section ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:chapterIV ;
+    eli:number \"5\"^^xsd:string ;
+    eli:title \"Codes of conduct and certification\"^^xsd:string ;
+    eli:title_alternative \"Section 5\"^^xsd:string ;
+    GDPRtEXT:hasArticle gdpr:article40,
+        gdpr:article41,
+        gdpr:article42,
+        gdpr:article43 ;
+    GDPRtEXT:isPartOfChapter gdpr:chapterIV .""" .
+
+
+###  https://w3id.org/GDPRtEXT#SecurityOfPersonalData
+:SecurityOfPersonalData rdf:type owl:Class ;
+                        rdfs:subClassOf :Activity ,
+                                        :Obligation ;
+                        rdfs:comment "This activity refers to security of data subject's personal data."@en ;
+                        rdfs:label "Security of Personal Data" ;
+                        :involves :DataSecurity ,
+                                  :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#SensitivePersonalData
+:SensitivePersonalData rdf:type owl:Class ;
+                       rdfs:subClassOf :PersonalData ;
+                       rdfs:comment "Personal data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, or trade union membership, and the processing of genetic data, biometric data for the purpose of uniquely identifying a natural person, data concerning health or data concerning a natural person's sex life or sexual orientation."@en ;
+                       rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article9-1> ,
+                                        <https://w3id.org/GDPRtEXT/gdpr#recital10> ,
+                                        <https://w3id.org/GDPRtEXT/gdpr#recital34> ,
+                                        <https://w3id.org/GDPRtEXT/gdpr#recital35> ,
+                                        <https://w3id.org/GDPRtEXT/gdpr#recital51> ;
+                       rdfs:label "Sensitive Personal Data" ;
+                       :involves :DataSubject .
+
+
+###  https://w3id.org/GDPRtEXT#ShareDataWithThirdParty
+:ShareDataWithThirdParty rdf:type owl:Class ;
+                         rdfs:subClassOf :DataActivity ;
+                         rdfs:comment "This activity represents the sharing of data subject's personal data with a third party."@en ;
+                         rdfs:label "Share Personal Data with Third Party" ;
+                         :involves :Controller ,
+                                   :PersonalData ,
+                                   :Processor .
+
+
+###  https://w3id.org/GDPRtEXT#ShouldBeCommonlyUsedFormat
+:ShouldBeCommonlyUsedFormat rdf:type owl:Class ;
+                            rdfs:subClassOf :ProvideCopyOfPersonalData ;
+                            rdfs:comment "The provided copy of personal data should be in a commonly used format"@en ;
+                            rdfs:label "Copy should be in a commonly used format" .
+
+
+###  https://w3id.org/GDPRtEXT#ShouldBeDemonstrable
+:ShouldBeDemonstrable rdf:type owl:Class ;
+                      rdfs:subClassOf :ObligationForObtainingConsent ;
+                      rdfs:comment "Obtained consent should be in a demonstrable form"@en ;
+                      rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article7-1> ,
+                                       <https://w3id.org/GDPRtEXT/gdpr#recital42> ;
+                      rdfs:label "Demonstrable" ;
+                      :involves :DemonstratingConsent ,
+                                :GivenConsent .
+
+
+###  https://w3id.org/GDPRtEXT#ShouldBeDistinguishableFromOtherMatters
+:ShouldBeDistinguishableFromOtherMatters rdf:type owl:Class ;
+                                         rdfs:subClassOf :ObligationForObtainingConsent ;
+                                         rdfs:comment "Obtained consent should be distinguishable from other related matters (in the context of the process)"@en ;
+                                         rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article7-2> ;
+                                         rdfs:label "Distinguishable from other matters" ;
+                                         :involves :GivenConsent .
+
+
+###  https://w3id.org/GDPRtEXT#ShouldBeMachineReadable
+:ShouldBeMachineReadable rdf:type owl:Class ;
+                         rdfs:subClassOf :ProvideCopyOfPersonalData ;
+                         rdfs:comment "The provided copy of personal data should be machine readable"@en ;
+                         rdfs:label "Copy should be in a machine readable format" .
+
+
+###  https://w3id.org/GDPRtEXT#ShouldBeStructured
+:ShouldBeStructured rdf:type owl:Class ;
+                    rdfs:subClassOf :ProvideCopyOfPersonalData ;
+                    rdfs:comment "The provided copy of personal data should be structured"@en ;
+                    rdfs:label "Should be structured" .
+
+
+###  https://w3id.org/GDPRtEXT#ShouldSupportReuse
+:ShouldSupportReuse rdf:type owl:Class ;
+                    rdfs:subClassOf :ProvideCopyOfPersonalData ;
+                    rdfs:comment "The provided copy of personal data should support reuse"@en ;
+                    rdfs:label "Shoud support reuse" .
+
+
+###  https://w3id.org/GDPRtEXT#SpecificConsentObligation
+:SpecificConsentObligation rdf:type owl:Class ;
+                           rdfs:subClassOf :ValidConsent ;
+                           rdfs:comment "GDPR obligation that specifies consent must be specific for it to be valid."@en ;
+                           rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article6-1-a> ,
+                                            <https://w3id.org/GDPRtEXT/gdpr#recital32> ;
+                           rdfs:label "Specific" ;
+                           :involves :GivenConsent .
+
+
+###  https://w3id.org/GDPRtEXT#SpecifiedPurpose
+:SpecifiedPurpose rdf:type owl:Class ;
+                  rdfs:subClassOf :ObligationForCollectionOfPersonalData ;
+                  rdfs:comment "This obligation states that the collection of personal data should happen only for the specified purposes (for which the data subject has consented)."@en ;
+                  rdfs:label "Specified purpose" ;
+                  :involves :CollectionOfPersonalData ,
+                            :Processing .
+
+
+###  https://w3id.org/GDPRtEXT#StorageLimitation
+:StorageLimitation rdf:type owl:Class ;
+                   rdfs:subClassOf :Principle ;
+                   rdfs:comment "The principle of storage limitation states that personal data must be kept in a form which permits identification of data subjects for no longer than is necessary for the purposes for which the personal data are processed; personal data may be stored for longer periods insofar as the personal data will be processed solely for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes in accordance with Article 89(1) of the GDPR subject to implementation of the appropriate technical and organisational measures required by this Regulation in order to safeguard the rights and freedoms of the data subject."@en ;
+                   rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article5-1-e> ,
+                                    <https://w3id.org/GDPRtEXT/gdpr#recital39> ;
+                   rdfs:label "Principle of Storage Limitation" ;
+                   :involves :ArchiveData ,
+                             :HistoricStatisticScientificPurposes ,
+                             :IdentifiableForRequiredProcessing ,
+                             :IdentificationOfDataSubject ,
+                             :PersonalData ,
+                             :PublicInterest ,
+                             :StoreData .
+
+
+###  https://w3id.org/GDPRtEXT#StoreData
+:StoreData rdf:type owl:Class ;
+           rdfs:subClassOf :DataActivity ;
+           rdfs:comment "An activity where personal data is being stored" ;
+           rdfs:label "Store Data" ;
+           :involves :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#SubPoint
+:SubPoint rdf:type owl:Class ;
+          rdfs:subClassOf <http://data.europa.eu/eli/ontology#LegalResourceSubdivision> ;
+          rdfs:comment "SubPoint in GDPR text" ;
+          rdfs:isDefinedBy <http://eur_lex.europa.eu/legal_content/EN/ALL/?uri=CELEX:32016R0679> ;
+          rdfs:label "SubPoint" ;
+          <http://www.w3.org/2004/02/skos/core#example> """gdpr:article12-5-b a eli:LegalResourceSubdivision,
+        GDPRtEXT:SubPoint ;
+    eli:description \"refuse to act on the request.\"^^xsd:string ;
+    eli:is_part_of gdpr:GDPR,
+        gdpr:article12,
+        gdpr:article12-5,
+        gdpr:chapterIII,
+        gdpr:chapterIII-1 ;
+    eli:number \"b\"^^xsd:string ;
+    eli:title_alternative \"Article12(5)(b)\"^^xsd:string ;
+    GDPRtEXT:isPartOfArticle gdpr:article12 ;
+    GDPRtEXT:isPartOfChapter gdpr:chapterIII ;
+    GDPRtEXT:isPartOfPoint gdpr:article12-5 ;
+    GDPRtEXT:isPartOfSection gdpr:chapterIII-1 .""" .
+
+
+###  https://w3id.org/GDPRtEXT#SubProcessor
+:SubProcessor rdf:type owl:Class ;
+              rdfs:subClassOf :Processor ;
+              rdfs:comment "A sub-processor is a processor acting under another processor."@en ;
+              rdfs:label "Sub-Processor" ;
+              :involves :Controller ,
+                        :Processor .
+
+
+###  https://w3id.org/GDPRtEXT#SubProcessorMustFollowSameTermsAsProcessorControllerAgreement
+:SubProcessorMustFollowSameTermsAsProcessorControllerAgreement rdf:type owl:Class ;
+                                                               rdfs:subClassOf :AppointingSubProcessors ;
+                                                               rdfs:comment "Sub-processors must follow the same rules and obligations (or terms) as the agreement between processor and controller."@en ;
+                                                               rdfs:label "Follow same terms" ;
+                                                               :involves :ProcessorControllerAgreement ,
+                                                                         :SubProcessor .
+
+
+###  https://w3id.org/GDPRtEXT#SystematicMonitoring
+:SystematicMonitoring rdf:type owl:Class ;
+                      rdfs:subClassOf :Activity ,
+                                      :FactorsForImpactAssessment ;
+                      rdfs:comment "This activity provides a systematic monitoring or overview of processes/activities taking place within the context of the organisation."@en ;
+                      rdfs:label "Systematic Monitoring" ;
+                      :involves :Processing .
+
+
+###  https://w3id.org/GDPRtEXT#UnlawfulProcessing
+:UnlawfulProcessing rdf:type owl:Class ;
+                    rdfs:subClassOf :Processing ;
+                    rdfs:comment "Processing of personal data that is termed to be unlawful in the context of the GDPR or other relevant laws and regulations" ;
+                    rdfs:label "Unlawful Processing" .
+
+
+###  https://w3id.org/GDPRtEXT#UseData
+:UseData rdf:type owl:Class ;
+         rdfs:subClassOf :DataActivity ;
+         rdfs:comment "An activity that uses personal data" ;
+         rdfs:label "Use Data" ;
+         :involves :PersonalData .
+
+
+###  https://w3id.org/GDPRtEXT#ValidConsent
+:ValidConsent rdf:type owl:Class ;
+              rdfs:subClassOf :GivenConsent ,
+                              :ObligationForObtainingConsent ;
+              rdfs:comment "Consent is termed to be valid if it passes all the criteria or obligations laid down by the GDPR."@en ;
+              rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article4-11> ,
+                               <https://w3id.org/GDPRtEXT/gdpr#article6-1-a> ,
+                               <https://w3id.org/GDPRtEXT/gdpr#article7> ,
+                               <https://w3id.org/GDPRtEXT/gdpr#recital32> ;
+              rdfs:label "Valid Consent" ;
+              :involves :FreelyGivenConsentObligation ,
+                        :GivenConsent ,
+                        :InformedConsentObligation ,
+                        :SpecificConsentObligation .
+
+
+###  https://w3id.org/GDPRtEXT#VitalInterest
+:VitalInterest rdf:type owl:Class ;
+               rdfs:subClassOf :LawfulBasisForProcessing ;
+               rdfs:comment "These are obligations pertaining to the vital interests of the data subjects"@en ;
+               rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article6-1-d> ,
+                                <https://w3id.org/GDPRtEXT/gdpr#article9-2-c> ,
+                                <https://w3id.org/GDPRtEXT/gdpr#recital46> ;
+               rdfs:label "Vital Interests" ;
+               :involves :DataSubject .
+
+
+###  https://w3id.org/GDPRtEXT#VoluntaryOptInConsentObligation
+:VoluntaryOptInConsentObligation rdf:type owl:Class ;
+                                 rdfs:subClassOf :ValidConsent ;
+                                 rdfs:comment "Consent must be obtained through the data subject's voluntary action and should be opt-in and not opt-out or by default."@en ;
+                                 rdfs:label "Voluntary & Opt-in" ;
+                                 :involves :GivenConsent .
+
+
+###  https://w3id.org/GDPRtEXT#VoluntarySystemOfAccredition
+:VoluntarySystemOfAccredition rdf:type owl:Class ;
+                              rdfs:subClassOf :ConditionsForSealsAndCertifications ;
+                              rdfs:comment "The seals and certifications should be a voluntary system of accredition"@en ;
+                              rdfs:isDefinedBy <https://w3id.org/GDPRtEXT/gdpr#article42-3> ;
+                              rdfs:label "Voluntary accredition" .
+
+
+###  https://w3id.org/GDPRtEXT#WithdrawingConsent
+:WithdrawingConsent rdf:type owl:Class ;
+                    rdfs:subClassOf :ConsentActivity ;
+                    rdfs:comment "This activity represents the data subject withdrawing given consent."@en ;
+                    rdfs:label "Withdrawing Given Consent" ;
+                    :involves :DataSubject ,
+                              :GivenConsent .
+
+
+_:genid1 rdfs:comment "TEST" ,
+                      "TEST2" .
+
+[ rdfs:comment "An ontology for representing provenance traces pertainining to GDPR compliance. It uses concepts from GDPRtEXT along with extending PROV and P-Plan."@en
+ ] .
+
+_:genid3 rdfs:comment "TEST" ,
+                       "TEST2" .
+
+###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/

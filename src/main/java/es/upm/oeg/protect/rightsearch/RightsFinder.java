@@ -1,5 +1,6 @@
 package es.upm.oeg.protect.rightsearch;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
@@ -23,9 +24,14 @@ import org.apache.jena.ontology.OntModel;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.util.iterator.ExtendedIterator;
+import org.json.JSONObject;
+import org.json.JSONArray;
 
 /**
- * Finds the rights in a collection of ontologies
+ * Finds the rights in a collection of ontologies.
+ * 
+ * These ontologies live for the moment in cosasbuenas.es 
+ * Deploying in protect@russell is cumbersome...
  *
  * @author vroddon
  */
@@ -41,6 +47,7 @@ public class RightsFinder {
         System.out.println("Searching for: " + searchterm);
         System.out.println("Foun: " + find);
     }
+    
 
     public static boolean initialized = false;
     public static void init() {
@@ -71,23 +78,13 @@ public class RightsFinder {
                 Model omodel = readModel(uonto);
                 if (omodel!=null)
                 {
-                    System.out.println("Successfully read " + uri);
+                    Historial.add("Successfully read " + uri);
                     models.add(omodel);        
                 }
                 else
-                    System.out.println("Error with " + uri);
+                    Historial.add("Error with " + uri);
             }
-            
-/*            String uri2 = "http://cosasbuenas.es/static/def/ppo.ttl";
-            omodel = readModel(uri2);
-            if (omodel!=null)
-            {
-                System.out.println("Successfully read " + uri);
-                models.add(omodel);        
-            }
-*/
-            
-            System.out.println("A total of " + models.size() + " models has been loaded.");
+            Historial.add("A total of " + models.size() + " models has been loaded.");
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -111,8 +108,7 @@ public class RightsFinder {
         
     }
     
-
-    public static String find(String text) {
+    public static String findFirst(String text) {
         if (models == null) {
             init();
         }
@@ -124,6 +120,29 @@ public class RightsFinder {
             }
         }
         return "";
+    }
+    
+
+    public static String find(String text) {
+        JSONObject obj = new JSONObject();
+        JSONArray jarr = new JSONArray();
+        ObjectMapper mapper = new ObjectMapper();
+        
+        if (models == null) {
+            init();
+        }
+        for (Model model : models) {
+            List<SearchResult> results = findElementInModel(model, text);
+            for (SearchResult sr : results) {
+
+                JSONObject jsr = new JSONObject(sr);
+                jarr.put(jsr);
+                Historial.add("Found: " + sr.element);
+//                String result = sr.element;
+//                return result;
+            }
+        }
+        return jarr.toString();
     }
 
     static List<SearchResult> findElementInModel(Model model, String text) {
