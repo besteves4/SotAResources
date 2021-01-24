@@ -34,7 +34,7 @@ public class SwaggerConf {
 	 	private ApiInfo apiEndPointsInfo() {
 	        return new ApiInfoBuilder().title("Ontology Rights Search REST API")
 	            .description("This is the documentation for the Ontology Rights Search")
-	            .contact(new Contact("Victor Rodriguez and Beatriz Esteves", "http://www.oeg-upm.net/", "vrodriguez@fi.upm.es, besteves@fi.upm.es "))
+	            .contact(new Contact("Victor Rodriguez and Beatriz Esteves", "http://www.oeg-upm.net/", "vrodriguez@fi.upm.es, beatriz.gesteves@upm.es"))
 	            .license("Apache 2.0")
 	            .licenseUrl("http://www.apache.org/licenses/LICENSE-2.0.html")
 	            .version("1.0.0")
