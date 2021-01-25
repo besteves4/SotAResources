@@ -2,8 +2,43 @@
     REST  API  service  to  find  references  to specific concepts in the collection of identified ontologies and languages
 </div>
 
-<div class="api">
-    <button (click)="testApp()">Test connection with Rest API</button>
+<!-- <div class="api">
+    <button (click)="getStatus()">Get Status</button>
     <br><br>
-    <span>{{result}}</span>
+    <span>{{status}}</span>
+</div> -->
+
+<div class="api">
+    <button (click)="getRights()">Get Right Searcher</button>
+    <br><br>
+    
+    <table class="table table-sm table-hover table-bordered">
+        <thead>
+            <tr>
+                <th>
+                    Ontology Name
+                </th>
+                <th>
+                    Element
+                </th>
+                <th>
+                    Element Description
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let res of results">
+                <th>
+                    {{res.ontologyname}}
+                </th>
+                <td>
+                    {{res.element}}
+                </td>
+                <td>
+                    {{res.elementdescription}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
 </div>
