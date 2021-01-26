@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -45,6 +46,7 @@ import { StartsWithPipe } from './pipes/starts-with.pipe';
     imports: [
         CommonModule,
         BrowserModule,
+        FormsModule,
         AppRoutingModule,
         RouterModule,
         HttpClientModule,

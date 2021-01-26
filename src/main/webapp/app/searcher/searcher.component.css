@@ -19,3 +19,25 @@ p {
 .searcher-text{
     text-align: justify;
 }
+
+.input_button {
+    width: 90%;
+    height: 30px;
+}
+
+#search-btn {
+    background-color: #9e1f65;
+    border-color: #9e1f65;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+}
+
+#search-btn:hover {
+    color: white;
+}
+
+/* .search-input {
+    display: inline;
+} */

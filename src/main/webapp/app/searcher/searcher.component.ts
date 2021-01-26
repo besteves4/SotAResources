@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-searcher',
@@ -8,10 +9,13 @@ import { HttpClient } from '@angular/common/http';
 })
 export class SearcherComponent implements OnInit {
 
+  faSearch = faSearch;
+
   ngOnInit() { }
 
   title = 'webapp';
   status = '';
+  term: '';
   results = {};
 
   constructor(private http: HttpClient){
@@ -28,7 +32,7 @@ export class SearcherComponent implements OnInit {
   
   public getRights(): void {
     const params = {
-      text: 'access'
+      text: this.term
     }
 
     this.http.get('/sota/rights', { params: params, responseType: 'json' })
