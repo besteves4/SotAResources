@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { LanguagesComponent } from './languages/languages.component';
 import { OntologiesComponent } from './ontologies/ontologies.component';
 import { SearcherComponent } from './searcher/searcher.component';
+import { GDPRifComponent } from './gdprif/gdprif.component';
 
 const routes: Routes = [
     {
@@ -28,6 +29,10 @@ const routes: Routes = [
     {
         path: 'searcher',
         component: SearcherComponent
+    },
+    {
+        path: 'gdprif',
+        component: GDPRifComponent
     },
     {
         path: '**',
