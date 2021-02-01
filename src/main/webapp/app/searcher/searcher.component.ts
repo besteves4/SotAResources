@@ -1,15 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-searcher',
   templateUrl: './searcher.component.html',
   styleUrls: ['./searcher.component.css']
 })
-export class SearcherComponent implements OnInit {
 
-  faSearch = faSearch;
+export class SearcherComponent implements OnInit {
 
   ngOnInit() { }
 
@@ -17,6 +15,7 @@ export class SearcherComponent implements OnInit {
   status = '';
   term: '';
   results = {};
+  _array = Array;
 
   constructor(private http: HttpClient){
   }

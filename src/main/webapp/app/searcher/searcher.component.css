@@ -16,28 +16,36 @@ p {
     text-align: justify;
 }
 
+.center-results {
+    text-align: center;
+}
+
 .searcher-text{
     text-align: justify;
 }
 
 .input_button {
     width: 90%;
-    height: 30px;
+    height: 35px;
+    vertical-align: middle;
 }
 
 #search-btn {
     background-color: #9e1f65;
     border-color: #9e1f65;
-    height: 30px;
-    line-height: 30px;
     text-align: center;
-    color: black;
+    color: white;
+    vertical-align: center;
+    text-align: center;
 }
 
 #search-btn:hover {
-    color: white;
+    color: #9e1f65;
+    background-color:white;
+    border-width: medium;
 }
 
-/* .search-input {
+.search-input {
     display: inline;
-} */
+    text-align: center;
+}

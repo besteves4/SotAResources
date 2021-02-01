@@ -8,27 +8,17 @@
     <span>{{status}}</span>
 </div> -->
 
-<!-- <div class="row mb-1 search-input">
-    <div class="col-9 offset">
-        <input type="text" class="input input_button" [(ngModel)]="term" placeholder="delete">
-    </div>
-
-    <div class="col-3">
-        <button type="submit" id="search-btn" name="search" value="Search" class="btn purple-btn btn-outline-warning" (click)="getRights()">
-            <i class="fas fa fa-search gap-right"></i>
-        </button>
-    </div>
-</div> -->
-<div class="row mb-1 search-input">
-    <input type="text" class="input input_button" [(ngModel)]="term" placeholder="delete">
+<div class="row ml-2 mb-5 search-input">
+    <input type="text" class="input input_button mr-4" [(ngModel)]="term" placeholder="delete">
     <button type="submit" id="search-btn" name="search" value="Search" class="btn purple-btn btn-outline-warning" (click)="getRights()">
-        <i class="fas fa fa-search"></i>
+        Search
     </button>
 </div>
 
-<div class="results-table" *ngIf="(results | json) != '{}'">
-    <table class="table table-sm table-bordered">
-        <thead>
+<div class="mt-5" [ngSwitch]="true">
+    <p *ngSwitchCase="_array.isArray(results) && results.length < 1">No results were found!</p>
+    <table *ngSwitchCase="_array.isArray(results) && results.length > 0" class="table table-sm table-bordered">
+        <thead class="center-results">
             <tr>
                 <th>
                     Ontology Name
@@ -43,7 +33,7 @@
         </thead>
         <tbody>
             <tr *ngFor="let res of results">
-                <th>
+                <th class="center-results">
                     {{res.ontologyname}}
                 </th>
                 <td>
