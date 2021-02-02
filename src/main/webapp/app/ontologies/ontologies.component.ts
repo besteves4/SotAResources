@@ -1360,7 +1360,7 @@ export class OntologiesComponent implements OnInit {
         },
         dates: {
             created: '2018',
-            lastUpdated: ''
+            lastUpdated: '2021'
         },
         idiom: [
             {
@@ -1378,56 +1378,72 @@ export class OntologiesComponent implements OnInit {
         project: [],
         authors: [
             {
-                name: 'Harshvardhan J. Pandit',
-                link: 'https://harshp.com/research/'
-            },
-            {
                 name: 'Axel Polleres',
                 link: 'https://aic.ai.wu.ac.at/~polleres/'
+            },
+            {
+                name: 'Beatriz Esteves',
+                link: 'https://besteves4.github.io/'
             },
             {
                 name: 'Bert Bos',
                 link: 'https://dblp.org/pers/hd/b/Bos:Bert'
             },
             {
-                name: 'Rob Brennan',
-                link: 'https://dblp.org/pers/hd/b/Brennan:Rob'
-            },
-            {
                 name: 'Bud Bruegger',
                 link: 'https://dblp.org/pers/hd/b/Bruegger:Bud_P='
-            },
-            {
-                name: 'Fajar J. Ekaputra',
-                link: 'https://dblp.org/pers/hd/e/Ekaputra:Fajar_J='
-            },
-            {
-                name: 'Javier D. Fernández',
-                link: 'https://dblp.org/pers/f/Fern=aacute=ndez:Javier_D=.html'
-            },
-            {
-                name: 'Ramisa Gachpaz Hamed',
-                link: 'https://dblp.org/pers/hd/h/Hamed:Roghaiyeh_Gachpaz'
             },
             {
                 name: 'Elmar Kiesling',
                 link: 'https://dblp.org/pers/hd/k/Kiesling:Elmar'
             },
             {
-                name: 'Mark Lizar',
-                link: 'https://dblp.org/pers/hd/l/Lizar:Mark'
-            },
-            {
                 name: 'Eva Schlehahn',
                 link: 'https://dblp.org/pers/hd/s/Schlehahn:Eva'
             },
             {
-                name: 'Simon Steyskal',
-                link: 'https://dblp.org/pers/hd/s/Steyskal:Simon'
+                name: 'Fajar J. Ekaputra',
+                link: 'https://dblp.org/pers/hd/e/Ekaputra:Fajar_J='
+            },
+            {
+                name: 'Georg P. Krog',
+                link: 'https://www.linkedin.com/in/georg-philip-krog-a2a278104/?originalSubdomain=ch'
+            },
+            {
+                name: 'Harshvardhan J. Pandit',
+                link: 'https://harshp.com/research/'
+            },
+            {
+                name: 'Javier D. Fernández',
+                link: 'https://dblp.org/pers/f/Fern=aacute=ndez:Javier_D=.html'
+            },
+            {
+                name: 'Mark Lizar',
+                link: 'https://dblp.org/pers/hd/l/Lizar:Mark'
+            },
+            {
+                name: 'Paul Ryan',
+                link: 'https://dblp.org/pid/03/2731.html'
+            },
+            {
+                name: 'Piero Bonatti',
+                link: 'https://dblp.org/pid/b/PABonatti.html'
+            },
+            {
+                name: 'Ramisa Gachpaz Hamed',
+                link: 'https://dblp.org/pers/hd/h/Hamed:Roghaiyeh_Gachpaz'
             },
             {
                 name: 'Rigo Wenning',
                 link: 'https://dblp.org/pers/hd/w/Wenning:Rigo'
+            },
+            {
+                name: 'Rob Brennan',
+                link: 'https://dblp.org/pers/hd/b/Brennan:Rob'
+            },
+            {
+                name: 'Simon Steyskal',
+                link: 'https://dblp.org/pers/hd/s/Steyskal:Simon'
             }
         ],
         elements: [
@@ -1452,30 +1468,26 @@ export class OntologiesComponent implements OnInit {
                 link: 'https://www.w3.org/ns/dpv#vocab-consent'
             },
             {
-                name: 'Recipient',
-                link: 'https://www.w3.org/ns/dpv#recipient'
-            },
-            {
-                name: 'Data controller',
-                link: 'https://www.w3.org/ns/dpv#data-controller'
-            },
-            {
-                name: 'Data subject',
-                link: 'https://www.w3.org/ns/dpv#data-subject'
+                name: 'Entities',
+                link: 'https://dpvcg.github.io/dpv/#vocab-entities'
             },
             {
                 name: 'GDPR legal basis',
-                link: 'https://www.w3.org/ns/dpv-gdpr'
+                link: 'https://dpvcg.github.io/dpv-gdpr/#vocab-legal-basis'
+            },
+            {
+                name: 'GDPR rights',
+                link: 'https://dpvcg.github.io/dpv-gdpr/#vocab-rights'
             }
         ],
         resources: [
             {
                 type: 'DPV RDF',
-                link: 'https://github.com/dpvcg/dpv/blob/master/dpv.xml'
+                link: 'https://github.com/dpvcg/dpv/blob/master/dpv.rdf'
             },
             {
                 type: 'DPV GDPR RDF',
-                link: 'https://github.com/dpvcg/dpv-gdpr/blob/master/rdf/dpv-gdpr.xml'
+                link: 'https://github.com/dpvcg/dpv-gdpr/blob/master/dpv-gdpr.rdf'
             },
             {
                 type: 'DPV Turtle',
@@ -1483,7 +1495,7 @@ export class OntologiesComponent implements OnInit {
             },
             {
                 type: 'DPV GDPR Turtle',
-                link: 'https://github.com/dpvcg/dpv-gdpr/blob/master/rdf/dpv-gdpr.ttl'
+                link: 'https://github.com/dpvcg/dpv-gdpr/blob/master/dpv-gdpr.ttl'
             },
             {
                 type: 'DPV JSON-LD',
@@ -1491,14 +1503,14 @@ export class OntologiesComponent implements OnInit {
             },
             {
                 type: 'DPV GDPR JSON-LD',
-                link: 'https://github.com/dpvcg/dpv-gdpr/blob/master/rdf/dpv-gdpr.jsonld'
+                link: 'https://github.com/dpvcg/dpv-gdpr/blob/master/dpv-gdpr.jsonld'
             },
             {
                 type: 'DPV N3',
                 link: 'https://github.com/dpvcg/dpv/blob/master/dpv.n3'
             },{
                 type: 'DPV GDPR N3',
-                link: 'https://github.com/dpvcg/dpv-gdpr/blob/master/rdf/dpv-gdpr.n3'
+                link: 'https://github.com/dpvcg/dpv-gdpr/blob/master/dpv-gdpr.n3'
             }
         ],
         documentation: [
@@ -1542,10 +1554,52 @@ export class OntologiesComponent implements OnInit {
         diagrams: [
             {
                 type: 'spec',
-                name: 'DPV v0.1',
-                imageSrc: 'https://www.w3.org/ns/diagrams/personaldatahandling.png',
+                name: 'Base',
+                imageSrc: 'https://dpvcg.github.io/dpv/diagrams/personaldatahandling.png',
                 typeSrc: 'https://www.w3.org/ns/dpv',
-                nameSrc: 'DPV specification'
+                nameSrc: 'DPV v0.2 specification'
+            },
+            {
+                type: 'spec',
+                name: 'Personal Data',
+                imageSrc: 'https://dpvcg.github.io/dpv/diagrams/personaldatacategories.png',
+                typeSrc: 'https://www.w3.org/ns/dpv',
+                nameSrc: 'DPV v0.2 specification'
+            },
+            {
+                type: 'spec',
+                name: 'Purpose',
+                imageSrc: 'https://dpvcg.github.io/dpv/diagrams/purpose.png',
+                typeSrc: 'https://www.w3.org/ns/dpv',
+                nameSrc: 'DPV v0.2 specification'
+            },
+            {
+                type: 'spec',
+                name: 'Processing',
+                imageSrc: 'https://dpvcg.github.io/dpv/diagrams/processing.png',
+                typeSrc: 'https://www.w3.org/ns/dpv',
+                nameSrc: 'DPV v0.2 specification'
+            },
+            {
+                type: 'spec',
+                name: 'Measures',
+                imageSrc: 'https://dpvcg.github.io/dpv/diagrams/technicalorganisationalmeasures.png',
+                typeSrc: 'https://www.w3.org/ns/dpv',
+                nameSrc: 'DPV v0.2 specification'
+            },
+            {
+                type: 'spec',
+                name: 'Entities',
+                imageSrc: 'https://dpvcg.github.io/dpv/diagrams/legalentities.png',
+                typeSrc: 'https://www.w3.org/ns/dpv',
+                nameSrc: 'DPV v0.2 specification'
+            },
+            {
+                type: 'spec',
+                name: 'Entities',
+                imageSrc: 'https://dpvcg.github.io/dpv/diagrams/legalentities.png',
+                typeSrc: 'https://www.w3.org/ns/dpv',
+                nameSrc: 'DPV v0.2 specification'
             }
         ]
     }
