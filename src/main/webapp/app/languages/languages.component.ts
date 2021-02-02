@@ -360,7 +360,7 @@ export class LanguagesComponent implements OnInit {
         {
             id: 'ODRL',
             name: 'Open Digital Rights Language',
-            description: 'Policy expression language that provides a model, vocabulary and encoding mechanisms to express information about permissions, prohibitions and duties related to an asset.',
+            description: 'Policy expression language that provides a model, vocabulary and encoding mechanisms to express information about permissions, prohibitions and duties related to an asset',
             domain: [
                 {
                     name: 'digital rights',
@@ -2009,6 +2009,296 @@ export class LanguagesComponent implements OnInit {
                 },
             ],
             diagrams: []
+        },
+        {
+            id: 'LegalRuleML',
+            name: 'LegalRuleML Core Specification',
+            description: "Rule interchange language that extends RuleML with formal features to represent and reason over legal norms, guidelines and policies",
+            domain: [
+                {
+                    name: 'digital rights',
+                    dbPedia: 'http://dbpedia.org/page/Digital_rights'
+                },
+                {
+                    name: 'law',
+                    dbPedia: 'https://dbpedia.org/page/Law'
+                }
+            ],
+            license: {
+                name: 'RF on Limited Terms',
+                link: 'https://www.oasis-open.org/policies-guidelines/ipr/#RF-on-Limited-Mode'
+            },
+            dates: {
+                created: '2012',
+                lastUpdated: '2020'
+            },
+            idiom: [
+                {
+                    imageSrc: './assets/flags/uk_flag.png',
+                    lang: 'en',
+                    link: 'https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/legalruleml-core-spec-v1.0.html'
+                }
+            ],
+            responsible: [
+                {
+                    name: 'OASIS LegalRuleML Technical Committee',
+                    link: 'https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=legalruleml'
+                }
+            ],
+            project: [],
+            authors: [
+                {
+                    name: 'Monica Palmirani',
+                    link: 'https://scholar.google.com/citations?user=G5C54V4AAAAJ'
+                },
+                {
+                    name: 'Guido Governatori',
+                    link: 'http://www.governatori.net/research/'
+                },
+                {
+                    name: 'Tara Athan',
+                    link: 'https://dblp.org/pid/74/10301.html'
+                },
+                {
+                    name: 'Harold Boley',
+                    link: 'https://dblp.org/pid/08/422.html'
+                },
+                {
+                    name: 'Adrian Paschke',
+                    link: 'https://www.mi.fu-berlin.de/inf/groups/ag-csw/Members/members/paschke.html'
+                },
+                {
+                    name: 'Adam Wyner',
+                    link: 'https://dblp.org/pid/73/3639.html'
+                }
+            ],
+            elements: [
+                {
+                    name: 'Deontic Operators',
+                    link: 'http://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/legalruleml-core-spec-v1.0-cs02.html#_Toc38017883'
+                },
+                {
+                    name: 'Sources',
+                    link: 'http://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/legalruleml-core-spec-v1.0-cs02.html#_Toc38017887'
+                },
+                {
+                    name: 'Agent',
+                    link: 'http://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/legalruleml-core-spec-v1.0-cs02.html#_Toc38017888'
+                },
+                {
+                    name: 'Jurisdiction',
+                    link: 'http://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/legalruleml-core-spec-v1.0-cs02.html#_Toc38017889'
+                },
+                {
+                    name: 'Authority',
+                    link: 'http://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/legalruleml-core-spec-v1.0-cs02.html#_Toc38017890'
+                },
+                {
+                    name: 'Time',
+                    link: 'http://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/legalruleml-core-spec-v1.0-cs02.html#_Toc38017891'
+                },
+                {
+                    name: 'Context',
+                    link: 'http://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/legalruleml-core-spec-v1.0-cs02.html#_Toc38017894'
+                }
+            ],
+            resources: [
+                {
+                    type: 'RDF',
+                    link: 'https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/rdfs/'
+                },
+                {
+                    type: 'XML',
+                    link: 'https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/xsd-schema/'
+                }
+            ],
+            documentation: [
+                {
+                    type: 'HTML',
+                    link: 'https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/legalruleml-core-spec-v1.0-cs02.html'
+                },
+                {
+                    type: 'PDF',
+                    link: 'https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/legalruleml-core-spec-v1.0-cs02.pdf'
+                },
+                {
+                    type: 'GitHub',
+                    link: 'https://github.com/oasis-tcs/legalruleml'
+                }
+            ],
+            examples: [
+                {
+                    type: 'sample',
+                    title: 'Examples from the LegalRuleML specification',
+                    description: {
+                        name: 'LegalRuleML specification',
+                        link: 'https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/legalruleml-core-spec-v1.0-cs02.html'
+                    },
+                    solutions: [
+                        {
+                            exampleName: 'Example 1: Use of CURIEs to abbreviate IRIs',
+                            resources: [
+                                {
+                                    language: 'XML',
+                                    link: 'https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/examples/normalized/ex1-curies-normal.lrml'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'Example 2: Specification of References and LegalSources',
+                            resources: [
+                                {
+                                    language: 'XML',
+                                    link: 'https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/examples/normalized/ex2-references-normal.lrml'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'Example 3: Specification of deontic elements',
+                            resources: [
+                                {
+                                    language: 'XML',
+                                    link: 'https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/examples/normalized/ex3-deontic-normal.lrml'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'Example 4: Specification of agents, figures and roles',
+                            resources: [
+                                {
+                                    language: 'XML',
+                                    link: 'https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/examples/normalized/ex4-meta-normal.lrml'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'Example 5: Section 29 of the Australian “National Consumer Credit Protection Act 2009” (Act No. 134 of 2009)',
+                            resources: [
+                                {
+                                    language: 'XML',
+                                    link: 'https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/examples/normalized/ex5-section29new-normal.lrml'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'Example 6: Specification of temporal parameters',
+                            resources: [
+                                {
+                                    language: 'XML',
+                                    link: 'https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/examples/normalized/ex6-temporal-normal.lrml'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'Example 7: Specification of temporal parameters',
+                            resources: [
+                                {
+                                    language: 'XML',
+                                    link: 'https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/examples/normalized/ex7-temporal-data-normal.lrml'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'Example 8: Specification of statements',
+                            resources: [
+                                {
+                                    language: 'XML',
+                                    link: 'https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/examples/normalized/ex8-defeasible-normal.lrml'
+                                },
+                                {
+                                    language: 'XML',
+                                    link: 'https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/examples/normalized/ex8b-defeasible-normal.lrml'
+                                },
+                                {
+                                    language: 'XML',
+                                    link: 'https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/examples/normalized/ex8c-defeasible-normal.lrml'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'Example 9: Specification of alternatives of law interpretations',
+                            resources: [
+                                {
+                                    language: 'XML',
+                                    link: 'https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/examples/normalized/ex9-alternatives-normal.lrml'
+                                },
+                                {
+                                    language: 'XML',
+                                    link: 'https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/examples/normalized/ex9b-alternatives-normal.lrml'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'Example 11: Specification of associations',
+                            resources: [
+                                {
+                                    language: 'XML',
+                                    link: 'https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/examples/normalized/ex11-maternity_alternatives-normal.lrml'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'Example 12: US Code section 504',
+                            resources: [
+                                {
+                                    language: 'XML',
+                                    link: 'https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/examples/normalized/ex12-USC_17_504_context-normal.lrml'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'Representation of GDPR Articles 5(1)(a), 6(1)(a), 8(1), 12(7)',
+                            resources: [
+                                {
+                                    language: 'GitHub',
+                                    link: 'https://github.com/oasis-tcs/legalruleml/blob/master/usecases/usecase1.md'
+                                },
+                                {
+                                    language: 'PDF',
+                                    link: 'https://www.aclweb.org/anthology/2020.lrec-1.698.pdf'
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            diagrams: [
+                {
+                    type: 'spec',
+                    name: 'Statements',
+                    imageSrc: 'https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/diagrams/statement-subclass.png',
+                    typeSrc: 'https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/legalruleml-core-spec-v1.0.html',
+                    nameSrc: 'LegalRuleML Core Specification v1.0'
+                },
+                {
+                    type: 'spec',
+                    name: 'Deontic',
+                    imageSrc: 'https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/diagrams/deontic-subclass.png',
+                    typeSrc: 'https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/legalruleml-core-spec-v1.0.html',
+                    nameSrc: 'LegalRuleML Core Specification v1.0'
+                },
+                {
+                    type: 'spec',
+                    name: 'Alternatives',
+                    imageSrc: 'https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/diagrams/alternatives.png',
+                    typeSrc: 'https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/legalruleml-core-spec-v1.0.html',
+                    nameSrc: 'LegalRuleML Core Specification v1.0'
+                },
+                {
+                    type: 'spec',
+                    name: 'Sources',
+                    imageSrc: 'https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/diagrams/source.png',
+                    typeSrc: 'https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/legalruleml-core-spec-v1.0.html',
+                    nameSrc: 'LegalRuleML Core Specification v1.0'
+                },
+                {
+                    type: 'spec',
+                    name: 'Agents',
+                    imageSrc: 'https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/cs02/diagrams/metadata-actor.png',
+                    typeSrc: 'https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/legalruleml-core-spec-v1.0.html',
+                    nameSrc: 'LegalRuleML Core Specification v1.0'
+                }
+            ]
         }
     ]
 }
