@@ -39,6 +39,35 @@
                             ] .
                         </div>
                     </code>
+                    <code *ngSwitchCase="'2'">
+                        <div class="col-12 gdprif">
+                            gdprif:RI2
+                        </div>
+                        <div class="col-11 offset-1">
+                            a odrl:Policy ;<br>
+                            odrl:obligation [
+                        </div>
+                        <div class="col-10 offset-2">
+                            a odrl:Obligation ;<br>
+                            <span class="gdprif">gdprif:isRequestedBy</span> [ a <span class="dpv">dpv:DataSubject</span>, odrl:Party ] ;<br>
+                            <span class="gdprif">gdprif:isAnsweredBy</span> [ a <span class="dpv">dpv:DataController</span>, odrl:Party ] ;<br>
+                            odrl:action odrl:inform ;<br>
+                            odrl:target <span class="gdprif">gdprif:I1</span>, <span class="gdprif">gdprif:I2</span>, <span class="gdprif">gdprif:I3</span>, <span class="gdprif">gdprif:I4</span>, <span class="gdprif">gdprif:I5</span>, <span class="gdprif">gdprif:I6</span>, <span class="gdprif">gdprif:I7</span>, <span class="gdprif">gdprif:I8</span>, <span class="gdprif">gdprif:I9</span>, <span class="gdprif">gdprif:I10</span>, <span class="gdprif">gdprif:I11</span>, <span class="gdprif">gdprif:I12</span>, <span class="gdprif">gdprif:I13</span>, <span class="gdprif">gdprif:I14</span>, <span class="gdprif">gdprif:I16</span>, <span class="gdprif">gdprif:I17</span>, <span class="gdprif">gdprif:I18</span>, <span class="gdprif">gdprif:I19</span> ;<br>
+                            odrl:constraint [
+                        </div>
+                        <div class="col-9 offset-3">
+                            a odrl:Constraint ;<br>
+                            odrl:leftOperand odrl:event ;<br>
+                            odrl:operator odrl:eq ;<br>
+                            odrl:rightOperand <span class="dpv">dpv-gdpr:A14</span> ;
+                        </div>
+                        <div class="col-10 offset-2">
+                            ]
+                        </div>
+                        <div class="col-11 offset-1">
+                            ] .
+                        </div>
+                    </code>
                     <code *ngSwitchDefault>TO DO!</code>
                 </div>   
             </div>
