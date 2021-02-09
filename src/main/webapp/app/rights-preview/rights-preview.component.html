@@ -158,6 +158,36 @@
                             ] .
                         </div>
                     </code>
+                    <code *ngSwitchCase="'6'">
+                        <div class="col-12 gdprif">
+                            gdprif:RRP
+                        </div>
+                        <div class="col-11 offset-1">
+                            rdfs:seeAlso <span class="gdprtext">gdprtext:RightToRestrictProcessing</span> ;<br>
+                            a odrl:Policy ;<br>
+                            odrl:obligation [
+                        </div>
+                        <div class="col-10 offset-2">
+                            a odrl:Obligation ;<br>
+                            <span class="gdprif">gdprif:isRequestedBy</span> [ a <span class="dpv">dpv:DataSubject</span>, odrl:Party ] ;<br>
+                            <span class="gdprif">gdprif:isAnsweredBy</span> [ a <span class="dpv">dpv:DataController</span>, odrl:Party ] ;<br>
+                            odrl:action odrl:inform ;<br>
+                            odrl:target <span class="gdprif">gdprif:I25</span> ;<br>
+                            odrl:constraint [
+                        </div>
+                        <div class="col-9 offset-3">
+                            a odrl:Constraint ;<br>
+                            odrl:leftOperand odrl:event ;<br>
+                            odrl:operator odrl:isAllOf ;<br>
+                            odrl:rightOperand (<span class="dpv">dpv-gdpr:A18</span>, <span class="gdprif">gdprif:I27</span>) ;
+                        </div>
+                        <div class="col-10 offset-2">
+                            ]
+                        </div>
+                        <div class="col-11 offset-1">
+                            ] .
+                        </div>
+                    </code>
                     <code *ngSwitchDefault>TO DO!</code>
                 </div>   
             </div>
