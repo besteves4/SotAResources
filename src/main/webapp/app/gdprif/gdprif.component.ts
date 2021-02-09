@@ -16,7 +16,13 @@ export class GDPRifComponent implements OnInit {
 
   handleSetActive(id: number) {
     this.activeRight = this.rights.find(e => e.Id == id);
-}
+  }
+
+  activeObligation;
+
+  handleSetActiveObl(id: number) {
+    this.activeObligation = this.rights.find(e => e.Id == id);
+  }
 
   rights = [
     {
@@ -73,14 +79,14 @@ export class GDPRifComponent implements OnInit {
 
   obligations = [
     {
-      Id: 11,
-      Label: '',
-      Comment: ""
+      Id: 1,
+      Label: 'Joint Controllers Responsabilities',
+      Comment: "Joint controllers have the obligation to inform the data subject about their responsabilities related to the processing of the data subject's personal data, including the responsabilities of each controller regarding the data subject's rights."
     },
     {
-      Id: 12,
-      Label: '',
-      Comment: ""
+      Id: 2,
+      Label: 'Contract with Processors',
+      Comment: "Data controller has the permission to establish a contract with processors for the latter to carry out the processing of the personal data on behalf of them. Sub-processors can only be hired with the authorization of the controller and their obligations are the same as the ones established in the contract between controller and processor."
     },
     {
       Id: 13,

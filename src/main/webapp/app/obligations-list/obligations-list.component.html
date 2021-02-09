@@ -1,0 +1,9 @@
+<div class="mb-7">
+    <ul class="list-group mb-7">
+        <li class="list-group-item clickable" *ngFor="let obligation of obligations" (click)="handleClick(obligation.Id)" [ngClass]="{'active': obligation.Id == activeId}">
+            <div class="title">
+                {{obligation.Label}}
+            </div>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,39 @@
+.page {
+    margin: 0 auto 3rem auto;
+    background: #fff;
+    box-shadow: 0 4px 5px rgba(75, 75, 75, 0.2);
+    outline: 0;
+    min-height: 13.8cm;
+    padding-left: 1cm;
+    padding-top: 1cm;
+    padding-right: 1cm;
+    padding-bottom: 1cm;
+    border: 1px solid rgba(75, 75, 75, 0.2);
+    position: relative;
+}
+
+.comment-text {
+    text-align: justify;
+}
+
+.page-container {
+    position: relative;
+    zoom: 65%;
+}
+
+code {
+    color: black;
+    font-size: 12px;
+}
+
+.gdprif {
+    color: #9e1f65;
+}
+
+.gdprtext {
+    color: #a500ff;
+}
+
+.dpv {
+    color: #e69500;
+}

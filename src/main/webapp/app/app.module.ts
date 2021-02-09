@@ -20,6 +20,8 @@ import { SearcherComponent } from './searcher/searcher.component';
 import { GDPRifComponent } from './gdprif/gdprif.component';
 import { RightsListComponent } from './rights-list/rights-list.component';
 import { RightsPreviewComponent } from './rights-preview/rights-preview.component';
+import { ObligationsListComponent } from './obligations-list/obligations-list.component';
+import { ObligationsPreviewComponent } from './obligations-preview/obligations-preview.component';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CommonModule } from '@angular/common';
@@ -45,6 +47,8 @@ import { StartsWithPipe } from './pipes/starts-with.pipe';
         GDPRifComponent,
         RightsListComponent,
         RightsPreviewComponent,
+        ObligationsListComponent,
+        ObligationsPreviewComponent,
         DividerPipe,
         OrderByPositionPipe,
         StartsWithPipe
