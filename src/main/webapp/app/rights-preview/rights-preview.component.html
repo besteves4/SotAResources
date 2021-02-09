@@ -188,6 +188,46 @@
                             ] .
                         </div>
                     </code>
+                    <code *ngSwitchCase="'7'">
+                        <div class="col-12 gdprif">
+                            gdprif:RN
+                        </div>
+                        <div class="col-11 offset-1">
+                            a odrl:Policy ;<br>
+                            odrl:obligation [
+                        </div>
+                        <div class="col-10 offset-2">
+                            a odrl:Obligation ;<br>
+                            <span class="gdprif">gdprif:isRequestedBy</span> [ a <span class="dpv">dpv:DataSubject</span>, odrl:Party ] ;<br>
+                            <span class="gdprif">gdprif:isAnsweredBy</span> [ a <span class="dpv">dpv:DataController</span>, odrl:Party ] ;<br>
+                            odrl:action odrl:inform ;<br>
+                            odrl:target <span class="gdprif">gdprif:I9</span>, <span class="gdprif">gdprif:I25</span> ;<br>
+                            odrl:constraint [
+                        </div>
+                        <div class="col-9 offset-3">
+                            a odrl:Constraint ;<br>
+                            odrl:leftOperand odrl:event ;<br>
+                            odrl:operator odrl:eq ;<br>
+                            odrl:rightOperand <span class="dpv">dpv-gdpr:A19</span> ;
+                        </div>
+                        <div class="col-10 offset-2">
+                            ] ;
+                        </div>
+                        <div class="col-10 offset-2">
+                            odrl:consequence [
+                        </div>
+                        <div class="col-9 offset-3">
+                            odrl:informingParty [ a <span class="dpv">dpv:DataController</span>, odrl:Party ] ;
+                            odrl:informedParty [ a <span class="dpv">dpv:Recipient</span>, odrl:Party ] ;
+                            odrl:action odrl:inform ;
+                        </div>
+                        <div class="col-10 offset-2">
+                            ]
+                        </div>
+                        <div class="col-11 offset-1">
+                            ] .
+                        </div>
+                    </code>
                     <code *ngSwitchDefault>TO DO!</code>
                 </div>   
             </div>
