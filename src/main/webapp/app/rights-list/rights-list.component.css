@@ -1,0 +1,26 @@
+.title {
+    font-size: 15px;
+    font-weight: 700;
+    text-align: justify;
+}
+
+.list-group-item {
+    height: 1.4cm;
+    border-color: #9e1f65;
+    border-width: 3px;
+}
+
+.list-group-item:first-child {
+    border-bottom: 0;
+}
+
+.list-group-item:last-child {
+    border-top: 0;
+}
+
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #9e1f65;
+    border-width: 3px;
+}

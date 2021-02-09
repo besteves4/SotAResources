@@ -18,6 +18,8 @@ import { ExamplesAccordionComponent } from './examples-accordion/examples-accord
 import { OntologiesComponent } from './ontologies/ontologies.component';
 import { SearcherComponent } from './searcher/searcher.component';
 import { GDPRifComponent } from './gdprif/gdprif.component';
+import { RightsListComponent } from './rights-list/rights-list.component';
+import { RightsPreviewComponent } from './rights-preview/rights-preview.component';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CommonModule } from '@angular/common';
@@ -41,6 +43,8 @@ import { StartsWithPipe } from './pipes/starts-with.pipe';
         OntologiesComponent,
         SearcherComponent,
         GDPRifComponent,
+        RightsListComponent,
+        RightsPreviewComponent,
         DividerPipe,
         OrderByPositionPipe,
         StartsWithPipe

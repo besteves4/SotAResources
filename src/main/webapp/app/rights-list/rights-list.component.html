@@ -1,0 +1,9 @@
+<div class="mb-7">
+    <ul class="list-group">
+        <li class="list-group-item clickable" *ngFor="let right of rights" (click)="handleClick(right.Id)" [ngClass]="{'active': right.Id == activeId}">
+            <div class="title">
+                {{right.Label}}
+            </div>
+        </li>
+    </ul>
+</div>
