@@ -57,7 +57,7 @@ export class GDPRifComponent implements OnInit {
     {
       Id: 8,
       Label: 'Right to Data Portability',
-      Comment: "Data controller has the obligation to provide a copy of data subject's personal data to the data subject and also to transmit it to other controllers upon request of the data subject."
+      Comment: "Data controller has the obligation to provide a copy of data subject's personal data to the data subject and also to transmit it to other recipients upon request of the data subject."
     },
     {
       Id: 9,
