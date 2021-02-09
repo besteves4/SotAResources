@@ -8,14 +8,11 @@
     height: 1.4cm;
     border-color: #9e1f65;
     border-width: 3px;
-}
-
-.list-group-item:first-child {
-    border-bottom: 0;
+    border-bottom: 0px;
 }
 
 .list-group-item:last-child {
-    border-top: 0;
+    border-bottom: 3px solid #9e1f65 !important;
 }
 
 .list-group-item.active {
