@@ -207,6 +207,65 @@
                             ] .
                         </div>
                     </code>
+                    <code *ngSwitchCase="'7'">
+                        <div class="col-12 gdprif">
+                            gdprif:DPIA
+                        </div>
+                        <div class="col-11 offset-1">
+                            rdfs:seeAlso <span class="gdprtext">gdprtext:FactorsForImpactAssessment</span> ;<br>
+                            a odrl:Policy ;<br>
+                            odrl:obligation [
+                        </div>
+                        <div class="col-10 offset-2">
+                            a odrl:Obligation ;<br>
+                            odrl:informingParty [ a <span class="dpv">dpv:DataController</span>, odrl:Party ] ;<br>
+                            odrl:informedParty [ a <span class="dpv">dpv:DataProtectionOfficer</span>, odrl:Party ] ;<br>
+                            odrl:action odrl:inform, odrl:modify ;<br>
+                            odrl:target <span class="gdprif">gdprif:I6</span>, <span class="gdprif">gdprif:I8</span>, <span class="gdprif">gdprif:I41</span>, <span class="gdprif">gdprif:I51</span>, <span class="gdprif">gdprif:I52</span>, <span class="gdprif">gdprif:I53</span> ;<br>
+                            odrl:constraint [
+                        </div>
+                        <div class="col-9 offset-3">
+                            a odrl:Constraint ;<br>
+                            odrl:leftOperand odrl:event ;<br>
+                            odrl:operator odrl:isAnyOf ;<br>
+                            odrl:rightOperand (<span class="gdprif">gdprif:SystematicAndExtensiveAutomatedProcessing</span>, <span class="gdprif">gdprif:LargeScaleProcessingOfSensitivePersonalData</span>, <span class="gdprif">gdprif:SystematicMonitoringOfPublicAreas</span>) ;
+                        </div>
+                        <div class="col-10 offset-2">
+                            ]
+                        </div>
+                        <div class="col-11 offset-1">
+                            ] .
+                        </div>
+                    </code>
+                    <code *ngSwitchCase="'8'">
+                        <div class="col-12 gdprif">
+                            gdprif:PC
+                        </div>
+                        <div class="col-11 offset-1">
+                            a odrl:Policy ;<br>
+                            odrl:obligation [
+                        </div>
+                        <div class="col-10 offset-2">
+                            a odrl:Obligation ;<br>
+                            <span class="gdprif">gdprif:isRequestedBy</span> [ a <span class="dpv">dpv:DataController</span>, odrl:Party ] ;<br>
+                            <span class="gdprif">gdprif:isAnsweredBy</span> [ a <span class="dpv">dpv:DataProtectionAuthority</span>, odrl:Party ] ;<br>
+                            odrl:action odrl:inform ;<br>
+                            odrl:target <span class="gdprif">gdprif:I5</span>, <span class="gdprif">gdprif:I6</span>, <span class="gdprif">gdprif:I33</span>, <span class="gdprif">gdprif:I41</span>, <span class="gdprif">gdprif:I54</span>, <span class="gdprif">gdprif:I55</span>, <span class="gdprif">gdprif:I56</span>, <span class="gdprif">gdprif:I57</span> ;<br>
+                            odrl:constraint [
+                        </div>
+                        <div class="col-9 offset-3">
+                            a odrl:Constraint ;<br>
+                            odrl:leftOperand odrl:event ;<br>
+                            odrl:operator odrl:eq ;<br>
+                            odrl:rightOperand <span class="gdprif">gdprif:HighRiskDPIA</span> ;
+                        </div>
+                        <div class="col-10 offset-2">
+                            ]
+                        </div>
+                        <div class="col-11 offset-1">
+                            ] .
+                        </div>
+                    </code>
                     <code *ngSwitchDefault>TO DO!</code>
                 </div>   
             </div>
