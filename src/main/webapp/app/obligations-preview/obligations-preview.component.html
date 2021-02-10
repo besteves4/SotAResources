@@ -99,6 +99,36 @@
                             ] .
                         </div>
                     </code>
+                    <code *ngSwitchCase="'4'">
+                        <div class="col-12 gdprif">
+                            gdprif:ROPA-DP
+                        </div>
+                        <div class="col-11 offset-1">
+                            rdfs:seeAlso <span class="gdprtext">gdprtext:MaintainRecordsOfProcessingActivities</span> ;<br>
+                            a odrl:Policy ;<br>
+                            odrl:obligation [
+                        </div>
+                        <div class="col-10 offset-2">
+                            a odrl:Obligation ;<br>
+                            <span class="gdprif">gdprif:isRequestedBy</span> [ a <span class="dpv">dpv:DataProtectionAuthority</span>, odrl:Party ] ;<br>
+                            <span class="gdprif">gdprif:isAnsweredBy</span> [ a <span class="dpv">dpv:DataProcessor</span>, odrl:Party ] ;<br>
+                            odrl:action odrl:inform ;<br>
+                            odrl:target <span class="gdprif">gdprif:I1</span>, <span class="gdprif">gdprif:I2</span>, <span class="gdprif">gdprif:I3</span>, <span class="gdprif">gdprif:I4</span>, <span class="gdprif">gdprif:I5</span>, <span class="gdprif">gdprif:I10</span>, <span class="gdprif">gdprif:I20</span>, <span class="gdprif">gdprif:I36</span>, <span class="gdprif">gdprif:I40</span>, <span class="gdprif">gdprif:I41</span>, <span class="gdprif">gdprif:I42</span>, <span class="gdprif">gdprif:I43</span>, <span class="gdprif">gdprif:I44</span>, <span class="gdprif">gdprif:I45</span> ;<br>
+                            odrl:constraint [
+                        </div>
+                        <div class="col-9 offset-3">
+                            a odrl:Constraint ;<br>
+                            odrl:leftOperand odrl:event ;<br>
+                            odrl:operator odrl:eq ;<br>
+                            odrl:rightOperand <span class="gdprif">gdprif:ComplianceMonitoring</span> ;
+                        </div>
+                        <div class="col-10 offset-2">
+                            ]
+                        </div>
+                        <div class="col-11 offset-1">
+                            ] .
+                        </div>
+                    </code>
                     <code *ngSwitchDefault>TO DO!</code>
                 </div>   
             </div>
