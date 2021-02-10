@@ -21,7 +21,7 @@ export class GDPRifComponent implements OnInit {
   activeObligation;
 
   handleSetActiveObl(id: number) {
-    this.activeObligation = this.rights.find(e => e.Id == id);
+    this.activeObligation = this.obligations.find(e => e.Id == id);
   }
 
   rights = [
@@ -89,34 +89,34 @@ export class GDPRifComponent implements OnInit {
       Comment: "Data controller has the permission to establish a contract with processors for the latter to carry out the processing of the personal data on behalf of them. Sub-processors can only be hired with the authorization of the controller and their obligations are the same as the ones established in the contract between controller and processor."
     },
     {
-      Id: 13,
-      Label: '',
-      Comment: ""
+      Id: 3,
+      Label: 'Records of Processing Activities of Data Controllers',
+      Comment: "Data controller should provide a record of its processing activities to the supervisory authority upon request."
     },
     {
-      Id: 14,
-      Label: '',
-      Comment: ""
+      Id: 4,
+      Label: 'Records of Processing Activities of Data Processors',
+      Comment: "Data processor should provide a record of its processing activities to the supervisory authority upon request."
     },
     {
-      Id: 15,
-      Label: '',
-      Comment: ""
+      Id: 5,
+      Label: 'Notification of a Data Breach to the Supervisory Authority',
+      Comment: "Data controller has to report a personal data breach to the supervisory authority and in the case it happens to the data processor it should be reported to the data controller."
     },
     {
-      Id: 16,
-      Label: '',
-      Comment: ""
+      Id: 6,
+      Label: 'Communication of a Data Breach to the Data Subject',
+      Comment: "Data controller must inform the data subject that a personal data breach occurred."
     },
     {
-      Id: 17,
-      Label: '',
-      Comment: ""
+      Id: 7,
+      Label: 'Data Protection Impact Assessment',
+      Comment: "Data controller has to draft a DPIA with the guidance of the data protection officer when doing automated evaluation of personal data, processing of sensitive categories of personal data or systematic monitoring of public areas."
     },
     {
-      Id: 18,
-      Label: '',
-      Comment: ""
+      Id: 8,
+      Label: 'Prior Consultation with the Supervisory Authority',
+      Comment: "Data controller has the obligation to consult with the supervisory authority when the DPIA illustrates that the processing will result in a high risk to the privacy of data subjects."
     }
   ]
 
