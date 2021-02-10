@@ -2,15 +2,13 @@
     font-size: 15px;
     font-weight: 700;
     text-align: justify;
-    vertical-align: middle;
 }
 
 .list-group-item {
-    height: 1.8cm;
+    height: 1.75cm;
     border-color: #9e1f65;
     border-width: 3px;
     border-bottom: 0px;
-    /* vertical-align: center; */
 }
 
 .list-group-item:last-child {
