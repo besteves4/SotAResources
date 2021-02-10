@@ -39,6 +39,36 @@
                             ] .
                         </div>
                     </code>
+                    <code *ngSwitchCase="'2'">
+                        <div class="col-12 gdprif">
+                            gdprif:CPr
+                        </div>
+                        <div class="col-11 offset-1">
+                            rdfs:seeAlso <span class="gdprtext">gdprtext:AppointmentOfProcessors</span> ;<br>
+                            a odrl:Policy ;<br>
+                            odrl:permission [
+                        </div>
+                        <div class="col-10 offset-2">
+                            a odrl:Permission ;<br>
+                            odrl:contractedParty [ a <span class="dpv">dpv:DataProcessor</span>, odrl:Party ] ;<br>
+                            odrl:contractingParty [ a <span class="dpv">dpv:DataController</span>, odrl:Party ] ;<br>
+                            odrl:action odrl:grantUse ;<br>
+                            odrl:target <span class="gdprif">gdprif:I6</span>, <span class="gdprif">gdprif:I12</span>, <span class="gdprif">gdprif:I17</span>, <span class="gdprif">gdprif:I34</span>, <span class="gdprif">gdprif:I35</span>, <span class="gdprif">gdprif:I36</span>, <span class="gdprif">gdprif:I37</span>, <span class="gdprif">gdprif:I38</span>, <span class="gdprif">gdprif:I39</span> ;<br>
+                            odrl:constraint [
+                        </div>
+                        <div class="col-9 offset-3">
+                            a odrl:Constraint ;<br>
+                            odrl:leftOperand odrl:event ;<br>
+                            odrl:operator odrl:eq ;<br>
+                            odrl:rightOperand <span class="gdprif">gdprif:ContractBetweenControllerProcessor</span> ;
+                        </div>
+                        <div class="col-10 offset-2">
+                            ]
+                        </div>
+                        <div class="col-11 offset-1">
+                            ] .
+                        </div>
+                    </code>
                     <code *ngSwitchDefault>TO DO!</code>
                 </div>   
             </div>
