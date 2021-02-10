@@ -129,6 +129,54 @@
                             ] .
                         </div>
                     </code>
+                    <code *ngSwitchCase="'5'">
+                        <div class="col-12 gdprif">
+                            gdprif:NDB
+                        </div>
+                        <div class="col-11 offset-1">
+                            rdfs:seeAlso <span class="gdprtext">gdprtext:ReportDataBreach</span> ;<br>
+                            a odrl:Policy ;<br>
+                            odrl:action odrl:inform ;<br>
+                            odrl:target <span class="gdprif">gdprif:I5</span>, <span class="gdprif">gdprif:I17</span>, <span class="gdprif">gdprif:I37</span>, <span class="gdprif">gdprif:I40</span>, <span class="gdprif">gdprif:I46</span>, <span class="gdprif">gdprif:I47</span>, <span class="gdprif">gdprif:I48</span>, <span class="gdprif">gdprif:I49</span>, <span class="gdprif">gdprif:I50</span> ;<br>
+                            odrl:constraint [
+                        </div>
+                        <div class="col-10 offset-2">
+                            a odrl:Constraint ;<br>
+                            odrl:leftOperand odrl:event ;<br>
+                            odrl:operator odrl:eq ;<br>
+                            odrl:rightOperand <span class="gdprif">gdprif:PersonalDataBreach</span> ;
+                        </div>
+                        <div class="col-11 offset-1">
+                            ] ;<br>
+                            odrl:obligation [
+                        </div>
+                        <div class="col-10 offset-2">
+                            a odrl:Obligation ;<br>
+                            odrl:informingParty [ a <span class="dpv">dpv:DataController</span>, odrl:Party ] ;<br>
+                            odrl:informedParty [ a <span class="dpv">dpv:DataProtectionAuthority</span>, odrl:Party ] ;<br>
+                        </div>
+                        <div class="col-11 offset-1">
+                            ] ;<br>
+                            odrl:obligation [
+                        </div>
+                        <div class="col-10 offset-2">
+                            a odrl:Obligation ;<br>
+                            odrl:informingParty [ a <span class="dpv">dpv:DataProcessor</span>, odrl:Party ] ;<br>
+                            odrl:informedParty [ a <span class="dpv">dpv:DataController</span>, odrl:Party ] ;<br>
+                            odrl:consequence [
+                        </div>
+                        <div class="col-9 offset-3">
+                            odrl:informingParty [ a <span class="dpv">dpv:DataController</span>, odrl:Party ] ;<br>
+                            odrl:informedParty [ a <span class="dpv">dpv:DataProtectionAuthority</span>, odrl:Party ] ;<br>
+                            odrl:action odrl:inform ;
+                        </div>
+                        <div class="col-10 offset-2">
+                            ]
+                        </div>
+                        <div class="col-11 offset-1">
+                            ] .
+                        </div>
+                    </code>
                     <code *ngSwitchDefault>TO DO!</code>
                 </div>   
             </div>
