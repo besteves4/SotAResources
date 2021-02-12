@@ -1,26 +1,10 @@
 package es.upm.oeg.protect.rightsearch;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import java.io.StringReader;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Scanner;
-import org.apache.jena.ontology.Individual;
-import org.apache.jena.ontology.OntClass;
-import org.apache.jena.ontology.OntModel;
-import org.apache.jena.rdf.model.Model;
-import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Property;
 import org.apache.jena.rdf.model.RDFNode;
 import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.rdf.model.Statement;
 import org.apache.jena.rdf.model.StmtIterator;
-import org.apache.jena.util.iterator.ExtendedIterator;
-import org.json.JSONArray;
-import org.json.JSONObject;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.BufferedReader;
 import java.io.File;
@@ -41,11 +25,13 @@ import java.util.Scanner;
 import java.util.Set;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
+import oeg.protect.rightsearch2.SearchResult;
 import org.apache.jena.ontology.Individual;
 import org.apache.jena.ontology.OntClass;
 import org.apache.jena.ontology.OntModel;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.rdf.model.ResIterator;
 import org.apache.jena.util.iterator.ExtendedIterator;
 import org.json.JSONObject;
 import org.json.JSONArray;
@@ -54,7 +40,7 @@ import org.json.JSONArray;
  * @author vroddon
  */
 public class RightsFinder {
-    
+
     //Main for testing purposes
     public static void main(String args[]) {
         String searchterm = "access";
@@ -63,16 +49,17 @@ public class RightsFinder {
         System.out.println("Searching for: " + searchterm);
         System.out.println("Found: " + find);
     }
-    
-    
+
     public static List<Model> models = null;
-    public static Map<Model, String> modelnames= new HashMap();
+    public static Map<Model, String> modelnames = new HashMap();
     public static boolean initialized = false;
+
     public static void init() {
-        if (initialized)
+        if (initialized) {
             return;
-        initialized=true;
-        
+        }
+        initialized = true;
+
         models = new ArrayList();
         try {
             /*
@@ -85,31 +72,28 @@ public class RightsFinder {
                     models.add(model);
                 }
             }*/
-            
+
             String uri = "http://cosasbuenas.es/static/def/odrl.ttl";
             String base = "http://cosasbuenas.es/static/def/";
-            String ontos[]={"odrl.ttl", "air.ttl","cloud.ttl", "dpo.ttl", "dpv-gdpr.ttl", "dpv.ttl", "func.ttl", "gconsent.ttl", "gdprov.ttl", "gdprtext.ttl", "p3p.ttl", "ppo.ttl", "splog.ttl"};
-            
-            for(String onto : ontos)
-            {
+            String ontos[] = {"odrl.ttl", "air.ttl", "cloud.ttl", "dpo.ttl", "dpv-gdpr.ttl", "dpv.ttl", "func.ttl", "gconsent.ttl", "gdprov.ttl", "gdprtext.ttl", "p3p.ttl", "ppo.ttl", "splog.ttl"};
+
+            for (String onto : ontos) {
                 String uonto = base + onto;
                 Model omodel = readModel(uonto);
-                if (omodel!=null)
-                {
-                    modelnames.put(omodel, onto.replace(".ttl",""));
-                    models.add(omodel);        
+                if (omodel != null) {
+                    modelnames.put(omodel, onto.replace(".ttl", ""));
+                    models.add(omodel);
                 }
             }
-            for(Model m : modelnames.keySet())
-            {
+            for (Model m : modelnames.keySet()) {
                 System.out.println("CArgado: " + modelnames.get(m));
             }
-            
+
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }   
-    
+    }
+
     /**
      * Gets the first value of a property
      */
@@ -117,31 +101,40 @@ public class RightsFinder {
         String value = "";
         Resource resource = model.getResource(sujeto);
         Property property = model.getProperty(predicado);
-        
+
         StmtIterator it = resource.listProperties(property);
         if (it.hasNext()) {
             Statement stmt2 = it.nextStatement();
             RDFNode nodo = stmt2.getObject();
-            if (nodo.isLiteral())
+            if (nodo.isLiteral()) {
                 value = nodo.asLiteral().getLexicalForm();
-            else
+            } else {
                 value = nodo.toString();
+            }
             return value;
         }
         return "";
-    }    
-    
+    }
+
     public static String find(String text) {
         JSONObject obj = new JSONObject();
         JSONArray jarr = new JSONArray();
         ObjectMapper mapper = new ObjectMapper();
-        
+
         if (models == null) {
             init();
         }
+        Set<String> elements = new HashSet();
         for (Model model : models) {
             List<SearchResult> results = findElementInModel(model, text);
             for (SearchResult sr : results) {
+                if (sr.element == null) {
+                    sr.element = "";
+                }
+                if (elements.contains(sr.element)) {
+                    continue;
+                }
+                elements.add(sr.element);
 
                 JSONObject jsr = new JSONObject(sr);
                 jarr.put(jsr);
@@ -151,23 +144,28 @@ public class RightsFinder {
         }
         return jarr.toString();
     }
-    
-    public static String getDescription(Model model, String name)
-    {
-        String desc = getFirstPropertyValue(model,name, "http://www.w3.org/2004/02/skos/core#definition");
-        if (desc.isEmpty())
-        {
-            desc = getFirstPropertyValue(model,name, "http://www.w3.org/2000/01/rdf-schema#comment");
-            if (desc.isEmpty())
-            {
-                desc = getFirstPropertyValue(model,name, "http://www.w3.org/2000/01/rdf-schema#label");
-                if (desc.isEmpty())
-                {
-                    desc="";
+
+    public static String getDescription(Model model, String name) {
+        String desc = getFirstPropertyValue(model, name, "http://www.w3.org/2004/02/skos/core#definition");
+        if (desc.isEmpty()) {
+            desc = getFirstPropertyValue(model, name, "http://www.w3.org/2000/01/rdf-schema#comment");
+            if (desc.isEmpty()) {
+                desc = getFirstPropertyValue(model, name, "http://www.w3.org/2000/01/rdf-schema#label");
+                if (desc.isEmpty()) {
+                    desc = "";
                 }
             }
         }
         return desc;
+    }
+
+    private static boolean inList(List<SearchResult> list, String element) {
+        for (SearchResult sr : list) {
+            if (sr.element != null && sr.element.equals(element)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     static List<SearchResult> findElementInModel(Model model, String text) {
@@ -175,10 +173,33 @@ public class RightsFinder {
         OntModel omodel = (OntModel) model;
         ExtendedIterator classes = omodel.listClasses();
         String ontologyname = modelnames.get(model);
-        if (ontologyname==null)
-            ontologyname="n/a";
-        
-        
+        if (ontologyname == null) {
+            ontologyname = "n/a";
+        }
+
+        //LOOKING THROUGH THE RDFS:CLASSES
+        ResIterator rdfsclases = model.listResourcesWithProperty(model.createProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"), model.createResource("http://www.w3.org/2000/01/rdf-schema#Class"));
+        while (rdfsclases.hasNext()) {
+            Resource next = rdfsclases.next();
+            try {
+                String name = next.getLocalName().toLowerCase();
+                String sear = text.toLowerCase();
+
+                if (name.contains(sear)) {
+                    SearchResult sr = new SearchResult();
+                    sr.ontologyname = ontologyname;
+                    sr.element = next.toString();
+                    sr.elementdescription = getDescription(model, next.getURI());
+                    if (!inList(list, sr.element)) {
+                        list.add(sr);
+                    }
+                }
+            } catch (Exception e) {
+
+            }
+
+        }
+
         //LOOKING THROUGH THE CLASSES
         while (classes.hasNext()) {
             try {
@@ -192,7 +213,9 @@ public class RightsFinder {
                     sr.ontologyname = ontologyname;
                     sr.element = next.toString();
                     sr.elementdescription = getDescription(model, next.getURI());
-                    list.add(sr);
+                    if (!inList(list, sr.element)) {
+                        list.add(sr);
+                    }
                 }
             } catch (Exception e2) {
                 //anonymousclases etc.
@@ -209,9 +232,12 @@ public class RightsFinder {
 
             if (name.contains(sear)) {
                 SearchResult sr = new SearchResult();
-                    sr.ontologyname = ontologyname;
+                sr.ontologyname = ontologyname;
                 sr.element = next.toString();
                 sr.elementdescription = getDescription(model, next.getURI());
+                if (!inList(list, sr.element)) {
+                    list.add(sr);
+                }
                 list.add(sr);
             }
         }
@@ -219,22 +245,20 @@ public class RightsFinder {
         return list;
     }
 
-     private static Model readModel(String uri)
-    {
-        try{
+    private static Model readModel(String uri) {
+        try {
             String ontotext = new Scanner(new URL(uri).openStream(), "UTF-8").useDelimiter("\\A").next();
             StringReader reader = new StringReader(ontotext);
             Model model = ModelFactory.createDefaultModel();
             model.read(reader, null, "TURTLE");
             OntModel omodel = ModelFactory.createOntologyModel();
-            omodel.addSubModel(model); 
+            omodel.addSubModel(model);
             return omodel;
-        }catch(Exception e)
-        {
+        } catch (Exception e) {
             e.printStackTrace();
             return null;
         }
-        
+
     }
 
     /**
@@ -314,5 +338,5 @@ public class RightsFinder {
             e.printStackTrace();
             return null;
         }
-    }   
+    }
 }
