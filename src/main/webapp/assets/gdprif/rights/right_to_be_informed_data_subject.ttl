@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gdprif: <https://protect.oeg.fi.upm.es/def/gdprif#> .
+@prefix gdprtext: <https://w3id.org/GDPRtEXT#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix dpv: <http://www.w3.org/ns/dpv#> .
+@prefix dpv-gdpr: <http://www.w3.org/ns/dpv-gdpr#> .
+
+gdprif:RI1
+    rdfs:label "Right to be Informed (collected from the Data Subject)" ;
+    rdfs:subClassOf gdprif:DataSubjectRight ;
+    rdfs:comment "Data controller has the obligation to provide information to the data subject regarding personal data directly collected from the data subject." ;
+    rdfs:seeAlso gdprtext:RightToBasicInformationAboutProcessing ;
+    a odrl:Policy ;
+    odrl:obligation [
+        a odrl:Obligation ;
+        gdprif:isRequestedBy [ a dpv:DataSubject, odrl:Party ] ;
+        gdprif:isAnsweredBy [ a dpv:DataController, odrl:Party ] ; 
+        odrl:action odrl:inform ;
+        odrl:target gdprif:I1, gdprif:I2, gdprif:I3, gdprif:I4, gdprif:I5, gdprif:I6, gdprif:I7, gdprif:I8, gdprif:I9, gdprif:I10, gdprif:I11, gdprif:I12, gdprif:I13, gdprif:I14, gdprif:I15, gdprif:I16, gdprif:I17, gdprif:I19 ;
+        odrl:constraint [
+            a odrl:Constraint ;
+            odrl:leftOperand odrl:event ;
+            odrl:operator odrl:eq ;
+            odrl:rightOperand dpv-gdpr:A13 ;
+        ]
+    ] .

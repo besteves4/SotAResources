@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gdprif: <https://protect.oeg.fi.upm.es/def/gdprif#> .
+@prefix gdprtext: <https://w3id.org/GDPRtEXT#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix dpv: <http://www.w3.org/ns/dpv#> .
+@prefix dpv-gdpr: <http://www.w3.org/ns/dpv-gdpr#> .
+
+gdprif:JC
+    rdfs:label "Joint Controllers Responsabilities" ;
+    rdfs:subClassOf gdprif:ControllerProcessorObligation ;
+    rdfs:comment "Joint controllers have the obligation to inform the data subject about their responsabilities related to the processing of the data subject's personal data, including the responsabilities of each controller regarding the data subject's rights." ;
+    rdfs:seeAlso gdprtext:LiabilityOfJointController ;
+    a odrl:Policy ;
+    odrl:obligation [
+        a odrl:Obligation ;
+        odrl:informingParty [ a gdprtext:JointController, odrl:Party ] ;
+        odrl:informedParty [ a dpv:DataSubject, odrl:Party ] ;
+        odrl:action odrl:inform ;
+        odrl:target gdprif:I31, gdprif:I32, gdprif:I33 ;
+        odrl:constraint [
+            a odrl:Constraint ;
+            odrl:leftOperand odrl:event ;
+            odrl:operator odrl:eq ;
+            odrl:rightOperand gdprif:ContractBetweenJointControllers ;
+        ]
+    ] .

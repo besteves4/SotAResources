@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gdprif: <https://protect.oeg.fi.upm.es/def/gdprif#> .
+@prefix gdprtext: <https://w3id.org/GDPRtEXT#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix dpv: <http://www.w3.org/ns/dpv#> .
+@prefix dpv-gdpr: <http://www.w3.org/ns/dpv-gdpr#> .
+
+gdprif:ROPA-DP
+    rdfs:label "Records of Processing Activities of Data Processors" ;
+    rdfs:subClassOf gdprif:ControllerProcessorObligation ;
+    rdfs:comment "Data processor should provide a record of its processing activities to the supervisory authority upon request." ;
+    rdfs:seeAlso gdprtext:MaintainRecordsOfProcessingActivities ;
+    a odrl:Policy ;
+    odrl:obligation [
+        a odrl:Obligation ;
+        gdprif:isRequestedBy [ a dpv:DataProtectionAuthority, odrl:Party ] ;
+        gdprif:isAnsweredBy [ a dpv:DataProcessor, odrl:Party ] ; 
+        odrl:action odrl:inform ;
+        odrl:target gdprif:I1, gdprif:I2, gdprif:I3, gdprif:I4, gdprif:I5, gdprif:I10, gdprif:I20, gdprif:I36, gdprif:I40, gdprif:I41, gdprif:I42, gdprif:I43, gdprif:I44, gdprif:I45 ;
+        odrl:constraint [
+            a odrl:Constraint ;
+            odrl:leftOperand odrl:event ;
+            odrl:operator odrl:eq ;
+            odrl:rightOperand gdprif:ComplianceMonitoring ;
+        ]
+    ] .

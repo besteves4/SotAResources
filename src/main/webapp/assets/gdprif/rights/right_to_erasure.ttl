@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gdprif: <https://protect.oeg.fi.upm.es/def/gdprif#> .
+@prefix gdprtext: <https://w3id.org/GDPRtEXT#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix dpv: <http://www.w3.org/ns/dpv#> .
+@prefix dpv-gdpr: <http://www.w3.org/ns/dpv-gdpr#> .
+
+gdprif:RE
+    rdfs:label "Right to Erasure" ;
+    rdfs:subClassOf gdprif:DataSubjectRight ;
+    rdfs:comment "Data controller has the obligation to erase the data subject's personal data upon a fundamented request." ;
+    rdfs:seeAlso gdprtext:RightOfErasure ;
+    a odrl:Policy ;
+    odrl:obligation [
+        a odrl:Obligation ;
+        gdprif:isRequestedBy [ a dpv:DataSubject, odrl:Party ] ;
+        gdprif:isAnsweredBy [ a dpv:DataController, odrl:Party ] ; 
+        odrl:action odrl:inform ;
+        odrl:target gdprif:I9, gdprif:I24, gdprif:I25, gdprif:I26 ;
+        odrl:constraint [
+            a odrl:Constraint ;
+            odrl:leftOperand odrl:event ;
+            odrl:operator odrl:isAllOf ;
+            odrl:rightOperand (dpv-gdpr:A17, gdprif:I23) ;
+        ]
+    ] .
