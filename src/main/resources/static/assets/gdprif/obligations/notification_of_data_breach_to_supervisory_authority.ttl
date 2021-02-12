@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gdprif: <https://protect.oeg.fi.upm.es/def/gdprif#> .
+@prefix gdprtext: <https://w3id.org/GDPRtEXT#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix dpv: <http://www.w3.org/ns/dpv#> .
+@prefix dpv-gdpr: <http://www.w3.org/ns/dpv-gdpr#> .
+
+gdprif:NDB
+    rdfs:label "Notification of a Data Breach to the Supervisory Authority" ;
+    rdfs:subClassOf gdprif:ControllerProcessorObligation ;
+    rdfs:comment "Data controller has to report a personal data breach to the supervisory authority and in the case it happens to the data processor it should be reported to the data controller." ;
+    rdfs:seeAlso gdprtext:ReportDataBreach ;
+    a odrl:Policy ;
+    odrl:action odrl:inform ;
+    odrl:target gdprif:I5, gdprif:I17, gdprif:I37, gdprif:I40, gdprif:I46, gdprif:I47, gdprif:I48, gdprif:I49, gdprif:I50 ;
+    odrl:constraint [
+        a odrl:Constraint ;
+        odrl:leftOperand odrl:event ;
+        odrl:operator odrl:eq ;
+        odrl:rightOperand gdprif:PersonalDataBreach ;
+    ] ;
+    odrl:obligation [
+        a odrl:Obligation ;
+        odrl:informingParty [ a dpv:DataController, odrl:Party ] ;
+        odrl:informedParty [ a dpv:DataProtectionAuthority, odrl:Party ] ;
+    ] ;
+    odrl:obligation [
+        a odrl:Obligation ;
+        odrl:informingParty [ a dpv:dpv:DataProcessor, odrl:Party ] ;
+        odrl:informedParty [ a dpv:DataController, odrl:Party ] ;
+        odrl:consequence [
+            odrl:informingParty [ a dpv:DataController, odrl:Party ] ;
+            odrl:informedParty [ a dpv:DataProtectionAuthority, odrl:Party ] ;
+            odrl:action odrl:inform ;
+        ]
+    ] .

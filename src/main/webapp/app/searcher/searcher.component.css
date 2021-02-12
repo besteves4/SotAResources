@@ -37,12 +37,12 @@ p {
     color: white;
     vertical-align: center;
     text-align: center;
+    border-width: medium;
 }
 
 #search-btn:hover {
     color: #9e1f65;
     background-color:white;
-    border-width: medium;
 }
 
 .search-input {

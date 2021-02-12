@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gdprif: <https://protect.oeg.fi.upm.es/def/gdprif#> .
+@prefix gdprtext: <https://w3id.org/GDPRtEXT#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix dpv: <http://www.w3.org/ns/dpv#> .
+@prefix dpv-gdpr: <http://www.w3.org/ns/dpv-gdpr#> .
+
+gdprif:CDB
+    rdfs:label "Communication of a Data Breach to the Data Subject" ;
+    rdfs:subClassOf gdprif:ControllerProcessorObligation ;
+    rdfs:comment "Data controller must inform the data subject that a personal data breach occurred." ;
+    rdfs:seeAlso gdprtext:NotifyDataSubjectOfBreach ;
+    a odrl:Policy ;
+    odrl:obligation [
+        a odrl:Obligation ;
+        odrl:informingParty [ a dpv:DataController, odrl:Party ] ;
+        odrl:informedParty [ a dpv:DataSubject, odrl:Party ] ;
+        odrl:action odrl:inform ;
+        odrl:target gdprif:I5, gdprif:I40, gdprif:I46, gdprif:I49, gdprif:I50 ;
+        odrl:constraint [
+            a odrl:Constraint ;
+            odrl:leftOperand odrl:event ;
+            odrl:operator odrl:eq ;
+            odrl:rightOperand gdprif:PersonalDataBreach ;
+        ]
+    ] .
