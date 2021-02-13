@@ -33,8 +33,14 @@
         </thead>
         <tbody>
             <tr *ngFor="let res of results">
-                <th class="center-results ontology-name">
-                    {{res.ontologyname}}
+                <th class="center-results ontology-name" [ngSwitch]="true">
+                    <div *ngSwitchCase="res.ontologyname.includes('gdprtext')">GDPRtEXT</div>
+                    <div *ngSwitchCase="res.ontologyname.includes('gdprov')">GDPRov</div>
+                    <div *ngSwitchCase="res.ontologyname.includes('cloud')">Cloud</div>
+                    <div *ngSwitchCase="res.ontologyname.includes('func')">SPL</div>
+                    <div *ngSwitchCase="res.ontologyname.includes('gconsent')">GConsent</div>
+                    <div *ngSwitchCase="res.ontologyname.includes('splog')">SPLog</div>
+                    <div *ngSwitchDefault class="uppercase">{{res.ontologyname}}</div>
                 </th>
                 <td class="element">
                     <a href={{res.element}} target="_blank">{{res.element}}</a>
