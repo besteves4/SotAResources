@@ -10,7 +10,7 @@
 
 <div class="row ml-2 mb-5 search-input">
     <input type="text" class="input input_button mr-4" [(ngModel)]="term" placeholder="delete">
-    <button type="submit" id="search-btn" name="search" value="Search" class="btn purple-btn btn-outline-warning" (click)="getRights()">
+    <button type="submit" id="search-btn" name="search" value="Search" class="btn purple-btn btn-outline-danger" (click)="getRights()">
         Search
     </button>
 </div>
@@ -18,28 +18,28 @@
 <div class="mt-5" [ngSwitch]="true">
     <p *ngSwitchCase="_array.isArray(results) && results.length < 1">No results were found!</p>
     <table *ngSwitchCase="_array.isArray(results) && results.length > 0" class="table table-sm table-bordered">
-        <thead class="center-results">
+        <thead>
             <tr>
-                <th>
+                <th class="center-results">
                     Ontology Name
                 </th>
-                <th>
+                <th class="center-results">
                     Element
                 </th>
-                <th>
+                <th class="center-results">
                     Element Description
                 </th>
             </tr>
         </thead>
         <tbody>
             <tr *ngFor="let res of results">
-                <th class="center-results">
+                <th class="center-results ontology-name">
                     {{res.ontologyname}}
                 </th>
-                <td>
+                <td class="element">
                     <a href={{res.element}} target="_blank">{{res.element}}</a>
                 </td>
-                <td>
+                <td class="element-description">
                     {{res.elementdescription}}
                 </td>
             </tr>

@@ -18,6 +18,7 @@ p {
 
 .center-results {
     text-align: center;
+    vertical-align: middle;
 }
 
 .searcher-text{
@@ -48,4 +49,18 @@ p {
 .search-input {
     display: inline;
     text-align: center;
+}
+
+.ontology-name {
+    vertical-align: middle;
+    width: 55px;
+}
+
+.element {
+    vertical-align: middle;
+    width: 500px;
+}
+
+.element-description {
+    vertical-align: middle;
 }
