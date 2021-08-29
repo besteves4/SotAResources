@@ -611,7 +611,7 @@ export class LanguagesComponent implements OnInit {
         },
         {
             id: 'XPref',
-            name: 'Xpath-based Preference Language',
+            name: 'XPath-based Preference Language',
             description: 'Preference language that makes use of XPath to deal with the shortcomings of APPEL when it comes to establish privacy preferences to be used by P3P enabled websites',
             domain: [
                 {
@@ -690,86 +690,6 @@ export class LanguagesComponent implements OnInit {
                         },
                         {
                             exampleName: 'Combinations -  section 4.3.3',
-                            resources: []
-                        }
-                    ]
-                }
-            ],
-            diagrams: []
-        },
-        {
-            id: 'S4P',
-            name: 'SecPAL for Privacy',
-            description: "Language framework that extends SecPAL to express user's preferences related to the handling of their Personally Identifiable Information (PII) and web services' data-handling policies on treating the collected PIIs",
-            domain: [
-                {
-                    name: 'PII',
-                    dbPedia: 'http://dbpedia.org/page/Personally_identifiable_information'
-                },
-                {
-                    name: 'preference',
-                    dbPedia: 'http://dbpedia.org/page/Preference'
-                }
-            ],
-            license: {
-                name: '',
-                link: ''
-            },
-            dates: {
-                created: '2009',
-                lastUpdated: '2010'
-            },
-            idiom: [
-                {
-                    imageSrc: './assets/flags/uk_flag.png',
-                    lang: 'en',
-                    link:'https://www.microsoft.com/en-us/research/wp-content/uploads/2010/04/main-1.pdf'
-                }
-            ],
-            responsible: [
-                {
-                    name: 'Microsoft Research',
-                    link: 'https://www.microsoft.com/en-us/research/'
-                }
-            ],
-            project: [],
-            authors: [
-                {
-                    name: 'Moritz Y. Becker',
-                    link: 'https://dblp.org/pers/b/Becker:Moritz_Y=.html'
-                },
-                {
-                    name: 'Alexander Malkis',
-                    link: 'https://dblp.uni-trier.de/pers/m/Malkis:Alexander.html'
-                },
-                {
-                    name: 'Laurent Bussard',
-                    link: 'https://www.microsoft.com/en-us/research/people/lbussard/'
-                }
-            ],
-            elements: [],
-            resources: [],
-            documentation: [
-                {
-                    type: 'S4P PDF',
-                    link: 'https://www.microsoft.com/en-us/research/wp-content/uploads/2010/04/main-1.pdf'
-                },
-                {
-                    type: 'SecPAL PDF',
-                    link: 'https://www.microsoft.com/en-us/research/wp-content/uploads/2006/09/BeckerFournetGordon_AuthorizationLanguage.pdf'
-                }
-            ],
-            examples: [
-                {
-                    type: 'sample',
-                    title: 'Examples from the S4P documentation',
-                    description: {
-                        name: 'S4P documentation',
-                        link: 'https://www.microsoft.com/en-us/research/wp-content/uploads/2010/04/main-1.pdf'
-                    },
-                    solutions: [
-                        {
-                            exampleName: 'Extended example on Annex A',
                             resources: []
                         }
                     ]
@@ -1051,6 +971,86 @@ export class LanguagesComponent implements OnInit {
             ]
         },
         {
+            id: 'S4P',
+            name: 'SecPAL for Privacy',
+            description: "Language framework that extends SecPAL to express user's preferences related to the handling of their Personally Identifiable Information (PII) and web services' data-handling policies on treating the collected PIIs",
+            domain: [
+                {
+                    name: 'PII',
+                    dbPedia: 'http://dbpedia.org/page/Personally_identifiable_information'
+                },
+                {
+                    name: 'preference',
+                    dbPedia: 'http://dbpedia.org/page/Preference'
+                }
+            ],
+            license: {
+                name: '',
+                link: ''
+            },
+            dates: {
+                created: '2009',
+                lastUpdated: '2010'
+            },
+            idiom: [
+                {
+                    imageSrc: './assets/flags/uk_flag.png',
+                    lang: 'en',
+                    link:'https://www.microsoft.com/en-us/research/wp-content/uploads/2010/04/main-1.pdf'
+                }
+            ],
+            responsible: [
+                {
+                    name: 'Microsoft Research',
+                    link: 'https://www.microsoft.com/en-us/research/'
+                }
+            ],
+            project: [],
+            authors: [
+                {
+                    name: 'Moritz Y. Becker',
+                    link: 'https://dblp.org/pers/b/Becker:Moritz_Y=.html'
+                },
+                {
+                    name: 'Alexander Malkis',
+                    link: 'https://dblp.uni-trier.de/pers/m/Malkis:Alexander.html'
+                },
+                {
+                    name: 'Laurent Bussard',
+                    link: 'https://www.microsoft.com/en-us/research/people/lbussard/'
+                }
+            ],
+            elements: [],
+            resources: [],
+            documentation: [
+                {
+                    type: 'S4P PDF',
+                    link: 'https://www.microsoft.com/en-us/research/wp-content/uploads/2010/04/main-1.pdf'
+                },
+                {
+                    type: 'SecPAL PDF',
+                    link: 'https://www.microsoft.com/en-us/research/wp-content/uploads/2006/09/BeckerFournetGordon_AuthorizationLanguage.pdf'
+                }
+            ],
+            examples: [
+                {
+                    type: 'sample',
+                    title: 'Examples from the S4P documentation',
+                    description: {
+                        name: 'S4P documentation',
+                        link: 'https://www.microsoft.com/en-us/research/wp-content/uploads/2010/04/main-1.pdf'
+                    },
+                    solutions: [
+                        {
+                            exampleName: 'Extended example on Annex A',
+                            resources: []
+                        }
+                    ]
+                }
+            ],
+            diagrams: []
+        },
+        {
             id: 'POL',
             name: 'Privacy Option Language',
             description: "Privacy contract language, inspired on financial option contracts, that provides privacy by design through data minimisation to define privacy contracts between data controllers and data subjects",
@@ -1247,768 +1247,6 @@ export class LanguagesComponent implements OnInit {
                     nameSrc: 'PPO article'
                 }
             ]
-        },
-        {
-            id: 'P2U',
-            name: 'Purpose-To-Use',
-            description: "Policy language that builds on the purpose-relevance-sharing principle with the aim of enforcing privacy while enabling the secondary sharing and usage of data on the web",
-            domain: [
-                {
-                    name: 'privacy',
-                    dbPedia: 'http://dbpedia.org/page/Category:Privacy'
-                }
-            ],
-            license: {
-                name: '',
-                link: ''
-            },
-            dates: {
-                created: '2014',
-                lastUpdated: ''
-            },
-            idiom: [
-                {
-                    imageSrc: './assets/flags/uk_flag.png',
-                    lang: 'en',
-                    link: 'https://ieeexplore.ieee.org/document/6957279'
-                }
-            ],
-            responsible: [
-                {
-                    name: 'Department of Computer Science, University of Saskatchewan',
-                    link: 'https://www.cs.usask.ca/'
-                }
-            ],
-            project: [],
-            authors: [
-                {
-                    name: 'Johnson Iyilade',
-                    link: 'https://dblp.org/pers/i/Iyilade:Johnson.html'
-                },
-                {
-                    name: 'Julita Vassileva',
-                    link: 'http://julita.usask.ca/'
-                }
-            ],
-            elements: [
-                {
-                    name: 'Policy',
-                    link: ''
-                },
-                {
-                    name: 'Data Provider',
-                    link: ''
-                },
-                {
-                    name: 'User',
-                    link: ''
-                },
-                {
-                    name: 'Purpose',
-                    link: ''
-                },
-                {
-                    name: 'Data Consumer',
-                    link: ''
-                },
-                {
-                    name: 'Retention',
-                    link: ''
-                },
-                {
-                    name: 'Data Group',
-                    link: ''
-                },
-                {
-                    name: 'Data',
-                    link: ''
-                }
-            ],
-            resources: [],
-            documentation: [
-                {
-                    type: 'PDF',
-                    link: 'https://ieeexplore.ieee.org/document/6957279'
-                }
-            ],
-            examples: [
-                {
-                    type: 'sample',
-                    title: 'Examples from the P2U documentation',
-                    description: {
-                        name: 'P2U documentation',
-                        link: 'https://ieeexplore.ieee.org/document/6957279'
-                    },
-                    solutions: [
-                        {
-                            exampleName: 'P2U policy in XML format - Figure 2',
-                            resources: [
-                                {
-                                    language: 'GIF',
-                                    link: 'https://ieeexplore.ieee.org/mediastore_new/IEEE/content/media/6954698/6957265/6957279/6957279-fig-2-source-small.gif'
-                                }]
-                        }
-                    ]
-                }
-            ],
-            diagrams: [
-                {
-                    type: 'spec',
-                    name: 'P2U',
-                    imageSrc: 'https://ieeexplore.ieee.org/mediastore_new/IEEE/content/media/6954698/6957265/6957279/6957279-fig-1-source-small.gif',
-                    typeSrc: 'https://ieeexplore.ieee.org/document/6957279',
-                    nameSrc: 'P2U documentation'
-                }
-            ]
-        },
-        {
-            id: 'A-PPL',
-            name: 'Accountable Policy Language',
-            description: "Accountability policy language that extends PPL and XACML with the notification, data location, data retention and logging concepts to provide cloud users with a way to express and enforce obligations",
-            domain: [
-                {
-                    name: 'privacy',
-                    dbPedia: 'http://dbpedia.org/page/Category:Privacy'
-                },
-                {
-                    name: 'accountability',
-                    dbPedia: 'http://dbpedia.org/page/Accountability'
-                }
-            ],
-            license: {
-                name: '',
-                link: ''
-            },
-            dates: {
-                created: '2013',
-                lastUpdated: '2016'
-            },
-            idiom: [
-                {
-                    imageSrc: './assets/flags/uk_flag.png',
-                    lang: 'en',
-                    link: 'http://www.eurecom.fr/en/publication/4372/download/rs-publi-4372.pdf'
-                }
-            ],
-            responsible: [],
-            project: [
-                {
-                    name: 'A4Cloud',
-                    link: 'http://a4cloud.eu/index.html'
-                }
-            ],
-            authors: [
-                {
-                    name: 'Monir Azraoui',
-                    link: 'https://dblp.org/pers/a/Azraoui:Monir.html'
-                },
-                {
-                    name: 'Kaoutar Elkhiyaoui',
-                    link: 'https://dblp.org/pers/e/Elkhiyaoui:Kaoutar.html'
-                },
-                {
-                    name: 'Melek ̈Önen',
-                    link: 'https://dblp.uni-trier.de/pers/=/=Ouml=nen:Melek.html'
-                },
-                {
-                    name: 'Karin Bernsmed',
-                    link: 'https://dblp.org/pers/b/Bernsmed:Karin.html'
-                },
-                {
-                    name: 'Anderson Santana de Oliveira',
-                    link: 'https://dblp.org/pers/o/Oliveira:Anderson_Santana_de.html'
-                },
-                {
-                    name: 'Jakub Sendor',
-                    link: 'https://dblp.org/pers/s/Sendor:Jakub.html'
-                }
-            ],
-            elements: [
-                {
-                    name: 'Policy',
-                    link: ''
-                },
-                {
-                    name: 'Rule',
-                    link: ''
-                },
-                {
-                    name: 'Target',
-                    link: ''
-                },
-                {
-                    name: 'Resource',
-                    link: ''
-                },
-                {
-                    name: 'Action',
-                    link: ''
-                },
-                {
-                    name: 'Trigger',
-                    link: ''
-                },
-                {
-                    name: 'Subject',
-                    link: ''
-                },
-                
-                {
-                    name: 'Purpose',
-                    link: ''
-                },
-                
-            ],
-            resources: [],
-            documentation: [
-                {
-                    type: 'A-PPL PDF',
-                    link: 'http://www.eurecom.fr/en/publication/4372/download/rs-publi-4372.pdf'
-                },
-                {
-                    type: 'PPL PDF',
-                    link: 'https://air.unimi.it/retrieve/handle/2434/158842/150231/Trabelisi.pdf'
-                },
-                {
-                    type: 'XACML HTML',
-                    link: 'http://docs.oasis-open.org/xacml/3.0/xacml-3.0-core-spec-os-en.html'
-                }
-            ],
-            examples: [
-                {
-                    type: 'sample',
-                    title: 'Examples from the A-PPL documentation',
-                    description: {
-                        name: 'A-PPL documentation',
-                        link: 'http://www.eurecom.fr/en/publication/4372/download/rs-publi-4372.pdf'
-                    },
-                    solutions: [
-                        {
-                            exampleName: 'Use case: Medical sensor networks in the Cloud - section 5.1',
-                            resources: []
-                        }
-                    ]
-                },
-                {
-                    type: 'deliverables',
-                    projectDeliverables: {
-                        name: 'A4Cloud',
-                        link: 'http://cloudaccountability.eu/deliverables'
-                    },
-                    deliverables: [
-                        {
-                            name: 'D34.1 - Policy Representation Framework',
-                            link: 'http://cloudaccountability.eu/sites/default/files/D34.1%20Policy%20representation%20Framework.pdf'
-                        },
-                        {
-                            name: 'D34.2 - Policy representation and enforcement techniques',
-                            link: 'http://cloudaccountability.eu/sites/default/files/D34.2%20Policy%20representation%20and%20enforcement%20techniques.pdf'
-                        }
-                    ]
-                }
-            ],
-            diagrams: [
-                {
-                    type: 'spec',
-                    name: 'A-PPL',
-                    imageSrc: './assets/languages/A-PPL/diagrams/fig1.2-d34.1.PNG',
-                    typeSrc: 'http://cloudaccountability.eu/sites/default/files/D34.1%20Policy%20representation%20Framework.pdf',
-                    nameSrc: 'D34.1 - Policy Representation Framework'
-                }
-            ]
-        },
-        {
-            id: 'DPF',
-            name: 'Declarative Policy Framework',
-            description: "Privacy policy framework that uses ontologies as a common data model to specify permissive and restrictive policies which are used to build user interfaces, so that users are not burdened with technical formalisms of the language",
-            domain: [
-                {
-                    name: 'privacy',
-                    dbPedia: 'http://dbpedia.org/page/Category:Privacy'
-                },
-                {
-                    name: 'ontology',
-                    dbPedia: ''
-                }
-            ],
-            license: {
-                name: '',
-                link: ''
-            },
-            dates: {
-                created: '2018',
-                lastUpdated: ''
-            },
-            idiom: [
-                {
-                    imageSrc: './assets/flags/uk_flag.png',
-                    lang: 'en',
-                    link: 'https://sunflower.csl.sri.com/wp-content/uploads/2018/05/policy-language.pdf'
-                }
-            ],
-            responsible: [
-                {
-                    name: 'Defense  Advanced  Research  Projects  Agency’s (DARPA’s) Brandeis program',
-                    link: ''
-                }
-            ],
-            project: [],
-            authors: [
-                {
-                    name: 'Karsten Martiny',
-                    link: 'https://dblp.org/pers/m/Martiny:Karsten.html'
-                },
-                {
-                    name: 'Daniel Elenius',
-                    link: 'https://dblp.org/pers/e/Elenius:Daniel.html'
-                },
-                {
-                    name: 'Grit Denker',
-                    link: 'https://dblp.uni-trier.de/pers/d/Denker:Grit.html'
-                }
-            ],
-            elements: [
-                {
-                    name: 'Policy rule',
-                    link: ''
-                },
-                {
-                    name: 'Policy authority',
-                    link: ''
-                },
-                {
-                    name: 'Data requester',
-                    link: ''
-                },
-                {
-                    name: 'Data',
-                    link: ''
-                },
-                {
-                    name: 'Time of request',
-                    link: ''
-                },
-                {
-                    name: 'Constraints',
-                    link: ''
-                } 
-            ],
-            resources: [],
-            documentation: [
-                {
-                    type: 'PDF',
-                    link: 'https://sunflower.csl.sri.com/wp-content/uploads/2018/05/policy-language.pdf'
-                },
-                {
-                    type: 'PDF',
-                    link: 'https://sunflower.csl.sri.com/wp-content/uploads/2020/02/policy-overrides.pdf'
-                }
-            ],
-            examples: [
-                {
-                    type: 'sample',
-                    title: 'Examples from the "Partial Decision Overrides in a Declarative Policy Framework" article',
-                    description: {
-                        name: '"Partial Decision Overrides in a Declarative Policy Framework" article',
-                        link: 'https://sunflower.csl.sri.com/wp-content/uploads/2020/02/policy-overrides.pdf'
-                    },
-                    solutions: [
-                        {
-                            exampleName: 'Pandemic use-case - monitor the disease’s outbreak',
-                            resources: []
-                        }
-                    ]
-                },
-                {
-                    type: 'sample',
-                    title: 'Examples from the "Protecting Privacy with a Declarative Policy Framework" article',
-                    description: {
-                        name: '"Protecting Privacy with a Declarative Policy Framework" article',
-                        link: 'https://sunflower.csl.sri.com/wp-content/uploads/2018/05/policy-language.pdf'
-                    },
-                    solutions: [
-                        {
-                            exampleName: 'Pandemic use-case - monitor the disease’s outbreak',
-                            resources: []
-                        }
-                    ]
-                }
-            ],
-            diagrams: []
-        },
-        {
-            id: 'PMO',
-            name: 'BPR4GDPR Policy Model Ontology',
-            description: "Rule-based framework that extends BPR4GDPR's Information Model Ontology (IMO) to define permissions, prohibitions and obligations over actions under specific purposes and contexts",
-            domain: [
-                {
-                    name: 'digital rights',
-                    dbPedia: 'http://dbpedia.org/page/Digital_rights'
-                }
-            ],
-            license: {
-                name: '',
-                link: ''
-            },
-            dates: {
-                created: '2019',
-                lastUpdated: ''
-            },
-            idiom: [
-                {
-                    imageSrc: './assets/flags/uk_flag.png',
-                    lang: 'en',
-                    link: 'https://www.bpr4gdpr.eu/wp-content/uploads/2019/06/D2.3-Initial-Specification-of-BPR4GDPR-architecture-%E2%80%94-final.pdf'
-                }
-            ],
-            responsible: [],
-            project: [
-                {
-                    name: 'Business Process Re-engineering and functional toolkit for GDPR compliance (BPR4GDPR) project',
-                    link: 'https://www.bpr4gdpr.eu/'
-                },
-            ],
-            authors: [
-                {
-                    name: 'Nikolaos Dellas',
-                    link: 'https://dblp.org/pers/d/Dellas:Nikolaos_L=.html'
-                }
-            ],
-            elements: [
-                {
-                    name: 'Rules',
-                    link: ''
-                },
-                {
-                    name: 'Actions',
-                    link: ''
-                },
-                {
-                    name: 'Required actions',
-                    link: ''
-                },
-                {
-                    name: 'Concrete entities',
-                    link: ''
-                },
-                {
-                    name: 'Enhanced entities',
-                    link: ''
-                },
-                {
-                    name: 'Expressions',
-                    link: ''
-                },
-                {
-                    name: 'Skeletons',
-                    link: ''
-                }
-            ],
-            resources: [],
-            documentation: [
-                {
-                    type: 'PDF',
-                    link: 'https://www.bpr4gdpr.eu/wp-content/uploads/2019/06/D2.3-Initial-Specification-of-BPR4GDPR-architecture-%E2%80%94-final.pdf'
-                },
-                {
-                    type: 'PDF',
-                    link: 'https://www.researchgate.net/publication/260706010_Leveraging_Ontologies_upon_a_Holistic_Privacy-Aware_Access_Control_Model'
-                }
-            ],
-            examples: [
-                {
-                    type: 'sample',
-                    title: 'Examples from the "Leveraging Ontologies upon a Holistic Privacy-Aware Access Control Model" article',
-                    description: {
-                        name: '"Leveraging Ontologies upon a Holistic Privacy-Aware Access Control Model" article',
-                        link: 'https://www.researchgate.net/publication/260706010_Leveraging_Ontologies_upon_a_Holistic_Privacy-Aware_Access_Control_Model'
-                    },
-                    solutions: [
-                        {
-                            exampleName: 'Example rule for the health sector - Figure 3',
-                            resources: [
-                                {
-                                    language: 'PNG',
-                                    link: 'https://www.researchgate.net/profile/Joaquin_Garcia-Alfaro/publication/260706010/figure/fig3/AS:296857856167938@1447787836426/Example-of-Ontological-Access-Control-Rule.png'
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    type: 'deliverables',
-                    projectDeliverables: {
-                        name: 'BPR4GDPR',
-                        link: 'https://www.bpr4gdpr.eu/results/deliverables/'
-                    },
-                    deliverables: [
-                        {
-                            name: 'D2.3 - Initial Specification of BPR4GDPR architecture',
-                            link: 'https://www.bpr4gdpr.eu/wp-content/uploads/2019/06/D2.3-Initial-Specification-of-BPR4GDPR-architecture-%E2%80%94-final.pdf'
-                        },
-                        {
-                            name: 'D3.1 - Compliance ontology',
-                            link: 'https://www.bpr4gdpr.eu/wp-content/uploads/2019/06/D3.1-Compliance-Ontology-1.0.pdf'
-                        },
-                    ]
-                }
-            ],
-            diagrams: [
-                {
-                    type: 'spec',
-                    name: 'PMO',
-                    imageSrc: 'https://www.researchgate.net/profile/Joaquin_Garcia-Alfaro/publication/260706010/figure/fig2/AS:296857856167937@1447787836378/Policy-Model-Ontology-PMO.png',
-                    typeSrc: 'https://www.researchgate.net/publication/260706010_Leveraging_Ontologies_upon_a_Holistic_Privacy-Aware_Access_Control_Model',
-                    nameSrc: '"Leveraging Ontologies upon a Holistic Privacy-Aware Access Control Model" article'
-                },
-                {
-                    type: 'spec',
-                    name: 'PMO rules format',
-                    imageSrc: './assets/languages/PMO/diagrams/PMOformat_fig5_d23.PNG',
-                    typeSrc: 'https://www.bpr4gdpr.eu/wp-content/uploads/2019/06/D2.3-Initial-Specification-of-BPR4GDPR-architecture-%E2%80%94-final.pdf',
-                    nameSrc: 'D2.3 - Initial Specification of BPR4GDPR architecture'
-                }
-            ]
-        },
-        {
-            id: 'SPL',
-            name: 'SPECIAL Usage Policy Language',
-            description: "Usage language that can be used to specify in formal terms both the data subjects' consent and the data controllers' usage policies, to be in compliance with the GDPR",
-            domain: [
-                {
-                    name: 'privacy',
-                    dbPedia: 'http://dbpedia.org/page/Category:Privacy'
-                },
-                {
-                    name: 'transparency',
-                    dbPedia: 'http://dbpedia.org/page/Category:Transparency_(behavior)'
-                }
-            ],
-            license: {
-                name: 'CC-by-4.0',
-                link: 'https://creativecommons.org/licenses/by/4.0/'
-            },
-            dates: {
-                created: '2017',
-                lastUpdated: '2019'
-            },
-            idiom: [
-                {
-                    imageSrc: './assets/flags/uk_flag.png',
-                    lang: 'en',
-                    link: 'https://ai.wu.ac.at/policies/policylanguage/'
-                }
-            ],
-            responsible: [],
-            project: [
-                {
-                    name: 'Scalable Policy-awarE linked data arChitecture For prIvacy, trAnsparency and compLiance (SPECIAL) project',
-                    link: 'https://www.specialprivacy.eu/'
-                }
-            ],
-            authors: [
-                {
-                    name: 'Piero A. Bonatti',
-                    link: 'http://wpage.unina.it/pieroandrea.bonatti/'
-                },
-                {
-                    name: 'Sabrina Kirrane',
-                    link: 'http://sabrinakirrane.com/'
-                },
-                {
-                    name: 'Iliana Mineva Petrova',
-                    link: 'https://dblp.org/pers/p/Petrova:Iliana_M=.html'
-                },
-                {
-                    name: 'Luigi Sauro',
-                    link: 'https://dblp.uni-trier.de/pers/s/Sauro:Luigi.html'
-                },
-                {
-                    name: 'Eva Schlehahn',
-                    link: 'https://dblp.org/pers/s/Schlehahn:Eva.html'
-                },
-            ],
-            elements: [
-                {
-                    name: 'Data',
-                    link: 'https://www.specialprivacy.eu/vocabs/data'
-                },
-                {
-                    name: 'Duration',
-                    link: 'https://www.specialprivacy.eu/vocabs/duration'
-                },
-                {
-                    name: 'Location',
-                    link: 'https://www.specialprivacy.eu/vocabs/locations'
-                },
-                {
-                    name: 'Processing',
-                    link: 'https://www.specialprivacy.eu/vocabs/processing'
-                },
-                {
-                    name: 'Purpose',
-                    link: 'https://www.specialprivacy.eu/vocabs/purposes'
-                },
-                {
-                    name: 'Recipient',
-                    link: 'https://www.specialprivacy.eu/vocabs/recipients'
-                }
-            ],
-            resources: [
-                {
-                    type: 'OWL',
-                    link: 'https://www.specialprivacy.eu/images/documents/func_usage-policy-language-1.0.owl'
-                }
-            ],
-            documentation: [
-                {
-                    type: 'HTML',
-                    link: 'https://ai.wu.ac.at/policies/policylanguage/'
-                },
-                {
-                    type: 'PDF',
-                    link: 'https://www.specialprivacy.eu/images/documents/Kirrane-2018-ESWC.pdf'
-                },
-                {
-                    type: 'GitHub',
-                    link: 'https://github.com/specialprivacy'
-                }
-            ],
-            examples: [
-                {
-                    type: 'sample',
-                    title: 'Examples from the SPL specification',
-                    description: {
-                        name: 'SPL specification',
-                        link: 'https://ai.wu.ac.at/policies/policylanguage/'
-                    },
-                    solutions: [
-                        {
-                            exampleName: 'Example 1: Abstract policy',
-                            resources: [
-                                {
-                                    language: 'OWL',
-                                    link: 'https://ai.wu.ac.at/policies/policylanguage/#ex1'
-                                }
-                            ]
-                        },
-                        {
-                            exampleName: 'Example 2: General usage policy in SPECIAL',
-                            resources: [
-                                {
-                                    language: 'OWL',
-                                    link: 'https://ai.wu.ac.at/policies/policylanguage/#ex2'
-                                }
-                            ]
-                        },
-                        {
-                            exampleName: 'Example 3: General usage policy in SPECIAL including a logical equivalence',
-                            resources: [
-                                {
-                                    language: 'OWL',
-                                    link: 'https://ai.wu.ac.at/policies/policylanguage/#ex3'
-                                }
-                            ]
-                        },
-                        {
-                            exampleName: 'Example 4: Ellaborated policy',
-                            resources: [
-                                {
-                                    language: 'OWL',
-                                    link: 'https://ai.wu.ac.at/policies/policylanguage/#ex4'
-                                }
-                            ]
-                        },
-                        {
-                            exampleName: 'Example 5: Sticky policies',
-                            resources: [
-                                {
-                                    language: 'OWL',
-                                    link: 'https://ai.wu.ac.at/policies/policylanguage/#ex5'
-                                }
-                            ]
-                        },
-                    ]
-                },
-                {
-                    type: 'deliverables',
-                    projectDeliverables: {
-                        name: 'SPECIAL',
-                        link: 'https://www.specialprivacy.eu/publications/public-deliverables'
-                    },
-                    deliverables: [
-                        {
-                            name: 'D2.1 - Policy Language V1',
-                            link: 'https://www.specialprivacy.eu/images/documents/SPECIAL_D21_M12_V10.pdf'
-                        },
-                        {
-                            name: 'D2.5 - Policy Language V2',
-                            link: 'https://www.specialprivacy.eu/images/documents/SPECIAL_D25_M21_V10.pdf'
-                        }
-                    ]
-                },
-                {
-                    type: 'use-case',
-                    heading: {
-                        title: 'Proximus',
-                        imageSrc: 'https://media-exp1.licdn.com/dms/image/C4D0BAQEzyH2v-_XUqg/company-logo_200_200/0?e=2159024400&v=beta&t=UiruiM5e4sRZKjEc31nrjo2DDU3DaEjmqhGUFh1sMg4'
-                    },
-                    institution: {
-                        name: 'Proximus',
-                        link: 'https://www.proximus.be/en/'
-                    },
-                    specifications: [
-                        {
-                            name: 'Personalized touristic recommendations',
-                            resources: [
-                                {
-                                    type: 'PDF',
-                                    link: 'https://www.specialprivacy.eu/images/documents/report-D5.pdf'
-                                },
-                                {
-                                    type: 'OWL',
-                                    link: './assets/languages/SPL/examples/proximus.owl'
-                                },
-                                {
-                                    type: 'DPV CG Wiki',
-                                    link: 'https://www.w3.org/community/dpvcg/wiki/SPECIAL/Proximus_use_case'
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    type: 'use-case',
-                    heading: {
-                        title: 'Thomson Reuters',
-                        imageSrc: 'https://i7.pngflow.com/pngimage/471/378/png-thomson-reuters-corporation-business-avox-limited-reuters-tv-business-orange-people-logo-symmetry-clipart.png'
-                    },
-                    institution: {
-                        name: 'Thomson Reuters',
-                        link: 'https://www.thomsonreuters.com/en.html'
-                    },
-                    specifications: [
-                        {
-                            name: 'Support anti-money laundering requirements.',
-                            resources: [
-                                {
-                                    type: 'PDF',
-                                    link: 'https://www.specialprivacy.eu/images/documents/report-D5.pdf'
-                                },
-                                {
-                                    type: 'OWL',
-                                    link: './assets/languages/SPL/examples/tr.owl'
-                                },
-                                {
-                                    type: 'DPV CG Wiki',
-                                    link: 'https://www.w3.org/community/dpvcg/wiki/SPECIAL/TR_use_case'
-                                }
-                            ]
-                        }
-                    ]
-                },
-            ],
-            diagrams: []
         },
         {
             id: 'LegalRuleML',
@@ -2301,6 +1539,634 @@ export class LanguagesComponent implements OnInit {
             ]
         },
         {
+            id: 'A-PPL',
+            name: 'Accountable Policy Language',
+            description: "Accountability policy language that extends PPL and XACML with the notification, data location, data retention and logging concepts to provide cloud users with a way to express and enforce obligations",
+            domain: [
+                {
+                    name: 'privacy',
+                    dbPedia: 'http://dbpedia.org/page/Category:Privacy'
+                },
+                {
+                    name: 'accountability',
+                    dbPedia: 'http://dbpedia.org/page/Accountability'
+                }
+            ],
+            license: {
+                name: '',
+                link: ''
+            },
+            dates: {
+                created: '2013',
+                lastUpdated: '2016'
+            },
+            idiom: [
+                {
+                    imageSrc: './assets/flags/uk_flag.png',
+                    lang: 'en',
+                    link: 'http://www.eurecom.fr/en/publication/4372/download/rs-publi-4372.pdf'
+                }
+            ],
+            responsible: [],
+            project: [
+                {
+                    name: 'A4Cloud',
+                    link: 'http://a4cloud.eu/index.html'
+                }
+            ],
+            authors: [
+                {
+                    name: 'Monir Azraoui',
+                    link: 'https://dblp.org/pers/a/Azraoui:Monir.html'
+                },
+                {
+                    name: 'Kaoutar Elkhiyaoui',
+                    link: 'https://dblp.org/pers/e/Elkhiyaoui:Kaoutar.html'
+                },
+                {
+                    name: 'Melek ̈Önen',
+                    link: 'https://dblp.uni-trier.de/pers/=/=Ouml=nen:Melek.html'
+                },
+                {
+                    name: 'Karin Bernsmed',
+                    link: 'https://dblp.org/pers/b/Bernsmed:Karin.html'
+                },
+                {
+                    name: 'Anderson Santana de Oliveira',
+                    link: 'https://dblp.org/pers/o/Oliveira:Anderson_Santana_de.html'
+                },
+                {
+                    name: 'Jakub Sendor',
+                    link: 'https://dblp.org/pers/s/Sendor:Jakub.html'
+                }
+            ],
+            elements: [
+                {
+                    name: 'Policy',
+                    link: ''
+                },
+                {
+                    name: 'Rule',
+                    link: ''
+                },
+                {
+                    name: 'Target',
+                    link: ''
+                },
+                {
+                    name: 'Resource',
+                    link: ''
+                },
+                {
+                    name: 'Action',
+                    link: ''
+                },
+                {
+                    name: 'Trigger',
+                    link: ''
+                },
+                {
+                    name: 'Subject',
+                    link: ''
+                },
+                
+                {
+                    name: 'Purpose',
+                    link: ''
+                },
+                
+            ],
+            resources: [],
+            documentation: [
+                {
+                    type: 'A-PPL PDF',
+                    link: 'http://www.eurecom.fr/en/publication/4372/download/rs-publi-4372.pdf'
+                },
+                {
+                    type: 'PPL PDF',
+                    link: 'https://air.unimi.it/retrieve/handle/2434/158842/150231/Trabelisi.pdf'
+                },
+                {
+                    type: 'XACML HTML',
+                    link: 'http://docs.oasis-open.org/xacml/3.0/xacml-3.0-core-spec-os-en.html'
+                }
+            ],
+            examples: [
+                {
+                    type: 'sample',
+                    title: 'Examples from the A-PPL documentation',
+                    description: {
+                        name: 'A-PPL documentation',
+                        link: 'http://www.eurecom.fr/en/publication/4372/download/rs-publi-4372.pdf'
+                    },
+                    solutions: [
+                        {
+                            exampleName: 'Use case: Medical sensor networks in the Cloud - section 5.1',
+                            resources: []
+                        }
+                    ]
+                },
+                {
+                    type: 'deliverables',
+                    projectDeliverables: {
+                        name: 'A4Cloud',
+                        link: 'http://cloudaccountability.eu/deliverables'
+                    },
+                    deliverables: [
+                        {
+                            name: 'D34.1 - Policy Representation Framework',
+                            link: 'http://cloudaccountability.eu/sites/default/files/D34.1%20Policy%20representation%20Framework.pdf'
+                        },
+                        {
+                            name: 'D34.2 - Policy representation and enforcement techniques',
+                            link: 'http://cloudaccountability.eu/sites/default/files/D34.2%20Policy%20representation%20and%20enforcement%20techniques.pdf'
+                        }
+                    ]
+                }
+            ],
+            diagrams: [
+                {
+                    type: 'spec',
+                    name: 'A-PPL',
+                    imageSrc: './assets/languages/A-PPL/diagrams/fig1.2-d34.1.PNG',
+                    typeSrc: 'http://cloudaccountability.eu/sites/default/files/D34.1%20Policy%20representation%20Framework.pdf',
+                    nameSrc: 'D34.1 - Policy Representation Framework'
+                }
+            ]
+        },
+        {
+            id: 'P2U',
+            name: 'Purpose-To-Use',
+            description: "Policy language that builds on the purpose-relevance-sharing principle with the aim of enforcing privacy while enabling the secondary sharing and usage of data on the web",
+            domain: [
+                {
+                    name: 'privacy',
+                    dbPedia: 'http://dbpedia.org/page/Category:Privacy'
+                }
+            ],
+            license: {
+                name: '',
+                link: ''
+            },
+            dates: {
+                created: '2014',
+                lastUpdated: ''
+            },
+            idiom: [
+                {
+                    imageSrc: './assets/flags/uk_flag.png',
+                    lang: 'en',
+                    link: 'https://ieeexplore.ieee.org/document/6957279'
+                }
+            ],
+            responsible: [
+                {
+                    name: 'Department of Computer Science, University of Saskatchewan',
+                    link: 'https://www.cs.usask.ca/'
+                }
+            ],
+            project: [],
+            authors: [
+                {
+                    name: 'Johnson Iyilade',
+                    link: 'https://dblp.org/pers/i/Iyilade:Johnson.html'
+                },
+                {
+                    name: 'Julita Vassileva',
+                    link: 'http://julita.usask.ca/'
+                }
+            ],
+            elements: [
+                {
+                    name: 'Policy',
+                    link: ''
+                },
+                {
+                    name: 'Data Provider',
+                    link: ''
+                },
+                {
+                    name: 'User',
+                    link: ''
+                },
+                {
+                    name: 'Purpose',
+                    link: ''
+                },
+                {
+                    name: 'Data Consumer',
+                    link: ''
+                },
+                {
+                    name: 'Retention',
+                    link: ''
+                },
+                {
+                    name: 'Data Group',
+                    link: ''
+                },
+                {
+                    name: 'Data',
+                    link: ''
+                }
+            ],
+            resources: [],
+            documentation: [
+                {
+                    type: 'PDF',
+                    link: 'https://ieeexplore.ieee.org/document/6957279'
+                }
+            ],
+            examples: [
+                {
+                    type: 'sample',
+                    title: 'Examples from the P2U documentation',
+                    description: {
+                        name: 'P2U documentation',
+                        link: 'https://ieeexplore.ieee.org/document/6957279'
+                    },
+                    solutions: [
+                        {
+                            exampleName: 'P2U policy in XML format - Figure 2',
+                            resources: [
+                                {
+                                    language: 'GIF',
+                                    link: 'https://ieeexplore.ieee.org/mediastore_new/IEEE/content/media/6954698/6957265/6957279/6957279-fig-2-source-small.gif'
+                                }]
+                        }
+                    ]
+                }
+            ],
+            diagrams: [
+                {
+                    type: 'spec',
+                    name: 'P2U',
+                    imageSrc: 'https://ieeexplore.ieee.org/mediastore_new/IEEE/content/media/6954698/6957265/6957279/6957279-fig-1-source-small.gif',
+                    typeSrc: 'https://ieeexplore.ieee.org/document/6957279',
+                    nameSrc: 'P2U documentation'
+                }
+            ]
+        },
+        {
+            id: 'SPL',
+            name: 'SPECIAL Usage Policy Language',
+            description: "Usage language that can be used to specify in formal terms both the data subjects' consent and the data controllers' usage policies, to be in compliance with the GDPR",
+            domain: [
+                {
+                    name: 'privacy',
+                    dbPedia: 'http://dbpedia.org/page/Category:Privacy'
+                },
+                {
+                    name: 'transparency',
+                    dbPedia: 'http://dbpedia.org/page/Category:Transparency_(behavior)'
+                }
+            ],
+            license: {
+                name: 'CC-by-4.0',
+                link: 'https://creativecommons.org/licenses/by/4.0/'
+            },
+            dates: {
+                created: '2017',
+                lastUpdated: '2019'
+            },
+            idiom: [
+                {
+                    imageSrc: './assets/flags/uk_flag.png',
+                    lang: 'en',
+                    link: 'https://ai.wu.ac.at/policies/policylanguage/'
+                }
+            ],
+            responsible: [],
+            project: [
+                {
+                    name: 'Scalable Policy-awarE linked data arChitecture For prIvacy, trAnsparency and compLiance (SPECIAL) project',
+                    link: 'https://www.specialprivacy.eu/'
+                }
+            ],
+            authors: [
+                {
+                    name: 'Piero A. Bonatti',
+                    link: 'http://wpage.unina.it/pieroandrea.bonatti/'
+                },
+                {
+                    name: 'Sabrina Kirrane',
+                    link: 'http://sabrinakirrane.com/'
+                },
+                {
+                    name: 'Iliana Mineva Petrova',
+                    link: 'https://dblp.org/pers/p/Petrova:Iliana_M=.html'
+                },
+                {
+                    name: 'Luigi Sauro',
+                    link: 'https://dblp.uni-trier.de/pers/s/Sauro:Luigi.html'
+                },
+                {
+                    name: 'Eva Schlehahn',
+                    link: 'https://dblp.org/pers/s/Schlehahn:Eva.html'
+                },
+            ],
+            elements: [
+                {
+                    name: 'Data',
+                    link: 'https://www.specialprivacy.eu/vocabs/data'
+                },
+                {
+                    name: 'Duration',
+                    link: 'https://www.specialprivacy.eu/vocabs/duration'
+                },
+                {
+                    name: 'Location',
+                    link: 'https://www.specialprivacy.eu/vocabs/locations'
+                },
+                {
+                    name: 'Processing',
+                    link: 'https://www.specialprivacy.eu/vocabs/processing'
+                },
+                {
+                    name: 'Purpose',
+                    link: 'https://www.specialprivacy.eu/vocabs/purposes'
+                },
+                {
+                    name: 'Recipient',
+                    link: 'https://www.specialprivacy.eu/vocabs/recipients'
+                }
+            ],
+            resources: [
+                {
+                    type: 'OWL',
+                    link: 'https://www.specialprivacy.eu/images/documents/func_usage-policy-language-1.0.owl'
+                }
+            ],
+            documentation: [
+                {
+                    type: 'HTML',
+                    link: 'https://ai.wu.ac.at/policies/policylanguage/'
+                },
+                {
+                    type: 'PDF',
+                    link: 'https://www.specialprivacy.eu/images/documents/Kirrane-2018-ESWC.pdf'
+                },
+                {
+                    type: 'GitHub',
+                    link: 'https://github.com/specialprivacy'
+                }
+            ],
+            examples: [
+                {
+                    type: 'sample',
+                    title: 'Examples from the SPL specification',
+                    description: {
+                        name: 'SPL specification',
+                        link: 'https://ai.wu.ac.at/policies/policylanguage/'
+                    },
+                    solutions: [
+                        {
+                            exampleName: 'Example 1: Abstract policy',
+                            resources: [
+                                {
+                                    language: 'OWL',
+                                    link: 'https://ai.wu.ac.at/policies/policylanguage/#ex1'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'Example 2: General usage policy in SPECIAL',
+                            resources: [
+                                {
+                                    language: 'OWL',
+                                    link: 'https://ai.wu.ac.at/policies/policylanguage/#ex2'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'Example 3: General usage policy in SPECIAL including a logical equivalence',
+                            resources: [
+                                {
+                                    language: 'OWL',
+                                    link: 'https://ai.wu.ac.at/policies/policylanguage/#ex3'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'Example 4: Ellaborated policy',
+                            resources: [
+                                {
+                                    language: 'OWL',
+                                    link: 'https://ai.wu.ac.at/policies/policylanguage/#ex4'
+                                }
+                            ]
+                        },
+                        {
+                            exampleName: 'Example 5: Sticky policies',
+                            resources: [
+                                {
+                                    language: 'OWL',
+                                    link: 'https://ai.wu.ac.at/policies/policylanguage/#ex5'
+                                }
+                            ]
+                        },
+                    ]
+                },
+                {
+                    type: 'deliverables',
+                    projectDeliverables: {
+                        name: 'SPECIAL',
+                        link: 'https://www.specialprivacy.eu/publications/public-deliverables'
+                    },
+                    deliverables: [
+                        {
+                            name: 'D2.1 - Policy Language V1',
+                            link: 'https://www.specialprivacy.eu/images/documents/SPECIAL_D21_M12_V10.pdf'
+                        },
+                        {
+                            name: 'D2.5 - Policy Language V2',
+                            link: 'https://www.specialprivacy.eu/images/documents/SPECIAL_D25_M21_V10.pdf'
+                        }
+                    ]
+                },
+                {
+                    type: 'use-case',
+                    heading: {
+                        title: 'Proximus',
+                        imageSrc: 'https://media-exp1.licdn.com/dms/image/C4D0BAQEzyH2v-_XUqg/company-logo_200_200/0?e=2159024400&v=beta&t=UiruiM5e4sRZKjEc31nrjo2DDU3DaEjmqhGUFh1sMg4'
+                    },
+                    institution: {
+                        name: 'Proximus',
+                        link: 'https://www.proximus.be/en/'
+                    },
+                    specifications: [
+                        {
+                            name: 'Personalized touristic recommendations',
+                            resources: [
+                                {
+                                    type: 'PDF',
+                                    link: 'https://www.specialprivacy.eu/images/documents/report-D5.pdf'
+                                },
+                                {
+                                    type: 'OWL',
+                                    link: './assets/languages/SPL/examples/proximus.owl'
+                                },
+                                {
+                                    type: 'DPV CG Wiki',
+                                    link: 'https://www.w3.org/community/dpvcg/wiki/SPECIAL/Proximus_use_case'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    type: 'use-case',
+                    heading: {
+                        title: 'Thomson Reuters',
+                        imageSrc: 'https://i7.pngflow.com/pngimage/471/378/png-thomson-reuters-corporation-business-avox-limited-reuters-tv-business-orange-people-logo-symmetry-clipart.png'
+                    },
+                    institution: {
+                        name: 'Thomson Reuters',
+                        link: 'https://www.thomsonreuters.com/en.html'
+                    },
+                    specifications: [
+                        {
+                            name: 'Support anti-money laundering requirements.',
+                            resources: [
+                                {
+                                    type: 'PDF',
+                                    link: 'https://www.specialprivacy.eu/images/documents/report-D5.pdf'
+                                },
+                                {
+                                    type: 'OWL',
+                                    link: './assets/languages/SPL/examples/tr.owl'
+                                },
+                                {
+                                    type: 'DPV CG Wiki',
+                                    link: 'https://www.w3.org/community/dpvcg/wiki/SPECIAL/TR_use_case'
+                                }
+                            ]
+                        }
+                    ]
+                },
+            ],
+            diagrams: []
+        },
+        {
+            id: 'DPF',
+            name: 'Declarative Policy Framework',
+            description: "Privacy policy framework that uses ontologies as a common data model to specify permissive and restrictive policies which are used to build user interfaces, so that users are not burdened with technical formalisms of the language",
+            domain: [
+                {
+                    name: 'privacy',
+                    dbPedia: 'http://dbpedia.org/page/Category:Privacy'
+                },
+                {
+                    name: 'ontology',
+                    dbPedia: ''
+                }
+            ],
+            license: {
+                name: '',
+                link: ''
+            },
+            dates: {
+                created: '2018',
+                lastUpdated: ''
+            },
+            idiom: [
+                {
+                    imageSrc: './assets/flags/uk_flag.png',
+                    lang: 'en',
+                    link: 'https://sunflower.csl.sri.com/wp-content/uploads/2018/05/policy-language.pdf'
+                }
+            ],
+            responsible: [
+                {
+                    name: 'Defense  Advanced  Research  Projects  Agency’s (DARPA’s) Brandeis program',
+                    link: ''
+                }
+            ],
+            project: [],
+            authors: [
+                {
+                    name: 'Karsten Martiny',
+                    link: 'https://dblp.org/pers/m/Martiny:Karsten.html'
+                },
+                {
+                    name: 'Daniel Elenius',
+                    link: 'https://dblp.org/pers/e/Elenius:Daniel.html'
+                },
+                {
+                    name: 'Grit Denker',
+                    link: 'https://dblp.uni-trier.de/pers/d/Denker:Grit.html'
+                }
+            ],
+            elements: [
+                {
+                    name: 'Policy rule',
+                    link: ''
+                },
+                {
+                    name: 'Policy authority',
+                    link: ''
+                },
+                {
+                    name: 'Data requester',
+                    link: ''
+                },
+                {
+                    name: 'Data',
+                    link: ''
+                },
+                {
+                    name: 'Time of request',
+                    link: ''
+                },
+                {
+                    name: 'Constraints',
+                    link: ''
+                } 
+            ],
+            resources: [],
+            documentation: [
+                {
+                    type: 'PDF',
+                    link: 'https://sunflower.csl.sri.com/wp-content/uploads/2018/05/policy-language.pdf'
+                },
+                {
+                    type: 'PDF',
+                    link: 'https://sunflower.csl.sri.com/wp-content/uploads/2020/02/policy-overrides.pdf'
+                }
+            ],
+            examples: [
+                {
+                    type: 'sample',
+                    title: 'Examples from the "Partial Decision Overrides in a Declarative Policy Framework" article',
+                    description: {
+                        name: '"Partial Decision Overrides in a Declarative Policy Framework" article',
+                        link: 'https://sunflower.csl.sri.com/wp-content/uploads/2020/02/policy-overrides.pdf'
+                    },
+                    solutions: [
+                        {
+                            exampleName: 'Pandemic use-case - monitor the disease’s outbreak',
+                            resources: []
+                        }
+                    ]
+                },
+                {
+                    type: 'sample',
+                    title: 'Examples from the "Protecting Privacy with a Declarative Policy Framework" article',
+                    description: {
+                        name: '"Protecting Privacy with a Declarative Policy Framework" article',
+                        link: 'https://sunflower.csl.sri.com/wp-content/uploads/2018/05/policy-language.pdf'
+                    },
+                    solutions: [
+                        {
+                            exampleName: 'Pandemic use-case - monitor the disease’s outbreak',
+                            resources: []
+                        }
+                    ]
+                }
+            ],
+            diagrams: []
+        },
+        {
             id: 'LPL',
             name: 'Layered Privacy Language',
             description: "Privacy language which promotes the expression and enforcement of GDPR’s legal requirements related to consent, personal data provenance and retention",
@@ -2414,6 +2280,140 @@ export class LanguagesComponent implements OnInit {
                     imageSrc: 'https://d3i71xaburhd42.cloudfront.net/490f6649c279ca65a6d2015c0312e3522fc625f9/500px/5-Figure2-1.png',
                     typeSrc: 'https://dl.gi.de/bitstream/handle/20.500.12116/16908/Beitrag_540_final__a.pdf?sequence=1&isAllowed=y',
                     nameSrc: '"LPL Personal Privacy Policy User Interface: Design and Evaluation" article'
+                }
+            ]
+        },
+        {
+            id: 'PMO',
+            name: 'BPR4GDPR Policy Model Ontology',
+            description: "Rule-based framework that extends BPR4GDPR's Information Model Ontology (IMO) to define permissions, prohibitions and obligations over actions under specific purposes and contexts",
+            domain: [
+                {
+                    name: 'digital rights',
+                    dbPedia: 'http://dbpedia.org/page/Digital_rights'
+                }
+            ],
+            license: {
+                name: '',
+                link: ''
+            },
+            dates: {
+                created: '2019',
+                lastUpdated: ''
+            },
+            idiom: [
+                {
+                    imageSrc: './assets/flags/uk_flag.png',
+                    lang: 'en',
+                    link: 'https://www.bpr4gdpr.eu/wp-content/uploads/2019/06/D2.3-Initial-Specification-of-BPR4GDPR-architecture-%E2%80%94-final.pdf'
+                }
+            ],
+            responsible: [],
+            project: [
+                {
+                    name: 'Business Process Re-engineering and functional toolkit for GDPR compliance (BPR4GDPR) project',
+                    link: 'https://www.bpr4gdpr.eu/'
+                },
+            ],
+            authors: [
+                {
+                    name: 'Nikolaos Dellas',
+                    link: 'https://dblp.org/pers/d/Dellas:Nikolaos_L=.html'
+                }
+            ],
+            elements: [
+                {
+                    name: 'Rules',
+                    link: ''
+                },
+                {
+                    name: 'Actions',
+                    link: ''
+                },
+                {
+                    name: 'Required actions',
+                    link: ''
+                },
+                {
+                    name: 'Concrete entities',
+                    link: ''
+                },
+                {
+                    name: 'Enhanced entities',
+                    link: ''
+                },
+                {
+                    name: 'Expressions',
+                    link: ''
+                },
+                {
+                    name: 'Skeletons',
+                    link: ''
+                }
+            ],
+            resources: [],
+            documentation: [
+                {
+                    type: 'PDF',
+                    link: 'https://www.bpr4gdpr.eu/wp-content/uploads/2019/06/D2.3-Initial-Specification-of-BPR4GDPR-architecture-%E2%80%94-final.pdf'
+                },
+                {
+                    type: 'PDF',
+                    link: 'https://www.researchgate.net/publication/260706010_Leveraging_Ontologies_upon_a_Holistic_Privacy-Aware_Access_Control_Model'
+                }
+            ],
+            examples: [
+                {
+                    type: 'sample',
+                    title: 'Examples from the "Leveraging Ontologies upon a Holistic Privacy-Aware Access Control Model" article',
+                    description: {
+                        name: '"Leveraging Ontologies upon a Holistic Privacy-Aware Access Control Model" article',
+                        link: 'https://www.researchgate.net/publication/260706010_Leveraging_Ontologies_upon_a_Holistic_Privacy-Aware_Access_Control_Model'
+                    },
+                    solutions: [
+                        {
+                            exampleName: 'Example rule for the health sector - Figure 3',
+                            resources: [
+                                {
+                                    language: 'PNG',
+                                    link: 'https://www.researchgate.net/profile/Joaquin_Garcia-Alfaro/publication/260706010/figure/fig3/AS:296857856167938@1447787836426/Example-of-Ontological-Access-Control-Rule.png'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    type: 'deliverables',
+                    projectDeliverables: {
+                        name: 'BPR4GDPR',
+                        link: 'https://www.bpr4gdpr.eu/results/deliverables/'
+                    },
+                    deliverables: [
+                        {
+                            name: 'D2.3 - Initial Specification of BPR4GDPR architecture',
+                            link: 'https://www.bpr4gdpr.eu/wp-content/uploads/2019/06/D2.3-Initial-Specification-of-BPR4GDPR-architecture-%E2%80%94-final.pdf'
+                        },
+                        {
+                            name: 'D3.1 - Compliance ontology',
+                            link: 'https://www.bpr4gdpr.eu/wp-content/uploads/2019/06/D3.1-Compliance-Ontology-1.0.pdf'
+                        },
+                    ]
+                }
+            ],
+            diagrams: [
+                {
+                    type: 'spec',
+                    name: 'PMO',
+                    imageSrc: 'https://www.researchgate.net/profile/Joaquin_Garcia-Alfaro/publication/260706010/figure/fig2/AS:296857856167937@1447787836378/Policy-Model-Ontology-PMO.png',
+                    typeSrc: 'https://www.researchgate.net/publication/260706010_Leveraging_Ontologies_upon_a_Holistic_Privacy-Aware_Access_Control_Model',
+                    nameSrc: '"Leveraging Ontologies upon a Holistic Privacy-Aware Access Control Model" article'
+                },
+                {
+                    type: 'spec',
+                    name: 'PMO rules format',
+                    imageSrc: './assets/languages/PMO/diagrams/PMOformat_fig5_d23.PNG',
+                    typeSrc: 'https://www.bpr4gdpr.eu/wp-content/uploads/2019/06/D2.3-Initial-Specification-of-BPR4GDPR-architecture-%E2%80%94-final.pdf',
+                    nameSrc: 'D2.3 - Initial Specification of BPR4GDPR architecture'
                 }
             ]
         }
