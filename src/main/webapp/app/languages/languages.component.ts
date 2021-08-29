@@ -2299,6 +2299,123 @@ export class LanguagesComponent implements OnInit {
                     nameSrc: 'LegalRuleML Core Specification v1.0'
                 }
             ]
+        },
+        {
+            id: 'LPL',
+            name: 'Layered Privacy Language',
+            description: "Privacy language which promotes the expression and enforcement of GDPR’s legal requirements related to consent, personal data provenance and retention",
+            domain: [
+                {
+                    name: 'privacy',
+                    dbPedia: 'http://dbpedia.org/page/Category:Privacy'
+                },
+                {
+                    name: 'provenance',
+                    dbPedia: 'https://dbpedia.org/page/Provenance'
+                }
+            ],
+            license: {
+                name: '',
+                link: ''
+            },
+            dates: {
+                created: '2018',
+                lastUpdated: '2019'
+            },
+            idiom: [
+                {
+                    imageSrc: './assets/flags/uk_flag.png',
+                    lang: 'en',
+                    link: 'https://link.springer.com/chapter/10.1007%2F978-3-662-57932-9_2'
+                }
+            ],
+            responsible: [
+                {
+                    name: 'Distributed Multimedia Information Systems (DIMIS), University of Passau, Germany',
+                    link: 'https://irixys.uni-passau.de/dimis-distributed-multimedia-information-systems-university-of-passau-chair-of-data-science/'
+                }
+            ],
+            project: [],
+            authors: [
+                {
+                    name: 'Armin Gerl',
+                    link: 'https://dblp.org/pid/224/2559.html'
+                },
+                {
+                    name: 'Nadia Bennani',
+                    link: 'https://dblp.org/pid/b/NadiaBennani.html'
+                },
+                {
+                    name: 'Harald Kosch',
+                    link: 'https://dblp.org/pid/k/HaraldKosch.html'
+                },
+                {
+                    name: 'Lionel Brunie',
+                    link: 'https://dblp.org/pid/29/857.html'
+                }
+            ],
+            elements: [
+                {
+                    name: 'Data Source',
+                    link: ''
+                },
+                {
+                    name: 'Purpose',
+                    link: ''
+                },
+                {
+                    name: 'Data Recipient',
+                    link: ''
+                },
+                {
+                    name: 'Data',
+                    link: ''
+                },
+                {
+                    name: 'Retention',
+                    link: ''
+                },
+                {
+                    name: 'Anonymization Method',
+                    link: ''
+                }
+
+            ],
+            resources: [],
+            documentation: [
+                {
+                    type: 'PDF',
+                    link: 'https://link.springer.com/chapter/10.1007%2F978-3-662-57932-9_2'
+                },
+                {
+                    type: 'PDF',
+                    link: 'https://dl.acm.org/doi/pdf/10.1145/3230833.3233267'
+                }
+            ],
+            examples: [],
+            diagrams: [
+                {
+                    type: 'spec',
+                    name: 'Initial',
+                    imageSrc: 'https://media.springernature.com/lw785/springer-static/image/chp%3A10.1007%2F978-3-662-57932-9_2/MediaObjects/472181_1_En_2_Fig2_HTML.gif',
+                    typeSrc: 'https://link.springer.com/chapter/10.1007%2F978-3-662-57932-9_2',
+                    nameSrc: '"LPL, Towards a GDPR-Compliant Privacy Language: Formal Definition and Usage" article'
+                },
+                {
+                    type: 'spec',
+                    name: 'Last update',
+                    imageSrc: 'https://d3i71xaburhd42.cloudfront.net/d8efa3566aeb905cbe56134f1013f235f73ade92/8-Figure4-1.png',
+                    typeSrc: 'https://dl.acm.org/doi/pdf/10.1145/3230833.3233267',
+                    nameSrc: '"Critical Analysis of LPL according to Articles 12 - 14 of the GDPR" article'
+                },
+                {
+                    type: 'spec',
+                    name: 'UI',
+                    imageSrc: 'https://d3i71xaburhd42.cloudfront.net/490f6649c279ca65a6d2015c0312e3522fc625f9/500px/5-Figure2-1.png',
+                    typeSrc: 'https://dl.gi.de/bitstream/handle/20.500.12116/16908/Beitrag_540_final__a.pdf?sequence=1&isAllowed=y',
+                    nameSrc: '"LPL Personal Privacy Policy User Interface: Design and Evaluation" article'
+                }
+            ]
         }
     ]
 }
