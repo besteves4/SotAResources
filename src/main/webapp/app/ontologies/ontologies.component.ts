@@ -436,265 +436,6 @@ export class OntologiesComponent implements OnInit {
         ]
     },
     {
-        id: 'GDPRtEXT',
-        name: 'GDPR text EXTensions',
-        description: 'Open data resource, that extends the European Legislation Identifier (ELI) ontology, with the aim of connecting GDPR concepts, through the SKOS ontology, and their respective chapter, article, point, etc.',
-        legalBasis: [
-            {
-                country: './assets/footer/eu_flag.jpg',
-                name: 'GDPR',
-                link: 'https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN'
-            }
-        ],
-        license: {
-            name: 'CC-by-4.0',
-            link: 'https://creativecommons.org/licenses/by/4.0/'
-        },
-        dates: {
-            created: '2018',
-            lastUpdated: '2020'
-        },
-        idiom: [
-            {
-                imageSrc: './assets/flags/uk_flag.png',
-                lang: 'en',
-                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology'
-            }
-        ],
-        responsible: [
-            {
-                name: 'ADAPT Centre, Trinity College Dublin',
-                link: 'https://www.adaptcentre.ie/'
-            }
-        ],
-        project: [],
-        authors: [
-            {
-                name: 'Harshvardhan J. Pandit',
-                link: 'https://harshp.com/research/'
-            },
-            {
-                name: 'Kaniz Fatema',
-                link: 'https://dblp.uni-trier.de/pers/hd/f/Fatema:Kaniz'
-            },
-            {
-                name: 'Declan O’Sullivan',
-                link: 'https://dblp.uni-trier.de/pers/hd/o/O=Sullivan:Declan'
-            },
-            {
-                name: 'Dave Lewis',
-                link: 'https://dblp.uni-trier.de/pers/hd/l/Lewis_0001:David'
-            }
-        ],
-        elements: [
-            {
-                name: 'Chapter',
-                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology#Chapter'
-            },
-            {
-                name: 'Section',
-                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology#Section'
-            },
-            {
-                name: 'Article',
-                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology#Article'
-            },
-            {
-                name: 'Point',
-                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology#Point'
-            },
-            {
-                name: 'Sub point',
-                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology#SubPoint'
-            },
-            {
-                name: 'Recital',
-                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology#Recital'
-            },
-            {
-                name: 'Citation',
-                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology#Citation'
-            }
-        ],
-        resources: [
-            {
-                type: 'RDF',
-                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology.xml'
-            },
-            {
-                type: 'N-Triples',
-                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology.nt'
-            },
-            {
-                type: 'Turtle',
-                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology.ttl'
-            },
-            {
-                type: 'JSON-LD',
-                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology.json'
-            }
-        ],
-        documentation: [
-            {
-                type: 'HTML',
-                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology'
-            },
-            {
-                type: 'PDF',
-                link: 'http://www.tara.tcd.ie/bitstream/handle/2262/91559/ESWC_2018___GDPRtEXT_rebuttal.pdf;jsessionid=B050BB1B6863A96C3278E15687462D54?sequence=1'
-            }
-        ],
-        examples: [
-            {
-                type: 'sample',
-                title: 'Examples from the GDPRtEXT specification',
-                description: {
-                    name: 'GDPRtEXT specification',
-                    link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology'
-                },
-                solutions: [
-                    {
-                        exampleName: 'Compliance reports - section 4.1',
-                        resources: []
-                    },
-                    {
-                        exampleName: 'Link obligations from Data Protection Directive - section 4.2',
-                        resources: [
-                            {
-                                language: 'HTML',
-                                link: 'http://openscience.adaptcentre.ie/projects/GDPRtEXT/dpd_mapping.html'
-                            }
-                        ]
-                    }
-                ]
-            }
-        ],
-        diagrams: [ // add figures from https://www.semanticscholar.org/paper/GDPRtEXT-GDPR-as-a-Linked-Data-Resource-Pandit-Fatema/e957b1aaefe408b351c48b1862cf5cc7c970b364
-            {
-                type: 'webvowl',
-                name: 'GDPRtEXT v0.7',
-                imageSrc: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/webvowl/index.html#'
-            }
-        ]
-    },
-    {
-        id: 'Cloud',
-        name: 'Cloud GDPR ontology',
-        description: "GDPR compliant ontology focused on the obligations of cloud services' providers and consumers, that takes into account the Cloud Security Alliance's (CSA) 'Code of Conduct for GDPR Compliance'",
-        legalBasis: [
-            {
-                country: './assets/footer/eu_flag.jpg',
-                name: 'GDPR',
-                link: 'https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN'
-            },
-            {
-                country: './assets/footer/eu_flag.jpg',
-                name: 'CSA Code of Conduct',
-                link: 'https://downloads.cloudsecurityalliance.org/assets/research/gdpr/CSA_Code_of_Conduct_for_GDPR_Compliance.pdf'
-            }
-        ],
-        license: {
-            name: '',
-            link: ''
-        },
-        dates: {
-            created: '2018',
-            lastUpdated: ''
-        },
-        idiom: [
-            {
-                imageSrc: './assets/flags/uk_flag.png',
-                lang: 'en',
-                link: 'https://ebiquity.umbc.edu/paper/html/id/827/A-Knowledge-Representation-of-Cloud-Data-controls-for-EU-GDPR-Compliance'
-            }
-        ],
-        responsible: [
-            {
-                name: 'Information Systems Department, University of Maryland Baltimore County (UMBC)',
-                link: 'https://informationsystems.umbc.edu/'
-            }
-        ],
-        project: [],
-        authors: [
-            {
-                name: 'Lavanya Elluri',
-                link: 'https://dblp.org/pers/hd/e/Elluri:Lavanya'
-            },
-            {
-                name: 'Karuna Pande Joshi',
-                link: 'http://karuna.informationsystems.umbc.edu/'
-            }
-        ],
-        elements: [
-            {
-                name: 'CSA controls',
-                link: ''
-            },
-            {
-                name: 'Common obligations',
-                link: ''
-            },
-            {
-                name: 'Consumer obligations',
-                link: ''
-            },
-            {
-                name: 'Provider obligations',
-                link: ''
-            },
-            {
-                name: 'Stakeholders',
-                link: ''
-            }
-        ],
-        resources: [
-            {
-                type: 'OWL',
-                link: 'https://ebiquity.umbc.edu/_file_directory_/resources/377.rdf'
-            }
-        ],
-        documentation: [
-            {
-                type: 'RDF',
-                link: 'https://ebiquity.umbc.edu/paper/owl/id/827/A-Knowledge-Representation-of-Cloud-Data-controls-for-EU-GDPR-Compliance'
-            },
-            {
-                type: 'PDF',
-                link: 'https://ebiquity.umbc.edu/_file_directory_/papers/891.pdf'
-            }
-        ],
-        examples: [
-            {
-                type: 'sample',
-                title: 'Data compliance ontology for GDPR and PCI DSS',
-                description: {
-                    name: '"An Integrated Knowledge Graph to Automate GDPR and PCI DSS Compliance" article',
-                    link: 'https://ebiquity.umbc.edu/_file_directory_/papers/907.pdf'
-                },
-                solutions: [
-                    {
-                        exampleName: 'Extend Cloud GDPR ontology to comply with the Payment Card Industry Data Security Standard (PCI DSS)',
-                        resources: [
-                            {
-                                language: 'PNG',
-                                link: 'https://d3i71xaburhd42.cloudfront.net/9171119bce7659b82f1b9d7387c7c178fccd169b/4-Figure3-1.png'
-                            }
-                        ]
-                    }
-                ]
-            }
-        ],
-        diagrams: [
-            {
-                type: 'spec',
-                name: 'Cloud',
-                imageSrc: './assets/ontologies/Cloud/diagrams/fig1.PNG',
-                typeSrc: 'https://ebiquity.umbc.edu/_file_directory_/papers/891.pdf',
-                nameSrc: 'Cloud GDPR ontology article'
-            }
-        ]
-    },
-    {
         id: 'SPLog',
         name: 'SPECIAL Policy Log Vocabulary',
         description: 'Log vocabulary built to record data processing events and consent that should comply with the consent actions given by the data owners. SPLog uses the SPL language to instantiate the content of a log entry',
@@ -912,6 +653,123 @@ export class OntologiesComponent implements OnInit {
                 imageSrc: 'https://ai.wu.ac.at/policies/policylog/images/log.png',
                 typeSrc: 'https://ai.wu.ac.at/policies/policylog/',
                 nameSrc: 'SPLog specification'
+            }
+        ]
+    },
+    {
+        id: 'Cloud',
+        name: 'Cloud GDPR ontology',
+        description: "GDPR compliant ontology focused on the obligations of cloud services' providers and consumers, that takes into account the Cloud Security Alliance's (CSA) 'Code of Conduct for GDPR Compliance'",
+        legalBasis: [
+            {
+                country: './assets/footer/eu_flag.jpg',
+                name: 'GDPR',
+                link: 'https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN'
+            },
+            {
+                country: './assets/footer/eu_flag.jpg',
+                name: 'CSA Code of Conduct',
+                link: 'https://downloads.cloudsecurityalliance.org/assets/research/gdpr/CSA_Code_of_Conduct_for_GDPR_Compliance.pdf'
+            }
+        ],
+        license: {
+            name: '',
+            link: ''
+        },
+        dates: {
+            created: '2018',
+            lastUpdated: ''
+        },
+        idiom: [
+            {
+                imageSrc: './assets/flags/uk_flag.png',
+                lang: 'en',
+                link: 'https://ebiquity.umbc.edu/paper/html/id/827/A-Knowledge-Representation-of-Cloud-Data-controls-for-EU-GDPR-Compliance'
+            }
+        ],
+        responsible: [
+            {
+                name: 'Information Systems Department, University of Maryland Baltimore County (UMBC)',
+                link: 'https://informationsystems.umbc.edu/'
+            }
+        ],
+        project: [],
+        authors: [
+            {
+                name: 'Lavanya Elluri',
+                link: 'https://dblp.org/pers/hd/e/Elluri:Lavanya'
+            },
+            {
+                name: 'Karuna Pande Joshi',
+                link: 'http://karuna.informationsystems.umbc.edu/'
+            }
+        ],
+        elements: [
+            {
+                name: 'CSA controls',
+                link: ''
+            },
+            {
+                name: 'Common obligations',
+                link: ''
+            },
+            {
+                name: 'Consumer obligations',
+                link: ''
+            },
+            {
+                name: 'Provider obligations',
+                link: ''
+            },
+            {
+                name: 'Stakeholders',
+                link: ''
+            }
+        ],
+        resources: [
+            {
+                type: 'OWL',
+                link: 'https://ebiquity.umbc.edu/_file_directory_/resources/377.rdf'
+            }
+        ],
+        documentation: [
+            {
+                type: 'RDF',
+                link: 'https://ebiquity.umbc.edu/paper/owl/id/827/A-Knowledge-Representation-of-Cloud-Data-controls-for-EU-GDPR-Compliance'
+            },
+            {
+                type: 'PDF',
+                link: 'https://ebiquity.umbc.edu/_file_directory_/papers/891.pdf'
+            }
+        ],
+        examples: [
+            {
+                type: 'sample',
+                title: 'Data compliance ontology for GDPR and PCI DSS',
+                description: {
+                    name: '"An Integrated Knowledge Graph to Automate GDPR and PCI DSS Compliance" article',
+                    link: 'https://ebiquity.umbc.edu/_file_directory_/papers/907.pdf'
+                },
+                solutions: [
+                    {
+                        exampleName: 'Extend Cloud GDPR ontology to comply with the Payment Card Industry Data Security Standard (PCI DSS)',
+                        resources: [
+                            {
+                                language: 'PNG',
+                                link: 'https://d3i71xaburhd42.cloudfront.net/9171119bce7659b82f1b9d7387c7c178fccd169b/4-Figure3-1.png'
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        diagrams: [
+            {
+                type: 'spec',
+                name: 'Cloud',
+                imageSrc: './assets/ontologies/Cloud/diagrams/fig1.PNG',
+                typeSrc: 'https://ebiquity.umbc.edu/_file_directory_/papers/891.pdf',
+                nameSrc: 'Cloud GDPR ontology article'
             }
         ]
     },
@@ -1600,6 +1458,148 @@ export class OntologiesComponent implements OnInit {
                 imageSrc: 'https://dpvcg.github.io/dpv/diagrams/legalentities.png',
                 typeSrc: 'https://www.w3.org/ns/dpv',
                 nameSrc: 'DPV v0.2 specification'
+            }
+        ]
+    },
+    {
+        id: 'GDPRtEXT',
+        name: 'GDPR text EXTensions',
+        description: 'Open data resource, that extends the European Legislation Identifier (ELI) ontology, with the aim of connecting GDPR concepts, through the SKOS ontology, and their respective chapter, article, point, etc.',
+        legalBasis: [
+            {
+                country: './assets/footer/eu_flag.jpg',
+                name: 'GDPR',
+                link: 'https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN'
+            }
+        ],
+        license: {
+            name: 'CC-by-4.0',
+            link: 'https://creativecommons.org/licenses/by/4.0/'
+        },
+        dates: {
+            created: '2018',
+            lastUpdated: '2020'
+        },
+        idiom: [
+            {
+                imageSrc: './assets/flags/uk_flag.png',
+                lang: 'en',
+                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology'
+            }
+        ],
+        responsible: [
+            {
+                name: 'ADAPT Centre, Trinity College Dublin',
+                link: 'https://www.adaptcentre.ie/'
+            }
+        ],
+        project: [],
+        authors: [
+            {
+                name: 'Harshvardhan J. Pandit',
+                link: 'https://harshp.com/research/'
+            },
+            {
+                name: 'Kaniz Fatema',
+                link: 'https://dblp.uni-trier.de/pers/hd/f/Fatema:Kaniz'
+            },
+            {
+                name: 'Declan O’Sullivan',
+                link: 'https://dblp.uni-trier.de/pers/hd/o/O=Sullivan:Declan'
+            },
+            {
+                name: 'Dave Lewis',
+                link: 'https://dblp.uni-trier.de/pers/hd/l/Lewis_0001:David'
+            }
+        ],
+        elements: [
+            {
+                name: 'Chapter',
+                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology#Chapter'
+            },
+            {
+                name: 'Section',
+                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology#Section'
+            },
+            {
+                name: 'Article',
+                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology#Article'
+            },
+            {
+                name: 'Point',
+                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology#Point'
+            },
+            {
+                name: 'Sub point',
+                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology#SubPoint'
+            },
+            {
+                name: 'Recital',
+                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology#Recital'
+            },
+            {
+                name: 'Citation',
+                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology#Citation'
+            }
+        ],
+        resources: [
+            {
+                type: 'RDF',
+                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology.xml'
+            },
+            {
+                type: 'N-Triples',
+                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology.nt'
+            },
+            {
+                type: 'Turtle',
+                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology.ttl'
+            },
+            {
+                type: 'JSON-LD',
+                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology.json'
+            }
+        ],
+        documentation: [
+            {
+                type: 'HTML',
+                link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology'
+            },
+            {
+                type: 'PDF',
+                link: 'http://www.tara.tcd.ie/bitstream/handle/2262/91559/ESWC_2018___GDPRtEXT_rebuttal.pdf;jsessionid=B050BB1B6863A96C3278E15687462D54?sequence=1'
+            }
+        ],
+        examples: [
+            {
+                type: 'sample',
+                title: 'Examples from the GDPRtEXT specification',
+                description: {
+                    name: 'GDPRtEXT specification',
+                    link: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/ontology'
+                },
+                solutions: [
+                    {
+                        exampleName: 'Compliance reports - section 4.1',
+                        resources: []
+                    },
+                    {
+                        exampleName: 'Link obligations from Data Protection Directive - section 4.2',
+                        resources: [
+                            {
+                                language: 'HTML',
+                                link: 'http://openscience.adaptcentre.ie/projects/GDPRtEXT/dpd_mapping.html'
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        diagrams: [ // add figures from https://www.semanticscholar.org/paper/GDPRtEXT-GDPR-as-a-Linked-Data-Resource-Pandit-Fatema/e957b1aaefe408b351c48b1862cf5cc7c970b364
+            {
+                type: 'webvowl',
+                name: 'GDPRtEXT v0.7',
+                imageSrc: 'https://openscience.adaptcentre.ie/ontologies/GDPRtEXT/deliverables/docs/webvowl/index.html#'
             }
         ]
     }
