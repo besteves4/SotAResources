@@ -57,9 +57,9 @@
         </td>
         <td class="diagram">
             <div class="button-wrapper mr-1" *ngFor="let diag of ppl?.diagrams" [ngSwitch]="true">
-                <a *ngSwitchCase="diag.type.includes('xsddiagram')" class="btn btn-outline-warning orange-btn btn-sm clickable" role="button" (click)="handleClickDiag(diag)">{{diag.name}}</a>
-                <a *ngSwitchCase="diag.type.includes('spec')" class="btn btn-outline-warning orange-btn btn-sm clickable" role="button" (click)="handleClickDiag(diag)">{{diag.name}}</a>
-                <a *ngSwitchCase="diag.type.includes('webvowl')" class="btn btn-outline-warning orange-btn btn-sm" href={{diag.imageSrc}} target="_blank" role="button">{{diag.name}}</a>
+                <a *ngSwitchCase="diag.type.includes('xsddiagram')" class="btn btn-outline-warning orange-btn btn-sm clickable mb-1" role="button" (click)="handleClickDiag(diag)">{{diag.name}}</a>
+                <a *ngSwitchCase="diag.type.includes('spec')" class="btn btn-outline-warning orange-btn btn-sm clickable mb-1" role="button" (click)="handleClickDiag(diag)">{{diag.name}}</a>
+                <a *ngSwitchCase="diag.type.includes('webvowl')" class="btn btn-outline-warning orange-btn btn-sm mb-1" href={{diag.imageSrc}} target="_blank" role="button">{{diag.name}}</a>
             </div>
         </td>
     </tr>

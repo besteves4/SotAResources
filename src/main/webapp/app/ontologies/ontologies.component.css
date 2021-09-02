@@ -23,6 +23,8 @@
     vertical-align: middle;
     text-align: justify;
     min-width: 240px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .name {
