@@ -161,7 +161,14 @@ export class OntologiesComponent implements OnInit {
                 name: 'DPKO',
                 imageSrc: './assets/ontologies/NEURONA/diagrams/DPKO.PNG',
                 typeSrc: 'https://ddd.uab.cat/pub/artpub/2010/137891/aaaisprsymser_a2010n1iENG.pdf',
-                nameSrc: 'NEURONA Project article'
+                nameSrc: 'Casellas et al. (2010) article'
+            },
+            {
+                type: 'spec',
+                name: 'DPRO',
+                imageSrc: './assets/ontologies/NEURONA/diagrams/DPRO.png',
+                typeSrc: 'https://www.albertmeronyo.org/wp-content/uploads/2014/05/aicol09ii_submission_9_A.pdf',
+                nameSrc: 'Torralba et al. (2009) article'
             }
         ]
     },
