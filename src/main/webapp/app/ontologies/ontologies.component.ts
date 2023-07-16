@@ -439,7 +439,14 @@ export class OntologiesComponent implements OnInit {
                 type: 'webvowl',
                 name: 'GDPRov v0.7',
                 imageSrc: 'https://openscience.adaptcentre.ie/ontologies/GDPRov/docs/webvowl/index.html#'
-            }
+            },
+            {
+                type: 'spec',
+                name: 'Main',
+                imageSrc: './assets/ontologies/gdprov/diagrams/main.png',
+                typeSrc: 'https://ceur-ws.org/Vol-1951/PrivOn2017_paper_6.pdf',
+                nameSrc: 'Pandit and Lewis (2017) article'
+            },
         ]
     },
     {
